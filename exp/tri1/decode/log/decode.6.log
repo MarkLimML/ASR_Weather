@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/6/utt2spk scp:data/test/split16/6/cmvn.scp scp:data/test/split16/6/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.6.gz" 
+# Started at Sat Apr  3 00:21:25 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/6/utt2spk scp:data/test/split16/6/cmvn.scp scp:data/test/split16/6/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.6.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/6/utt2spk scp:data/test/split16/6/cmvn.scp scp:data/test/split16/6/feats.scp ark:- 
+weather030_010 AYON SA PAGASA NASA LAYO NA LAMANG THREE HUNDRED TEN KILOMETERS DIYAN SA MAY SILANGAN HILAGANG SILANGAN O EAST NORTH EAST NG CASIGURAN AURORA ANG MATA NG BAGYONG ROSITA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_010 is -9.20334 over 1011 frames.
+weather030_011 AT TAGLAY NITO ANG NA PARA LAKAS ANG HA ANG INA ONE HUNDRED FIFTY KILOMETERS PER HOUR MALAPIT SA GITNA AT BUGSO NA HANGGANG ONE HUNDRED EIGHTY FIVE KILOMETERS PER HOUR AT KUMIKILOS ITO PAKANLURAN O WESTWARD SA BILIS NAMAN NA FIFTEEN KILOMETERS PER HOUR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_011 is -9.36881 over 1456 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather030_012 AT SA TRACK NG PAGASA BUKAS NA PO NG UMAGA TATAMA DIYAN SA MAY SOUTHERN SA MAY LA O NG NORTHERN AURORA AREA YUNG BAGYO AT MAGHAPON DIN ITONG KATAWAN RIN ANG NORTHERN LUZON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_012 is -9.07009 over 1129 frames.
+weather030_013 AT MGA KAPUSO AH MAGING I AM READY PO SA BANTA NG ULAN SA E KASAMA NA RITO ANG NA RING NA YAN AT ANG MGA PAGBAHA AT DAAN SA MALALAKAS NA ULAN LALONG LALO NA ITO SA MGA DADAANAN NG NA BAGYO ITONG ISABELA AURORA AYON QUIRINO NUEVA VIZCAYA IFUGAO BENGUET LA UNION AT POSIBLE ANG PANGASINAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_013 is -9.26827 over 1917 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 9.12673s: real-time factor assuming 100 frames/sec is 0.165549
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.24233 over 5513 frames.
+# Accounting: time=9 threads=1
+# Ended (code 0) at Sat Apr  3 00:21:35 CST 2021, elapsed time 9 seconds

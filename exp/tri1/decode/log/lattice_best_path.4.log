@@ -1,0 +1,14 @@
+# lattice-depth-per-frame "ark:gunzip -c exp/tri1/decode/lat.4.gz|" "ark,t:|gzip -c > exp/tri1/decode/depth_tmp.4.gz" ark:- | lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null "ark,t:|gzip -c >exp/tri1/decode/ali_tmp.4.gz" 
+# Started at Sat Apr  3 00:21:37 CST 2021
+#
+lattice-depth-per-frame 'ark:gunzip -c exp/tri1/decode/lat.4.gz|' 'ark,t:|gzip -c > exp/tri1/decode/depth_tmp.4.gz' ark:- 
+lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null 'ark,t:|gzip -c >exp/tri1/decode/ali_tmp.4.gz' 
+LOG (lattice-depth-per-frame[5.5.896~1-8a59]:main():lattice-depth-per-frame.cc:82) Done 4 lattices.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather030_002, best cost 66.1609 + 3722.42 = 3788.58 over 344 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather030_003, best cost 44.9304 + 1691.4 = 1736.33 over 153 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather030_004, best cost 156.446 + 9802.63 = 9959.08 over 869 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather030_005, best cost 153.779 + 7338.58 = 7492.36 over 687 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:124) Overall cost per frame is 11.1916 = 0.20522 [graph] + 10.9864 [acoustic] over 2053 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:128) Done 4 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat Apr  3 00:21:38 CST 2021, elapsed time 1 seconds

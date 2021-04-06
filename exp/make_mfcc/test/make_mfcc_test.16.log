@@ -1,0 +1,16 @@
+# extract-segments scp,p:data/test/wav.scp exp/make_mfcc/test/segments.16 ark:- | compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.16 --verbose=2 --config=conf/mfcc.conf ark:- ark:- | copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.16 ark:- ark,scp:/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.16.ark,/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.16.scp 
+# Started at Wed Mar 31 21:45:24 CST 2021
+#
+extract-segments scp,p:data/test/wav.scp exp/make_mfcc/test/segments.16 ark:- 
+WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 50597152 bytes in RIFF chunk, but after first data block there will be 36 + 50596728 bytes (we do not support reading multiple data chunks).
+copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.16 ark:- ark,scp:/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.16.ark,/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.16.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.16 --verbose=2 --config=conf/mfcc.conf ark:- ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather031_034
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather031_035
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather031_036
+LOG (extract-segments[5.5.896~1-8a59]:main():extract-segments.cc:194) Successfully processed 4 lines out of 4 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather031_037
+LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:185)  Done 4 out of 4 utterances.
+LOG (copy-feats[5.5.896~1-8a59]:main():copy-feats.cc:143) Copied 4 feature matrices.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Wed Mar 31 21:45:26 CST 2021, elapsed time 2 seconds

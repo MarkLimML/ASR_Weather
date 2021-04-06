@@ -1,0 +1,7 @@
+# sum-tree-stats exp/tri4a/treeacc exp/tri4a/1.treeacc exp/tri4a/2.treeacc exp/tri4a/3.treeacc exp/tri4a/4.treeacc 
+# Started at Sun Apr  4 23:45:14 CST 2021
+#
+sum-tree-stats exp/tri4a/treeacc exp/tri4a/1.treeacc exp/tri4a/2.treeacc exp/tri4a/3.treeacc exp/tri4a/4.treeacc 
+LOG (sum-tree-stats[5.5.896~1-8a59]:main():sum-tree-stats.cc:88) Wrote summed accs ( 15561 individual stats)
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sun Apr  4 23:45:15 CST 2021, elapsed time 1 seconds

@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/14/utt2spk scp:data/test/split16/14/cmvn.scp scp:data/test/split16/14/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.14.gz" 
+# Started at Sat Apr  3 00:21:25 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/14/utt2spk scp:data/test/split16/14/cmvn.scp scp:data/test/split16/14/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.14.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/14/utt2spk scp:data/test/split16/14/cmvn.scp scp:data/test/split16/14/feats.scp ark:- 
+weather031_026 MAS PA DIN LEYTE YUNG MABABANG BAHAGI YUNG IBABANG BAHAGI NG ATING BANSA KESA YUNG AH TAAS NO KASI TSAKA BANSA TAAS MERONG KANG CORDILLERA SIERRA MADRE MANG TANI DIYES PAG TUMAMA YUNG BAGYO NA HUMIHINA YUNG EPEKTO MANG TANI DITO SA BABA WALA TAYONG NG PARA NAMAN TEN WINDS INA HUMAHARANG DITO KASI PURO MGA PULO PULO O MGA ISLA ITONG MGA DADAANAN NIYA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_026 is -9.16807 over 2488 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_027 TAMA YAN JESSICA KUNG TITINGNAN NATIN YUNG TRACK NUNG BAGYO NO PAG YAN TUMAMA SA MAY DINAGAT KAILAN ANG NANGYAYARI DIYAN JESSICA KUNG IKOCLOSE NA PO YAN PAGTAMA NYAN SA ISANG ISLA BABALIK ULIT SA TAGA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_027 is -8.81947 over 1183 frames.
+weather031_028 SO KAHIT PAPAANO MAKAKAIPON NG LAKAS PAG TININGNAN MO YUNG CLOSE ANG NUNG FORECAST NA YAN JESSICA KADA TAMA NYAN SA ISLA DADAAN SA DAGAT POSIBLENG LUMAKAS ULIT TATAMA NA NAMAN SA ISLA DAGAT NA NAMAN ULIT SO YUNG KANYANG TAMA SA LUPA BABALIK SA DAGAT KAHIT PAPANO NA MAY MAY PILING LAKAS NGA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_028 is -8.908 over 1800 frames.
+weather031_029 CITY KATULAD KAPAG SA LUZON SA TUMAMA MALIBAN DOON SA BUNDOK NG SIERRA MADRE YUNG MALAKING LANDMASS NG LUZON EH NAKAKATULONG PARA MABAWASAN YUNG PINANGGAGALINGAN EH GANYAN ANG ENERGY WHICH IS YUNG WEST SI OR NA NASA TAGA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_029 is -9.0795 over 1297 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 9.92529s: real-time factor assuming 100 frames/sec is 0.14665
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.021 over 6768 frames.
+# Accounting: time=10 threads=1
+# Ended (code 0) at Sat Apr  3 00:21:35 CST 2021, elapsed time 10 seconds

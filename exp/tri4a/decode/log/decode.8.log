@@ -1,0 +1,26 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.mdl exp/tri4a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/8/utt2spk scp:data/test/split16/8/cmvn.scp scp:data/test/split16/8/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split16/8/utt2spk ark:exp/tri4a/decode/pre_trans.8 ark:- ark:- |" "ark:|gzip -c > exp/tri4a/decode/lat.tmp.8.gz" 
+# Started at Sun Apr  4 23:48:21 CST 2021
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.mdl exp/tri4a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/8/utt2spk scp:data/test/split16/8/cmvn.scp scp:data/test/split16/8/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split16/8/utt2spk ark:exp/tri4a/decode/pre_trans.8 ark:- ark:- |' 'ark:|gzip -c > exp/tri4a/decode/lat.tmp.8.gz' 
+transform-feats --utt2spk=ark:data/test/split16/8/utt2spk ark:exp/tri4a/decode/pre_trans.8 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/8/utt2spk scp:data/test/split16/8/cmvn.scp scp:data/test/split16/8/feats.scp ark:- 
+transform-feats exp/tri4a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_001 ISANG BAGYO ANG NASA LOOB NGAYON NG PHILIPPINE AREA OF RESPONSIBILITY ANG BAGYONG SAMUEL NA INAASAHANG TATAMA SA ILANG LUGAR SA BANSA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_001 is -4.5966 over 851 frames.
+weather031_002 ALAMIN PO NATIN ANG LATEST SA LAGAY NG PANAHON PULA KAY GMA RESIDENT ITONG LALO DIYES NA KANYANG CRUZ MANG TANI 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_002 is -4.78191 over 675 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.4635 over 2728 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+weather031_003 NALAMANG JESSICA MGA KAPUSO MAGING I AM READY PO SA MAULANG PANAHON ANG MGA TAGA VISAYAS AT MINDANAO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_003 is -4.6186 over 560 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average logdet is 0.609877 over 2728 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+weather031_004 SIMULA NGAYONG GABI AT YAN AY DAHIL SA PAPALAPIT NA TROPICAL DEPRESSION SAMUEL ANG UNANG BAGYO SA KIM PAR NGAYONG NOBYEMBRE 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_004 is -4.72148 over 642 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 5.66924s: real-time factor assuming 100 frames/sec is 0.207817
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -4.67636 over 2728 frames.
+# Accounting: time=7 threads=1
+# Ended (code 0) at Sun Apr  4 23:48:29 CST 2021, elapsed time 7 seconds

@@ -1,0 +1,25 @@
+# gmm-latgen-faster --max-active=2000 --beam=10.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.alimdl exp/tri4a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/1/utt2spk scp:data/test/split16/1/cmvn.scp scp:data/test/split16/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri4a/decode.si/lat.1.gz" 
+# Started at Sun Apr  4 23:47:50 CST 2021
+#
+gmm-latgen-faster --max-active=2000 --beam=10.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.alimdl exp/tri4a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/1/utt2spk scp:data/test/split16/1/cmvn.scp scp:data/test/split16/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri4a/decode.si/lat.1.gz' 
+apply-cmvn --utt2spk=ark:data/test/split16/1/utt2spk scp:data/test/split16/1/cmvn.scp scp:data/test/split16/1/feats.scp ark:- 
+transform-feats exp/tri4a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+weather029_006 SA NGAYON NASA ONE HUNDRED TEN KILOMETERS SILANGAN NG BALER AURORA ANG BAGYONG PEPITO O PAR ANG MAXIMUM SUSTAINED WINDS ISA NAG FIVE KILOMETERS PER HOUR AT PAGBUGSO KASI MINSAN NA EIGHTY KILOMETERS PER HOUR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_006 is -6.29155 over 1125 frames.
+weather029_007 BAHAGYANG BUMILIS ANG PAG KILOS DITO SA THIRTY EIGHT KILOMETERS PER HOUR PATUNGONG WEST NORTH WEST 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_007 is -6.36881 over 553 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 5 utterances, errors on 0
+weather029_008 SA FORECAST O GABI YAN CENTRAL SUBIC YUNG RAINFALL FORECAST BUONG IS ISANG DOBOL LINYA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_008 is -6.85561 over 578 frames.
+weather029_009 NAKIKITANG TUTUMBUKIN NITO ANG AURORA NGAYONG GABI AT AH TANI NA CENTRAL LUZON O SOUTHERN SUR NORTHERN LUZON HANGGANG BUKAS NG MADALING ARAW 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_009 is -6.36451 over 814 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.4635 over 4876 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 5 utterances; 0 had errors.
+weather029_010 INAASAHAN ANG MALAKAS NA ULAN NGAYONG GABI SA AURORA ISABELA QUEZON BULACAN TARLAC CAMARINES NORTE NUEVA ECIJA NUEVA VIZCAYA QUIRINO RING LANG CAGAYAN CORDILLERA LA UNION ILOCOS SUR TARLAC PAMPANGA BATAAN ZAMBALES AT PANGASINAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_010 is -5.64738 over 1806 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 7.0899s: real-time factor assuming 100 frames/sec is 0.145404
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 5 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -6.14077 over 4876 frames.
+# Accounting: time=8 threads=1
+# Ended (code 0) at Sun Apr  4 23:47:58 CST 2021, elapsed time 8 seconds

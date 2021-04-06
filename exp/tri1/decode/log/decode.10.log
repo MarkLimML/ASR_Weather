@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/10/utt2spk scp:data/test/split16/10/cmvn.scp scp:data/test/split16/10/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.10.gz" 
+# Started at Sat Apr  3 00:21:25 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/10/utt2spk scp:data/test/split16/10/cmvn.scp scp:data/test/split16/10/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.10.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/10/utt2spk scp:data/test/split16/10/cmvn.scp scp:data/test/split16/10/feats.scp ark:- 
+weather031_010 AT BABA MAY NG BAGYONG SAMUEL ANG NA HALOS BUONG VISAYAS NA MAGDADALA PAU LA ANG MAULANG PANAHON DITO ANG PAGTAMA NITO SA MAY DINAGAT ISLAND YAN EH KUNG HINDI MAGBABAGO YUNG KANYANG DIRECTION EIGHT AT ANG READY NITO DITO SA MAY LEYTE LALO SA BANSA DEL LEYTE POSIBLENG DIYAN SA MAY BOHOL CEBU DIYAN SA MAY NEGROS ISLAND LALO SA MAY NEGROS OCCIDENTAL DADAAN NG ILOILO ANTIQUE EH PAPUNTA NA NG NIYA PALAWAN AT PAPALABAS NG NA O PAPUNTA NG WEST PHILIPPINE SEA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_010 is -8.70834 over 2714 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_011 KAYA MAGING I AM READY PO AH ANG MGA TAGA REHIYON NG CARAGA NORTHERN MINDANAO LALONG LALO NA I EASTERN VISAYAS RIN SAMAR LEYTE PROVINCES SA MAULANG MAGDAMAG NA MAGPAPATULOY MGA KAPUSO HANGGANG BUKAS PO YAN YUN NAKIKITA NYONG PULA AT SA AH PINK NA YAN YAN YUNG MGA MATITINDING PAGULAN NA PWEDENG MARARANASAN SA MALAKING BAHAGI NG NA VISAYAS BUKAS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_011 is -8.64287 over 2081 frames.
+weather031_012 MAGHAPON DIN MAULAN DIYAN SA MAY AH ZAMBOANGA AT DAVAO REGION AT SA BUONG VISAYAS BUKAS AT MAGING I AM READY PO SA BANTA NG AH LANDSLIDE AT MAS FIVE SA NIYAN MGA MALAKAS O PAGULAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_012 is -8.6668 over 1128 frames.
+weather031_013 HABANG SA LUZON APEKTADO NG BAGYO ANG NG AH BICOL REGION MINDORO MARINDUQUE ROMBLON PERO YAN ANG SIMULA LANG NA BUKAS AT GABI 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_013 is -8.63924 over 880 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 9.59879s: real-time factor assuming 100 frames/sec is 0.141096
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.67249 over 6803 frames.
+# Accounting: time=10 threads=1
+# Ended (code 0) at Sat Apr  3 00:21:35 CST 2021, elapsed time 10 seconds

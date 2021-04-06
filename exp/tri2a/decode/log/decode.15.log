@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/15/utt2spk scp:data/test/split16/15/cmvn.scp scp:data/test/split16/15/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri2a/decode/lat.15.gz" 
+# Started at Sat Apr  3 18:06:42 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/15/utt2spk scp:data/test/split16/15/cmvn.scp scp:data/test/split16/15/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri2a/decode/lat.15.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/15/utt2spk scp:data/test/split16/15/cmvn.scp scp:data/test/split16/15/feats.scp ark:- 
+weather031_030 ANC AT TSAKA BATAY SA HISTORY TRACK RECORD NITONG MGA BAGYO AT THIS PA OF NA YAN MANG TANI PARANG HULING HIRIT NILA EH KAYA MEDYO NAKAKATAKOT DIN ITONG MGA BAGYO TOWARDS AH DIN END OF NA YAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_030 is -9.35896 over 1108 frames.
+weather031_031 YES JESSICA AT SIYA NA NABANGGIT MO ITO PURO HA INIT MAP EH LEYTE YUNG BAGYO KASI KAHIT GAANO KALAKAS PAG TUMAMA DIYAN SA NORTE MAS KAKAUNTI YUNG TAO SO ITONG ATING PINAG AH UUSAPAN NGAYON HINDI PO SIYA NAPAKALAKAS IN TERMS OF WIND PERO YUNG ULAN NYAN SA YAN YUN DIN ANG DAPAT NATING PAG INGAT AN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_031 is -9.05499 over 1664 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_032 MARAMING MANG AH NAKATIRA DIYAN MARAMING NYAN AH MGA TAO DIYAN SA MGA ISLA NA YAN SO YUNG NYAN MASBATE LANG STRENGTH AT KUNG GANUNG KALAKAS YUNG HANGIN NYAN EH YUNG DALA DALANG ULAN NYAN JESSICA KUNG TITINGNAN MO YUNG NA RIN ZAMBALES AT EH MAS MARAMI YUNG KULAY NA PULA YUNG DING AT YUNG NA YUNG ORANGE SO IBIG SABIHIN MAS MARAMING LUGAR ANG MAKAKARANAS NUNG MALALAKAS NA PAGULAN LALO NA NGAYONG GABI HANGGANG BUKAS ANG KRITIKAL NATIN JESSICA NGAYONG GABI EIGHT BUKAS HANGGANG SA MIYERKULES NA ANG UMAGA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_032 is -8.78614 over 2945 frames.
+weather031_033 AY DIN O BAYONG MGA NA LANDSLIDE NA AREA SA NORTHERN LUZON YUNG IBA HINDI NAMAN KALAKASAN PERO NAGKA LANDSLIDE PA RIN SO YUNG MGA KABABAYAN PO NATIN SA DADAANAN NG NITONG SI BAGYONG SAMUEL NO THREE NA IDENTIFIED NAMAN MANG TANI INYONG MGA LANDSLIDE PRONE BATAY SA DILAW HA SA NA NG NA DIN YAN HA ANONG MATAGAL NAUWI MAYROON YAN SO KUNG MALAPIT PO KAYO SA MGA BUNDOK MALAPIT KAYO SA MGA I IDENTIFIED NA LANDSLIDE AREA PAG SINABING EVACUATE EVACUATE PO AH 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_033 is -9.22597 over 2873 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 25.4954s: real-time factor assuming 100 frames/sec is 0.296804
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.05921 over 8590 frames.
+# Accounting: time=28 threads=1
+# Ended (code 0) at Sat Apr  3 18:07:10 CST 2021, elapsed time 28 seconds

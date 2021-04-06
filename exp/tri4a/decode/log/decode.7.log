@@ -1,0 +1,26 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.mdl exp/tri4a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split16/7/utt2spk ark:exp/tri4a/decode/pre_trans.7 ark:- ark:- |" "ark:|gzip -c > exp/tri4a/decode/lat.tmp.7.gz" 
+# Started at Sun Apr  4 23:48:21 CST 2021
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.mdl exp/tri4a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split16/7/utt2spk ark:exp/tri4a/decode/pre_trans.7 ark:- ark:- |' 'ark:|gzip -c > exp/tri4a/decode/lat.tmp.7.gz' 
+transform-feats --utt2spk=ark:data/test/split16/7/utt2spk ark:exp/tri4a/decode/pre_trans.7 ark:- ark:- 
+splice-feats ark:- ark:- 
+transform-feats exp/tri4a/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- 
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather030_014 MATAAS DIN ANG ALON SA HALOS BUONG LUZON MULA YAN SA MAY AH BATANGAS ANG DITO SA MAY AH CAGAYAN VALLEY ILOCOS REGION DIYAN SA MAY EASTERN VISAYAS YANG NORTHERN AND EASTERN SAMAR KASAMA NA ANG EASTERN MINDANAO DAHIL NAMAN PO YAN SA PINAGSANIB NA EPEKTO NUNG BAGYO AT NG MALAKAS NA AMIHAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_014 is -4.37707 over 1744 frames.
+weather030_015 MAY BANTA RIN NG STORM STRESS DIYAN SA MGA PROBINSYA NG ISABELA CAGAYAN DIYAN SA MAY AURORA ILOCOS SUR ILOCOS NORTE AT LA UNION NA POSIBLENG UMABOT NA ANG TATLONG METRO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_015 is -4.4695 over 1159 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.4635 over 4567 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+weather030_016 DI NAMAN APEKTADO NG BAGYO ANG VISAYAS AT MINDANAO PERO INA KAPUSO AH MALALAKAS NA ULAN DITO SA MAY I LUZON LALONG LALO NA SA NORTHERN AT CENTRAL LUZON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_016 is -4.51995 over 924 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average logdet is -3.60285 over 4567 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+weather030_017 AT YAN ANG LATEST MULA SA GMA WEATHER AKO PO SI NATHANIEL CRUZ MAGPLANO PARA SIGURADO I AM READY SERBISYONG TOTOO NG GMA NEWS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_017 is -4.20003 over 740 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 8.30579s: real-time factor assuming 100 frames/sec is 0.181865
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -4.40075 over 4567 frames.
+# Accounting: time=10 threads=1
+# Ended (code 0) at Sun Apr  4 23:48:31 CST 2021, elapsed time 10 seconds

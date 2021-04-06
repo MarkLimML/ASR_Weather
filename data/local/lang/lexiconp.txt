@@ -1,0 +1,1221 @@
+<UNK> 1.0	SPN
+A 1.0	ej
+AABOT 1.0	6 6 b o t
+AALALA 1.0	6 6 l a l a
+AALAMIN 1.0	6 6 l a m i n
+AALAS 1.0	6 6 l a s
+AASAHAN 1.0	6 6 s a h a n
+ABRA 1.0	6 b r a
+ABRIL 1.0	6 b r i l
+ABS 1.0	ej b i e s
+ABS-CBN 1.0	ej b i e s s i b i e n
+ACCOUNT 1.0	6 k a w n t
+ACTUALLY 1.0	6 k t U a l i
+ADMINISTRATIVE 1.0	6 d m i n i s t r a t I v
+AFTERNOON 1.0	6 f t e r n U n
+AGUSAN 1.0	6 g u s a n
+AGWAT 1.0	6 g w a t
+AH 1.0	6
+AIR 1.0	ej r
+AKLAN 1.0	6 k l a n
+AKO 1.0	6 k o
+ALA 1.0	6 l a
+ALABAT 1.0	6 l a b a t
+ALAMIN 1.0	6 l a m i n
+ALAS 1.0	6 l a s
+ALINSANGAN 1.0	6 l i n s a N a n
+ALON 1.0	6 l o n
+AM 1.0	e m
+AMA 1.0	6 m a
+AMIHAN 1.0	6 m i h a n
+AN 1.0	6 n
+ANC 1.0	ej e n s i
+AND 1.0	e n d
+ANG 1.0	6 N
+ANGAT 1.0	6 N a t
+ANO 1.0	6 n o
+ANONG 1.0	6 n o N
+ANTIQUE 1.0	6 n t I k
+ANUMANG 1.0	6 n u m a N
+ANYOS 1.0	6 n j o s
+APARRI 1.0	6 p a r i
+APAYAO 1.0	6 p 6 j aw
+APEKTADO 1.0	6 p e k t a d o
+ARAW 1.0	6 r aw
+AREA 1.0	ej r i j a
+AS 1.0	6 s
+ASAHAN 1.0	6 s 6 h a n
+ASAHANG 1.0	6 s 6 h a N
+ASUL 1.0	6 s u l
+AT 1.0	6 t
+ATIN 1.0	6 t I n
+ATING 1.0	6 t I N
+AURORA 1.0	a o r o r a 
+AURORAT 1.0	a o r o r a t
+AWAY 1.0	6 w 6j
+AXIS 1.0	a k s i s
+AY 1.0	6j
+AYON 1.0	6 j o n
+B 1.0	b i
+BA 1.0	b 6
+BABA 1.0	b 6 b 6
+BABALA 1.0	b 6 b 6 l a
+BABALIK 1.0	b 6 b 6 l i k
+BABAYBAYIN 1.0	b 6 b 6j b 6j i n
+BABUYAN 1.0	b 6 b u j a n
+BACOLOD 1.0	b 6 k o l o d
+BAGAMAT 1.0	b 6 g 6 m a t
+BAGO 1.0	b 6 g o
+BAGONG 1.0	b 6 g o N
+BAGUIO 1.0	b 6 g I j o
+BAGYO 1.0	b 6 g j o
+BAGYONG 1.0	b 6 g j o N
+BAHA 1.0	b 6 h a
+BAHAGI 1.0	b 6 h a g i
+BAHAGING 1.0	b 6 h a g i N
+BAHAGYANG 1.0	b 6 h a g j a N
+BAHAY 1.0	b 6 h 6j
+BAKIT 1.0	b 6 k i t
+BALER 1.0	b 6 l e r
+BALITA 1.0	b 6 l i t a
+BANG 1.0	b a N
+BANGKA 1.0	b 6 N k a
+BANGSAMORO 1.0	b 6 N s a m o r o
+BANSA 1.0	b 6 n s a
+BANTA 1.0	b 6 n t a
+BARMM 1.0	b 6 r m
+BASA 1.0	b 6 s a
+BASCO 1.0	b 6 s k o
+BASE 1.0	b ej s 
+BATAAN 1.0	b 6 t a a n
+BATANES 1.0	b 6 t a n e s
+BATANGAS 1.0	b 6 t a N g 6 s
+BATAY 1.0	b 6 t 6j
+BAWAL 1.0	b 6 w 6 l
+BAWAT 1.0	b 6 w a t
+BAY 1.0	b ej
+BAYBAYIN 1.0	b 6j b 6j i n
+BAYBAYING 1.0	b 6j b 6j i N
+BAYONG 1.0	b 6 j o N
+BENGUET 1.0	b E n g V e t
+BENISON 1.0	b E n i s o n
+BENTE 1.0	b e n t e
+BERNADETTE 1.0	b e r n a d e t
+BHAGYA 1.0	b 6 g j a
+BICOL 1.0	b i k o l
+BIGLAANG 1.0	b i k l 6 a N
+BIGLANG 1.0	b i k l 6 N
+BIKOL 1.0	b i k o l
+BIKTIMA 1.0	b i k t i m a
+BILIRAN 1.0	b i l i r a n
+BILIS 1.0	b i l i s
+BINABANTAYAN 1.0	b i n a b 6 n t a j a n
+BINABANTAYANG 1.0	b i n a b 6 n t a j a N
+BINATAYAN 1.0	b i n a t 6 j a n
+BINATILYO 1.0	b i n a t i l j o
+BISITAHIN 1.0	b i s i t a h i n
+BIYERNES 1.0	b i r n e s
+BOHOL 1.0	b o h o l
+BORACAY 1.0	b o r a k aj
+BOUNDARY 1.0	b aw n d e r i
+BREAK 1.0	b r ej k
+BUBONG 1.0	b u b o N
+BUBUTI 1.0	b u b u t i
+BUENAVISTA 1.0	b u e n a v i s t a
+BUGSO 1.0	b u k s o
+BUGSONG 1.0	b u k s o N
+BUHAWI 1.0	b u h a w i
+BUHOS 1.0	b u h o s
+BUKA 1.0	b u k a
+BUKAS 1.0	b u k a s
+BUKIDNON 1.0	b u k i t n o n
+BULACAN 1.0	b u l 6 k a n
+BULLETIN 1.0	b u l i t i n
+BUMABA 1.0	b u m 6 b a
+BUMAGSAK 1.0	b u m 6 s a k
+BUMILIS 1.0	b u m i l i s
+BUNDOK 1.0	b u n d o k
+BUNTOT 1.0	b u n t o t
+BUONG 1.0	b u o N
+BUWAN 1.0	b u w 6 n
+CABANATUAN 1.0	k 6 b 6 n 6 t u 6 n
+CACAUSE 1.0	c ow c ow s
+CAGAYAN 1.0	k 6 g 6 j a n
+CALABARZON 1.0	k 6 l 6 b 6 r s o n
+CALAPAN 1.0	k 6 l 6 p a n
+CALAYAN 1.0	k 6 l 6 j a n 
+CAMARINES 1.0	k 6 m 6 r i n e s
+CAMIGUIN 1.0	k 6 m i g u i n
+CAMP 1.0	k 6 m p
+CAPIZ 1.0	k 6 p i s
+CARAGA 1.0	k 6 r 6 g 6 
+CASIGURAN 1.0	k 6 s i g u r a n
+CATANDUANES 1.0	k 6 t a n d u 6 n e s
+CATBALOGAN 1.0	k 6 t b 6 l o g a n
+CATEGORY 1.0	l 6 t e g o r i
+CAUSE 1.0	c ow s
+CAVITE 1.0	k a v i t e 
+CBN 1.0	s i b i e n 
+CEBU 1.0	s e b u
+CELSIUS 1.0	s e l s i u s 
+CENTER 1.0	s e n t e r
+CENTRAL 1.0	s e n t r a l
+CENTRO 1.0	s e n t r o
+CHANCE 1.0	tS a n S
+CI 1.0	S
+CITIES 1.0	S t i e S
+CITY 1.0	S t i
+CLOSE 1.0	k l o s 
+COAST 1.0	k o a s t
+COLD 1.0	k o l d
+COM 1.0	k o m
+COMPANY 1.0	k o m p a n i
+COMPOSTELA 1.0	k o m p o s t e l 6
+CONDITION 1.0	k o n d i S o n
+CONVERGENCE 1.0	k o n v e r g e n c e
+COOL 1.0	k U l
+CORDILLERA 1.0	k o r d i l e r a
+COTABATO 1.0	k o t 6 b 6 t o
+COUNTRY 1.0	k aw n t r i
+CRUZ 1.0	k r u z
+CYCLONE 1.0	s 6j k l o n
+DA 1.0	d 6
+DAAN 1.0	d 6 a n
+DAANG 1.0	d 6 a N
+DADAAN 1.0	d 6 d 6 a n
+DADAANAN 1.0	d 6 d 6 a n a n
+DADALHIN 1.0	d 6 d 6 l h i n
+DAGAT 1.0	d 6 g 6 t
+DAGUPAN 1.0	d 6 g u p a n
+DAHIL 1.0	d 6 h i l
+DAHILAN 1.0	d 6 h i l a n
+DALA 1.0	d 6 l a
+DALANG 1.0	d 6 l a N
+DALAWANG 1.0	d 6 l a w a N
+DAM 1.0	d 6 m
+DAMANG 1.0	d 6 m a N
+DAMA 1.0	d 6 m 6
+DAMI 1.0	d 6 m i
+DAPAT 1.0	d 6 p a t
+DAPITAN 1.0	d 6 p i t a n
+DARANAS 1.0	d 6 r 6 n a s
+DARATING 1.0	d 6 r 6 t i N
+DASH 1.0	d a S
+DATI 1.0	d a t i 
+DATING 1.0	d 6 t i N 
+DATOS 1.0	d a t o s
+DAVAO 1.0	d a v aw
+DAW 1.0	d 6w
+DECEMBER 1.0	d e s e m b e r
+DEFINITELY 1.0	d e f i n i t l i
+DEGREES 1.0	d e g r i s
+DEL 1.0	d e l
+DELA 1.0	d e l a
+DELIKADO 1.0	d e l i k a d o
+DENR 1.0	d i e e n a r 
+DEPRESSION 1.0	d e p r e S o n
+DI 1.0	d i 
+DIFFERENCE 1.0	d i f e r e n s
+DILAW 1.0	d i l aw
+DIN 1.0	d i n 
+DINAGAT 1.0	d i n a g 6 t
+DING 1.0	d i N
+DIRECTION 1.0	d i r e k s i o n 
+DITO 1.0	d i t o
+DIYAN 1.0	d i a n
+DIYES 1.0	d j e s
+DOBLE 1.0	d o b l e
+DOBLENG 1.0	d o b l e N
+DOBOL 1.0	d o b o l
+DOON 1.0	d o o n
+DOS 1.0	d o s
+DOST 1.0	d i ow e s t i
+DOT 1.0	d i ow t i
+DROUGHT 1.0	d r aw t 
+DRY 1.0	d r aj
+DULONG 1.0	d u l o N
+DULOT 1.0	d u l o t
+DUMAAN 1.0	d V m a 6 n
+DUMAGUETE 1.0	d u m a g e t E
+DUMAKO 1.0	d u m a k o
+DZ 1.0	d i z i 
+DZMM 1.0	d i z i e m e m
+E 1.0	i
+EACH 1.0	i t s
+EAST 1.0	i S t
+EASTER 1.0	i S t e r
+EASTERLIES 1.0	i S t e r l i s
+EASTERN 1.0	i S t e r n
+ECIJA 1.0	e S h 6
+ECMWF 1.0	i s i e m d a b 6 l j u e f
+EEXTEND 1.0	e e k s t e n d
+EH 1.0	e
+EIGHT 1.0	ej t
+EIGHTEEN 1.0	ej t i n
+EIGHTY 1.0	ej t I
+EL 1.0	e l 
+ELEVEN 1.0	I l e v n
+END 1.0	e n d 
+ENERGY 1.0	e n e r dZ i
+EPEKTO 1.0	e p e k t o
+ESCOLIAR 1.0	e s k o l j a r
+ESTAREJA 1.0	e s t a r e h 6
+ETO 1.0	e t o
+EUROPEAN 1.0	j U r o p I a n
+EVACUATE 1.0	I v { k j u ej t 
+EVENING 1.0	I v n i N
+EXCEPT 1.0	I k s e p t
+EXTENSION 1.0	I k s t e n S o n
+EXTREME 1.0	I k s t r i m
+FACEBOOK 1.0	f ej s b U k 
+FACTOR 1.0	f { k t o r
+FAIR 1.0	f @ r
+FAIRWEATHER 1.0	F @ r w i D e r
+FAR 1.0	f a r
+FEBRUARY 1.0	f e b w a r i
+FIFTEEN 1.0	f I f t i n
+FIFTY 1.0	f I f t I
+FIVE 1.0	f aj v
+FLASH 1.0	f l { S
+FLOOD 1.0	f l V d
+FLOODING 1.0	f l V d I N
+FOLLOW 1.0	f a l ow
+FOR 1.0	f o r 
+FORECAST 1.0	f o r k a s t
+FORECASTER 1.0	f o r k a s t e r
+FORECASTING 1.0	f o r k a s t I N
+FORTICH 1.0	f o r i tS
+FORTY 1.0	f o r t i
+FOUR 1.0	f o r
+FOURTEEN 1.0	f o r t i n
+FROM 1.0	f r o m
+FRONT 1.0	f r V n t 
+GAANO 1.0	g a 6 n o
+GABI 1.0	g 6 b i 
+GAIN 1.0	g ej n
+GALE 1.0	g ej l
+GALING 1.0	g 6 l I N
+GANAP 1.0	g 6 n a p
+GANITONG 1.0	g a n i t o N
+GANUN 1.0	g a n u n
+GANUNG 1.0	g a n u N
+GANYAN 1.0	g 6 n j a n
+GANYANG 1.0	g 6 n j a N
+GAYA 1.0	g 6 j 6
+GAYUNDIN 1.0	g 6 j u n d i n
+GENERAL 1.0	dZ e n e r a l
+GENERALLY 1.0	dZ e n e r a l i
+GEOHAZARD 1.0	dZ @ U h { z a r d
+GINAGANAP 1.0	g i n a g 6 n a p
+GINAGAWA 1.0	g i n a g 6 w a
+GINOONG 1.0	g i n o o N
+GITNA 1.0	g i t n a
+GIWAN 1.0	g i w a n
+GLAIZA 1.0	g l aj z a
+GMA 1.0	dZ i e m ej
+GOOD 1.0	g u d
+GOV 1.0	g o v
+GREEN 1.0	g r i n
+GROUP 1.0	g r U p
+GROUPS 1.0	g r U p s
+GUARD 1.0	g a r d
+GUMAGAMIT 1.0	g u m a g 6 m i t
+GUMAMIT 1.0	g u m a m i t
+GUSTINESS 1.0	g u s t i n e s
+HA 1.0	h a
+HABAGAT 1.0	h a b 6 g a t
+HABANG 1.0	h a b 6 N
+HAHATAKIN 1.0	h a h a t a k i n
+HAILSTORM 1.0	h ej l s t o r m
+HALOS 1.0	h a l o s
+HAMOG 1.0	h a m o g
+HANGGANG 1.0	h a N g a N
+HANGIN 1.0	h a N i n
+HANGING 1.0	h a N i N
+HAPON 1.0	h a p o n
+HAPONG 1.0	h a p o N
+HAPPY 1.0	h { p j
+HATAKIN 1.0	h 6 t 6 k i n
+HAVE 1.0	h { v 
+HEADLIGHT 1.0	h e d l j t
+HEAT 1.0	h i t
+HEAVY 1.0	h e v j
+HIGHLY 1.0	h j l j
+HIHIGUPIN 1.0	h i h i g u p i n 
+HIHINA 1.0	h i h i n a
+HILAGANG 1.0	h i l 6 g 6 N
+HILAGA 1.0	h i l 6 g a
+HIMAWARI 1.0	h i m 6 w 6 r i
+HINAHATAK 1.0	h i n 6 h 6 t 6 k
+HINATUAN 1.0	h i n 6 t u 6 n
+HINDI 1.0	h i n d i
+HIRIT 1.0	h i r i t
+HISTORY 1.0	h i s t o r i
+HO 1.0	h o
+HOUR 1.0	a r
+HULI 1.0	h u l i
+HULING 1.0	h u l i N
+HUMAHARANG 1.0	h u m 6 h 6 r a N
+HUMIHINA 1.0	h u m i h i n a
+HUMIHINGA 1.0	h u m i h i N a
+HUNDRED 1.0	h u n d r e d
+HUWEBES 1.0	h u w e b e s
+I 1.0	aj
+I 1.0	i
+IBA 1.0	i b 6
+IBA'T 1.0	i b a t
+IBA'T-IBANG 1.0	i b a t i b a N
+IBABANG 1.0	i b 6 b 6 N
+IBANG 1.0	i b 6 N
+IBIG 1.0	i b i k
+IDENTIFIED 1.0	i d e n t i f aj d
+IEXPLAIN 1.0	i e k s p l ej n
+IFUGAO 1.0	i f u g a o
+IGNACIO 1.0	i g n a s i o
+IINGAT 1.0	i i N 6 t
+IIRAL 1.0	i i r a l
+IKALAWA 1.0	i k 6 l 6 w a
+IKALAWANG 1.0	i k 6 l 6 w a N
+IKATLO 1.0	i k a t l o
+IKOCLOSE 1.0	i k o k l o s
+ILALIM 1.0	i l a l i m
+ILAN 1.0	i l 6 n
+ILANG 1.0	i l 6 N
+ILIGAN 1.0	i l i g a n
+ILOCOS 1.0	i l o k o s
+ILOILO 1.0	i l o i l o
+IMAGE 1.0	i m ej tS
+IMEDIA 1.0	i m e d j a
+IMPORMASYON 1.0	i m p o r m 6 S o n
+IN 1.0	i n
+INA 1.0	i n a
+INAASAHAN 1.0	i n a 6 s 6 h a n
+INAASAHANG 1.0	i n a 6 s 6 h a N
+INDEX 1.0	i n d e k s
+INFANTA 1.0	i n f a n t 6
+INGAT 1.0	i N a t
+INGATAN 1.0	i N 6 t a n
+INIT 1.0	i n i t
+INTENSE 1.0	i n t e n s
+INTENSITY 1.0	i n t e n s i t i
+INTERTROPICAL 1.0	i n t e r t r o p i c a l
+INYONG 1.0	i n j o N
+IS 1.0	i s
+ISA 1.0	i s 6
+ISABELA 1.0	i s 6 b e l 6
+ISANG 1.0	i s 6 N
+ISLA 1.0	i s l 6
+ISLAND 1.0	aj l a n d
+ISLANDS 1.0	aj l a n d s
+ISOLATED 1.0	aj s o l ej t e d
+ITCZ 1.0	aj t i s i z i
+ITINAAS 1.0	i t i n 6 a s
+ITO 1.0	i t o
+ITO'Y 1.0	i t oj
+ITONG 1.0	i t o N
+JACKET 1.0	dZ 6 k e t
+JENNY 1.0	g e n i
+JESSICA 1.0	g e s i k a
+KA 1.0	k 6
+KAALINSANGAN 1.0	k 6 6 l i n s 6 N a n
+KABABAYAN 1.0	k 6 b 6 b 6 j a n
+KABABAYANG 1.0	k 6 b 6 b 6 j a N
+KABAYAN 1.0	k 6 b 6 j a n
+KABIKULAN 1.0	k 6 b i k u l a n
+KABILA 1.0	k 6 b i l 6
+KABILANG 1.0	k 6 b i l a N
+KABILISAN 1.0	k 6 b i l i s a n
+KABISAYAAN 1.0	k 6 b i s a j 6 a n
+KADA 1.0	k 6 d 6
+KAGABI 1.0	k 6 g 6 b i
+KAHAPON 1.0	k 6 h 6 p o n
+KAHIT 1.0	k 6 h i t
+KAILAN 1.0	k 6 i l a n
+KAILANGAN 1.0	k a i l 6 N a n
+KAKAIBANG 1.0	k 6 k 6 i b 6 N
+KAKALIMUTAN 1.0	k 6 k 6 l i m u t a n
+KAKAUNTI 1.0	k 6 k 6 u n t i
+KALAKAS 1.0	k 6 l 6 k a s
+KALAKASAN 1.0	k 6 l 6 k 6 s a n
+KALANGITAN 1.0	k 6 l a N i t a n
+KALAT-KALAT 1.0	k 6 l a t k 6 l a t
+KALAYAAN 1.0	k 6 l 6 j 6 a n
+KALINGA 1.0	k 6 l i N a
+KALUPAAN 1.0	k 6 l u p 6 a n
+KAMAYNILAAN 1.0	k 6 m aj n i l 6 a n
+KANG 1.0	k 6 N
+KANILANG 1.0	k 6 n i l a N
+KANINA 1.0	k 6 n i n a
+KANINANG 1.0	k 6 n i n 6 N
+KANLURAN 1.0	k 6 n l u r a n
+KANLURANG 1.0	k 6 n l u r a N
+KANYANG 1.0	k a n j a N
+KAPAG 1.0	k 6 p a k
+KAPAL 1.0	k 6 p a l
+KAPAMILYA 1.0	k 6 p 6 m i l j a
+KAPUSO 1.0	k 6 p u s o
+KARAGATAN 1.0	k 6 r 6 g 6 t a n
+KAROON 1.0	k 6 r o o n
+KASALUKUYAN 1.0	k 6 s 6 l u k u j a n
+KASAMA 1.0	k 6 s 6 m a
+KASI 1.0	k 6 s i
+KASING 1.0	k 6 s i N
+KATAMTAMAN 1.0	k 6 t a m t a m a n
+KATAMTAMANG 1.0	k 6 t a m t a m a N
+KATAWAN 1.0	k 6 t 6 w a n
+KATULAD 1.0	k 6 t u l a d
+KAUGNAY 1.0	k 6 u g n aj
+KAULAPANG 1.0	k 6 u l 6 p a N
+KAY 1.0	k aj
+KAYA 1.0	k 6 j a
+KAYA'Y 1.0	k 6 j aj
+KAYAT 1.0	k 6 j a t
+KAYO 1.0	k 6 j o
+KESA 1.0	k e s a
+KIDLAT 1.0	k i t l a t
+KIKILOS 1.0	k i k i l o s
+KILOMETERS 1.0	k i a m i t e r s
+KILOMETRO 1.0	k i l o m e t r o
+KILOS 1.0	k i l o s
+KIM 1.0	k i m
+KLASENG 1.0	k l 6 s e N
+KLIMA 1.0	k l i m a
+KO 1.0	k o
+KONG 1.0	k o N
+KPH 1.0	k ej p i ej tS
+KRITIKAL 1.0	k r i t i k a l
+KULAY 1.0	k u l aj
+KULOG 1.0	k u l o g
+KUMIKILOS 1.0	k u m i k i l o s
+KUMPARA 1.0	k u m p a r a
+KUNG 1.0	k u N
+KUYA 1.0	k u j a
+LA 1.0	l 6
+LABAS 1.0	l a b a s
+LAGAY 1.0	l a g aj
+LAGING 1.0	l a g i N
+LAGUNA 1.0	l a g u n 6
+LAHAT 1.0	l a h a t
+LAKAS 1.0	l a k a s
+LALABAS 1.0	l 6 l 6 b a s
+LALAKAS 1.0	l 6 l 6 k a s
+LALANDFALL 1.0	l 6 l a n f o l
+LALAWIGAN 1.0	l 6 l 6 w i g a n
+LALO 1.0	l 6 l o
+LALONG 1.0	l 6 l o N
+LAMANG 1.0	l a m a N
+LANAO 1.0	l 6 n a o
+LAND 1.0	l a n d
+LANDFALL 1.0	l a n d f o l
+LANDMASS 1.0	l a n d m a s
+LANDSLIDE 1.0	l a n d s l aj d
+LANG 1.0	l a N
+LAOAG 1.0	l aw 6 g
+LAPU 1.0	l 6 p u
+LAST 1.0	l a s t
+LATE 1.0	l ej t
+LATEST 1.0	l ej t e s t
+LAYAG 1.0	l 6 j a g
+LAYO 1.0	l 6 j o
+LAYONG 1.0	l 6 j o N
+LEBEL 1.0	l ej b e l
+LEGAZPI 1.0	l e g 6 z p i
+LESS 1.0	l e s
+LEYTE 1.0	l ej t e
+LIGHT 1.0	l aj t
+LIKE 1.0	l aj k
+LINDOL 1.0	l i n d o l
+LINGGO 1.0	l i n g o
+LINYA 1.0	l i n j a
+LIWAYWAY 1.0	l i w aj w aj
+LOCALIZE 1.0	l o k a l aj z
+LOCALIZED 1.0	l o k a l aj z d
+LOOB 1.0	l o o b
+LORIDIN 1.0	l o r i d i n
+LOW 1.0	l ow
+LPA 1.0	e l p i ej
+LUBHA 1.0	l u b h a
+LUGAR 1.0	l u g a r
+LULUBOG 1.0	l u l u b o g
+LUMAKAS 1.0	l u m 6 k a s
+LUMALABAS 1.0	l u m 6 l 6 b a s
+LUMALAKAS 1.0	l u m 6 l 6 k a s
+LUMALAPIT 1.0	l u m 6 l 6 p i t
+LUPA 1.0	l u p a
+LUZON 1.0	l u z o n
+MA 1.0	m a
+MAAARI 1.0	m a 6 6 r i
+MAALINSANGAN 1.0	m a 6 l i n s a N a n
+MAALINSANGANG 1.0	m a 6 l i n s a N a N
+MAALIWALAS 1.0	m a 6 l i w a l a s
+MAALON 1.0	m a 6 l o n
+MAAPEKTUHAN 1.0	m a 6 p e k t u h a n
+MAARAW 1.0	m a 6 r aw
+MAARI 1.0	m a 6 r i
+MAAYOS 1.0	m a 6 j o s
+MABABA 1.0	m a b 6 b 6
+MABABANG 1.0	m a b 6 b 6 N
+MABAWASAN 1.0	m a b 6 w 6 s a n
+MABILIS 1.0	m a b i l i s
+MADALAS 1.0	m a d a l a s
+MADALING 1.0	m a d 6 l i N
+MADRE 1.0	m a d r e
+MAG 1.0	m a g
+MAGAGANAP 1.0	m a g 6 g 6 n a p
+MAGANDA 1.0	m a g 6 n d a
+MAGANDANG 1.0	m a g 6 n d a N
+MAGBABAGO 1.0	m a g b 6 b 6 g o
+MAGBAGO 1.0	m a g b 6 g o
+MAGDADALA 1.0	m a g d 6 d 6 l a
+MAGDAMAG 1.0	m a g d 6 m a g
+MAGDULOT 1.0	m a g d u l o t
+MAGHAPON 1.0	m a g h 6 p o n
+MAGHAPONG 1.0	m a g h 6 p o N
+MAGIGING 1.0	m a g i g i N
+MAGING 1.0	m a g i N
+MAGKAKAROON 1.0	m a g k 6 k 6 r o o n
+MAGLALANDFALL 1.0	m a g l 6 l 6 n d f a l
+MAGPAPATULOY 1.0	m a g p 6 p 6 t u l oj
+MAGPAPAULAN 1.0	m a g p 6 p 6 u l a n
+MAGPLANO 1.0	m a g p l 6 n o
+MAGTUTULOY 1.0	m a g t u t u l oj
+MAGUINDANAO 1.0	m a g i n d 6 n aw
+MAHAL 1.0	m a h a l
+MAHIHINANG 1.0	m a h i h i n a N
+MAHINA 1.0	m a h i n a
+MAHINANG 1.0	m a h i n a N
+MAINIT 1.0	m a i n i t
+MAINLAND 1.0	m ej n l 6 n d
+MAINTAIN 1.0	m ej n t a i n
+MAKAKAAPEKTO 1.0	m a k 6 k 6 6 p e k t o
+MAKAKAASA 1.0	m a k 6 k 6 6 s 6
+MAKAKAIPON 1.0	m a k 6 k 6 i p o n
+MAKAKAPAL 1.0	m a k 6 k 6 p 6 l
+MAKAKARANAS 1.0	m a k 6 k 6 r 6 n a s
+MAKAPAL 1.0	m a k 6 p 6 l
+MAKARANAS 1.0	m a k 6 r 6 n a s
+MAKARARANAS 1.0	m a k 6 r 6 r 6 n a s
+MAKIKITA 1.0	m a k i k i t a
+MAKITA 1.0	m a k i t a
+MAKULIMLIM 1.0	m a k u l i m l i m
+MALA 1.0	m a l a
+MALAKAS 1.0	m a l a k a s
+MALAKI 1.0	m a l a k i
+MALAKING 1.0	m a l a k i N
+MALALAKAS 1.0	m a l 6 l 6 k a s
+MALALAKI 1.0	m a l 6 l 6 k i
+MALALAKING 1.0	m a l 6 l 6 k i N
+MALALAMIG 1.0	m a l 6 l 6 m i g
+MALAMIG 1.0	m a l 6 m i g
+MALAPIT 1.0	m a l a p i t
+MALAWAK 1.0	m a l 6 w a k
+MALAYO 1.0	m a l a j o
+MALIBAN 1.0	m a l i b a n
+MALIIT 1.0	m a l i i t
+MALILIIT 1.0	m a l i l i i t
+MAMASYAL 1.0	m a m a S a l
+MAMAYA 1.0	m a m a j a
+MAMAYANG 1.0	m 6 m 6 j a N
+MANATILING 1.0	m 6 n 6 t i l i N
+MANG 1.0	m 6 N
+MANGINGISDA 1.0	m 6 N i N i s d a
+MANILA 1.0	m 6 n i l a
+MANOLO 1.0	m a n o l o
+MAP 1.0	m a p
+MAPAMINSALA 1.0	m a p 6 m i n s a l a
+MAPANGANIB 1.0	m a p a N a n i b
+MAPANSING 1.0	m a p a n s i N
+MAPAPANSIN 1.0	m a p a p a n s i n
+MARA 1.0	m 6 r a
+MARAMDAMAN 1.0	m a r a m d a m a n
+MARAMI 1.0	m a r a m i
+MARAMING 1.0	m a r a m i N
+MARARAMDAMAN 1.0	m a r 6 r a m d a m a n
+MARARAMDAMANG 1.0	m 6 r 6 r 6 m d 6 m 6 N
+MARARANASAN 1.0	m 6 r 6 r 6 n 6 s 6 n
+MARCH 1.0	m 6 r tS
+MARILYN 1.0	m 6 r i l i n
+MARINDUQUE 1.0	m 6 r i n d u k e
+MARTES 1.0	m 6 r t e s
+MAS 1.0	m 6 s
+MASASABAYAN 1.0	m 6 s 6 s 6 b 6 j 6 n
+MASAYA 1.0	m 6 s 6 j 6
+MASBATE 1.0	m 6 s b 6 t e
+MASS 1.0	m { s
+MASUNGIT 1.0	m 6 s 6 N i t
+MASYADONG 1.0	m 6 s j 6 d o N
+MATA 1.0	m 6 t 6 
+MATAAS 1.0	m 6 t 6 a s
+MATAGAL 1.0	m 6 t 6 g 6 l
+MATANAO 1.0	m 6 t 6 n 6 o
+MATAPOS 1.0	m 6 t 6 p o s
+MATINDING 1.0	m 6 t i n d i N
+MATITINDING 1.0	m 6 t i t i n d i N
+MAULAN 1.0	m 6 u l a n
+MAULANG 1.0	m 6 u l 6 N
+MAULAP 1.0	m 6 u l 6 p
+MAWAWALA 1.0	m 6 w 6 w 6 l 6
+MAXIMUM 1.0	m 6 k s i m u m
+MAY 1.0	m 6 j
+MAYO 1.0	m 6 j o 
+MAYROON 1.0	m 6 j r o o n
+MABABANG 1.0	m 6 b 6 b 6 N
+MEDIUM 1.0	m e d i u m
+MEDYO 1.0	m e d j o
+MERON 1.0	m e r o n
+MERONG 1.0	m e r o N
+METEOROLOGIST 1.0	m e t e o r o l o g j s t
+METRAWEATHER 1.0	m e t r 6 w e T e r
+METRO 1.0	m e t r o
+MGA 1.0	m N 6
+MID 1.0	m i d
+MIMAROPA 1.0	m i m 6 r o p 6
+MINDANAO 1.0	m i n d 6 n 6 o
+MINDORO 1.0	m i n d o r o
+MINIMUM 1.0	m i n i m u m
+MINSAN 1.0	m i n s 6 n
+MINSANG 1.0	m i n s 6 N
+MISAMIS 1.0	m i s 6 m i s
+MIYERKULES 1.0	m i j e r k u l e s
+MO 1.0	m o
+MODERATE 1.0	m o d e r 6 j t
+MOISTURE 1.0	m o j s t u r 
+MOMENTUM 1.0	m o m e n t u m
+MONSOON 1.0	m o n s u n
+MORNING 1.0	m o r n i N
+MOTORISTA 1.0	m o t o r i s t a
+MOUNTAIN 1.0	m o u n t { i n
+MULA 1.0	m u l a 
+MULI 1.0	m u l i
+MUNA 1.0	m u n 6
+NA 1.0	n 6
+NAAPEKTUHAN 1.0	n 6 a p e k t u h 6 n
+NABALOT 1.0	n 6 b 6 l o t
+NABANGGIT 1.0	n 6 b 6 N g i t
+NABUBUO 1.0	n 6 b u b u o
+NABUO 1.0	n 6 b u o
+NAFORECAST 1.0	n 6 f o r k 6 s t
+NAG 1.0	n 6 g
+NAGBABAGANG 1.0	n 6 g b 6 b 6 g 6 N
+NAGBIBIGAY 1.0	n 6 g b i b i g 6j
+NAGI 1.0	n 6 g i
+NAGIGING 1.0	n 6 g i g i N
+NAGING 1.0	n 6 g i N
+NAGKA 1.0	n 6 g k a
+NAGKAKAMALI 1.0	n 6 g k 6 k 6 m 6 l i
+NAGKAKAROON 1.0	n 6 g k 6 k 6 r o o n
+NAGKAROON 1.0	n 6 g k 6 r o o n
+NAGLALARO 1.0	n 6 g l 6 l 6 r o
+NAGPAPALAKAS 1.0	n 6 g p 6 p 6 l 6 k 6 s
+NAGPAPATULOY 1.0	n 6 g p 6 p 6 t u l o j
+NAGPAPAULAN 1.0	n 6 g p 6 p 6 u l 6 n
+NAGPAULAN 1.0	n 6 g p 6 u l 6 n
+NAGTAAS 1.0	n 6 t 6 a s
+NAGULAT 1.0	n 6 g u l 6 t
+NAIA 1.0	n 6 i j 6
+NAITALA 1.0	n 6 i t 6 l a
+NAKA 1.0	n 6 k 6
+NAKAKAAPEKTO 1.0	n 6 k 6 k 6 a p e k t o
+NAKAKAKUHA 1.0	n 6 k 6 k 6 k u h 6
+NAKAKAPAG 1.0	n 6 k 6 k 6 p 6 g
+NAKAKATAKOT 1.0	n 6 k 6 k 6 t 6 k o t
+NAKAKATULONG 1.0	n 6 k 6 k 6 t u l o N
+NAKAMOTOR 1.0	n 6 k 6 m o t o r
+NAKAPALOOB 1.0	n 6 k 6 p 6 l o o b
+NAKAR 1.0	n 6 k 6 r
+NAKARAANG 1.0	n 6 k 6 r 6 a N
+NAKARANAS 1.0	n 6 k 6 r 6 n 6 s
+NAKARARANAS 1.0	n 6 k 6 r 6 r 6 n 6 s
+NAKATAAS 1.0	n 6 k 6 t 6 a s
+NAKATIRA 1.0	n 6 k 6 t i r a
+NAKATUTOK 1.0	n 6 k 6 t u t o k
+NAKIKITA 1.0	n 6 k i k i t a
+NAKIKITANG 1.0	n 6 k i k i t 6 N
+NALALABING 1.0	n 6 l 6 l 6 b i N
+NALAMANG 1.0	n 6 l 6 m 6 N
+NAMAMATAAN 1.0	n 6 m 6 m 6 t 6 a n
+NAMAMAYANI 1.0	n 6 m 6 m 6 j 6 n i 
+NAMAN 1.0	n 6 m 6 n
+NAMANG 1.0	n 6 m 6 N
+NAMATAAN 1.0	n 6 m 6 t 6 a n
+NAMIN 1.0	n 6 m i n
+NANANATILI 1.0	n 6 n 6 n 6 t i l i
+NANATILI 1.0	n 6 n 6 t i l i 
+NANDITO 1.0	n 6 n d i t o 
+NANDOON 1.0	n 6 n d o o n
+NANDUN 1.0	n 6 n d u n
+NANDYAN 1.0	n 6 n d j 6 n 
+NANGYARI 1.0	n 6 N j 6 r i
+NANGYAYARI 1.0	n 6 N j 6 j 6 r i
+NAPAKA 1.0	n 6 p 6 k a
+NAPAKAALON 1.0	n 6 p 6 k a 6 l o n
+NAPAKALAKAS 1.0	n 6 p 6 k 6 k 6 l 6 k 6 s
+NAPANSIN 1.0	n 6 p 6 n s i n
+NAPAPADALAS 1.0	n 6 p 6 p 6 d 6 l 6 s
+NARAMDAMAN 1.0	n 6 r 6 m d 6 m 6 n
+NARANASAN 1.0	n 6 r 6 n s 6 n
+NARARAMDAMAN 1.0	n 6 r 6 r 6 m d 6 m 6 n
+NARITO 1.0	m 6 r i t o 
+NASA 1.0	n 6 s a
+NASABI 1.0	n 6 s 6 b i
+NATATANAW 1.0	n 6 t 6 t 6 n 6 w
+NATHANIEL 1.0	n 6 T a n i e l
+NATIN 1.0	n 6 t i n
+NATING 1.0	n 6 t i N
+NATITIRANG 1.0	n 6 t i t i r 6 N
+NATURANG 1.0	n 6 t u r 6 N
+NAUNA 1.0	n 6 u n a
+NAUUNA 1.0	n 6 u u n a
+NAUWI 1.0	n 6 u w i
+NEGROS 1.0	n e g r o s
+NETONG 1.0	n e t o N
+NEWS 1.0	n j w s
+NG 1.0	N
+NGA 1.0	N a
+NGAY 1.0	N 6 j
+NGAYON 1.0	N g 6 j o n
+NGAYONG 1.0	N 6 j o N
+NGUNIT 1.0	N u n i t
+NI 1.0	n i
+NILA 1.0	n i l a
+NILALAMAN 1.0	n i l 6 l 6 m 6 n 
+NINA 1.0	n i n a
+NINE 1.0	n j n
+NINETEEN 1.0	n j n t i n
+NINETY 1.0	n j n t j
+NINYONG 1.0	n i n j o N
+NITO 1.0	n i t o
+NITONG 1.0	n i t o N
+NIYA 1.0	n i j a
+NIYAN 1.0	n i j 6 n
+NIYO 1.0	n i j o
+NIYONG 1.0	n i j o N
+NIÑO 1.0	n i n j o
+NO 1.0	n o
+NOBYEMBRE 1.0	n o b j e m b r e
+NONE 1.0	n o n
+NORTE 1.0	n o r t e
+NORTH 1.0	n o r T
+NORTHEAST 1.0	n o r T i s t
+NORTHERN 1.0	n o r T e r n
+NORTHWEST 1.0	n o r T w e s t
+NORZAGARAY 1.0	n o r z 6 g 6 r 6 j
+NUEBE 1.0	n u e b e
+NUEVA 1.0	n u e v 6
+NUMBER 1.0	n u m b e r
+NUNG 1.0	n u N
+NYAN 1.0	n j a n
+NYO 1.0	n j o
+NYONG 1.0	n j o N
+O 1.0	o
+OCCASIONALLY 1.0	o k 6 s j o n 6 l j
+OCCIDENTAL 1.0	o k s i d e n t 6 l
+OCEAN 1.0	o S j e n
+OF 1.0	o f
+OK 1.0	o k 
+ONE 1.0	w o n
+ONSE 1.0	o n s e
+ONYOK 1.0	o n j o k
+OPERATION 1.0	o p e r 6 s j o n
+OPO 1.0	o p o
+OR 1.0	o r
+ORANGE 1.0	o r 6 N dZ
+ORAS 1.0	o r 6 s
+ORIENTAL 1.0	o r i e n t 6 l
+ORIENTATION 1.0	o r i e n t 6 s j o n
+OUTING 1.0	o w t i N
+PA 1.0	p i ej
+PAALALA 1.0	p 6 a l 6 l a
+PAALIS 1.0	p 6 a l i s
+PABABA 1.0	p 6 b 6 b a
+PABLO 1.0	p 6 b l o
+PACIFIC 1.0	p 6 s i f i k
+PAG 1.0	p 6 g
+PAGALON 1.0	p 6 g 6 l o n
+PAGASA 1.0	p 6 g 6 s a
+PAGBAHA 1.0	p 6 g b 6 h a
+PAGBATI 1.0	p 6 g b 6 t i
+PAGBUGSO 1.0	p 6 g b u g s o
+PAGBUGSONG 1.0	p 6 g b u g s o N
+PAGDATING 1.0	p 6 g d 6 t i N
+PAGGUHO 1.0	p 6 g u h o
+PAGITAN 1.0	p 6 g i t 6 n
+PAGKABUHAY 1.0	p 6 g k 6 b u h aj
+PAGKAKAIBA 1.0	p 6 g k 6 k 6 i b a
+PAGKAKATAONG 1.0	p 6 g k 6 k 6 t 6 o N
+PAGKATAPOS 1.0	p 6 g k 6 t 6 p o s
+PAGKAWALA 1.0	p 6 g k 6 w 6 l a
+PAGKIDLAT 1.0	p 6 g k i d l 6 t
+PAGKILOS 1.0	p 6 g k i l o s
+PAGKULOG 1.0	p 6 g k u l o N
+PAGLALAYAG 1.0	p 6 g l 6 l 6 j 6 g
+PAGPAPAULAN 1.0	p 6 g p 6 p 6 u l 6 n
+PAGSAPIT 1.0	p 6 g s 6 p i t 
+PAGSASALUBONG 1.0	p 6 g s a l u b o N
+PAGTAAS 1.0	p 6 g t 6 a s
+PAGTAMA 1.0	p 6 g t 6 m a
+PAGTAWID 1.0	p 6 g t 6 w i d
+PAGULAN 1.0	p 6 g u l 6 n
+PAHILAGA 1.0	p 6 h i l 6 g a
+PAHILAGANG 1.0	p 6 h I l 6 g 6 N 
+PAKANLURAN 1.0	p 6 k 6 n l u r 6 n
+PALALAKASIN 1.0	p 6 l 6 l 6 k 6 s i n
+PALARONG 1.0	p 6 l 6 r o N
+PALAWAN 1.0	p 6 l 6 w 6 n
+PALIBOT 1.0	p 6 l i b o t 
+PALISADA 1.0	p 6 l i s d a 
+PAMBANSA 1.0	p 6 m b 6 n s a
+PAMILYA 1.0	p 6 m i l j a
+PAMINSAN 1.0	p 6 m i n s 6 n
+PAMPANGA 1.0	p 6 m p 6 N g 6
+PAN 1.0	p 6 n
+PANAHON 1.0	p 6 n 6 h o n
+PANANDALIAN 1.0	p 6 n 6 n d 6 l 6 n
+PANANGGA 1.0	p 6 n 6 N g a
+PANAY 1.0	p 6 n 6 j
+PANDAGAT 1.0	p 6 n d 6 g 6 t
+PANG 1.0	p 6 N
+PANGANIB 1.0	p N 6 n i b
+PANGASINAN 1.0	p 6 N g 6 s i n 6 n
+PANGATLONG 1.0	p 6 N 6 t l o N
+PANGUNAHING 1.0	p 6 N u n 6 h i N
+PANIBAGONG 1.0	p 6 n i b 6 g o N
+PANONOOD 1.0	p 6 n o n o o d
+PANOOD 1.0	p 6 n o o d
+PANSAMANTALANG 1.0	p 6 n s 6 m 6 n t 6 l 6 N
+PAPAANO 1.0	p 6 p 6 a n o
+PAPALABAS 1.0	p 6 p 6 l a b a s
+PAPALAKAS 1.0	p 6 p 6 l 6 k 6 s
+PAPALAPIT 1.0	p 6 p 6 l 6 p i t
+PAPALIT 1.0	p 6 p 6 l i t
+PAPALO 1.0	p 6 p 6 l o
+PAPANO 1.0	p 6 p 6 n o
+PAPASOK 1.0	p 6 p 6 s o k
+PAPAULAN 1.0	p 6 p 6 u l 6 n
+PAPUNTA 1.0	p 6 p u n t 6
+PAR 1.0	p 6 r
+PARA 1.0	p 6 r 6
+PARANG 1.0	p 6 r 6 N
+PART 1.0	p 6 r t
+PARTE 1.0	p 6 r t e
+PARTENG 1.0	p 6 r t e N
+PARTIKULAR 1.0	p 6 r t i k u l 6 r
+PATAAS 1.0	p 6 t 6 a s
+PATAY 1.0	p 6 t 6j
+PATI 1.0	p 6 t i
+PATROL 1.0	p 6 t r o l
+PATULOY 1.0	p 6 t u l o j
+PATUNGONG 1.0	p 6 t u N o N
+PAU 1.0	p 6 u
+PAULAN 1.0	p 6 u l 6 n
+PENINSULA 1.0	p e n i n s u l a
+PEPITO 1.0	p e p i t o
+PER 1.0	p e r
+PERCENT 1.0	p e r s e n t
+PERO 1.0	p e r o
+PH 1.0	p i ej tS
+PHILIPPINE 1.0	f i l i p i n 
+PHILLIPS 1.0	f i l i p s
+PHYSICS 1.0	f j s i k s
+PILING 1.0	p i l i N
+PILIPINAS 1.0	p i l i p i n 6 s
+PINAG 1.0	p i n 6 g
+PINAGSANIB 1.0	p i N 6 g s 6 n i b
+PINAIGTING 1.0	p i n 6 i g t i N
+PINAKA 1.0	p i n 6 k a
+PINAKAHULING 1.0	p i n 6 k 6 h u l i N
+PINAKAMALAMIG 1.0	o i n 6 k 6 m 6 l 6 m i g
+PINAKAMATAAS 1.0	p i n 6 k 6 m 6 t 6 a s
+PINANGGAGALINGAN 1.0	p i n 6 N g 6 g 6 l
+PINAPAYAGAN 1.0	p i n 6 p 6 j 6 g 6 n
+PINAPAYAGANG 1.0	p i n 6 p 6 j 6 g 6 N
+PINAPAYUHANG 1.0	p i n 6 p 6 j u h 6 N
+PINK 1.0	p i n k 
+PM 1.0	p i e m
+PO 1.0	p o 
+POINT 1.0	p o i n t
+POLILLO 1.0	p o l i l j o
+PONG 1.0	p o N
+POPULATED 1.0	p o p j u l { t e d
+PORSYENTO 1.0	p o r S e n t o 
+PORTION 1.0	p o r t i o n
+POSIBLE 1.0	p o s i b l 
+POSIBLENG 1.0	p o s i b l e N
+PRE 1.0	p r e
+PRESSURE 1.0	p r e s u r e
+PREVAILING 1.0	p r e v 6 i l i N
+PRINCESA 1.0	p r i n s e s a
+PROBABILITY 1.0	p r o b 6 b i l i t j
+PROBINSYA 1.0	p r o b i n S a
+PROBLEMA 1.0	p r o b l e m 6
+PRONE 1.0	p r o n 
+PROVINCE 1.0	p r o v i n s
+PROVINCES 1.0	p r o v i n s e s
+PUERTO 1.0	p u w e r t o
+PULA 1.0	p u l a
+PULO 1.0	p u l o
+PULO-PULONG 1.0	p u l o p u l o N
+PUMALAOT 1.0	p u m 6 l 6 o t
+PUMALO 1.0	p u m 6 l o
+PUMAPALO 1.0	p u m 6 p 6 l o
+PUMAPATAK 1.0	p u m 6 p 6 t 6 k
+PUMASOK 1.0	p u m 6 s o k
+PUNG 1.0	p u N
+PUNO 1.0	p u n o
+PUPUNTA 1.0	p u p u n t a
+PURO 1.0	p u r o
+PUWERSA 1.0	p u w e r s a
+PWEDE 1.0	p w e d e
+PWEDENG 1.0	p w e d e N
+QUARTER 1.0	k w a r t e r
+QUATRO 1.0	k w 6 t r o
+QUEZON 1.0	k e s o n
+QUIRINO 1.0	k i r i n o 
+RADYO 1.0	r 6 j ow
+RAIN 1.0	r 6j n
+RAINFALL 1.0	r 6j n f a l
+RAINS 1.0	r 6j n s
+RAINSHOWERS 1.0	r 6j n S o w e r s
+RAMDAM 1.0	r 6 m d 6 m
+RANGE 1.0	r { n g 
+RANGES 1.0	r { n g s
+READY 1.0	r e d j
+REAL 1.0	r i l
+RECORD 1.0	r e k o r d
+REGION 1.0	r e g i o n
+REHIYON 1.0	r e h i j o n
+RESCUE 1.0	r e s k j u
+RESIDENT 1.0	r e s i d e n t
+RESIDENTE 1.0	r e s i d e n t e
+RESPONSIBILITY 1.0	r e s p o n s i b i l t j
+REST 1.0	r e s t
+RETRIEVAL 1.0	r e t r i v 6 l
+RIN 1.0	r i n
+RING 1.0	r i N
+RITO 1.0	r i t o
+RIZAL 1.0	r i z 6 l
+ROMBLON 1.0	r o m b l o n
+ROSITA 1.0	r o s i t a
+SA 1.0	s 6
+SAAN 1.0	s 6 a n
+SABADO 1.0	s 6 b 6 d o
+SABIHIN 1.0	s 6 b i h i n
+SAIS 1.0	s 6 i s
+SAKAHAN 1.0	s 6 k 6 h a n
+SALAMAT 1.0	s 6 l 6 m 6 t
+SAMA 1.0	s 6 m a
+SAMANTALA 1.0	s 6 m 6 n t 6 l 6
+SAMANTALANG 1.0	s 6 m 6 n t 6 l 6 N
+SAMAR 1.0	s 6 m 6 r
+SAMUEL 1.0	s 6 m u e l
+SANTO 1.0	s 6 n t o
+SANTOS 1.0	s 6 n t o s
+SAPAGKAT 1.0	s 6 p 6 g k 6 t
+SASAKYANG 1.0	s a s a k j 6 n
+SATELLITE 1.0	s a t e l aj t
+SEA 1.0	s i
+SEABOARD 1.0	s i b o r d
+SEABOARDS 1.0	s i b o r d s
+SEASON 1.0	s i s o n
+SECTION 1.0	s e k S o n
+SENDONG 1.0	s e n d o N
+SERBISYONG 1.0	s e r b i S o N
+SEVEN 1.0	s e v e n
+SEVENTEEN 1.0	s e v e t i n
+SEVENTY 1.0	s e v e n t j
+SHANSHAN 1.0	S 6 n S a n
+SHERY 1.0	S e r j
+SHERYL 1.0	S e r i l
+SHOWERS 1.0	S ow e r s 
+SI 1.0	s i
+SIDE 1.0	s i d
+SIERRA 1.0	s i e r a
+SIGNAL 1.0	s i g n 6 l
+SIGNALS 1.0	s i g n 6 l s
+SIGURADO 1.0	s i g u r 6 d o
+SIGURADUHIN 1.0	s i g u r 6 d u h i n
+SILA 1.0	s i l a
+SILANGAN 1.0	s i l 6 N 6 n
+SILANGANG 1.0	s i l 6 N 6 N
+SILIPIN 1.0	s i l i p i n
+SIMULA 1.0	s i m u l a
+SINABING 1.0	s i n 6 b i N
+SINAIT 1.0	s i n 6 i t
+SINGKO 1.0	s i N k o
+SINUSUNDAN 1.0	s i n u s u n d 6 n
+SIQUIJOR 1.0	s i k i h o r
+SISIKAT 1.0	s i s i k 6 t
+SIX 1.0	s i k s
+SIXTEEN 1.0	s i k s t i n
+SIXTY 1.0	s i k s t j
+SIYA 1.0	s i j 6
+SIYANG 1.0	s i j 6 N
+SO 1.0	s o
+SOCSARGEN 1.0	s o c s 6 r g e n
+SOUTH 1.0	s aw T
+SOUTHERN 1.0	s aw T e r n
+SOUTHWEST 1.0	s aw T w e s t
+SPELL 1.0	s p e l
+STANLEY 1.0	s t 6 n l e j
+STORM 1.0	s t o r m
+STRENGTH 1.0	s t r e N T
+STRESS 1.0	s t r e s
+SUBAYBAY 1.0	s u b 6 j b 6 j
+STROKE 1.0	s t r o k
+SUBIC 1.0	s u b i k
+SUGATAN 1.0	s u g 6 t 6 n
+SUNDAY 1.0	s u n d ej
+SUNGIT 1.0	s u N i t
+SUNOG 1.0	s u n o g
+SUNRISE 1.0	s u n r i s V
+SUNSET 1.0	s u n s e t
+SUPER 1.0	s u p e r
+SUR 1.0	s u r
+SURGE 1.0	s u r dZ
+SURIGAO 1.0	s u r i g 6 o
+SUSTAINED 1.0	s u s t aj n d
+SUSUNOD 1.0	s u s u n o d
+SYSTEM 1.0	s i s t e m
+SYUDAD 1.0	s j u d 6 d
+TAAS 1.0	t 6 a s
+TAGA 1.0	t 6 g a
+TAGAPANOOD 1.0	t 6 g 6 p 6 n o o d
+TAGAYTAY 1.0	t 6 g 6j t aj
+TAGBILARAN 1.0	t 6 g b i l 6 r 6 n
+TAGLAY 1.0	t 6 g l 6 j
+TAIL 1.0	t ej l
+TAKBO 1.0	t 6 k b o
+TAMA 1.0	t 6 m 6
+TAMAAN 1.0	t 6 m 6 a n
+TANGHALI 1.0	t 6 N h 6 l i
+TANI 1.0	t 6 n i
+TAO 1.0	t 6 o
+TAPOS 1.0	t 6 p o s
+TARLAC 1.0	t 6 r l 6 c
+TATAAS 1.0	t 6 t 6 a s
+TATAMA 1.0	t 6 t 6 m 6
+TATAWIDIN 1.0	t 6 t 6w i d i n
+TATAWIRIN 1.0	t 6 t 6w i r i n
+TATLO 1.0	t 6 t l o
+TATLONG 1.0	t 6 t l o N
+TAYA 1.0	t 6 j 6
+TAYO 1.0	t 6 j o
+TAYONG 1.0	t 6 j o N
+TED 1.0	t e d
+TEMPERATURA 1.0	t e m p e r 6 t u r 6
+TEMPERATURE 1.0	t e m p e r { t u r 
+TEMPERATURES 1.0	t e m p e r { t u r s
+TEN 1.0	t e n
+TERMS 1.0	t e r m s
+THAT 1.0	T { t
+THE 1.0	T a
+THIRTY 1.0	T 3 r t j
+THIS 1.0	T I s
+THOUSAND 1.0	T o u s a n d
+THREE 1.0	T r i
+THUNDERSTORM 1.0	T u n d e r s t o r m
+THUNDERSTORMS 1.0	T u n d e r s t o r m s
+TIME 1.0	t i m
+TIMOG 1.0	t i m o g
+TINAAS 1.0	t i n 6 a s
+TINATAWAG 1.0	t i n 6 t 6 w 6 g
+TINATAYA 1.0	t i n 6 t 6 j 6
+TINATAYANG 1.0	t i n a t j 6 N
+TINAWAG 1.0	t i n 6 w 6 g
+TININGNAN 1.0	t i n i N n 6 n
+TITIGNAN 1.0	t i t i g 6 n
+TITINGNAN 1.0	t i t i N n 6 n
+TO 1.0	t o
+TODAY 1.0	t o d ej
+TOMORROW 1.0	t o m o r o w
+TORNADO 1.0	t o r n ej d o
+TOTOO 1.0	t o t o o
+TOWARDS 1.0	t o w 6 r d s
+TRACK 1.0	t r 6 k
+TRAHEDYA 1.0	t r 6 h e d j 6
+TRENTAY 1.0	t r e t aj
+TRESE 1.0	t r e s e
+TROPICAL 1.0	t r o p i k 6 l
+TROUGH 1.0	t r 6 f
+TSAKA 1.0	tS 6 k 6
+TSANSA 1.0	tS 6 n s 6
+TSANSANG 1.0	tS 6 n s 6 N
+TUBIG 1.0	t u b i g
+TUGUEGARAO 1.0	t u g e g 6 r 6 o
+TULAD 1.0	t u l 6 d
+TULOY 1.0	t u l o j
+TUMAMA 1.0	t u m 6 m 6
+TUMAMANG 1.0	t u m 6 m 6 N
+TUMATAMA 1.0	t u m 6 t 6 m 6
+TUNGKOL 1.0	t u N k o l
+TUTUMBUKIN 1.0	t u t u m b u k i n
+TUWING 1.0	t u w i N
+TUYONG 1.0	t u j o N
+TV 1.0	t i v i
+TWELVE 1.0	t u e l v
+TWENTY 1.0	t u e n t i
+TWITTER 1.0	t u i t e r
+TWO 1.0	t u
+TYPHOON 1.0	t aj f U n
+U 1.0	u
+ULAN 1.0	u l 6 n
+ULAP 1.0	u l 6 p
+ULAT 1.0	u l 6 t
+ULI 1.0	u l i
+ULIT 1.0	u l i t
+UMAABOT 1.0	u m 6 a b o t
+UMABOT 1.0	u m 6 b o t
+UMAGA 1.0	u m 6 g 6
+UMIIRAL 1.0	u m i i l 6 w
+UMULAN 1.0	u m u l 6 n
+UNA 1.0	u n 6
+UNANG 1.0	u n 6 N
+UNA'Y 1.0	u n 6 aj
+UNDERSCORE 1.0	6 n d e r s k o r
+UNION 1.0	j u n i o n
+UP 1.0	j u p i
+UPDATE 1.0	6 p d 6 j t
+UULAN 1.0	u u l 6 n
+UULAT 1.0	u u l 6 t
+UUSAPAN 1.0	u u s 6 p 6 n
+UUWI 1.0	u u w i
+VALLEY 1.0	v 6 l i
+VICINITY 1.0	v i s i n i t i
+VISAYAS 1.0	v i s 6 j 6 s
+VISIBILITY 1.0	v i s i b i l i t i
+VIZCAYA 1.0	v i z k 6 j 6
+VIZCAYAT 1.0	v i z k 6 j 6 t
+WW 1.0	d a b 6 l j u d a b 6 l j u
+WAG 1.0	w 6 g
+WALA 1.0	w 6 l 6
+WALANG 1.0	w 6 l 6 N
+WARNING 1.0	w 6 r n i N
+WE 1.0	w i
+WEATHER 1.0	w e T e r
+WEBSITE 1.0	w e b s aj t
+WEEK 1.0	w i k
+WEEKEND 1.0	w i k e n d
+WELCOME 1.0	w e l k 6 m
+WELL 1.0	w e l
+WEST 1.0	w e s t
+WESTERN 1.0	w e s t e r n
+WESTWARD 1.0	w e s t w 6 r d 
+WHICH 1.0	w i tS
+WIND 1.0	w i n d
+WINDS 1.0	w i n d s
+WOW 1.0	w 6 w
+YAN 1.0	j 6 n
+YANG 1.0	j 6 N
+YEAR 1.0	j i r
+YELLOW 1.0	j e l ow
+YELO 1.0	j e l o
+YES 1.0	j e s
+YOLANDA 1.0	j o l 6 n d 6
+YOLANDANG 1.0	j o l 6 n d 6 N
+YOUTUBE 1.0	j U t u b
+YUN 1.0	j U n
+YUNG 1.0	j U N
+ZAMBALES 1.0	z 6 m b 6 l e s
+ZAMBOANGA 1.0	z a m b o 6 N g 6
+ZERO 1.0	z i r o
+ZONE 1.0	z ow n

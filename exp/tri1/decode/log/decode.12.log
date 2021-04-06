@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.12.gz" 
+# Started at Sat Apr  3 00:21:25 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.12.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- 
+weather031_018 WELL UNANG UNA YUNG AH AMIHAN JESSICA JENNY TUYONG HANGIN WALANG MASYADONG PO IS YUNG PERO MAPAPANSIN MO YUNG BAGYO MALAPIT NA PERO HALOS HINDI PA RAMDAM YUNG MGA PAGULAN KUNG TITINGNAN MO YUNG RAINFALL MAP JESSICA YUNG AH PULA NA DARATING DITO SA AT EH YUNG NA MAMAYANG GABI HALOS NANDYAN YUNG BAGYO PERO PA HINDI PA RAMDAM YUNG ULAN AT YAN YUNG NA NGAYONG HANGIN AMIHAN YUNG NORTHERN SA E NG BAGYO ANG MAS MAULAN KUMPARA DITO SA MAY SOUTHERN PART HINDI KATULAD PAG HANGING HABAGAT JESSICA SA MAY SOUTHWEST YUNG BAGYO KAHIT NANDITO SA MAY AH EASTERN SECTION MAULAN DOON SA MAY WESTERN SA A COLD YUNG AH WESTERN SENDONG BAGUIO DAHIL NGA YUNG MGA HABAGAT AT EH MAS MARAMING MOISTURE 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_018 is -8.68875 over 4658 frames.
+weather031_019 SO ANG PAGKAKAIBA JESSICA PAGDATING SA AMIHAN HALOS WALANG MOISTURE KAYA HINDI NAGPAPALAKAS NG BAGYO YAN SAMANTALANG NG UMAGA AT DAAN MARAMING DALANG TUBIG SA NAMAN EH NAGPAPALAKAS NG BAGYO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_019 is -8.91438 over 1111 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_020 KAYA LANG YUNG MGA TUMAMANG BAGYO AT THIS MAY OF HIRIT AT EH SA BABA O SA COMPOSTELA VALLEY SA AH ILIGAN MANG TANI MALALAKAS DIN NGA YUNG SENDONG AT TSAKA YUNG MGA BAGYO GOOD AKO NAGKAKAMALI 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_020 is -9.18136 over 1336 frames.
+weather031_021 ANG NANGYAYARI NAMAN KUNG TITINGNAN NATIN YUNG PACIFIC OCEAN MAY MGA BAGYO NA MALAYO PA LANG DITO SA ATIN NABUBUO NA KAYA HABANG NA SA MAY KARAGATAN YAN NAKAKAKUHA SA NA NG LAKAS LALONG LALO KUNG MGA MASASABAYAN SIYA NG MAHINANG AMIHAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_021 is -8.82025 over 1418 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 10.5926s: real-time factor assuming 100 frames/sec is 0.124283
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.81726 over 8523 frames.
+# Accounting: time=11 threads=1
+# Ended (code 0) at Sat Apr  3 00:21:36 CST 2021, elapsed time 11 seconds

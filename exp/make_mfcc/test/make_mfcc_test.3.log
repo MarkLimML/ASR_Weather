@@ -1,0 +1,17 @@
+# extract-segments scp,p:data/test/wav.scp exp/make_mfcc/test/segments.3 ark:- | compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.3 --verbose=2 --config=conf/mfcc.conf ark:- ark:- | copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.3 ark:- ark,scp:/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.3.ark,/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.3.scp 
+# Started at Wed Mar 31 21:45:24 CST 2021
+#
+copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.3 ark:- ark,scp:/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.3.ark,/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.3.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.3 --verbose=2 --config=conf/mfcc.conf ark:- ark:- 
+extract-segments scp,p:data/test/wav.scp exp/make_mfcc/test/segments.3 ark:- 
+WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 14754112 bytes in RIFF chunk, but after first data block there will be 36 + 14753688 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather029_016
+WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 15633352 bytes in RIFF chunk, but after first data block there will be 36 + 15632928 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather029_017
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather030_001
+LOG (extract-segments[5.5.896~1-8a59]:main():extract-segments.cc:194) Successfully processed 4 lines out of 4 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather030_002
+LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:185)  Done 4 out of 4 utterances.
+LOG (copy-feats[5.5.896~1-8a59]:main():copy-feats.cc:143) Copied 4 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Wed Mar 31 21:45:26 CST 2021, elapsed time 1 seconds

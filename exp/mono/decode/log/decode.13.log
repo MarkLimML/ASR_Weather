@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/13/utt2spk scp:data/test/split16/13/cmvn.scp scp:data/test/split16/13/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode/lat.13.gz" 
+# Started at Wed Mar 31 21:47:26 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/13/utt2spk scp:data/test/split16/13/cmvn.scp scp:data/test/split16/13/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode/lat.13.gz' 
+apply-cmvn --utt2spk=ark:data/test/split16/13/utt2spk scp:data/test/split16/13/cmvn.scp scp:data/test/split16/13/feats.scp ark:- 
+add-deltas ark:- ark:- 
+weather031_022 KAPAG MAHINA YUNG AMIHAN MO TAPOS NANDITO KA PA LAMANG AH BAGO PUMASOK SA PHILIPPINE AREA OF RESPONSIBILITY ISA KA NA GANAP NA BAGYO NANDUN YUNG PAGKAKATAONG LALO SIYANG LUMALAKAS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_022 is -9.02818 over 966 frames.
+weather031_023 BERNADETTE PAPALABAS NG BASA PA YAN AT MAHINA YUNG AMIHAN NA MAY AH LUMAKAS EH KAYA NAGING MAPAMINSALA SAMANTALA ITO KASING SIYA SAMUEL DITO NALAMANG SA NAGING TROPICAL DEPRESSION MALAPIT NA TUMAMA SA LUPA KAYA HINDI SA GANUNG KALAKAS PERO YUNG ISANG NAKIKITA NATIN JESSICA AT NAPANSIN MO YAN PAGDATING NG LAST QUARTER OF THE YEAR MAS KAKAUNTI YUNG BAGYO PERO MAS MADALAS TUMATAMA YAN KAYA NAGIGING MAS MAPAMINSALA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_023 is -8.91324 over 2611 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_024 O PARANG AS PHYSICS DIN MANG TANI NO PAG MAS MARA MAS MAP MALAYO ANG PINANGGAGALINGAN DIYAN NAKAKAPAG DIN SA NG STRENGTH AT MOMENTUM MAS MALAKAS YUNG PUWERSA NIYA KATULAD NGA NIYA YOLANDA ITONG SI SAMUEL MALAPIT SA PILIPINAS NABUO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_024 is -9.23472 over 1483 frames.
+weather031_025 YES JESSICA YAN ANG MAGIGING AH NIYA POSIBLE SA MAGING ISANG TROPICAL STORM BAHAGYANG LALAKAS BAGO TUMAMA SA KALUPAAN PERO DEFINITELY HINDI SIYA MAGIGING KASING LAKAS LALO MGA NAG AALALA NG ISANG SUPER TYPHOON O KATULAD NUNG MALA YOLANDANG BAGYO ANG PROBLEMA LANG 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_025 is -8.86012 over 1642 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 14.0253s: real-time factor assuming 100 frames/sec is 0.209271
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.98793 over 6702 frames.
+# Accounting: time=15 threads=1
+# Ended (code 0) at Wed Mar 31 21:47:41 CST 2021, elapsed time 15 seconds

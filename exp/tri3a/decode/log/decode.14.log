@@ -1,0 +1,25 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.mdl exp/tri3a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/14/utt2spk scp:data/test/split16/14/cmvn.scp scp:data/test/split16/14/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri3a/decode/lat.14.gz" 
+# Started at Sun Apr  4 16:15:31 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.mdl exp/tri3a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/14/utt2spk scp:data/test/split16/14/cmvn.scp scp:data/test/split16/14/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri3a/decode/lat.14.gz' 
+apply-cmvn --utt2spk=ark:data/test/split16/14/utt2spk scp:data/test/split16/14/cmvn.scp scp:data/test/split16/14/feats.scp ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_026 MAS AT JENNY TED YUNG MABABANG BAHAGI YUNG IBABANG BAHAGI NG ATING BANSA KESA YUNG AH TAAS NO KASI TSAKA DOON SA TAAS MERONG KANG CORDILLERA SIERRA MADRE MANG TANI RIN DIYES PAG TUMAMA YUNG BAGYO NA NGA KUNG RIN NA YUNG EPEKTO MANG TANI DITO SA BABA WALA TAYONG PARANG NAMANG TED DIN SILANGAN HUMAHARANG DITO KASI PURO MGA PULO-PULONG MGA ISLA ITONG MGA DADAANAN NIYA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_026 is -5.34744 over 2488 frames.
+weather031_027 TAMA YAN DZ YAN PO TITINGNAN NATIN YUNG TRACK NUNG BAGYO NO PAG YAN EH TUMAMA SA MAY DINAGAT KAILAN ANG NANGYAYARI DIYAN JESSICA KUNG IKOCLOSE NA PO YAN PAGTAMA NYAN SA ISANG ISLA BABALIK ULI SA DAGAT 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_027 is -4.88008 over 1183 frames.
+weather031_028 SO KAHIT PAPAANO MAKAKAIPON NG LAKAS PAG TININGNAN MO YUNG CLOSE AT NUNG FORECAST NA YAN JESSICA KADA TAMA NYAN SA ISLA DADAAN SA DAGAT POSIBLENG LUMAKAS NA LIKE TATAMA NA NAMAN SA ISLA DAGAT NA LAMANG NA LIKE SO YUNG KANYANG TAMA ASAHAN LUPA BABALIK SA DAGAT KAHIT PAPAANO NA MAY MAY PILING LAKAS YAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_028 is -4.96523 over 1800 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.4635 over 6768 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+WARNING (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:309) Outputting partial output for utterance weather031_029 since no final-state reached
+
+weather031_029 B KATULAD KAPAG SA LUZON SA TUMAMA MALIBAN DOON SA BUNDOK NG SIERRA MADRE YUNG MALAKING LANDMASS NG LUZON EH NAKAKATULONG PARA MABAWASAN YUNG PINANGGAGALINGAN NIYA NYAN NG ENERGY WHICH IS YUNG MOISTURE NA NASA DAGAT 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_029 is -5.09341 over 1297 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 13.8683s: real-time factor assuming 100 frames/sec is 0.20491
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -5.11542 over 6768 frames.
+# Accounting: time=15 threads=1
+# Ended (code 0) at Sun Apr  4 16:15:46 CST 2021, elapsed time 15 seconds

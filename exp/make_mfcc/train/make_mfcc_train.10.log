@@ -1,0 +1,32 @@
+# extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.10 ark:- | compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.10 --verbose=2 --config=conf/mfcc.conf ark:- ark:- | copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.10 ark:- ark,scp:/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.10.ark,/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.10.scp 
+# Started at Wed Mar 31 21:45:16 CST 2021
+#
+copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.10 ark:- ark,scp:/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.10.ark,/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.10.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.10 --verbose=2 --config=conf/mfcc.conf ark:- ark:- 
+extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.10 ark:- 
+WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 10367412 bytes in RIFF chunk, but after first data block there will be 36 + 10366988 bytes (we do not support reading multiple data chunks).
+WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 8530744 bytes in RIFF chunk, but after first data block there will be 36 + 8530320 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather016_010
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather017_001
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather017_002
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather017_003
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather017_004
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather017_005
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather017_006
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather017_007
+WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 9395684 bytes in RIFF chunk, but after first data block there will be 36 + 9395260 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather017_008
+LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_001
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_002
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_003
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_004
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_005
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_006
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_007
+LOG (extract-segments[5.5.896~1-8a59]:main():extract-segments.cc:194) Successfully processed 17 lines out of 17 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_008
+LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:185)  Done 17 out of 17 utterances.
+LOG (copy-feats[5.5.896~1-8a59]:main():copy-feats.cc:143) Copied 17 feature matrices.
+# Accounting: time=4 threads=1
+# Ended (code 0) at Wed Mar 31 21:45:20 CST 2021, elapsed time 4 seconds

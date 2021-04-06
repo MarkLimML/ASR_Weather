@@ -1,0 +1,23 @@
+# gmm-latgen-faster --max-active=2000 --beam=10.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.alimdl exp/tri4a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri4a/decode.si/lat.12.gz" 
+# Started at Sun Apr  4 23:47:50 CST 2021
+#
+gmm-latgen-faster --max-active=2000 --beam=10.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.alimdl exp/tri4a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri4a/decode.si/lat.12.gz' 
+transform-feats exp/tri4a/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- 
+splice-feats ark:- ark:- 
+weather031_018 PA WALANG ULAN YUNG AH AMIHAN JESSICA YAN NA ITO YUNG HANGIN WALANG MASYADONG MOISTURE KAYA MAPAPANSIN MO YUNG BAGYO MALAPIT NA PERO HALOS HINDI PA RAMDAM YUNG MGA PAGULAN KUNG TITINGNAN MO YUNG RAINFALL MAP JESSICA YUNG NA ULAN NA DARATING DITO SA AT EH YUNG NA MAMAYANG GABI HALOS NANDYAN YUNG BAGYO PERO ANG ANG HINDI PA RAMDAM YUNG ULAN AT YAN YUNG NA NGAYONG HANGING AMIHAN YUNG NORTHERN SA RIN NG BAGYO ANG MAS MAULAN KUMPARA DITO SA MAY SOUTHERN PART HINDI KATULAD PAG HANGING HABAGAT JESSICA SA MAY SOUTHWEST YUNG BAGYO KAHIT NANDITO SA MAY AH EASTERN SECTION MAULAN DOON SA MAY WESTERN SA I PO YUNG AH WESTERN SA NUNG BAGYO DAHIL NGA YUNG MGA HABAGAT NATIN MAS MARAMING MOISTURE 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_018 is -4.60936 over 4658 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_019 SO ANG PAGKAKAIBA JESSICA PAGDATING SA AMIHAN HALOS WALANG MOISTURE KAYA HINDI NAGPAPALAKAS NG BAGYO YAN SAMANTALANG HABAGAT DAHIL MARAMING DALANG TUBIG SIYA NAMAN EH NAGPAPALAKAS NG BAGYO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_019 is -4.80843 over 1111 frames.
+weather031_020 KAYA ALAMIN NAMAN TUMAMANG BAGYO AT IS MAAYOS MAY EH DATI YES SA DAVAO SA COMPOSTELA VALLEY SA HA ILIGAN MANG TANI MALALAKAS DIN UNA YUNG SENDONG AT TSAKA INYONG MGA PABLO KUNG DAPAT HABAGAT 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_020 is -5.04 over 1336 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.4635 over 8523 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+weather031_021 ANG MAY AH NIYO MAY KUNG TITINGNAN NATIN YUNG POSIBLE ITONG SA MAY MGA BAGYO NA MALAYO PA LANG DITO SA AT EH NABUBUO NA KAYA HABANG NASA MAY KARAGATAN YAN NAKAKAKUHA SA NG LAKAS LALONG LALO KUNG MGA MASASABAYAN SA NG MAHINANG AMIHAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_021 is -4.75947 over 1418 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 9.40994s: real-time factor assuming 100 frames/sec is 0.110406
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -4.72779 over 8523 frames.
+# Accounting: time=13 threads=1
+# Ended (code 0) at Sun Apr  4 23:48:03 CST 2021, elapsed time 13 seconds

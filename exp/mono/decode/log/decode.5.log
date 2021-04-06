@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/5/utt2spk scp:data/test/split16/5/cmvn.scp scp:data/test/split16/5/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode/lat.5.gz" 
+# Started at Wed Mar 31 21:47:26 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/5/utt2spk scp:data/test/split16/5/cmvn.scp scp:data/test/split16/5/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode/lat.5.gz' 
+apply-cmvn --utt2spk=ark:data/test/split16/5/utt2spk scp:data/test/split16/5/cmvn.scp scp:data/test/split16/5/feats.scp ark:- 
+add-deltas ark:- ark:- 
+weather030_006 SIGNAL NUMBER TWO NAMAN DIYAN SA CAGAYAN ILOCOS NORTE APAYAO ABRA KALINGA ILOCOS SUR MO TEN PROVINCE LA UNION BENTE PANGASINAN TARLAC NUEVA ECIJA NORTHERN QUEZON KASAMA ANG POLILLO ISLAND SOUTHERN AURORA ZAMBALES PAMPANGA AT BULACAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_006 is -9.17672 over 1884 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather030_007 MASUNGIT NA LAGAY NG PANAHON DIN ANG INAASAHAN BUKA O MAMAYANG GABI HANGGANG BUKAS DIYAN SA MGA PROBINSYA NA YAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_007 is -9.43757 over 523 frames.
+weather030_008 HABANG SIGNAL NUMBER ONE NAMAN DITO SA METRO MANILA SA BATANES GROUP OF ISLANDS KASAMA ANG BABUYAN GROUP OF ISLANDS RIZAL SOUTHERN QUEZON DIYAN SA MAY LAGUNA BATANGAS BATAAN CAVITE AT CAMARINES NORTE 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_008 is -9.19296 over 1403 frames.
+weather030_009 MGA ULAN AT BUGSO NG HANGIN NAMAN ANG INAASAHAN SIMULA MAMAYA HANGGANG BUKAS SA MGA NABANGGIT NA LUGAR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_009 is -9.13026 over 687 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 9.7821s: real-time factor assuming 100 frames/sec is 0.217525
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.20502 over 4497 frames.
+# Accounting: time=11 threads=1
+# Ended (code 0) at Wed Mar 31 21:47:37 CST 2021, elapsed time 11 seconds

@@ -1,0 +1,23 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.mdl exp/tri3a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/15/utt2spk scp:data/test/split16/15/cmvn.scp scp:data/test/split16/15/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri3a/decode/lat.15.gz" 
+# Started at Sun Apr  4 16:15:31 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.mdl exp/tri3a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/15/utt2spk scp:data/test/split16/15/cmvn.scp scp:data/test/split16/15/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri3a/decode/lat.15.gz' 
+apply-cmvn --utt2spk=ark:data/test/split16/15/utt2spk scp:data/test/split16/15/cmvn.scp scp:data/test/split16/15/feats.scp ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+weather031_030 YAN SI AT TSAKA BATAY SA HISTORY TRACK RECORD NITONG MGA BAGYO AT SUSTAINED OF THE YEAR MANG TANI PARANG HULING HIRIT NILA EH KAYA MEDYO NAKAKATAKOT DIN ITONG MGA BAGYO TOWARDS AH END OF THE YEAR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_030 is -5.4564 over 1108 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_031 YES JESSICA AT YAN YAN NA NABANGGIT MO ITO PURO KAYA NITO PHILIPPINE YUNG BAGYO KASI KAHIT GAANO KALAKAS PAG TUMAMA DIYAN SA NORTE MAS KAKAUNTI YUNG TAO SO ITONG AT UP NANDYAN UUSAPAN NGAYON HINDI PO SIYA NAPAKALAKAS IN TERMS OF WIND PERO YUNG ULAN NA KAYA YUN DIN NG DAPAT NATING PAG INGATAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_031 is -5.08695 over 1664 frames.
+weather031_032 MARAMING MGA NAKATIRA DIYAN MARAMING NG AH MGA TAO DIYAN SA MGA ISLA NA YAN SO YUNG NA MAS WAG AT LANDSLIDE KAHIT PO DITO KALAKAS YUNG HANGING YAN YAN YUNG DALA DALANG ULAN YAN JESSICA KUNG TITINGNAN MO YUNG AH RIN PAGULAN SA TEN MAS MARAMI YUNG KULAY NA PULA YUNG PINK AT YUNG NA YUNG ORANGE SO IBIG SABIHIN MAS MARAMING LUGAR ANG MAKAKARANAS NUNG MALALAKAS NA PAGULAN LALO NA NGAYONG GABI HANGGANG BUKAS NG TROPICAL NATING JESSICA NGAYONG GABI YAN BUKAS NG DIYAN SA NG MIYERKULES NA ANG UMAGA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_032 is -4.82424 over 2945 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.4635 over 8590 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+weather031_033 RIN DITO BA YUNG MGA NA LANDSLIDE NA AREA SA NORTHERN LUZON YUNG IBA HINDI NAMAN KALAKASAN PERO NAGKA LANDSLIDE PA RIN SO YUNG MGA KABABAYAN PO NATIN SA DADAANAN NG NITONG SI BAGYONG SAMUEL PA RING I IDENTIFIED NAMAN MANG TANI ANG MGA LANDSLIDE PRONE BATAY SA AT DIN AASAHAN MAP NG NAGI IN AYON MATAGAL NA HO MERON YAN SO KUNG MALAPIT PO KAYO SA MGA BUBONG PO MALAPIT KAYO SA MGA I IDENTIFIED NA LANDSLIDE AREA PAG SINABING EVACUATE EVACUATE PO ANG 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_033 is -5.30871 over 2873 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 15.9164s: real-time factor assuming 100 frames/sec is 0.185289
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -5.11871 over 8590 frames.
+# Accounting: time=17 threads=1
+# Ended (code 0) at Sun Apr  4 16:15:48 CST 2021, elapsed time 17 seconds

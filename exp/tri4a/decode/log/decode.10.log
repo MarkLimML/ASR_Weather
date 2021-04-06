@@ -1,0 +1,26 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.mdl exp/tri4a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/10/utt2spk scp:data/test/split16/10/cmvn.scp scp:data/test/split16/10/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split16/10/utt2spk ark:exp/tri4a/decode/pre_trans.10 ark:- ark:- |" "ark:|gzip -c > exp/tri4a/decode/lat.tmp.10.gz" 
+# Started at Sun Apr  4 23:48:21 CST 2021
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri4a/graph/words.txt exp/tri4a/final.mdl exp/tri4a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/10/utt2spk scp:data/test/split16/10/cmvn.scp scp:data/test/split16/10/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split16/10/utt2spk ark:exp/tri4a/decode/pre_trans.10 ark:- ark:- |' 'ark:|gzip -c > exp/tri4a/decode/lat.tmp.10.gz' 
+transform-feats exp/tri4a/final.mat ark:- ark:- 
+transform-feats --utt2spk=ark:data/test/split16/10/utt2spk ark:exp/tri4a/decode/pre_trans.10 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/10/utt2spk scp:data/test/split16/10/cmvn.scp scp:data/test/split16/10/feats.scp ark:- 
+splice-feats ark:- ark:- 
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_010 AT BABAYBAYIN ANG BAGYONG SAMUEL ANG NA HALOS BUONG VISAYAS NA MAGDADALA NG PAULAN ANG MAULANG PANAHON DITO ANG PAGTAMA NITO SA MAY DINAGAT ISLAND JENNY KUNG HINDI MAGBABAGO YUNG KANYANG DIRECTION AY TATAMA DIN ITO DITO SA MAY LEYTE LALO SA NA SOUTHERN LEYTE POSIBLENG DIYAN SA MAY BOHOL CEBU DIYAN SA MAY NEGROS ISLAND LALO SA MAY NEGROS OCCIDENTAL DADAAN NG ILOILO ANTIQUE AND PAPUNTA NA ANG NA PALAWAN AT PAPALABAS NG NO OPO KUNG THE NG WEST PHILIPPINE SEA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_010 is -4.43899 over 2714 frames.
+weather031_011 KAYA MAGING I AM READY PO ANG ANG MGA TAGA REHIYON NG CARAGA NORTHERN MINDANAO LALONG LALO NA EASTERN VISAYAS YUNG SAMAR LEYTE PROVINCES SA MAULANG MAGDAMAG NA MAGPAPATULOY MGA KAPUSO HANGGANG BUKAS PO YAN YUN NAKIKITA NYONG PULA AT SA AH PINK NA YAN YAN YUNG MGA MATITINDING PAGULAN NA PWEDENG MARARANASAN SA MALAKING BAHAGI NG AH VISAYAS BUKAS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_011 is -4.31105 over 2081 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.4635 over 6803 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+weather031_012 MAGHAPON DIN MAULAN DIYAN SA MAY AH ZAMBOANGA AT DAVAO REGION AT SA BUONG VISAYAS BUKAS AT MAGING I AM READY PO SA BANTA NG NA LANDSLIDE AT WESTWARD SA LINYA NUNG MGA MALAKAS O PAGULAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_012 is -4.4269 over 1128 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average logdet is 2.71931 over 6803 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 4 utterances; 0 had errors.
+weather031_013 HABANG SA LUZON APEKTADO NAMAN ANG BAGYO ANG NA BICOL REGION MINDORO MARINDUQUE ROMBLON PERO YAN AY SIMULA NA ANG NA BUKAS AT GABI 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_013 is -4.3931 over 880 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 13.3583s: real-time factor assuming 100 frames/sec is 0.196359
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -4.39192 over 6803 frames.
+# Accounting: time=15 threads=1
+# Ended (code 0) at Sun Apr  4 23:48:36 CST 2021, elapsed time 15 seconds

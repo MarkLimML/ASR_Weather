@@ -1,0 +1,6 @@
+weather01 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.1.ark:10
+weather02 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.1.ark:134501
+weather03 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.2.ark:10
+weather04 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.2.ark:378521
+weather05 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.3.ark:10
+weather06 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.3.ark:339661

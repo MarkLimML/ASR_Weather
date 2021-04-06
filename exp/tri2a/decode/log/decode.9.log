@@ -1,0 +1,22 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/9/utt2spk scp:data/test/split16/9/cmvn.scp scp:data/test/split16/9/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri2a/decode/lat.9.gz" 
+# Started at Sat Apr  3 18:06:42 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/9/utt2spk scp:data/test/split16/9/cmvn.scp scp:data/test/split16/9/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri2a/decode/lat.9.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/9/utt2spk scp:data/test/split16/9/cmvn.scp scp:data/test/split16/9/feats.scp ark:- 
+weather031_005 NAKATAAS ANG STORM SIGNAL NUMBER ONE DIYAN SA MGA PROBINSYA NG SURIGAO DEL NORTE SURIGAO DEL SUR AGUSAN DEL NORTE AGUSAN DEL SUR DINAGAT ISLAND MISAMIS ORIENTAL AT CAMIGUIN SA MINDANAO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_005 is -8.94739 over 1094 frames.
+weather031_006 SIGNAL NUMBER ONE DIN SA MAY AH SAMAR EASTERN SAMAR BILIRAN LEYTE SOUTHERN LEYTE DIYAN SA BOHOL CEBU SIQUIJOR NEGROS ORIENTAL AT NEGROS OCCIDENTAL SA VISAYAS AT SA MASBATE SA LUZON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_006 is -8.63581 over 1508 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 5 utterances, errors on 0
+weather031_007 NAMATAAN ANG CENTRO NG TROPICAL DEPRESSION SAMUEL O SA LAYO LAMANG FIVE HUNDRED FIVE KILOMETERS DIYAN SA MAY SILANGAN NG HINATUAN SURIGAO DEL SUR AT TAGLAY NITO LAKAS NG HANGIN YAN EIGHTY FIVE KILOMETERS PER HOUR MALAPIT SA GITNA AT BUGSO NA HANGGANG SIXTY FIVE KILOMETERS PER HOUR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_007 is -8.90189 over 1529 frames.
+weather031_008 AT INAASAHAN NA KIKILOS ITO PAHILAGANG KANLURAN O NORTHWEST SA BILIS NAMAN NA TWENTY FIVE KILOMETERS PER HOUR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_008 is -8.61993 over 713 frames.
+weather031_009 AT SA FORECAST TRACK NG PAGASA EH POSIBLENG TUMAMA DIYAN SA MAY DINAGAT ISLAND O SA MAY AH POSIBLE SA LEYTE ANG YAN CENTRO NG BAGYO SAMUEL BUKAS PO YAN AT MAY TSANSA RIN NA LUMAKAS PA ITO BAGO MAG LANDFALL 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_009 is -8.70313 over 1289 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 18.1892s: real-time factor assuming 100 frames/sec is 0.296579
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 5 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.77003 over 6133 frames.
+# Accounting: time=21 threads=1
+# Ended (code 0) at Sat Apr  3 18:07:03 CST 2021, elapsed time 21 seconds

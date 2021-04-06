@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/16/utt2spk scp:data/test/split16/16/cmvn.scp scp:data/test/split16/16/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri2a/decode/lat.16.gz" 
+# Started at Sat Apr  3 18:06:42 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/16/utt2spk scp:data/test/split16/16/cmvn.scp scp:data/test/split16/16/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri2a/decode/lat.16.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/16/utt2spk scp:data/test/split16/16/cmvn.scp scp:data/test/split16/16/feats.scp ark:- 
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_034 MAMAYANG DIYAN SIDE AT LINYA NO LALONG LALO NA ITONG NA ITONG ANG MGA PROBINSYA NA LANDSLIDE PRONE YUNG LEYTE YUNG SOUTHERN LEYTE DIN LEYTE MAGING YUNG SA SIDE O 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_034 is -8.98255 over 865 frames.
+weather031_035 AT ISA PA JESSICA LAST WEEK NITONG MGA DIYAN LALO PRESSURE AREA HINDI SA BAGUIO PERO NAG PAULAN AT NAKA ANG SA RIN NAKARANAS NG BAHA YUNG IBANG LUGAR DIYAN SA MAY PANAY ISLAND AT DIYAN SA MAY AH MINDANAO KAYA BASA PA RIN YUNG LUPA DADAANAN ULI NG PANIBAGONG BAGYO NA MAY DALANG ULAN KAYA YUN NGA ANG PROBABILITY OR YUNG TSANSA MAG KAROON NG LAST LAHAT PO LAGING NA MAS NINE EH MAS MATAAS NGAYON DAHIL MAY INA NA NA PONG WEATHER SYSTEM NA NAGPAULAN DIYAN ANG ILANG ARAW LALO NA SA VISAYAS JESSICA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_035 is -8.85288 over 3006 frames.
+weather031_036 MARAMING SALAMAT MANG TANI NATHANIEL CRUZ GMA YUNG RESIDENT PRONE KILOS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_036 is -9.58687 over 442 frames.
+weather031_037 AT YAN ANG LATEST MULA SA GMA WEATHER AKO PO SI NATHANIEL CRUZ MAGPLANO PARA SIGURADO I AM READY SERBISYONG TOTOO NG GMA NEWS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_037 is -8.67259 over 767 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 18.9534s: real-time factor assuming 100 frames/sec is 0.373099
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.9116 over 5080 frames.
+# Accounting: time=21 threads=1
+# Ended (code 0) at Sat Apr  3 18:07:03 CST 2021, elapsed time 21 seconds

@@ -1,0 +1,1222 @@
+<UNK> SPN_S
+A ej_S
+AABOT 6_B 6_I b_I o_I t_E
+AALALA 6_B 6_I l_I a_I l_I a_E
+AALAMIN 6_B 6_I l_I a_I m_I i_I n_E
+AALAS 6_B 6_I l_I a_I s_E
+AASAHAN 6_B 6_I s_I a_I h_I a_I n_E
+ABRA 6_B b_I r_I a_E
+ABRIL 6_B b_I r_I i_I l_E
+ABS ej_B b_I i_I e_I s_E
+ABS-CBN ej_B b_I i_I e_I s_I s_I i_I b_I i_I e_I n_E
+ACCOUNT 6_B k_I a_I w_I n_I t_E
+ACTUALLY 6_B k_I t_I U_I a_I l_I i_E
+ADMINISTRATIVE 6_B d_I m_I i_I n_I i_I s_I t_I r_I a_I t_I I_I v_E
+AFTERNOON 6_B f_I t_I e_I r_I n_I U_I n_E
+AGUSAN 6_B g_I u_I s_I a_I n_E
+AGWAT 6_B g_I w_I a_I t_E
+AH 6_S
+AIR ej_B r_E
+AKLAN 6_B k_I l_I a_I n_E
+AKO 6_B k_I o_E
+ALA 6_B l_I a_E
+ALABAT 6_B l_I a_I b_I a_I t_E
+ALAMIN 6_B l_I a_I m_I i_I n_E
+ALAS 6_B l_I a_I s_E
+ALINSANGAN 6_B l_I i_I n_I s_I a_I N_I a_I n_E
+ALON 6_B l_I o_I n_E
+AM e_B m_E
+AMA 6_B m_I a_E
+AMIHAN 6_B m_I i_I h_I a_I n_E
+AN 6_B n_E
+ANC ej_B e_I n_I s_I i_E
+AND e_B n_I d_E
+ANG 6_B N_E
+ANGAT 6_B N_I a_I t_E
+ANO 6_B n_I o_E
+ANONG 6_B n_I o_I N_E
+ANTIQUE 6_B n_I t_I I_I k_E
+ANUMANG 6_B n_I u_I m_I a_I N_E
+ANYOS 6_B n_I j_I o_I s_E
+APARRI 6_B p_I a_I r_I i_E
+APAYAO 6_B p_I 6_I j_I aw_E
+APEKTADO 6_B p_I e_I k_I t_I a_I d_I o_E
+ARAW 6_B r_I aw_E
+AREA ej_B r_I i_I j_I a_E
+AS 6_B s_E
+ASAHAN 6_B s_I 6_I h_I a_I n_E
+ASAHANG 6_B s_I 6_I h_I a_I N_E
+ASUL 6_B s_I u_I l_E
+AT 6_B t_E
+ATIN 6_B t_I I_I n_E
+ATING 6_B t_I I_I N_E
+AURORA a_B o_I r_I o_I r_I a_E
+AURORAT a_B o_I r_I o_I r_I a_I t_E
+AWAY 6_B w_I 6j_E
+AXIS a_B k_I s_I i_I s_E
+AY 6j_S
+AYON 6_B j_I o_I n_E
+B b_B i_E
+BA b_B 6_E
+BABA b_B 6_I b_I 6_E
+BABALA b_B 6_I b_I 6_I l_I a_E
+BABALIK b_B 6_I b_I 6_I l_I i_I k_E
+BABAYBAYIN b_B 6_I b_I 6j_I b_I 6j_I i_I n_E
+BABUYAN b_B 6_I b_I u_I j_I a_I n_E
+BACOLOD b_B 6_I k_I o_I l_I o_I d_E
+BAGAMAT b_B 6_I g_I 6_I m_I a_I t_E
+BAGO b_B 6_I g_I o_E
+BAGONG b_B 6_I g_I o_I N_E
+BAGUIO b_B 6_I g_I I_I j_I o_E
+BAGYO b_B 6_I g_I j_I o_E
+BAGYONG b_B 6_I g_I j_I o_I N_E
+BAHA b_B 6_I h_I a_E
+BAHAGI b_B 6_I h_I a_I g_I i_E
+BAHAGING b_B 6_I h_I a_I g_I i_I N_E
+BAHAGYANG b_B 6_I h_I a_I g_I j_I a_I N_E
+BAHAY b_B 6_I h_I 6j_E
+BAKIT b_B 6_I k_I i_I t_E
+BALER b_B 6_I l_I e_I r_E
+BALITA b_B 6_I l_I i_I t_I a_E
+BANG b_B a_I N_E
+BANGKA b_B 6_I N_I k_I a_E
+BANGSAMORO b_B 6_I N_I s_I a_I m_I o_I r_I o_E
+BANSA b_B 6_I n_I s_I a_E
+BANTA b_B 6_I n_I t_I a_E
+BARMM b_B 6_I r_I m_E
+BASA b_B 6_I s_I a_E
+BASCO b_B 6_I s_I k_I o_E
+BASE b_B ej_I s_E
+BATAAN b_B 6_I t_I a_I a_I n_E
+BATANES b_B 6_I t_I a_I n_I e_I s_E
+BATANGAS b_B 6_I t_I a_I N_I g_I 6_I s_E
+BATAY b_B 6_I t_I 6j_E
+BAWAL b_B 6_I w_I 6_I l_E
+BAWAT b_B 6_I w_I a_I t_E
+BAY b_B ej_E
+BAYBAYIN b_B 6j_I b_I 6j_I i_I n_E
+BAYBAYING b_B 6j_I b_I 6j_I i_I N_E
+BAYONG b_B 6_I j_I o_I N_E
+BENGUET b_B E_I n_I g_I V_I e_I t_E
+BENISON b_B E_I n_I i_I s_I o_I n_E
+BENTE b_B e_I n_I t_I e_E
+BERNADETTE b_B e_I r_I n_I a_I d_I e_I t_E
+BHAGYA b_B 6_I g_I j_I a_E
+BICOL b_B i_I k_I o_I l_E
+BIGLAANG b_B i_I k_I l_I 6_I a_I N_E
+BIGLANG b_B i_I k_I l_I 6_I N_E
+BIKOL b_B i_I k_I o_I l_E
+BIKTIMA b_B i_I k_I t_I i_I m_I a_E
+BILIRAN b_B i_I l_I i_I r_I a_I n_E
+BILIS b_B i_I l_I i_I s_E
+BINABANTAYAN b_B i_I n_I a_I b_I 6_I n_I t_I a_I j_I a_I n_E
+BINABANTAYANG b_B i_I n_I a_I b_I 6_I n_I t_I a_I j_I a_I N_E
+BINATAYAN b_B i_I n_I a_I t_I 6_I j_I a_I n_E
+BINATILYO b_B i_I n_I a_I t_I i_I l_I j_I o_E
+BISITAHIN b_B i_I s_I i_I t_I a_I h_I i_I n_E
+BIYERNES b_B i_I r_I n_I e_I s_E
+BOHOL b_B o_I h_I o_I l_E
+BORACAY b_B o_I r_I a_I k_I aj_E
+BOUNDARY b_B aw_I n_I d_I e_I r_I i_E
+BREAK b_B r_I ej_I k_E
+BUBONG b_B u_I b_I o_I N_E
+BUBUTI b_B u_I b_I u_I t_I i_E
+BUENAVISTA b_B u_I e_I n_I a_I v_I i_I s_I t_I a_E
+BUGSO b_B u_I k_I s_I o_E
+BUGSONG b_B u_I k_I s_I o_I N_E
+BUHAWI b_B u_I h_I a_I w_I i_E
+BUHOS b_B u_I h_I o_I s_E
+BUKA b_B u_I k_I a_E
+BUKAS b_B u_I k_I a_I s_E
+BUKIDNON b_B u_I k_I i_I t_I n_I o_I n_E
+BULACAN b_B u_I l_I 6_I k_I a_I n_E
+BULLETIN b_B u_I l_I i_I t_I i_I n_E
+BUMABA b_B u_I m_I 6_I b_I a_E
+BUMAGSAK b_B u_I m_I 6_I s_I a_I k_E
+BUMILIS b_B u_I m_I i_I l_I i_I s_E
+BUNDOK b_B u_I n_I d_I o_I k_E
+BUNTOT b_B u_I n_I t_I o_I t_E
+BUONG b_B u_I o_I N_E
+BUWAN b_B u_I w_I 6_I n_E
+CABANATUAN k_B 6_I b_I 6_I n_I 6_I t_I u_I 6_I n_E
+CACAUSE c_B ow_I c_I ow_I s_E
+CAGAYAN k_B 6_I g_I 6_I j_I a_I n_E
+CALABARZON k_B 6_I l_I 6_I b_I 6_I r_I s_I o_I n_E
+CALAPAN k_B 6_I l_I 6_I p_I a_I n_E
+CALAYAN k_B 6_I l_I 6_I j_I a_I n_E
+CAMARINES k_B 6_I m_I 6_I r_I i_I n_I e_I s_E
+CAMIGUIN k_B 6_I m_I i_I g_I u_I i_I n_E
+CAMP k_B 6_I m_I p_E
+CAPIZ k_B 6_I p_I i_I s_E
+CARAGA k_B 6_I r_I 6_I g_I 6_E
+CASIGURAN k_B 6_I s_I i_I g_I u_I r_I a_I n_E
+CATANDUANES k_B 6_I t_I a_I n_I d_I u_I 6_I n_I e_I s_E
+CATBALOGAN k_B 6_I t_I b_I 6_I l_I o_I g_I a_I n_E
+CATEGORY l_B 6_I t_I e_I g_I o_I r_I i_E
+CAUSE c_B ow_I s_E
+CAVITE k_B a_I v_I i_I t_I e_E
+CBN s_B i_I b_I i_I e_I n_E
+CEBU s_B e_I b_I u_E
+CELSIUS s_B e_I l_I s_I i_I u_I s_E
+CENTER s_B e_I n_I t_I e_I r_E
+CENTRAL s_B e_I n_I t_I r_I a_I l_E
+CENTRO s_B e_I n_I t_I r_I o_E
+CHANCE tS_B a_I n_I S_E
+CI S_S
+CITIES S_B t_I i_I e_I S_E
+CITY S_B t_I i_E
+CLOSE k_B l_I o_I s_E
+COAST k_B o_I a_I s_I t_E
+COLD k_B o_I l_I d_E
+COM k_B o_I m_E
+COMPANY k_B o_I m_I p_I a_I n_I i_E
+COMPOSTELA k_B o_I m_I p_I o_I s_I t_I e_I l_I 6_E
+CONDITION k_B o_I n_I d_I i_I S_I o_I n_E
+CONVERGENCE k_B o_I n_I v_I e_I r_I g_I e_I n_I c_I e_E
+COOL k_B U_I l_E
+CORDILLERA k_B o_I r_I d_I i_I l_I e_I r_I a_E
+COTABATO k_B o_I t_I 6_I b_I 6_I t_I o_E
+COUNTRY k_B aw_I n_I t_I r_I i_E
+CRUZ k_B r_I u_I z_E
+CYCLONE s_B 6j_I k_I l_I o_I n_E
+DA d_B 6_E
+DAAN d_B 6_I a_I n_E
+DAANG d_B 6_I a_I N_E
+DADAAN d_B 6_I d_I 6_I a_I n_E
+DADAANAN d_B 6_I d_I 6_I a_I n_I a_I n_E
+DADALHIN d_B 6_I d_I 6_I l_I h_I i_I n_E
+DAGAT d_B 6_I g_I 6_I t_E
+DAGUPAN d_B 6_I g_I u_I p_I a_I n_E
+DAHIL d_B 6_I h_I i_I l_E
+DAHILAN d_B 6_I h_I i_I l_I a_I n_E
+DALA d_B 6_I l_I a_E
+DALANG d_B 6_I l_I a_I N_E
+DALAWANG d_B 6_I l_I a_I w_I a_I N_E
+DAM d_B 6_I m_E
+DAMANG d_B 6_I m_I a_I N_E
+DAMA d_B 6_I m_I 6_E
+DAMI d_B 6_I m_I i_E
+DAPAT d_B 6_I p_I a_I t_E
+DAPITAN d_B 6_I p_I i_I t_I a_I n_E
+DARANAS d_B 6_I r_I 6_I n_I a_I s_E
+DARATING d_B 6_I r_I 6_I t_I i_I N_E
+DASH d_B a_I S_E
+DATI d_B a_I t_I i_E
+DATING d_B 6_I t_I i_I N_E
+DATOS d_B a_I t_I o_I s_E
+DAVAO d_B a_I v_I aw_E
+DAW d_B 6w_E
+DECEMBER d_B e_I s_I e_I m_I b_I e_I r_E
+DEFINITELY d_B e_I f_I i_I n_I i_I t_I l_I i_E
+DEGREES d_B e_I g_I r_I i_I s_E
+DEL d_B e_I l_E
+DELA d_B e_I l_I a_E
+DELIKADO d_B e_I l_I i_I k_I a_I d_I o_E
+DENR d_B i_I e_I e_I n_I a_I r_E
+DEPRESSION d_B e_I p_I r_I e_I S_I o_I n_E
+DI d_B i_E
+DIFFERENCE d_B i_I f_I e_I r_I e_I n_I s_E
+DILAW d_B i_I l_I aw_E
+DIN d_B i_I n_E
+DINAGAT d_B i_I n_I a_I g_I 6_I t_E
+DING d_B i_I N_E
+DIRECTION d_B i_I r_I e_I k_I s_I i_I o_I n_E
+DITO d_B i_I t_I o_E
+DIYAN d_B i_I a_I n_E
+DIYES d_B j_I e_I s_E
+DOBLE d_B o_I b_I l_I e_E
+DOBLENG d_B o_I b_I l_I e_I N_E
+DOBOL d_B o_I b_I o_I l_E
+DOON d_B o_I o_I n_E
+DOS d_B o_I s_E
+DOST d_B i_I ow_I e_I s_I t_I i_E
+DOT d_B i_I ow_I t_I i_E
+DROUGHT d_B r_I aw_I t_E
+DRY d_B r_I aj_E
+DULONG d_B u_I l_I o_I N_E
+DULOT d_B u_I l_I o_I t_E
+DUMAAN d_B V_I m_I a_I 6_I n_E
+DUMAGUETE d_B u_I m_I a_I g_I e_I t_I E_E
+DUMAKO d_B u_I m_I a_I k_I o_E
+DZ d_B i_I z_I i_E
+DZMM d_B i_I z_I i_I e_I m_I e_I m_E
+E i_S
+EACH i_B t_I s_E
+EAST i_B S_I t_E
+EASTER i_B S_I t_I e_I r_E
+EASTERLIES i_B S_I t_I e_I r_I l_I i_I s_E
+EASTERN i_B S_I t_I e_I r_I n_E
+ECIJA e_B S_I h_I 6_E
+ECMWF i_B s_I i_I e_I m_I d_I a_I b_I 6_I l_I j_I u_I e_I f_E
+EEXTEND e_B e_I k_I s_I t_I e_I n_I d_E
+EH e_S
+EIGHT ej_B t_E
+EIGHTEEN ej_B t_I i_I n_E
+EIGHTY ej_B t_I I_E
+EL e_B l_E
+ELEVEN I_B l_I e_I v_I n_E
+END e_B n_I d_E
+ENERGY e_B n_I e_I r_I dZ_I i_E
+EPEKTO e_B p_I e_I k_I t_I o_E
+ESCOLIAR e_B s_I k_I o_I l_I j_I a_I r_E
+ESTAREJA e_B s_I t_I a_I r_I e_I h_I 6_E
+ETO e_B t_I o_E
+EUROPEAN j_B U_I r_I o_I p_I I_I a_I n_E
+EVACUATE I_B v_I {_I k_I j_I u_I ej_I t_E
+EVENING I_B v_I n_I i_I N_E
+EXCEPT I_B k_I s_I e_I p_I t_E
+EXTENSION I_B k_I s_I t_I e_I n_I S_I o_I n_E
+EXTREME I_B k_I s_I t_I r_I i_I m_E
+FACEBOOK f_B ej_I s_I b_I U_I k_E
+FACTOR f_B {_I k_I t_I o_I r_E
+FAIR f_B @_I r_E
+FAIRWEATHER F_B @_I r_I w_I i_I D_I e_I r_E
+FAR f_B a_I r_E
+FEBRUARY f_B e_I b_I w_I a_I r_I i_E
+FIFTEEN f_B I_I f_I t_I i_I n_E
+FIFTY f_B I_I f_I t_I I_E
+FIVE f_B aj_I v_E
+FLASH f_B l_I {_I S_E
+FLOOD f_B l_I V_I d_E
+FLOODING f_B l_I V_I d_I I_I N_E
+FOLLOW f_B a_I l_I ow_E
+FOR f_B o_I r_E
+FORECAST f_B o_I r_I k_I a_I s_I t_E
+FORECASTER f_B o_I r_I k_I a_I s_I t_I e_I r_E
+FORECASTING f_B o_I r_I k_I a_I s_I t_I I_I N_E
+FORTICH f_B o_I r_I i_I tS_E
+FORTY f_B o_I r_I t_I i_E
+FOUR f_B o_I r_E
+FOURTEEN f_B o_I r_I t_I i_I n_E
+FROM f_B r_I o_I m_E
+FRONT f_B r_I V_I n_I t_E
+GAANO g_B a_I 6_I n_I o_E
+GABI g_B 6_I b_I i_E
+GAIN g_B ej_I n_E
+GALE g_B ej_I l_E
+GALING g_B 6_I l_I I_I N_E
+GANAP g_B 6_I n_I a_I p_E
+GANITONG g_B a_I n_I i_I t_I o_I N_E
+GANUN g_B a_I n_I u_I n_E
+GANUNG g_B a_I n_I u_I N_E
+GANYAN g_B 6_I n_I j_I a_I n_E
+GANYANG g_B 6_I n_I j_I a_I N_E
+GAYA g_B 6_I j_I 6_E
+GAYUNDIN g_B 6_I j_I u_I n_I d_I i_I n_E
+GENERAL dZ_B e_I n_I e_I r_I a_I l_E
+GENERALLY dZ_B e_I n_I e_I r_I a_I l_I i_E
+GEOHAZARD dZ_B @_I U_I h_I {_I z_I a_I r_I d_E
+GINAGANAP g_B i_I n_I a_I g_I 6_I n_I a_I p_E
+GINAGAWA g_B i_I n_I a_I g_I 6_I w_I a_E
+GINOONG g_B i_I n_I o_I o_I N_E
+GITNA g_B i_I t_I n_I a_E
+GIWAN g_B i_I w_I a_I n_E
+GLAIZA g_B l_I aj_I z_I a_E
+GMA dZ_B i_I e_I m_I ej_E
+GOOD g_B u_I d_E
+GOV g_B o_I v_E
+GREEN g_B r_I i_I n_E
+GROUP g_B r_I U_I p_E
+GROUPS g_B r_I U_I p_I s_E
+GUARD g_B a_I r_I d_E
+GUMAGAMIT g_B u_I m_I a_I g_I 6_I m_I i_I t_E
+GUMAMIT g_B u_I m_I a_I m_I i_I t_E
+GUSTINESS g_B u_I s_I t_I i_I n_I e_I s_E
+HA h_B a_E
+HABAGAT h_B a_I b_I 6_I g_I a_I t_E
+HABANG h_B a_I b_I 6_I N_E
+HAHATAKIN h_B a_I h_I a_I t_I a_I k_I i_I n_E
+HAILSTORM h_B ej_I l_I s_I t_I o_I r_I m_E
+HALOS h_B a_I l_I o_I s_E
+HAMOG h_B a_I m_I o_I g_E
+HANGGANG h_B a_I N_I g_I a_I N_E
+HANGIN h_B a_I N_I i_I n_E
+HANGING h_B a_I N_I i_I N_E
+HAPON h_B a_I p_I o_I n_E
+HAPONG h_B a_I p_I o_I N_E
+HAPPY h_B {_I p_I j_E
+HATAKIN h_B 6_I t_I 6_I k_I i_I n_E
+HAVE h_B {_I v_E
+HEADLIGHT h_B e_I d_I l_I j_I t_E
+HEAT h_B i_I t_E
+HEAVY h_B e_I v_I j_E
+HIGHLY h_B j_I l_I j_E
+HIHIGUPIN h_B i_I h_I i_I g_I u_I p_I i_I n_E
+HIHINA h_B i_I h_I i_I n_I a_E
+HILAGANG h_B i_I l_I 6_I g_I 6_I N_E
+HILAGA h_B i_I l_I 6_I g_I a_E
+HIMAWARI h_B i_I m_I 6_I w_I 6_I r_I i_E
+HINAHATAK h_B i_I n_I 6_I h_I 6_I t_I 6_I k_E
+HINATUAN h_B i_I n_I 6_I t_I u_I 6_I n_E
+HINDI h_B i_I n_I d_I i_E
+HIRIT h_B i_I r_I i_I t_E
+HISTORY h_B i_I s_I t_I o_I r_I i_E
+HO h_B o_E
+HOUR a_B r_E
+HULI h_B u_I l_I i_E
+HULING h_B u_I l_I i_I N_E
+HUMAHARANG h_B u_I m_I 6_I h_I 6_I r_I a_I N_E
+HUMIHINA h_B u_I m_I i_I h_I i_I n_I a_E
+HUMIHINGA h_B u_I m_I i_I h_I i_I N_I a_E
+HUNDRED h_B u_I n_I d_I r_I e_I d_E
+HUWEBES h_B u_I w_I e_I b_I e_I s_E
+I aj_S
+I i_S
+IBA i_B b_I 6_E
+IBA'T i_B b_I a_I t_E
+IBA'T-IBANG i_B b_I a_I t_I i_I b_I a_I N_E
+IBABANG i_B b_I 6_I b_I 6_I N_E
+IBANG i_B b_I 6_I N_E
+IBIG i_B b_I i_I k_E
+IDENTIFIED i_B d_I e_I n_I t_I i_I f_I aj_I d_E
+IEXPLAIN i_B e_I k_I s_I p_I l_I ej_I n_E
+IFUGAO i_B f_I u_I g_I a_I o_E
+IGNACIO i_B g_I n_I a_I s_I i_I o_E
+IINGAT i_B i_I N_I 6_I t_E
+IIRAL i_B i_I r_I a_I l_E
+IKALAWA i_B k_I 6_I l_I 6_I w_I a_E
+IKALAWANG i_B k_I 6_I l_I 6_I w_I a_I N_E
+IKATLO i_B k_I a_I t_I l_I o_E
+IKOCLOSE i_B k_I o_I k_I l_I o_I s_E
+ILALIM i_B l_I a_I l_I i_I m_E
+ILAN i_B l_I 6_I n_E
+ILANG i_B l_I 6_I N_E
+ILIGAN i_B l_I i_I g_I a_I n_E
+ILOCOS i_B l_I o_I k_I o_I s_E
+ILOILO i_B l_I o_I i_I l_I o_E
+IMAGE i_B m_I ej_I tS_E
+IMEDIA i_B m_I e_I d_I j_I a_E
+IMPORMASYON i_B m_I p_I o_I r_I m_I 6_I S_I o_I n_E
+IN i_B n_E
+INA i_B n_I a_E
+INAASAHAN i_B n_I a_I 6_I s_I 6_I h_I a_I n_E
+INAASAHANG i_B n_I a_I 6_I s_I 6_I h_I a_I N_E
+INDEX i_B n_I d_I e_I k_I s_E
+INFANTA i_B n_I f_I a_I n_I t_I 6_E
+INGAT i_B N_I a_I t_E
+INGATAN i_B N_I 6_I t_I a_I n_E
+INIT i_B n_I i_I t_E
+INTENSE i_B n_I t_I e_I n_I s_E
+INTENSITY i_B n_I t_I e_I n_I s_I i_I t_I i_E
+INTERTROPICAL i_B n_I t_I e_I r_I t_I r_I o_I p_I i_I c_I a_I l_E
+INYONG i_B n_I j_I o_I N_E
+IS i_B s_E
+ISA i_B s_I 6_E
+ISABELA i_B s_I 6_I b_I e_I l_I 6_E
+ISANG i_B s_I 6_I N_E
+ISLA i_B s_I l_I 6_E
+ISLAND aj_B l_I a_I n_I d_E
+ISLANDS aj_B l_I a_I n_I d_I s_E
+ISOLATED aj_B s_I o_I l_I ej_I t_I e_I d_E
+ITCZ aj_B t_I i_I s_I i_I z_I i_E
+ITINAAS i_B t_I i_I n_I 6_I a_I s_E
+ITO i_B t_I o_E
+ITO'Y i_B t_I oj_E
+ITONG i_B t_I o_I N_E
+JACKET dZ_B 6_I k_I e_I t_E
+JENNY g_B e_I n_I i_E
+JESSICA g_B e_I s_I i_I k_I a_E
+KA k_B 6_E
+KAALINSANGAN k_B 6_I 6_I l_I i_I n_I s_I 6_I N_I a_I n_E
+KABABAYAN k_B 6_I b_I 6_I b_I 6_I j_I a_I n_E
+KABABAYANG k_B 6_I b_I 6_I b_I 6_I j_I a_I N_E
+KABAYAN k_B 6_I b_I 6_I j_I a_I n_E
+KABIKULAN k_B 6_I b_I i_I k_I u_I l_I a_I n_E
+KABILA k_B 6_I b_I i_I l_I 6_E
+KABILANG k_B 6_I b_I i_I l_I a_I N_E
+KABILISAN k_B 6_I b_I i_I l_I i_I s_I a_I n_E
+KABISAYAAN k_B 6_I b_I i_I s_I a_I j_I 6_I a_I n_E
+KADA k_B 6_I d_I 6_E
+KAGABI k_B 6_I g_I 6_I b_I i_E
+KAHAPON k_B 6_I h_I 6_I p_I o_I n_E
+KAHIT k_B 6_I h_I i_I t_E
+KAILAN k_B 6_I i_I l_I a_I n_E
+KAILANGAN k_B a_I i_I l_I 6_I N_I a_I n_E
+KAKAIBANG k_B 6_I k_I 6_I i_I b_I 6_I N_E
+KAKALIMUTAN k_B 6_I k_I 6_I l_I i_I m_I u_I t_I a_I n_E
+KAKAUNTI k_B 6_I k_I 6_I u_I n_I t_I i_E
+KALAKAS k_B 6_I l_I 6_I k_I a_I s_E
+KALAKASAN k_B 6_I l_I 6_I k_I 6_I s_I a_I n_E
+KALANGITAN k_B 6_I l_I a_I N_I i_I t_I a_I n_E
+KALAT-KALAT k_B 6_I l_I a_I t_I k_I 6_I l_I a_I t_E
+KALAYAAN k_B 6_I l_I 6_I j_I 6_I a_I n_E
+KALINGA k_B 6_I l_I i_I N_I a_E
+KALUPAAN k_B 6_I l_I u_I p_I 6_I a_I n_E
+KAMAYNILAAN k_B 6_I m_I aj_I n_I i_I l_I 6_I a_I n_E
+KANG k_B 6_I N_E
+KANILANG k_B 6_I n_I i_I l_I a_I N_E
+KANINA k_B 6_I n_I i_I n_I a_E
+KANINANG k_B 6_I n_I i_I n_I 6_I N_E
+KANLURAN k_B 6_I n_I l_I u_I r_I a_I n_E
+KANLURANG k_B 6_I n_I l_I u_I r_I a_I N_E
+KANYANG k_B a_I n_I j_I a_I N_E
+KAPAG k_B 6_I p_I a_I k_E
+KAPAL k_B 6_I p_I a_I l_E
+KAPAMILYA k_B 6_I p_I 6_I m_I i_I l_I j_I a_E
+KAPUSO k_B 6_I p_I u_I s_I o_E
+KARAGATAN k_B 6_I r_I 6_I g_I 6_I t_I a_I n_E
+KAROON k_B 6_I r_I o_I o_I n_E
+KASALUKUYAN k_B 6_I s_I 6_I l_I u_I k_I u_I j_I a_I n_E
+KASAMA k_B 6_I s_I 6_I m_I a_E
+KASI k_B 6_I s_I i_E
+KASING k_B 6_I s_I i_I N_E
+KATAMTAMAN k_B 6_I t_I a_I m_I t_I a_I m_I a_I n_E
+KATAMTAMANG k_B 6_I t_I a_I m_I t_I a_I m_I a_I N_E
+KATAWAN k_B 6_I t_I 6_I w_I a_I n_E
+KATULAD k_B 6_I t_I u_I l_I a_I d_E
+KAUGNAY k_B 6_I u_I g_I n_I aj_E
+KAULAPANG k_B 6_I u_I l_I 6_I p_I a_I N_E
+KAY k_B aj_E
+KAYA k_B 6_I j_I a_E
+KAYA'Y k_B 6_I j_I aj_E
+KAYAT k_B 6_I j_I a_I t_E
+KAYO k_B 6_I j_I o_E
+KESA k_B e_I s_I a_E
+KIDLAT k_B i_I t_I l_I a_I t_E
+KIKILOS k_B i_I k_I i_I l_I o_I s_E
+KILOMETERS k_B i_I a_I m_I i_I t_I e_I r_I s_E
+KILOMETRO k_B i_I l_I o_I m_I e_I t_I r_I o_E
+KILOS k_B i_I l_I o_I s_E
+KIM k_B i_I m_E
+KLASENG k_B l_I 6_I s_I e_I N_E
+KLIMA k_B l_I i_I m_I a_E
+KO k_B o_E
+KONG k_B o_I N_E
+KPH k_B ej_I p_I i_I ej_I tS_E
+KRITIKAL k_B r_I i_I t_I i_I k_I a_I l_E
+KULAY k_B u_I l_I aj_E
+KULOG k_B u_I l_I o_I g_E
+KUMIKILOS k_B u_I m_I i_I k_I i_I l_I o_I s_E
+KUMPARA k_B u_I m_I p_I a_I r_I a_E
+KUNG k_B u_I N_E
+KUYA k_B u_I j_I a_E
+LA l_B 6_E
+LABAS l_B a_I b_I a_I s_E
+LAGAY l_B a_I g_I aj_E
+LAGING l_B a_I g_I i_I N_E
+LAGUNA l_B a_I g_I u_I n_I 6_E
+LAHAT l_B a_I h_I a_I t_E
+LAKAS l_B a_I k_I a_I s_E
+LALABAS l_B 6_I l_I 6_I b_I a_I s_E
+LALAKAS l_B 6_I l_I 6_I k_I a_I s_E
+LALANDFALL l_B 6_I l_I a_I n_I f_I o_I l_E
+LALAWIGAN l_B 6_I l_I 6_I w_I i_I g_I a_I n_E
+LALO l_B 6_I l_I o_E
+LALONG l_B 6_I l_I o_I N_E
+LAMANG l_B a_I m_I a_I N_E
+LANAO l_B 6_I n_I a_I o_E
+LAND l_B a_I n_I d_E
+LANDFALL l_B a_I n_I d_I f_I o_I l_E
+LANDMASS l_B a_I n_I d_I m_I a_I s_E
+LANDSLIDE l_B a_I n_I d_I s_I l_I aj_I d_E
+LANG l_B a_I N_E
+LAOAG l_B aw_I 6_I g_E
+LAPU l_B 6_I p_I u_E
+LAST l_B a_I s_I t_E
+LATE l_B ej_I t_E
+LATEST l_B ej_I t_I e_I s_I t_E
+LAYAG l_B 6_I j_I a_I g_E
+LAYO l_B 6_I j_I o_E
+LAYONG l_B 6_I j_I o_I N_E
+LEBEL l_B ej_I b_I e_I l_E
+LEGAZPI l_B e_I g_I 6_I z_I p_I i_E
+LESS l_B e_I s_E
+LEYTE l_B ej_I t_I e_E
+LIGHT l_B aj_I t_E
+LIKE l_B aj_I k_E
+LINDOL l_B i_I n_I d_I o_I l_E
+LINGGO l_B i_I n_I g_I o_E
+LINYA l_B i_I n_I j_I a_E
+LIWAYWAY l_B i_I w_I aj_I w_I aj_E
+LOCALIZE l_B o_I k_I a_I l_I aj_I z_E
+LOCALIZED l_B o_I k_I a_I l_I aj_I z_I d_E
+LOOB l_B o_I o_I b_E
+LORIDIN l_B o_I r_I i_I d_I i_I n_E
+LOW l_B ow_E
+LPA e_B l_I p_I i_I ej_E
+LUBHA l_B u_I b_I h_I a_E
+LUGAR l_B u_I g_I a_I r_E
+LULUBOG l_B u_I l_I u_I b_I o_I g_E
+LUMAKAS l_B u_I m_I 6_I k_I a_I s_E
+LUMALABAS l_B u_I m_I 6_I l_I 6_I b_I a_I s_E
+LUMALAKAS l_B u_I m_I 6_I l_I 6_I k_I a_I s_E
+LUMALAPIT l_B u_I m_I 6_I l_I 6_I p_I i_I t_E
+LUPA l_B u_I p_I a_E
+LUZON l_B u_I z_I o_I n_E
+MA m_B a_E
+MAAARI m_B a_I 6_I 6_I r_I i_E
+MAALINSANGAN m_B a_I 6_I l_I i_I n_I s_I a_I N_I a_I n_E
+MAALINSANGANG m_B a_I 6_I l_I i_I n_I s_I a_I N_I a_I N_E
+MAALIWALAS m_B a_I 6_I l_I i_I w_I a_I l_I a_I s_E
+MAALON m_B a_I 6_I l_I o_I n_E
+MAAPEKTUHAN m_B a_I 6_I p_I e_I k_I t_I u_I h_I a_I n_E
+MAARAW m_B a_I 6_I r_I aw_E
+MAARI m_B a_I 6_I r_I i_E
+MAAYOS m_B a_I 6_I j_I o_I s_E
+MABABA m_B a_I b_I 6_I b_I 6_E
+MABABANG m_B a_I b_I 6_I b_I 6_I N_E
+MABAWASAN m_B a_I b_I 6_I w_I 6_I s_I a_I n_E
+MABILIS m_B a_I b_I i_I l_I i_I s_E
+MADALAS m_B a_I d_I a_I l_I a_I s_E
+MADALING m_B a_I d_I 6_I l_I i_I N_E
+MADRE m_B a_I d_I r_I e_E
+MAG m_B a_I g_E
+MAGAGANAP m_B a_I g_I 6_I g_I 6_I n_I a_I p_E
+MAGANDA m_B a_I g_I 6_I n_I d_I a_E
+MAGANDANG m_B a_I g_I 6_I n_I d_I a_I N_E
+MAGBABAGO m_B a_I g_I b_I 6_I b_I 6_I g_I o_E
+MAGBAGO m_B a_I g_I b_I 6_I g_I o_E
+MAGDADALA m_B a_I g_I d_I 6_I d_I 6_I l_I a_E
+MAGDAMAG m_B a_I g_I d_I 6_I m_I a_I g_E
+MAGDULOT m_B a_I g_I d_I u_I l_I o_I t_E
+MAGHAPON m_B a_I g_I h_I 6_I p_I o_I n_E
+MAGHAPONG m_B a_I g_I h_I 6_I p_I o_I N_E
+MAGIGING m_B a_I g_I i_I g_I i_I N_E
+MAGING m_B a_I g_I i_I N_E
+MAGKAKAROON m_B a_I g_I k_I 6_I k_I 6_I r_I o_I o_I n_E
+MAGLALANDFALL m_B a_I g_I l_I 6_I l_I 6_I n_I d_I f_I a_I l_E
+MAGPAPATULOY m_B a_I g_I p_I 6_I p_I 6_I t_I u_I l_I oj_E
+MAGPAPAULAN m_B a_I g_I p_I 6_I p_I 6_I u_I l_I a_I n_E
+MAGPLANO m_B a_I g_I p_I l_I 6_I n_I o_E
+MAGTUTULOY m_B a_I g_I t_I u_I t_I u_I l_I oj_E
+MAGUINDANAO m_B a_I g_I i_I n_I d_I 6_I n_I aw_E
+MAHAL m_B a_I h_I a_I l_E
+MAHIHINANG m_B a_I h_I i_I h_I i_I n_I a_I N_E
+MAHINA m_B a_I h_I i_I n_I a_E
+MAHINANG m_B a_I h_I i_I n_I a_I N_E
+MAINIT m_B a_I i_I n_I i_I t_E
+MAINLAND m_B ej_I n_I l_I 6_I n_I d_E
+MAINTAIN m_B ej_I n_I t_I a_I i_I n_E
+MAKAKAAPEKTO m_B a_I k_I 6_I k_I 6_I 6_I p_I e_I k_I t_I o_E
+MAKAKAASA m_B a_I k_I 6_I k_I 6_I 6_I s_I 6_E
+MAKAKAIPON m_B a_I k_I 6_I k_I 6_I i_I p_I o_I n_E
+MAKAKAPAL m_B a_I k_I 6_I k_I 6_I p_I 6_I l_E
+MAKAKARANAS m_B a_I k_I 6_I k_I 6_I r_I 6_I n_I a_I s_E
+MAKAPAL m_B a_I k_I 6_I p_I 6_I l_E
+MAKARANAS m_B a_I k_I 6_I r_I 6_I n_I a_I s_E
+MAKARARANAS m_B a_I k_I 6_I r_I 6_I r_I 6_I n_I a_I s_E
+MAKIKITA m_B a_I k_I i_I k_I i_I t_I a_E
+MAKITA m_B a_I k_I i_I t_I a_E
+MAKULIMLIM m_B a_I k_I u_I l_I i_I m_I l_I i_I m_E
+MALA m_B a_I l_I a_E
+MALAKAS m_B a_I l_I a_I k_I a_I s_E
+MALAKI m_B a_I l_I a_I k_I i_E
+MALAKING m_B a_I l_I a_I k_I i_I N_E
+MALALAKAS m_B a_I l_I 6_I l_I 6_I k_I a_I s_E
+MALALAKI m_B a_I l_I 6_I l_I 6_I k_I i_E
+MALALAKING m_B a_I l_I 6_I l_I 6_I k_I i_I N_E
+MALALAMIG m_B a_I l_I 6_I l_I 6_I m_I i_I g_E
+MALAMIG m_B a_I l_I 6_I m_I i_I g_E
+MALAPIT m_B a_I l_I a_I p_I i_I t_E
+MALAWAK m_B a_I l_I 6_I w_I a_I k_E
+MALAYO m_B a_I l_I a_I j_I o_E
+MALIBAN m_B a_I l_I i_I b_I a_I n_E
+MALIIT m_B a_I l_I i_I i_I t_E
+MALILIIT m_B a_I l_I i_I l_I i_I i_I t_E
+MAMASYAL m_B a_I m_I a_I S_I a_I l_E
+MAMAYA m_B a_I m_I a_I j_I a_E
+MAMAYANG m_B 6_I m_I 6_I j_I a_I N_E
+MANATILING m_B 6_I n_I 6_I t_I i_I l_I i_I N_E
+MANG m_B 6_I N_E
+MANGINGISDA m_B 6_I N_I i_I N_I i_I s_I d_I a_E
+MANILA m_B 6_I n_I i_I l_I a_E
+MANOLO m_B a_I n_I o_I l_I o_E
+MAP m_B a_I p_E
+MAPAMINSALA m_B a_I p_I 6_I m_I i_I n_I s_I a_I l_I a_E
+MAPANGANIB m_B a_I p_I a_I N_I a_I n_I i_I b_E
+MAPANSING m_B a_I p_I a_I n_I s_I i_I N_E
+MAPAPANSIN m_B a_I p_I a_I p_I a_I n_I s_I i_I n_E
+MARA m_B 6_I r_I a_E
+MARAMDAMAN m_B a_I r_I a_I m_I d_I a_I m_I a_I n_E
+MARAMI m_B a_I r_I a_I m_I i_E
+MARAMING m_B a_I r_I a_I m_I i_I N_E
+MARARAMDAMAN m_B a_I r_I 6_I r_I a_I m_I d_I a_I m_I a_I n_E
+MARARAMDAMANG m_B 6_I r_I 6_I r_I 6_I m_I d_I 6_I m_I 6_I N_E
+MARARANASAN m_B 6_I r_I 6_I r_I 6_I n_I 6_I s_I 6_I n_E
+MARCH m_B 6_I r_I tS_E
+MARILYN m_B 6_I r_I i_I l_I i_I n_E
+MARINDUQUE m_B 6_I r_I i_I n_I d_I u_I k_I e_E
+MARTES m_B 6_I r_I t_I e_I s_E
+MAS m_B 6_I s_E
+MASASABAYAN m_B 6_I s_I 6_I s_I 6_I b_I 6_I j_I 6_I n_E
+MASAYA m_B 6_I s_I 6_I j_I 6_E
+MASBATE m_B 6_I s_I b_I 6_I t_I e_E
+MASS m_B {_I s_E
+MASUNGIT m_B 6_I s_I 6_I N_I i_I t_E
+MASYADONG m_B 6_I s_I j_I 6_I d_I o_I N_E
+MATA m_B 6_I t_I 6_E
+MATAAS m_B 6_I t_I 6_I a_I s_E
+MATAGAL m_B 6_I t_I 6_I g_I 6_I l_E
+MATANAO m_B 6_I t_I 6_I n_I 6_I o_E
+MATAPOS m_B 6_I t_I 6_I p_I o_I s_E
+MATINDING m_B 6_I t_I i_I n_I d_I i_I N_E
+MATITINDING m_B 6_I t_I i_I t_I i_I n_I d_I i_I N_E
+MAULAN m_B 6_I u_I l_I a_I n_E
+MAULANG m_B 6_I u_I l_I 6_I N_E
+MAULAP m_B 6_I u_I l_I 6_I p_E
+MAWAWALA m_B 6_I w_I 6_I w_I 6_I l_I 6_E
+MAXIMUM m_B 6_I k_I s_I i_I m_I u_I m_E
+MAY m_B 6_I j_E
+MAYO m_B 6_I j_I o_E
+MAYROON m_B 6_I j_I r_I o_I o_I n_E
+MABABANG m_B 6_I b_I 6_I b_I 6_I N_E
+MEDIUM m_B e_I d_I i_I u_I m_E
+MEDYO m_B e_I d_I j_I o_E
+MERON m_B e_I r_I o_I n_E
+MERONG m_B e_I r_I o_I N_E
+METEOROLOGIST m_B e_I t_I e_I o_I r_I o_I l_I o_I g_I j_I s_I t_E
+METRAWEATHER m_B e_I t_I r_I 6_I w_I e_I T_I e_I r_E
+METRO m_B e_I t_I r_I o_E
+MGA m_B N_I 6_E
+MID m_B i_I d_E
+MIMAROPA m_B i_I m_I 6_I r_I o_I p_I 6_E
+MINDANAO m_B i_I n_I d_I 6_I n_I 6_I o_E
+MINDORO m_B i_I n_I d_I o_I r_I o_E
+MINIMUM m_B i_I n_I i_I m_I u_I m_E
+MINSAN m_B i_I n_I s_I 6_I n_E
+MINSANG m_B i_I n_I s_I 6_I N_E
+MISAMIS m_B i_I s_I 6_I m_I i_I s_E
+MIYERKULES m_B i_I j_I e_I r_I k_I u_I l_I e_I s_E
+MO m_B o_E
+MODERATE m_B o_I d_I e_I r_I 6_I j_I t_E
+MOISTURE m_B o_I j_I s_I t_I u_I r_E
+MOMENTUM m_B o_I m_I e_I n_I t_I u_I m_E
+MONSOON m_B o_I n_I s_I u_I n_E
+MORNING m_B o_I r_I n_I i_I N_E
+MOTORISTA m_B o_I t_I o_I r_I i_I s_I t_I a_E
+MOUNTAIN m_B o_I u_I n_I t_I {_I i_I n_E
+MULA m_B u_I l_I a_E
+MULI m_B u_I l_I i_E
+MUNA m_B u_I n_I 6_E
+NA n_B 6_E
+NAAPEKTUHAN n_B 6_I a_I p_I e_I k_I t_I u_I h_I 6_I n_E
+NABALOT n_B 6_I b_I 6_I l_I o_I t_E
+NABANGGIT n_B 6_I b_I 6_I N_I g_I i_I t_E
+NABUBUO n_B 6_I b_I u_I b_I u_I o_E
+NABUO n_B 6_I b_I u_I o_E
+NAFORECAST n_B 6_I f_I o_I r_I k_I 6_I s_I t_E
+NAG n_B 6_I g_E
+NAGBABAGANG n_B 6_I g_I b_I 6_I b_I 6_I g_I 6_I N_E
+NAGBIBIGAY n_B 6_I g_I b_I i_I b_I i_I g_I 6j_E
+NAGI n_B 6_I g_I i_E
+NAGIGING n_B 6_I g_I i_I g_I i_I N_E
+NAGING n_B 6_I g_I i_I N_E
+NAGKA n_B 6_I g_I k_I a_E
+NAGKAKAMALI n_B 6_I g_I k_I 6_I k_I 6_I m_I 6_I l_I i_E
+NAGKAKAROON n_B 6_I g_I k_I 6_I k_I 6_I r_I o_I o_I n_E
+NAGKAROON n_B 6_I g_I k_I 6_I r_I o_I o_I n_E
+NAGLALARO n_B 6_I g_I l_I 6_I l_I 6_I r_I o_E
+NAGPAPALAKAS n_B 6_I g_I p_I 6_I p_I 6_I l_I 6_I k_I 6_I s_E
+NAGPAPATULOY n_B 6_I g_I p_I 6_I p_I 6_I t_I u_I l_I o_I j_E
+NAGPAPAULAN n_B 6_I g_I p_I 6_I p_I 6_I u_I l_I 6_I n_E
+NAGPAULAN n_B 6_I g_I p_I 6_I u_I l_I 6_I n_E
+NAGTAAS n_B 6_I t_I 6_I a_I s_E
+NAGULAT n_B 6_I g_I u_I l_I 6_I t_E
+NAIA n_B 6_I i_I j_I 6_E
+NAITALA n_B 6_I i_I t_I 6_I l_I a_E
+NAKA n_B 6_I k_I 6_E
+NAKAKAAPEKTO n_B 6_I k_I 6_I k_I 6_I a_I p_I e_I k_I t_I o_E
+NAKAKAKUHA n_B 6_I k_I 6_I k_I 6_I k_I u_I h_I 6_E
+NAKAKAPAG n_B 6_I k_I 6_I k_I 6_I p_I 6_I g_E
+NAKAKATAKOT n_B 6_I k_I 6_I k_I 6_I t_I 6_I k_I o_I t_E
+NAKAKATULONG n_B 6_I k_I 6_I k_I 6_I t_I u_I l_I o_I N_E
+NAKAMOTOR n_B 6_I k_I 6_I m_I o_I t_I o_I r_E
+NAKAPALOOB n_B 6_I k_I 6_I p_I 6_I l_I o_I o_I b_E
+NAKAR n_B 6_I k_I 6_I r_E
+NAKARAANG n_B 6_I k_I 6_I r_I 6_I a_I N_E
+NAKARANAS n_B 6_I k_I 6_I r_I 6_I n_I 6_I s_E
+NAKARARANAS n_B 6_I k_I 6_I r_I 6_I r_I 6_I n_I 6_I s_E
+NAKATAAS n_B 6_I k_I 6_I t_I 6_I a_I s_E
+NAKATIRA n_B 6_I k_I 6_I t_I i_I r_I a_E
+NAKATUTOK n_B 6_I k_I 6_I t_I u_I t_I o_I k_E
+NAKIKITA n_B 6_I k_I i_I k_I i_I t_I a_E
+NAKIKITANG n_B 6_I k_I i_I k_I i_I t_I 6_I N_E
+NALALABING n_B 6_I l_I 6_I l_I 6_I b_I i_I N_E
+NALAMANG n_B 6_I l_I 6_I m_I 6_I N_E
+NAMAMATAAN n_B 6_I m_I 6_I m_I 6_I t_I 6_I a_I n_E
+NAMAMAYANI n_B 6_I m_I 6_I m_I 6_I j_I 6_I n_I i_E
+NAMAN n_B 6_I m_I 6_I n_E
+NAMANG n_B 6_I m_I 6_I N_E
+NAMATAAN n_B 6_I m_I 6_I t_I 6_I a_I n_E
+NAMIN n_B 6_I m_I i_I n_E
+NANANATILI n_B 6_I n_I 6_I n_I 6_I t_I i_I l_I i_E
+NANATILI n_B 6_I n_I 6_I t_I i_I l_I i_E
+NANDITO n_B 6_I n_I d_I i_I t_I o_E
+NANDOON n_B 6_I n_I d_I o_I o_I n_E
+NANDUN n_B 6_I n_I d_I u_I n_E
+NANDYAN n_B 6_I n_I d_I j_I 6_I n_E
+NANGYARI n_B 6_I N_I j_I 6_I r_I i_E
+NANGYAYARI n_B 6_I N_I j_I 6_I j_I 6_I r_I i_E
+NAPAKA n_B 6_I p_I 6_I k_I a_E
+NAPAKAALON n_B 6_I p_I 6_I k_I a_I 6_I l_I o_I n_E
+NAPAKALAKAS n_B 6_I p_I 6_I k_I 6_I k_I 6_I l_I 6_I k_I 6_I s_E
+NAPANSIN n_B 6_I p_I 6_I n_I s_I i_I n_E
+NAPAPADALAS n_B 6_I p_I 6_I p_I 6_I d_I 6_I l_I 6_I s_E
+NARAMDAMAN n_B 6_I r_I 6_I m_I d_I 6_I m_I 6_I n_E
+NARANASAN n_B 6_I r_I 6_I n_I s_I 6_I n_E
+NARARAMDAMAN n_B 6_I r_I 6_I r_I 6_I m_I d_I 6_I m_I 6_I n_E
+NARITO m_B 6_I r_I i_I t_I o_E
+NASA n_B 6_I s_I a_E
+NASABI n_B 6_I s_I 6_I b_I i_E
+NATATANAW n_B 6_I t_I 6_I t_I 6_I n_I 6_I w_E
+NATHANIEL n_B 6_I T_I a_I n_I i_I e_I l_E
+NATIN n_B 6_I t_I i_I n_E
+NATING n_B 6_I t_I i_I N_E
+NATITIRANG n_B 6_I t_I i_I t_I i_I r_I 6_I N_E
+NATURANG n_B 6_I t_I u_I r_I 6_I N_E
+NAUNA n_B 6_I u_I n_I a_E
+NAUUNA n_B 6_I u_I u_I n_I a_E
+NAUWI n_B 6_I u_I w_I i_E
+NEGROS n_B e_I g_I r_I o_I s_E
+NETONG n_B e_I t_I o_I N_E
+NEWS n_B j_I w_I s_E
+NG N_S
+NGA N_B a_E
+NGAY N_B 6_I j_E
+NGAYON N_B g_I 6_I j_I o_I n_E
+NGAYONG N_B 6_I j_I o_I N_E
+NGUNIT N_B u_I n_I i_I t_E
+NI n_B i_E
+NILA n_B i_I l_I a_E
+NILALAMAN n_B i_I l_I 6_I l_I 6_I m_I 6_I n_E
+NINA n_B i_I n_I a_E
+NINE n_B j_I n_E
+NINETEEN n_B j_I n_I t_I i_I n_E
+NINETY n_B j_I n_I t_I j_E
+NINYONG n_B i_I n_I j_I o_I N_E
+NITO n_B i_I t_I o_E
+NITONG n_B i_I t_I o_I N_E
+NIYA n_B i_I j_I a_E
+NIYAN n_B i_I j_I 6_I n_E
+NIYO n_B i_I j_I o_E
+NIYONG n_B i_I j_I o_I N_E
+NIÑO n_B i_I n_I j_I o_E
+NO n_B o_E
+NOBYEMBRE n_B o_I b_I j_I e_I m_I b_I r_I e_E
+NONE n_B o_I n_E
+NORTE n_B o_I r_I t_I e_E
+NORTH n_B o_I r_I T_E
+NORTHEAST n_B o_I r_I T_I i_I s_I t_E
+NORTHERN n_B o_I r_I T_I e_I r_I n_E
+NORTHWEST n_B o_I r_I T_I w_I e_I s_I t_E
+NORZAGARAY n_B o_I r_I z_I 6_I g_I 6_I r_I 6_I j_E
+NUEBE n_B u_I e_I b_I e_E
+NUEVA n_B u_I e_I v_I 6_E
+NUMBER n_B u_I m_I b_I e_I r_E
+NUNG n_B u_I N_E
+NYAN n_B j_I a_I n_E
+NYO n_B j_I o_E
+NYONG n_B j_I o_I N_E
+O o_S
+OCCASIONALLY o_B k_I 6_I s_I j_I o_I n_I 6_I l_I j_E
+OCCIDENTAL o_B k_I s_I i_I d_I e_I n_I t_I 6_I l_E
+OCEAN o_B S_I j_I e_I n_E
+OF o_B f_E
+OK o_B k_E
+ONE w_B o_I n_E
+ONSE o_B n_I s_I e_E
+ONYOK o_B n_I j_I o_I k_E
+OPERATION o_B p_I e_I r_I 6_I s_I j_I o_I n_E
+OPO o_B p_I o_E
+OR o_B r_E
+ORANGE o_B r_I 6_I N_I dZ_E
+ORAS o_B r_I 6_I s_E
+ORIENTAL o_B r_I i_I e_I n_I t_I 6_I l_E
+ORIENTATION o_B r_I i_I e_I n_I t_I 6_I s_I j_I o_I n_E
+OUTING o_B w_I t_I i_I N_E
+PA p_B i_I ej_E
+PAALALA p_B 6_I a_I l_I 6_I l_I a_E
+PAALIS p_B 6_I a_I l_I i_I s_E
+PABABA p_B 6_I b_I 6_I b_I a_E
+PABLO p_B 6_I b_I l_I o_E
+PACIFIC p_B 6_I s_I i_I f_I i_I k_E
+PAG p_B 6_I g_E
+PAGALON p_B 6_I g_I 6_I l_I o_I n_E
+PAGASA p_B 6_I g_I 6_I s_I a_E
+PAGBAHA p_B 6_I g_I b_I 6_I h_I a_E
+PAGBATI p_B 6_I g_I b_I 6_I t_I i_E
+PAGBUGSO p_B 6_I g_I b_I u_I g_I s_I o_E
+PAGBUGSONG p_B 6_I g_I b_I u_I g_I s_I o_I N_E
+PAGDATING p_B 6_I g_I d_I 6_I t_I i_I N_E
+PAGGUHO p_B 6_I g_I u_I h_I o_E
+PAGITAN p_B 6_I g_I i_I t_I 6_I n_E
+PAGKABUHAY p_B 6_I g_I k_I 6_I b_I u_I h_I aj_E
+PAGKAKAIBA p_B 6_I g_I k_I 6_I k_I 6_I i_I b_I a_E
+PAGKAKATAONG p_B 6_I g_I k_I 6_I k_I 6_I t_I 6_I o_I N_E
+PAGKATAPOS p_B 6_I g_I k_I 6_I t_I 6_I p_I o_I s_E
+PAGKAWALA p_B 6_I g_I k_I 6_I w_I 6_I l_I a_E
+PAGKIDLAT p_B 6_I g_I k_I i_I d_I l_I 6_I t_E
+PAGKILOS p_B 6_I g_I k_I i_I l_I o_I s_E
+PAGKULOG p_B 6_I g_I k_I u_I l_I o_I N_E
+PAGLALAYAG p_B 6_I g_I l_I 6_I l_I 6_I j_I 6_I g_E
+PAGPAPAULAN p_B 6_I g_I p_I 6_I p_I 6_I u_I l_I 6_I n_E
+PAGSAPIT p_B 6_I g_I s_I 6_I p_I i_I t_E
+PAGSASALUBONG p_B 6_I g_I s_I a_I l_I u_I b_I o_I N_E
+PAGTAAS p_B 6_I g_I t_I 6_I a_I s_E
+PAGTAMA p_B 6_I g_I t_I 6_I m_I a_E
+PAGTAWID p_B 6_I g_I t_I 6_I w_I i_I d_E
+PAGULAN p_B 6_I g_I u_I l_I 6_I n_E
+PAHILAGA p_B 6_I h_I i_I l_I 6_I g_I a_E
+PAHILAGANG p_B 6_I h_I I_I l_I 6_I g_I 6_I N_E
+PAKANLURAN p_B 6_I k_I 6_I n_I l_I u_I r_I 6_I n_E
+PALALAKASIN p_B 6_I l_I 6_I l_I 6_I k_I 6_I s_I i_I n_E
+PALARONG p_B 6_I l_I 6_I r_I o_I N_E
+PALAWAN p_B 6_I l_I 6_I w_I 6_I n_E
+PALIBOT p_B 6_I l_I i_I b_I o_I t_E
+PALISADA p_B 6_I l_I i_I s_I d_I a_E
+PAMBANSA p_B 6_I m_I b_I 6_I n_I s_I a_E
+PAMILYA p_B 6_I m_I i_I l_I j_I a_E
+PAMINSAN p_B 6_I m_I i_I n_I s_I 6_I n_E
+PAMPANGA p_B 6_I m_I p_I 6_I N_I g_I 6_E
+PAN p_B 6_I n_E
+PANAHON p_B 6_I n_I 6_I h_I o_I n_E
+PANANDALIAN p_B 6_I n_I 6_I n_I d_I 6_I l_I 6_I n_E
+PANANGGA p_B 6_I n_I 6_I N_I g_I a_E
+PANAY p_B 6_I n_I 6_I j_E
+PANDAGAT p_B 6_I n_I d_I 6_I g_I 6_I t_E
+PANG p_B 6_I N_E
+PANGANIB p_B N_I 6_I n_I i_I b_E
+PANGASINAN p_B 6_I N_I g_I 6_I s_I i_I n_I 6_I n_E
+PANGATLONG p_B 6_I N_I 6_I t_I l_I o_I N_E
+PANGUNAHING p_B 6_I N_I u_I n_I 6_I h_I i_I N_E
+PANIBAGONG p_B 6_I n_I i_I b_I 6_I g_I o_I N_E
+PANONOOD p_B 6_I n_I o_I n_I o_I o_I d_E
+PANOOD p_B 6_I n_I o_I o_I d_E
+PANSAMANTALANG p_B 6_I n_I s_I 6_I m_I 6_I n_I t_I 6_I l_I 6_I N_E
+PAPAANO p_B 6_I p_I 6_I a_I n_I o_E
+PAPALABAS p_B 6_I p_I 6_I l_I a_I b_I a_I s_E
+PAPALAKAS p_B 6_I p_I 6_I l_I 6_I k_I 6_I s_E
+PAPALAPIT p_B 6_I p_I 6_I l_I 6_I p_I i_I t_E
+PAPALIT p_B 6_I p_I 6_I l_I i_I t_E
+PAPALO p_B 6_I p_I 6_I l_I o_E
+PAPANO p_B 6_I p_I 6_I n_I o_E
+PAPASOK p_B 6_I p_I 6_I s_I o_I k_E
+PAPAULAN p_B 6_I p_I 6_I u_I l_I 6_I n_E
+PAPUNTA p_B 6_I p_I u_I n_I t_I 6_E
+PAR p_B 6_I r_E
+PARA p_B 6_I r_I 6_E
+PARANG p_B 6_I r_I 6_I N_E
+PART p_B 6_I r_I t_E
+PARTE p_B 6_I r_I t_I e_E
+PARTENG p_B 6_I r_I t_I e_I N_E
+PARTIKULAR p_B 6_I r_I t_I i_I k_I u_I l_I 6_I r_E
+PATAAS p_B 6_I t_I 6_I a_I s_E
+PATAY p_B 6_I t_I 6j_E
+PATI p_B 6_I t_I i_E
+PATROL p_B 6_I t_I r_I o_I l_E
+PATULOY p_B 6_I t_I u_I l_I o_I j_E
+PATUNGONG p_B 6_I t_I u_I N_I o_I N_E
+PAU p_B 6_I u_E
+PAULAN p_B 6_I u_I l_I 6_I n_E
+PENINSULA p_B e_I n_I i_I n_I s_I u_I l_I a_E
+PEPITO p_B e_I p_I i_I t_I o_E
+PER p_B e_I r_E
+PERCENT p_B e_I r_I s_I e_I n_I t_E
+PERO p_B e_I r_I o_E
+PH p_B i_I ej_I tS_E
+PHILIPPINE f_B i_I l_I i_I p_I i_I n_E
+PHILLIPS f_B i_I l_I i_I p_I s_E
+PHYSICS f_B j_I s_I i_I k_I s_E
+PILING p_B i_I l_I i_I N_E
+PILIPINAS p_B i_I l_I i_I p_I i_I n_I 6_I s_E
+PINAG p_B i_I n_I 6_I g_E
+PINAGSANIB p_B i_I N_I 6_I g_I s_I 6_I n_I i_I b_E
+PINAIGTING p_B i_I n_I 6_I i_I g_I t_I i_I N_E
+PINAKA p_B i_I n_I 6_I k_I a_E
+PINAKAHULING p_B i_I n_I 6_I k_I 6_I h_I u_I l_I i_I N_E
+PINAKAMALAMIG o_B i_I n_I 6_I k_I 6_I m_I 6_I l_I 6_I m_I i_I g_E
+PINAKAMATAAS p_B i_I n_I 6_I k_I 6_I m_I 6_I t_I 6_I a_I s_E
+PINANGGAGALINGAN p_B i_I n_I 6_I N_I g_I 6_I g_I 6_I l_E
+PINAPAYAGAN p_B i_I n_I 6_I p_I 6_I j_I 6_I g_I 6_I n_E
+PINAPAYAGANG p_B i_I n_I 6_I p_I 6_I j_I 6_I g_I 6_I N_E
+PINAPAYUHANG p_B i_I n_I 6_I p_I 6_I j_I u_I h_I 6_I N_E
+PINK p_B i_I n_I k_E
+PM p_B i_I e_I m_E
+PO p_B o_E
+POINT p_B o_I i_I n_I t_E
+POLILLO p_B o_I l_I i_I l_I j_I o_E
+PONG p_B o_I N_E
+POPULATED p_B o_I p_I j_I u_I l_I {_I t_I e_I d_E
+PORSYENTO p_B o_I r_I S_I e_I n_I t_I o_E
+PORTION p_B o_I r_I t_I i_I o_I n_E
+POSIBLE p_B o_I s_I i_I b_I l_E
+POSIBLENG p_B o_I s_I i_I b_I l_I e_I N_E
+PRE p_B r_I e_E
+PRESSURE p_B r_I e_I s_I u_I r_I e_E
+PREVAILING p_B r_I e_I v_I 6_I i_I l_I i_I N_E
+PRINCESA p_B r_I i_I n_I s_I e_I s_I a_E
+PROBABILITY p_B r_I o_I b_I 6_I b_I i_I l_I i_I t_I j_E
+PROBINSYA p_B r_I o_I b_I i_I n_I S_I a_E
+PROBLEMA p_B r_I o_I b_I l_I e_I m_I 6_E
+PRONE p_B r_I o_I n_E
+PROVINCE p_B r_I o_I v_I i_I n_I s_E
+PROVINCES p_B r_I o_I v_I i_I n_I s_I e_I s_E
+PUERTO p_B u_I w_I e_I r_I t_I o_E
+PULA p_B u_I l_I a_E
+PULO p_B u_I l_I o_E
+PULO-PULONG p_B u_I l_I o_I p_I u_I l_I o_I N_E
+PUMALAOT p_B u_I m_I 6_I l_I 6_I o_I t_E
+PUMALO p_B u_I m_I 6_I l_I o_E
+PUMAPALO p_B u_I m_I 6_I p_I 6_I l_I o_E
+PUMAPATAK p_B u_I m_I 6_I p_I 6_I t_I 6_I k_E
+PUMASOK p_B u_I m_I 6_I s_I o_I k_E
+PUNG p_B u_I N_E
+PUNO p_B u_I n_I o_E
+PUPUNTA p_B u_I p_I u_I n_I t_I a_E
+PURO p_B u_I r_I o_E
+PUWERSA p_B u_I w_I e_I r_I s_I a_E
+PWEDE p_B w_I e_I d_I e_E
+PWEDENG p_B w_I e_I d_I e_I N_E
+QUARTER k_B w_I a_I r_I t_I e_I r_E
+QUATRO k_B w_I 6_I t_I r_I o_E
+QUEZON k_B e_I s_I o_I n_E
+QUIRINO k_B i_I r_I i_I n_I o_E
+RADYO r_B 6_I j_I ow_E
+RAIN r_B 6j_I n_E
+RAINFALL r_B 6j_I n_I f_I a_I l_E
+RAINS r_B 6j_I n_I s_E
+RAINSHOWERS r_B 6j_I n_I S_I o_I w_I e_I r_I s_E
+RAMDAM r_B 6_I m_I d_I 6_I m_E
+RANGE r_B {_I n_I g_E
+RANGES r_B {_I n_I g_I s_E
+READY r_B e_I d_I j_E
+REAL r_B i_I l_E
+RECORD r_B e_I k_I o_I r_I d_E
+REGION r_B e_I g_I i_I o_I n_E
+REHIYON r_B e_I h_I i_I j_I o_I n_E
+RESCUE r_B e_I s_I k_I j_I u_E
+RESIDENT r_B e_I s_I i_I d_I e_I n_I t_E
+RESIDENTE r_B e_I s_I i_I d_I e_I n_I t_I e_E
+RESPONSIBILITY r_B e_I s_I p_I o_I n_I s_I i_I b_I i_I l_I t_I j_E
+REST r_B e_I s_I t_E
+RETRIEVAL r_B e_I t_I r_I i_I v_I 6_I l_E
+RIN r_B i_I n_E
+RING r_B i_I N_E
+RITO r_B i_I t_I o_E
+RIZAL r_B i_I z_I 6_I l_E
+ROMBLON r_B o_I m_I b_I l_I o_I n_E
+ROSITA r_B o_I s_I i_I t_I a_E
+SA s_B 6_E
+SAAN s_B 6_I a_I n_E
+SABADO s_B 6_I b_I 6_I d_I o_E
+SABIHIN s_B 6_I b_I i_I h_I i_I n_E
+SAIS s_B 6_I i_I s_E
+SAKAHAN s_B 6_I k_I 6_I h_I a_I n_E
+SALAMAT s_B 6_I l_I 6_I m_I 6_I t_E
+SAMA s_B 6_I m_I a_E
+SAMANTALA s_B 6_I m_I 6_I n_I t_I 6_I l_I 6_E
+SAMANTALANG s_B 6_I m_I 6_I n_I t_I 6_I l_I 6_I N_E
+SAMAR s_B 6_I m_I 6_I r_E
+SAMUEL s_B 6_I m_I u_I e_I l_E
+SANTO s_B 6_I n_I t_I o_E
+SANTOS s_B 6_I n_I t_I o_I s_E
+SAPAGKAT s_B 6_I p_I 6_I g_I k_I 6_I t_E
+SASAKYANG s_B a_I s_I a_I k_I j_I 6_I n_E
+SATELLITE s_B a_I t_I e_I l_I aj_I t_E
+SEA s_B i_E
+SEABOARD s_B i_I b_I o_I r_I d_E
+SEABOARDS s_B i_I b_I o_I r_I d_I s_E
+SEASON s_B i_I s_I o_I n_E
+SECTION s_B e_I k_I S_I o_I n_E
+SENDONG s_B e_I n_I d_I o_I N_E
+SERBISYONG s_B e_I r_I b_I i_I S_I o_I N_E
+SEVEN s_B e_I v_I e_I n_E
+SEVENTEEN s_B e_I v_I e_I t_I i_I n_E
+SEVENTY s_B e_I v_I e_I n_I t_I j_E
+SHANSHAN S_B 6_I n_I S_I a_I n_E
+SHERY S_B e_I r_I j_E
+SHERYL S_B e_I r_I i_I l_E
+SHOWERS S_B ow_I e_I r_I s_E
+SI s_B i_E
+SIDE s_B i_I d_E
+SIERRA s_B i_I e_I r_I a_E
+SIGNAL s_B i_I g_I n_I 6_I l_E
+SIGNALS s_B i_I g_I n_I 6_I l_I s_E
+SIGURADO s_B i_I g_I u_I r_I 6_I d_I o_E
+SIGURADUHIN s_B i_I g_I u_I r_I 6_I d_I u_I h_I i_I n_E
+SILA s_B i_I l_I a_E
+SILANGAN s_B i_I l_I 6_I N_I 6_I n_E
+SILANGANG s_B i_I l_I 6_I N_I 6_I N_E
+SILIPIN s_B i_I l_I i_I p_I i_I n_E
+SIMULA s_B i_I m_I u_I l_I a_E
+SINABING s_B i_I n_I 6_I b_I i_I N_E
+SINAIT s_B i_I n_I 6_I i_I t_E
+SINGKO s_B i_I N_I k_I o_E
+SINUSUNDAN s_B i_I n_I u_I s_I u_I n_I d_I 6_I n_E
+SIQUIJOR s_B i_I k_I i_I h_I o_I r_E
+SISIKAT s_B i_I s_I i_I k_I 6_I t_E
+SIX s_B i_I k_I s_E
+SIXTEEN s_B i_I k_I s_I t_I i_I n_E
+SIXTY s_B i_I k_I s_I t_I j_E
+SIYA s_B i_I j_I 6_E
+SIYANG s_B i_I j_I 6_I N_E
+SO s_B o_E
+SOCSARGEN s_B o_I c_I s_I 6_I r_I g_I e_I n_E
+SOUTH s_B aw_I T_E
+SOUTHERN s_B aw_I T_I e_I r_I n_E
+SOUTHWEST s_B aw_I T_I w_I e_I s_I t_E
+SPELL s_B p_I e_I l_E
+STANLEY s_B t_I 6_I n_I l_I e_I j_E
+STORM s_B t_I o_I r_I m_E
+STRENGTH s_B t_I r_I e_I N_I T_E
+STRESS s_B t_I r_I e_I s_E
+SUBAYBAY s_B u_I b_I 6_I j_I b_I 6_I j_E
+STROKE s_B t_I r_I o_I k_E
+SUBIC s_B u_I b_I i_I k_E
+SUGATAN s_B u_I g_I 6_I t_I 6_I n_E
+SUNDAY s_B u_I n_I d_I ej_E
+SUNGIT s_B u_I N_I i_I t_E
+SUNOG s_B u_I n_I o_I g_E
+SUNRISE s_B u_I n_I r_I i_I s_I V_E
+SUNSET s_B u_I n_I s_I e_I t_E
+SUPER s_B u_I p_I e_I r_E
+SUR s_B u_I r_E
+SURGE s_B u_I r_I dZ_E
+SURIGAO s_B u_I r_I i_I g_I 6_I o_E
+SUSTAINED s_B u_I s_I t_I aj_I n_I d_E
+SUSUNOD s_B u_I s_I u_I n_I o_I d_E
+SYSTEM s_B i_I s_I t_I e_I m_E
+SYUDAD s_B j_I u_I d_I 6_I d_E
+TAAS t_B 6_I a_I s_E
+TAGA t_B 6_I g_I a_E
+TAGAPANOOD t_B 6_I g_I 6_I p_I 6_I n_I o_I o_I d_E
+TAGAYTAY t_B 6_I g_I 6j_I t_I aj_E
+TAGBILARAN t_B 6_I g_I b_I i_I l_I 6_I r_I 6_I n_E
+TAGLAY t_B 6_I g_I l_I 6_I j_E
+TAIL t_B ej_I l_E
+TAKBO t_B 6_I k_I b_I o_E
+TAMA t_B 6_I m_I 6_E
+TAMAAN t_B 6_I m_I 6_I a_I n_E
+TANGHALI t_B 6_I N_I h_I 6_I l_I i_E
+TANI t_B 6_I n_I i_E
+TAO t_B 6_I o_E
+TAPOS t_B 6_I p_I o_I s_E
+TARLAC t_B 6_I r_I l_I 6_I c_E
+TATAAS t_B 6_I t_I 6_I a_I s_E
+TATAMA t_B 6_I t_I 6_I m_I 6_E
+TATAWIDIN t_B 6_I t_I 6w_I i_I d_I i_I n_E
+TATAWIRIN t_B 6_I t_I 6w_I i_I r_I i_I n_E
+TATLO t_B 6_I t_I l_I o_E
+TATLONG t_B 6_I t_I l_I o_I N_E
+TAYA t_B 6_I j_I 6_E
+TAYO t_B 6_I j_I o_E
+TAYONG t_B 6_I j_I o_I N_E
+TED t_B e_I d_E
+TEMPERATURA t_B e_I m_I p_I e_I r_I 6_I t_I u_I r_I 6_E
+TEMPERATURE t_B e_I m_I p_I e_I r_I {_I t_I u_I r_E
+TEMPERATURES t_B e_I m_I p_I e_I r_I {_I t_I u_I r_I s_E
+TEN t_B e_I n_E
+TERMS t_B e_I r_I m_I s_E
+THAT T_B {_I t_E
+THE T_B a_E
+THIRTY T_B 3_I r_I t_I j_E
+THIS T_B I_I s_E
+THOUSAND T_B o_I u_I s_I a_I n_I d_E
+THREE T_B r_I i_E
+THUNDERSTORM T_B u_I n_I d_I e_I r_I s_I t_I o_I r_I m_E
+THUNDERSTORMS T_B u_I n_I d_I e_I r_I s_I t_I o_I r_I m_I s_E
+TIME t_B i_I m_E
+TIMOG t_B i_I m_I o_I g_E
+TINAAS t_B i_I n_I 6_I a_I s_E
+TINATAWAG t_B i_I n_I 6_I t_I 6_I w_I 6_I g_E
+TINATAYA t_B i_I n_I 6_I t_I 6_I j_I 6_E
+TINATAYANG t_B i_I n_I a_I t_I j_I 6_I N_E
+TINAWAG t_B i_I n_I 6_I w_I 6_I g_E
+TININGNAN t_B i_I n_I i_I N_I n_I 6_I n_E
+TITIGNAN t_B i_I t_I i_I g_I 6_I n_E
+TITINGNAN t_B i_I t_I i_I N_I n_I 6_I n_E
+TO t_B o_E
+TODAY t_B o_I d_I ej_E
+TOMORROW t_B o_I m_I o_I r_I o_I w_E
+TORNADO t_B o_I r_I n_I ej_I d_I o_E
+TOTOO t_B o_I t_I o_I o_E
+TOWARDS t_B o_I w_I 6_I r_I d_I s_E
+TRACK t_B r_I 6_I k_E
+TRAHEDYA t_B r_I 6_I h_I e_I d_I j_I 6_E
+TRENTAY t_B r_I e_I t_I aj_E
+TRESE t_B r_I e_I s_I e_E
+TROPICAL t_B r_I o_I p_I i_I k_I 6_I l_E
+TROUGH t_B r_I 6_I f_E
+TSAKA tS_B 6_I k_I 6_E
+TSANSA tS_B 6_I n_I s_I 6_E
+TSANSANG tS_B 6_I n_I s_I 6_I N_E
+TUBIG t_B u_I b_I i_I g_E
+TUGUEGARAO t_B u_I g_I e_I g_I 6_I r_I 6_I o_E
+TULAD t_B u_I l_I 6_I d_E
+TULOY t_B u_I l_I o_I j_E
+TUMAMA t_B u_I m_I 6_I m_I 6_E
+TUMAMANG t_B u_I m_I 6_I m_I 6_I N_E
+TUMATAMA t_B u_I m_I 6_I t_I 6_I m_I 6_E
+TUNGKOL t_B u_I N_I k_I o_I l_E
+TUTUMBUKIN t_B u_I t_I u_I m_I b_I u_I k_I i_I n_E
+TUWING t_B u_I w_I i_I N_E
+TUYONG t_B u_I j_I o_I N_E
+TV t_B i_I v_I i_E
+TWELVE t_B u_I e_I l_I v_E
+TWENTY t_B u_I e_I n_I t_I i_E
+TWITTER t_B u_I i_I t_I e_I r_E
+TWO t_B u_E
+TYPHOON t_B aj_I f_I U_I n_E
+U u_S
+ULAN u_B l_I 6_I n_E
+ULAP u_B l_I 6_I p_E
+ULAT u_B l_I 6_I t_E
+ULI u_B l_I i_E
+ULIT u_B l_I i_I t_E
+UMAABOT u_B m_I 6_I a_I b_I o_I t_E
+UMABOT u_B m_I 6_I b_I o_I t_E
+UMAGA u_B m_I 6_I g_I 6_E
+UMIIRAL u_B m_I i_I i_I l_I 6_I w_E
+UMULAN u_B m_I u_I l_I 6_I n_E
+UNA u_B n_I 6_E
+UNANG u_B n_I 6_I N_E
+UNA'Y u_B n_I 6_I aj_E
+UNDERSCORE 6_B n_I d_I e_I r_I s_I k_I o_I r_E
+UNION j_B u_I n_I i_I o_I n_E
+UP j_B u_I p_I i_E
+UPDATE 6_B p_I d_I 6_I j_I t_E
+UULAN u_B u_I l_I 6_I n_E
+UULAT u_B u_I l_I 6_I t_E
+UUSAPAN u_B u_I s_I 6_I p_I 6_I n_E
+UUWI u_B u_I w_I i_E
+VALLEY v_B 6_I l_I i_E
+VICINITY v_B i_I s_I i_I n_I i_I t_I i_E
+VISAYAS v_B i_I s_I 6_I j_I 6_I s_E
+VISIBILITY v_B i_I s_I i_I b_I i_I l_I i_I t_I i_E
+VIZCAYA v_B i_I z_I k_I 6_I j_I 6_E
+VIZCAYAT v_B i_I z_I k_I 6_I j_I 6_I t_E
+WW d_B a_I b_I 6_I l_I j_I u_I d_I a_I b_I 6_I l_I j_I u_E
+WAG w_B 6_I g_E
+WALA w_B 6_I l_I 6_E
+WALANG w_B 6_I l_I 6_I N_E
+WARNING w_B 6_I r_I n_I i_I N_E
+WE w_B i_E
+WEATHER w_B e_I T_I e_I r_E
+WEBSITE w_B e_I b_I s_I aj_I t_E
+WEEK w_B i_I k_E
+WEEKEND w_B i_I k_I e_I n_I d_E
+WELCOME w_B e_I l_I k_I 6_I m_E
+WELL w_B e_I l_E
+WEST w_B e_I s_I t_E
+WESTERN w_B e_I s_I t_I e_I r_I n_E
+WESTWARD w_B e_I s_I t_I w_I 6_I r_I d_E
+WHICH w_B i_I tS_E
+WIND w_B i_I n_I d_E
+WINDS w_B i_I n_I d_I s_E
+WOW w_B 6_I w_E
+YAN j_B 6_I n_E
+YANG j_B 6_I N_E
+YEAR j_B i_I r_E
+YELLOW j_B e_I l_I ow_E
+YELO j_B e_I l_I o_E
+YES j_B e_I s_E
+YOLANDA j_B o_I l_I 6_I n_I d_I 6_E
+YOLANDANG j_B o_I l_I 6_I n_I d_I 6_I N_E
+YOUTUBE j_B U_I t_I u_I b_E
+YUN j_B U_I n_E
+YUNG j_B U_I N_E
+ZAMBALES z_B 6_I m_I b_I 6_I l_I e_I s_E
+ZAMBOANGA z_B a_I m_I b_I o_I 6_I N_I g_I 6_E
+ZERO z_B i_I r_I o_E
+ZONE z_B ow_I n_E
+<eps> SIL

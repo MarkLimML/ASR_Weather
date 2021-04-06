@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/11/utt2spk scp:data/test/split16/11/cmvn.scp scp:data/test/split16/11/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.11.gz" 
+# Started at Sat Apr  3 00:21:25 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/11/utt2spk scp:data/test/split16/11/cmvn.scp scp:data/test/split16/11/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.11.gz' 
+apply-cmvn --utt2spk=ark:data/test/split16/11/utt2spk scp:data/test/split16/11/cmvn.scp scp:data/test/split16/11/feats.scp ark:- 
+add-deltas ark:- ark:- 
+weather031_014 AT HINDI NAMAN APEKTADO NG BAGYO ANG NA NORTHERN AT CENTRAL LUZON NA MABABA LAMANG ANG TSANSANG UMULAN EH MGA MAHIHINANG PAGULAN DEL ISOLATED DIYAN SA MAY QUEZON AURORA PROVINCES 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_014 is -8.69961 over 986 frames.
+weather031_015 AT SA METRO MANILA MAGIGING MAULAP BUKAS PERO HALOS WALANG ULAN NA INAASAHAN DAHIL MGA KAPUSO MALAYO PO KAYO SA CENTRO NG BAGYO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_015 is -8.60048 over 803 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather031_016 MATAAS NAMAN ANG ALON SA MGA LUGAR NA MAY SIGNAL YUNG MAY KULAY YANG ASUL NA YAN KASAMA NA ANG NA DAVAO ORIENTAL AT OCCIDENTAL NA WALA SIGNAL PERO MALAKAS DIN YUNG INAASAHANG MGA PAGALON JESSICA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_016 is -8.8423 over 1080 frames.
+weather031_017 MANG TANI ITO NA YUNG EPEKTO NG ANG AMIHAN NO YUNG MGA BAGYO AY KIDLAT SA MABABANG PARTE NA NA NA PILIPINAS TUMATAMA YUNG HABAGAT SA MID YUNG MATAAS NGAYON PO PABABA NG PABABA AMIHAN ONE O ONE MANG TANI ANO BANG PAGKAKAIBA NITO AMIHAN SA HABAGAT 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_017 is -9.24582 over 1550 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 8.98867s: real-time factor assuming 100 frames/sec is 0.20341
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.90806 over 4419 frames.
+# Accounting: time=9 threads=1
+# Ended (code 0) at Sat Apr  3 00:21:34 CST 2021, elapsed time 9 seconds

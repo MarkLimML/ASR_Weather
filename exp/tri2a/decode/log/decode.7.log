@@ -1,0 +1,20 @@
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri2a/decode/lat.7.gz" 
+# Started at Sat Apr  3 18:06:42 CST 2021
+#
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri2a/decode/lat.7.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- 
+weather030_014 PATAAS ILANG LALO SA HALOS BUONG LUZON MULA YAN SA MAY AT BATAAN NASA NANDITO SA MAY AH CAGAYAN VALLEY ILOCOS REGION DIYAN SA MAY EASTERN VISAYAS YANG NORTHERN EACH EASTERN SAMAR KASAMA NA ANG EASTERN MINDANAO DAHIL NAMAN PO YAN SA PINAGSANIB EPEKTO NUNG BAGYO AT NG MALAKAS NA AMIHAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_014 is -9.14719 over 1744 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
+weather030_015 MAY BANTA RIN NG STORM SURGE DIYAN SA MGA PROBINSYA NG ISABELA CAGAYAN DIYAN SA MAY AURORA ILOCOS SUR ILOCOS NORTE AT NG INYONG ANG NA POSIBLENG UMABOT NA ANG TATLONG METRO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_015 is -9.36084 over 1159 frames.
+weather030_016 HINDI NAMAN APEKTADO NG BAGYO ANG VISAYAS AT MINDANAO KANYANG KAPUSO AH MALALAKAS NA ULAN DITO SA MAY LUZON LALONG LALO NA SA NORTHERN AT CENTRAL LUZON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_016 is -9.28889 over 924 frames.
+weather030_017 AT YAN ANG LATEST MULA SA GMA WEATHER AKO PO SI NATHANIEL CRUZ MAGPLANO PARA SIGURADO I AM READY SERBISYONG TOTOO NG GMA NEWS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_017 is -9.1604 over 740 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 13.9675s: real-time factor assuming 100 frames/sec is 0.305836
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.23222 over 4567 frames.
+# Accounting: time=16 threads=1
+# Ended (code 0) at Sat Apr  3 18:06:59 CST 2021, elapsed time 16 seconds
