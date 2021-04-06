@@ -20,7 +20,7 @@ with open("lexicon.txt") as f:
 print(ref)
 
 lex = open("lexicon_tmp.txt", "wb")
-lex.write(b"<oov> <oov>\n")
+lex.write(b"<UNK> SPN\n")
 i = 0
 
 with open("words.txt") as f:
