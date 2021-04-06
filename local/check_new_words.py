@@ -24,8 +24,11 @@ lex.write(b"<UNK> SPN\n")
 i = 0
 
 with open("words.txt") as f:
-	with open("nonlex.txt","r") as n:
+	with open("nonlex.txt","w") as n:
 		for line in f:
+			if(i == 0):
+				i += 1
+				continue
 			line = line.strip()
 			if line in ref.keys():
 				for pron in ref[line]:
