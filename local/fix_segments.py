@@ -31,6 +31,7 @@ for x in range(min,max):
             elif(" \n" in line):
                 txt[i] = txt[i].replace(" \n","\n")
                 totalfix+=1
+            f3.writelines(txt[i])
             i+=1
 
 print(sys.argv[0]+":", "checked segments.")

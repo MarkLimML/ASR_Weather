@@ -33,6 +33,7 @@ for x in range(min,max):
             elif(not tmp[1].isupper()):
                 txt[i] = txt[i].upper()
                 totalfix+=1
+            f3.writelines(txt[i])
             i+=1
 
 print(sys.argv[0]+":", "checked segments.")
