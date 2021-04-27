@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
-if(len(sys.argv) < 3):
+if(len(sys.argv) < 4):
     print("usage: local/validate_texts.py <start-num> <end-num> <list-of-skipped-numbers>")
     print("e.g.: local/validate_texts.py 1 30")
     print("validates files numbered 1 to 30")

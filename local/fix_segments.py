@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
-if(len(sys.argv) < 3):
+if(len(sys.argv) < 4):
     print("usage: local/fix_odd_texts.py <start-num> <end-num> <list-of-skipped-numbers>")
     print("e.g.: local/fix_odd_texts.py 1 30 20,30")
     print("fixes segments numbered 1 to 30 and skips 20 and 30")
