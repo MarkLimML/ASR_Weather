@@ -10,6 +10,17 @@ test_size=173 # number of utterances (test set)
 [[ $# -ge 2 ]] && { echo "Wrong arguments!"; exit 1; }
 
 filename=$1
+curdate="$(date '+%m_%d_%Y')"
+tmp=$curdate
+for i in 2 3 4 5 6 7 8 9 10; do
+	if [ -f "exp_log/log_$curdate.txt" ]; then
+		curdate="$tmp"_"$i"
+	else
+		echo "logging to exp_log/log_$curdate"
+		break
+	fi
+done
+
 
 # Removing previously created data (from last run.sh execution)
 #rm -rf exp mfcc data/train/spk2utt data/train/cmvn.scp data/train/feats.scp data/train/split1 data/test/spk2utt data/test/cmvn.scp data/test/feats.scp data/test/split1 data/local/lang data/lang data/local/tmp data/local/dict/lexiconp.txt
@@ -154,4 +165,4 @@ echo
 echo
 echo "===== run.sh script is finished ====="
 echo
-} > exp_log/$filename.txt
+} > exp_log/log_$curdate.txt
