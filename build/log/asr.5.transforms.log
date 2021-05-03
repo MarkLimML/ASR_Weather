@@ -1,0 +1,8 @@
+# set -o pipefail && transform-feats exp/tri4a/final.mat ark:data/dev/splice-feats-tri4a.ark ark:data/dev/splice-transform-feats-tri4a.ark 
+# Started at Tue Apr 27 18:07:50 CST 2021
+#
+transform-feats exp/tri4a/final.mat ark:data/dev/splice-feats-tri4a.ark ark:data/dev/splice-transform-feats-tri4a.ark 
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.1463 over 100070 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 2 utterances; 0 had errors.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Apr 27 18:07:50 CST 2021, elapsed time 0 seconds

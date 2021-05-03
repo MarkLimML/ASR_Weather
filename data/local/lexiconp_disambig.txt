@@ -5,44 +5,76 @@ AALALA	1.0	6_B 6_I l_I a_I l_I a_E
 AALAMIN	1.0	6_B 6_I l_I a_I m_I i_I n_E
 AALAS	1.0	6_B 6_I l_I a_I s_E
 AASAHAN	1.0	6_B 6_I s_I a_I h_I a_I n_E
+ABA'Y	1.0	6_B b_I 6j_E
 ABRA	1.0	6_B b_I r_I a_E
 ABRIL	1.0	6_B b_I r_I i_I l_E
 ABS	1.0	ej_B b_I i_I e_I s_E
 ABS-CBN	1.0	ej_B b_I i_I e_I s_I s_I i_I b_I i_I e_I n_E
 ACCOUNT	1.0	6_B k_I a_I w_I n_I t_E
+ACTIVITY	1.0	6_B k_I t_I i_I b_I i_I t_I j_E
 ACTUALLY	1.0	6_B k_I t_I U_I a_I l_I i_E
 ADMINISTRATIVE	1.0	6_B d_I m_I i_I n_I i_I s_I t_I r_I a_I t_I I_I v_E
+ADN	1.0	ej_B d_I i_I e_I n_E
+ADVANCE	1.0	6_B d_I v_I 6_I n_I s_E
+ADVISORY	1.0	6_B d_I v_I i_I s_I o_I r_I j_E
+AFFECTING	1.0	6_B f_I e_I k_I t_I i_I N_E
+AFTER	1.0	6_B f_I t_I e_I r_E
 AFTERNOON	1.0	6_B f_I t_I e_I r_I n_I U_I n_E
+AGOSTO	1.0	6_B g_I o_I s_I t_I o_E
 AGUSAN	1.0	6_B g_I u_I s_I a_I n_E
 AGWAT	1.0	6_B g_I w_I a_I t_E
-AH	1.0	6_S
+AH	1.0	6_S #1
+AHENSYA	1.0	6_B h_I e_I n_I s_I j_I a_E
+AHH	1.0	6_S #2
+AHM	1.0	6_B m_E
+AILEEN	1.0	6_B i_I l_I i_I n_E
 AIR	1.0	ej_B r_E
+AKAN	1.0	6_B k_I a_I n_E
 AKLAN	1.0	6_B k_I l_I a_I n_E
 AKO	1.0	6_B k_I o_E
 ALA	1.0	6_B l_I a_E
 ALABAT	1.0	6_B l_I a_I b_I a_I t_E
+ALAM	1.0	6_B l_I a_I m_E
 ALAMIN	1.0	6_B l_I a_I m_I i_I n_E
 ALAS	1.0	6_B l_I a_I s_E
+ALASDOSE	1.0	6_B l_I a_I s_I d_I o_I s_I e_E
+ALBAY	1.0	6_B l_I b_I aj_E
+ALDZAR	1.0	6_B l_I d_I z_I 6_I r_E
+ALERTO	1.0	6_B l_I e_I r_I t_I o_E
 ALINSANGAN	1.0	6_B l_I i_I n_I s_I a_I N_I a_I n_E
 ALON	1.0	6_B l_I o_I n_E
+ALRIGHT	1.0	6_B l_I r_I j_I t_E
 AM	1.0	e_B m_E
 AMA	1.0	6_B m_I a_E
+AMBON	1.0	6_B m_I b_I o_I n_E
 AMIHAN	1.0	6_B m_I i_I h_I a_I n_E
+AMING	1.0	6_B m_I i_I N_E
 AN	1.0	6_B n_E
+ANALYSIS	1.0	6_B n_I a_I l_I j_I s_I i_I s_E
 ANC	1.0	ej_B e_I n_I s_I i_E
 AND	1.0	e_B n_I d_E #1
+ANDYAN	1.0	6_B n_I d_I j_I a_I n_E
 ANG	1.0	6_B N_E
 ANGAT	1.0	6_B N_I a_I t_E
+ANIMATION	1.0	6_B n_I i_I m_I 6j_I s_I j_I o_I n_E
 ANO	1.0	6_B n_I o_E
 ANONG	1.0	6_B n_I o_I N_E
+ANTABAYANAN	1.0	6_B n_I t_I 6_I b_I 6_I j_I 6_I n_I a_I n_E
 ANTIQUE	1.0	6_B n_I t_I I_I k_E
 ANUMANG	1.0	6_B n_I u_I m_I a_I N_E
 ANYOS	1.0	6_B n_I j_I o_I s_E
+ANYTIME	1.0	e_B n_I j_I t_I j_I m_E
 APARRI	1.0	6_B p_I a_I r_I i_E
 APAYAO	1.0	6_B p_I 6_I j_I aw_E
 APEKTADO	1.0	6_B p_I e_I k_I t_I a_I d_I o_E
+ARAS	1.0	6_B r_I a_I s_E
 ARAW	1.0	6_B r_I aw_E
+ARAY	1.0	6_B r_I 6j_E
+ARCHIPELAGO	1.0	6_B r_I k_I i_I p_I e_I l_I 6_I g_I o_E
+ARE	1.0	6_B r_E #1
 AREA	1.0	ej_B r_I i_I j_I a_E
+AREAS	1.0	ej_B r_I i_I j_I a_I s_E
+AROUND	1.0	6_B r_I 6_I w_I n_I d_E
 AS	1.0	6_B s_E
 ASAHAN	1.0	6_B s_I 6_I h_I a_I n_E
 ASAHANG	1.0	6_B s_I 6_I h_I a_I N_E
@@ -50,13 +82,17 @@ ASUL	1.0	6_B s_I u_I l_E
 AT	1.0	6_B t_E
 ATIN	1.0	6_B t_I I_I n_E
 ATING	1.0	6_B t_I I_I N_E
+AUGUST	1.0	o_B g_I u_I s_I t_E
+AURING	1.0	6_B w_I r_I i_I N_E
 AURORA	1.0	a_B o_I r_I o_I r_I a_E
 AURORAT	1.0	a_B o_I r_I o_I r_I a_I t_E
+AUTUMNAL	1.0	o_B t_I u_I m_I n_I a_I l_E
 AWAY	1.0	6_B w_I 6j_E
+AWTORIDAD	1.0	6_B w_I t_I o_I r_I i_I d_I a_I d_E
 AXIS	1.0	a_B k_I s_I i_I s_E
 AY	1.0	6j_S
 AYON	1.0	6_B j_I o_I n_E
-B	1.0	b_B i_E
+B	1.0	b_B i_E #1
 BA	1.0	b_B 6_E
 BABA	1.0	b_B 6_I b_I 6_E
 BABALA	1.0	b_B 6_I b_I 6_I l_I a_E
@@ -73,20 +109,32 @@ BAGYONG	1.0	b_B 6_I g_I j_I o_I N_E
 BAHA	1.0	b_B 6_I h_I a_E
 BAHAGI	1.0	b_B 6_I h_I a_I g_I i_E
 BAHAGING	1.0	b_B 6_I h_I a_I g_I i_I N_E
+BAHAGYA	1.0	b_B 6_I h_I a_I g_I j_I a_E
 BAHAGYANG	1.0	b_B 6_I h_I a_I g_I j_I a_I N_E
+BAHAIN	1.0	b_B 6_I h_I a_I i_I n_E
 BAHAY	1.0	b_B 6_I h_I 6j_E
+BAKA	1.0	b_B 6_I k_I a_E
+BAKASYUNAN	1.0	b_B a_I k_I a_I s_I j_I u_I n_I a_I n_E
 BAKIT	1.0	b_B 6_I k_I i_I t_E
 BALER	1.0	b_B 6_I l_I e_I r_E
+BALIK	1.0	b_B 6_I l_I i_I k_E
+BALIKAN	1.0	b_B 6_I l_I i_I k_I a_I n_E
 BALITA	1.0	b_B 6_I l_I i_I t_I a_E
+BANDA	1.0	b_B 6_I n_I d_I a_E
+BANDANG	1.0	b_B 6_I n_I d_I a_I N_E
 BANG	1.0	b_B a_I N_E
 BANGKA	1.0	b_B 6_I N_I k_I a_E
 BANGSAMORO	1.0	b_B 6_I N_I s_I a_I m_I o_I r_I o_E
 BANSA	1.0	b_B 6_I n_I s_I a_E
+BANSA'Y	1.0	b_B 6_I n_I s_I aj_E
 BANTA	1.0	b_B 6_I n_I t_I a_E
+BARANGAY	1.0	b_B 6_I r_I 6_I N_I g_I aj_E
 BARMM	1.0	b_B 6_I r_I m_E
 BASA	1.0	b_B 6_I s_I a_E
 BASCO	1.0	b_B 6_I s_I k_I o_E
 BASE	1.0	b_B ej_I s_E
+BASIN	1.0	b_B ej_I s_I i_I n_E
+BASURA	1.0	b_B 6_I s_I u_I r_I a_E
 BATAAN	1.0	b_B 6_I t_I a_I a_I n_E
 BATANES	1.0	b_B 6_I t_I a_I n_I e_I s_E
 BATANGAS	1.0	b_B 6_I t_I a_I N_I g_I 6_I s_E
@@ -94,29 +142,43 @@ BATAY	1.0	b_B 6_I t_I 6j_E
 BAWAL	1.0	b_B 6_I w_I 6_I l_E
 BAWAT	1.0	b_B 6_I w_I a_I t_E
 BAY	1.0	b_B ej_E
+BA'Y	1.0	b_B aj_E #1
 BAYBAYIN	1.0	b_B 6j_I b_I 6j_I i_I n_E
 BAYBAYING	1.0	b_B 6j_I b_I 6j_I i_I N_E
 BAYONG	1.0	b_B 6_I j_I o_I N_E
-BENGUET	1.0	b_B E_I n_I g_I V_I e_I t_E
-BENISON	1.0	b_B E_I n_I i_I s_I o_I n_E
+BE	1.0	b_B i_E #2
+BEEN	1.0	b_B i_I n_E
+BEFORE	1.0	b_B i_I f_I o_I r_E
+BENGUET	1.0	b_B e_I n_I g_I e_I t_E
+BENISON	1.0	b_B e_I n_I i_I s_I o_I n_E
+BENNY	1.0	b_B e_I n_I i_E
 BENTE	1.0	b_B e_I n_I t_I e_E
 BERNADETTE	1.0	b_B e_I r_I n_I a_I d_I e_I t_E
+BETWEEN	1.0	b_B e_I t_I w_I i_I n_E
 BHAGYA	1.0	b_B 6_I g_I j_I a_E
 BICOL	1.0	b_B i_I k_I o_I l_E #1
-BIGLAANG	1.0	b_B i_I k_I l_I 6_I a_I N_E
-BIGLANG	1.0	b_B i_I k_I l_I 6_I N_E
+BIGLA	1.0	b_B i_I g_I l_I a_E
+BIGLAANG	1.0	b_B i_I g_I l_I 6_I a_I N_E
+BIGLANG	1.0	b_B i_I g_I l_I 6_I N_E
 BIKOL	1.0	b_B i_I k_I o_I l_E #2
 BIKTIMA	1.0	b_B i_I k_I t_I i_I m_I a_E
+BILANG	1.0	b_B i_I l_I 6_I N_E
 BILIRAN	1.0	b_B i_I l_I i_I r_I a_I n_E
 BILIS	1.0	b_B i_I l_I i_I s_E
 BINABANTAYAN	1.0	b_B i_I n_I a_I b_I 6_I n_I t_I a_I j_I a_I n_E
 BINABANTAYANG	1.0	b_B i_I n_I a_I b_I 6_I n_I t_I a_I j_I a_I N_E
+BINANGGIT	1.0	b_B i_I n_I a_I N_I g_I i_I t_E
+BINANTAYAN	1.0	b_B i_I n_I a_I n_I t_I a_I j_I a_I n_E
 BINATAYAN	1.0	b_B i_I n_I a_I t_I 6_I j_I a_I n_E
 BINATILYO	1.0	b_B i_I n_I a_I t_I i_I l_I j_I o_E
+BINIGYAN	1.0	b_B i_I n_I i_I g_I j_I a_I n_E
 BISITAHIN	1.0	b_B i_I s_I i_I t_I a_I h_I i_I n_E
 BIYERNES	1.0	b_B i_I r_I n_I e_I s_E
+BLUE	1.0	b_B l_I u_E
+BOARDS	1.0	b_B o_I r_I d_I s_E
 BOHOL	1.0	b_B o_I h_I o_I l_E
 BORACAY	1.0	b_B o_I r_I a_I k_I aj_E
+BORONGAN	1.0	b_B o_I r_I o_I N_I a_I n_E
 BOUNDARY	1.0	b_B aw_I n_I d_I e_I r_I i_E
 BREAK	1.0	b_B r_I ej_I k_E
 BUBONG	1.0	b_B u_I b_I o_I N_E
@@ -131,54 +193,86 @@ BUKAS	1.0	b_B u_I k_I a_I s_E
 BUKIDNON	1.0	b_B u_I k_I i_I t_I n_I o_I n_E
 BULACAN	1.0	b_B u_I l_I 6_I k_I a_I n_E
 BULLETIN	1.0	b_B u_I l_I i_I t_I i_I n_E
+BULUBUNDUKIN	1.0	b_B u_I l_I u_I b_I u_I n_I d_I u_I k_I i_I n_E
 BUMABA	1.0	b_B u_I m_I 6_I b_I a_E
+BUMAGAL	1.0	b_B u_I m_I 6_I g_I a_I l_E
 BUMAGSAK	1.0	b_B u_I m_I 6_I s_I a_I k_E
 BUMILIS	1.0	b_B u_I m_I i_I l_I i_I s_E
 BUNDOK	1.0	b_B u_I n_I d_I o_I k_E
+BUNG	1.0	b_B u_I N_E
+BUNOT	1.0	b_B u_I n_I o_I t_E
 BUNTOT	1.0	b_B u_I n_I t_I o_I t_E
 BUONG	1.0	b_B u_I o_I N_E
+BURIAS	1.0	b_B u_I r_I i_I a_I s_E
+BUT	1.0	b_B u_I t_E
 BUWAN	1.0	b_B u_I w_I 6_I n_E
+BY	1.0	b_B aj_E #2
 CABANATUAN	1.0	k_B 6_I b_I 6_I n_I 6_I t_I u_I 6_I n_E
-CACAUSE	1.0	c_B ow_I c_I ow_I s_E
+CACAUSE	1.0	k_B ow_I k_I ow_I s_E
 CAGAYAN	1.0	k_B 6_I g_I 6_I j_I a_I n_E
 CALABARZON	1.0	k_B 6_I l_I 6_I b_I 6_I r_I s_I o_I n_E
+CALAMIAN	1.0	k_B 6_I l_I 6_I m_I i_I a_I n_E
 CALAPAN	1.0	k_B 6_I l_I 6_I p_I a_I n_E
-CALAYAN	1.0	k_B 6_I l_I 6_I j_I a_I n_E
+CALAYAN	1.0	k_B 6_I l_I 6_I j_I a_I n_E #1
+CAMANAVA	1.0	k_B 6_I m_I 6_I n_I 6_I v_I 6_E
 CAMARINES	1.0	k_B 6_I m_I 6_I r_I i_I n_I e_I s_E
 CAMIGUIN	1.0	k_B 6_I m_I i_I g_I u_I i_I n_E
 CAMP	1.0	k_B 6_I m_I p_E
+CAN	1.0	k_B 6_I n_E
 CAPIZ	1.0	k_B 6_I p_I i_I s_E
 CARAGA	1.0	k_B 6_I r_I 6_I g_I 6_E
+CASE	1.0	k_B ej_I s_E
+CASES	1.0	k_B ej_I s_I e_I s_E
 CASIGURAN	1.0	k_B 6_I s_I i_I g_I u_I r_I a_I n_E
 CATANDUANES	1.0	k_B 6_I t_I a_I n_I d_I u_I 6_I n_I e_I s_E
+CATARMAN	1.0	k_B 6_I t_I 6_I r_I m_I a_I n_E #1
 CATBALOGAN	1.0	k_B 6_I t_I b_I 6_I l_I o_I g_I a_I n_E
 CATEGORY	1.0	l_B 6_I t_I e_I g_I o_I r_I i_E
-CAUSE	1.0	c_B ow_I s_E
+CAUSE	1.0	k_B ow_I s_E
 CAVITE	1.0	k_B a_I v_I i_I t_I e_E
 CBN	1.0	s_B i_I b_I i_I e_I n_E
 CEBU	1.0	s_B e_I b_I u_E
-CELSIUS	1.0	s_B e_I l_I s_I i_I u_I s_E
+CELCIUS	1.0	s_B e_I l_I s_I i_I u_I s_E #1
+CELSIUS	1.0	s_B e_I l_I s_I i_I u_I s_E #2
 CENTER	1.0	s_B e_I n_I t_I e_I r_E
 CENTRAL	1.0	s_B e_I n_I t_I r_I a_I l_E
-CENTRO	1.0	s_B e_I n_I t_I r_I o_E
+CENTRO	1.0	s_B e_I n_I t_I r_I o_E #1
 CHANCE	1.0	tS_B a_I n_I S_E
+CHANNEL	1.0	t_B s_I 6_I n_I e_I l_E
+CHANSA	1.0	t_B s_I 6_I n_I s_I a_E
+CHANSANG	1.0	t_B s_I 6_I n_I s_I a_I N_E
+CHINESE	1.0	t_B s_I i_I n_I i_I s_E
+CHRIS	1.0	k_B r_I i_I s_E #1
 CI	1.0	S_S
+CIMARON	1.0	S_B m_I 6_I r_I o_I n_E
 CITIES	1.0	S_B t_I i_I e_I S_E
 CITY	1.0	S_B t_I i_E
+CLARK	1.0	k_B l_I a_I r_I k_E
 CLOSE	1.0	k_B l_I o_I s_E
+CLOUDINESS	1.0	k_B l_I ow_I d_I i_I n_I e_I s_E
 COAST	1.0	k_B o_I a_I s_I t_E
+COASTAL	1.0	k_B o_I s_I t_I 6_I l_E
 COLD	1.0	k_B o_I l_I d_E
 COM	1.0	k_B o_I m_E
 COMPANY	1.0	k_B o_I m_I p_I a_I n_I i_E
+COMPARED	1.0	k_B o_I m_I p_I e_I r_I d_E
 COMPOSTELA	1.0	k_B o_I m_I p_I o_I s_I t_I e_I l_I 6_E
+COMPOSTELLA	1.0	k_B o_I m_I p_I o_I s_I t_I e_I l_I a_E
+CONCREAT	1.0	k_B o_I n_I k_I r_I i_I t_E
 CONDITION	1.0	k_B o_I n_I d_I i_I S_I o_I n_E
-CONVERGENCE	1.0	k_B o_I n_I v_I e_I r_I g_I e_I n_I c_I e_E
+CONTINUOUS	1.0	k_B o_I n_I t_I n_I i_I u_I s_E
+CONVERGENCE	1.0	k_B o_I n_I v_I e_I r_I g_I e_I n_I s_E
 COOL	1.0	k_B U_I l_E
 CORDILLERA	1.0	k_B o_I r_I d_I i_I l_I e_I r_I a_E
+CORY	1.0	k_B o_I r_I i_E #1
 COTABATO	1.0	k_B o_I t_I 6_I b_I 6_I t_I o_E
 COUNTRY	1.0	k_B aw_I n_I t_I r_I i_E
 CRUZ	1.0	k_B r_I u_I z_E
+CURRENT	1.0	k_B u_I r_I e_I n_I t_E
+CUYO	1.0	k_B u_I j_I o_E
 CYCLONE	1.0	s_B 6j_I k_I l_I o_I n_E
+CYCLONES	1.0	s_B 6j_I k_I l_I o_I n_I s_E
+D	1.0	d_B i_E #1
 DA	1.0	d_B 6_E
 DAAN	1.0	d_B 6_I a_I n_E
 DAANG	1.0	d_B 6_I a_I N_E
@@ -189,59 +283,91 @@ DAGAT	1.0	d_B 6_I g_I 6_I t_E
 DAGUPAN	1.0	d_B 6_I g_I u_I p_I a_I n_E
 DAHIL	1.0	d_B 6_I h_I i_I l_E
 DAHILAN	1.0	d_B 6_I h_I i_I l_I a_I n_E
+DAKO	1.0	d_B 6_I k_I o_E
+DAKONG	1.0	d_B 6_I k_I o_I N_E
 DALA	1.0	d_B 6_I l_I a_E
 DALANG	1.0	d_B 6_I l_I a_I N_E
+DALAWA	1.0	d_B 6_I l_I 6_I w_I a_E
 DALAWANG	1.0	d_B 6_I l_I a_I w_I a_I N_E
+DALUYONG	1.0	d_B 6_I l_I u_I j_I o_I N_E
 DAM	1.0	d_B 6_I m_E
-DAMANG	1.0	d_B 6_I m_I a_I N_E
 DAMA	1.0	d_B 6_I m_I 6_E
+DAMAGES	1.0	d_B 6_I m_I ej_I dZ_I e_I s_E
+DAMAGING	1.0	d_B 6_I m_I ej_I dZ_I i_I N_E
+DAMANG	1.0	d_B 6_I m_I a_I N_E
+DAMAY	1.0	d_B 6_I m_I aj_E
 DAMI	1.0	d_B 6_I m_I i_E
 DAPAT	1.0	d_B 6_I p_I a_I t_E
 DAPITAN	1.0	d_B 6_I p_I i_I t_I a_I n_E
 DARANAS	1.0	d_B 6_I r_I 6_I n_I a_I s_E
 DARATING	1.0	d_B 6_I r_I 6_I t_I i_I N_E
 DASH	1.0	d_B a_I S_E
+DATE	1.0	d_B ej_I t_E
 DATI	1.0	d_B a_I t_I i_E
 DATING	1.0	d_B 6_I t_I i_I N_E
 DATOS	1.0	d_B a_I t_I o_I s_E
 DAVAO	1.0	d_B a_I v_I aw_E
 DAW	1.0	d_B 6w_E
+DAY	1.0	d_B ej_E
+DE	1.0	d_B i_E #2
+DEAN	1.0	d_B i_I n_E #1
 DECEMBER	1.0	d_B e_I s_I e_I m_I b_I e_I r_E
 DEFINITELY	1.0	d_B e_I f_I i_I n_I i_I t_I l_I i_E
+DEGREE	1.0	d_B e_I g_I r_I i_E
 DEGREES	1.0	d_B e_I g_I r_I i_I s_E
 DEL	1.0	d_B e_I l_E
 DELA	1.0	d_B e_I l_I a_E
+DELAY	1.0	d_B i_I l_I ej_E
+DELAYED	1.0	d_B i_I l_I ej_I d_E
 DELIKADO	1.0	d_B e_I l_I i_I k_I a_I d_I o_E
 DENR	1.0	d_B i_I e_I e_I n_I a_I r_E
+DEPARTMENT	1.0	d_B e_I p_I 6_I r_I t_I m_I e_I n_I t_E
 DEPRESSION	1.0	d_B e_I p_I r_I e_I S_I o_I n_E
-DI	1.0	d_B i_E
+DETALYE	1.0	d_B e_I t_I 6_I l_I j_I e_E
+DEVELOPMENT	1.0	d_B e_I v_I e_I l_I o_I p_I m_I e_I n_I t_E
+DI	1.0	d_B i_E #3
 DIFFERENCE	1.0	d_B i_I f_I e_I r_I e_I n_I s_E
 DILAW	1.0	d_B i_I l_I aw_E
-DIN	1.0	d_B i_I n_E
+DIN	1.0	d_B i_I n_E #2
 DINAGAT	1.0	d_B i_I n_I a_I g_I 6_I t_E
 DING	1.0	d_B i_I N_E
 DIRECTION	1.0	d_B i_I r_I e_I k_I s_I i_I o_I n_E
+DIRECTLY	1.0	d_B i_I r_I e_I k_I t_I l_I j_E
+DIREKSYON	1.0	d_B i_I r_I e_I k_I s_I j_I o_I n_E
+DIREKSYONG	1.0	d_B i_I r_I e_I k_I s_I j_I o_I N_E
+DIREKTANG	1.0	d_B i_I r_I e_I k_I t_I 6_I N_E
+DISTANCE	1.0	d_B i_I s_I t_I 6_I n_I s_E
+DITA	1.0	d_B i_I t_I a_E
 DITO	1.0	d_B i_I t_I o_E
+DIYAAN	1.0	d_B i_I j_I 6_I a_I n_E
 DIYAN	1.0	d_B i_I a_I n_E
-DIYES	1.0	d_B j_I e_I s_E
-DOBLE	1.0	d_B o_I b_I l_I e_E
+DIYES	1.0	d_B j_I e_I s_E #1
+DOBLE	1.0	d_B o_I b_I l_I e_E #1
 DOBLENG	1.0	d_B o_I b_I l_I e_I N_E
 DOBOL	1.0	d_B o_I b_I o_I l_E
 DOON	1.0	d_B o_I o_I n_E
 DOS	1.0	d_B o_I s_E
 DOST	1.0	d_B i_I ow_I e_I s_I t_I i_E
 DOT	1.0	d_B i_I ow_I t_I i_E
+DOUBLE	1.0	d_B o_I b_I l_I e_E #2
+DOWN	1.0	d_B o_I w_I n_E
 DROUGHT	1.0	d_B r_I aw_I t_E
 DRY	1.0	d_B r_I aj_E
 DULONG	1.0	d_B u_I l_I o_I N_E
 DULOT	1.0	d_B u_I l_I o_I t_E
 DUMAAN	1.0	d_B V_I m_I a_I 6_I n_E
-DUMAGUETE	1.0	d_B u_I m_I a_I g_I e_I t_I E_E
+DUMAGUETE	1.0	d_B u_I m_I a_I g_I e_I t_I e_E
 DUMAKO	1.0	d_B u_I m_I a_I k_I o_E
+DUN	1.0	d_B u_I n_E
+DURING	1.0	d_B u_I r_I i_I N_E
+DYAN	1.0	d_B j_I a_I n_E
+DYES	1.0	d_B j_I e_I s_E #2
+DYKE	1.0	d_B j_I k_E
 DZ	1.0	d_B i_I z_I i_E
 DZMM	1.0	d_B i_I z_I i_I e_I m_I e_I m_E
 E	1.0	i_S #1
 EACH	1.0	i_B t_I s_E
+EARLY	1.0	e_B r_I l_I j_E
 EAST	1.0	i_B S_I t_E
 EASTER	1.0	i_B S_I t_I e_I r_E
 EASTERLIES	1.0	i_B S_I t_I e_I r_I l_I i_I s_E
@@ -257,119 +383,188 @@ EL	1.0	e_B l_E
 ELEVEN	1.0	I_B l_I e_I v_I n_E
 END	1.0	e_B n_I d_E #2
 ENERGY	1.0	e_B n_I e_I r_I dZ_I i_E
+ENHANCING	1.0	e_B n_I h_I 6_I n_I s_I i_I N_E
 EPEKTO	1.0	e_B p_I e_I k_I t_I o_E
-ESCOLIAR	1.0	e_B s_I k_I o_I l_I j_I a_I r_E
+EPEKTONG	1.0	e_B p_I e_I k_I t_I o_I N_E
+EQUINOX	1.0	e_B k_I w_I i_I n_I o_I k_I s_E
+ESCOLIAR	1.0	e_B s_I k_I o_I l_I j_I a_I r_E #1
+ESCOLYAR	1.0	e_B s_I k_I o_I l_I j_I a_I r_E #2
+ESPECIFICALLY	1.0	e_B s_I p_I e_I s_I i_I f_I i_I k_I 6_I l_I j_E
 ESTAREJA	1.0	e_B s_I t_I a_I r_I e_I h_I 6_E
 ETO	1.0	e_B t_I o_E
+ETONG	1.0	e_B t_I o_I N_E
 EUROPEAN	1.0	j_B U_I r_I o_I p_I I_I a_I n_E
-EVACUATE	1.0	I_B v_I {_I k_I j_I u_I ej_I t_E
+EVACUATE	1.0	I_B v_I 6_I k_I j_I u_I ej_I t_E
 EVENING	1.0	I_B v_I n_I i_I N_E
-EXCEPT	1.0	I_B k_I s_I e_I p_I t_E
+EXACT	1.0	e_B k_I s_I a_I t_E
+EXCEPT	1.0	e_B k_I s_I e_I p_I t_E
+EXIT	1.0	e_B k_I s_I i_I t_E
+EXPECT	1.0	e_B k_I s_I p_I e_I k_E
 EXTENSION	1.0	I_B k_I s_I t_I e_I n_I S_I o_I n_E
 EXTREME	1.0	I_B k_I s_I t_I r_I i_I m_E
+EYE	1.0	e_B j_E
+EYEWALL	1.0	e_B j_I w_I 6_I l_E
 FACEBOOK	1.0	f_B ej_I s_I b_I U_I k_E
 FACTOR	1.0	f_B {_I k_I t_I o_I r_E
 FAIR	1.0	f_B @_I r_E
-FAIRWEATHER	1.0	F_B @_I r_I w_I i_I D_I e_I r_E
+FAIRWEATHER	1.0	f_B e_I r_I w_I i_I D_I e_I r_E
+FALCON	1.0	f_B 6_I l_I k_I o_I n_E
 FAR	1.0	f_B a_I r_E
 FEBRUARY	1.0	f_B e_I b_I w_I a_I r_I i_E
+FIESTA	1.0	f_B i_I e_I s_I t_I a_E
 FIFTEEN	1.0	f_B I_I f_I t_I i_I n_E
 FIFTY	1.0	f_B I_I f_I t_I I_E
+FINALLY	1.0	f_B i_I n_I 6_I l_I j_E
+FIRST	1.0	f_B e_I r_I s_I t_E
 FIVE	1.0	f_B aj_I v_E
-FLASH	1.0	f_B l_I {_I S_E
+FLASH	1.0	f_B l_I a_I S_E
+FLASHFLOODS	1.0	f_B l_I a_I S_I f_I l_I a_I d_I s_E
 FLOOD	1.0	f_B l_I V_I d_E
 FLOODING	1.0	f_B l_I V_I d_I I_I N_E
+FLOODS	1.0	f_B l_I V_I d_I s_E
 FOLLOW	1.0	f_B a_I l_I ow_E
+FONT	1.0	f_B o_I n_I t_E
 FOR	1.0	f_B o_I r_E #1
 FORECAST	1.0	f_B o_I r_I k_I a_I s_I t_E
 FORECASTER	1.0	f_B o_I r_I k_I a_I s_I t_I e_I r_E
 FORECASTING	1.0	f_B o_I r_I k_I a_I s_I t_I I_I N_E
+FORMERLY	1.0	f_B o_I r_I m_I e_I r_I l_I j_E
 FORTICH	1.0	f_B o_I r_I i_I tS_E
 FORTY	1.0	f_B o_I r_I t_I i_E
+FORTY-ONE	1.0	f_B o_I r_I t_I j_I o_I n_I e_E
 FOUR	1.0	f_B o_I r_E #2
 FOURTEEN	1.0	f_B o_I r_I t_I i_I n_E
+FOURTY	1.0	f_B o_I r_I t_I j_E
+FOUT	1.0	f_B o_I u_I t_E
 FROM	1.0	f_B r_I o_I m_E
 FRONT	1.0	f_B r_I V_I n_I t_E
+FULL	1.0	f_B u_I l_E
 GAANO	1.0	g_B a_I 6_I n_I o_E
 GABI	1.0	g_B 6_I b_I i_E
+GAGANDA	1.0	g_B 6_I g_I 6_I n_I d_I a_E
 GAIN	1.0	g_B ej_I n_E
+GALAW	1.0	g_B 6_I l_I a_I w_E
 GALE	1.0	g_B ej_I l_E
 GALING	1.0	g_B 6_I l_I I_I N_E
+GAMES	1.0	g_B ej_I m_I s_E
 GANAP	1.0	g_B 6_I n_I a_I p_E
+GANITO	1.0	g_B 6_I n_I i_I t_I o_E
 GANITONG	1.0	g_B a_I n_I i_I t_I o_I N_E
+GANON	1.0	g_B 6_I n_I o_I n_E
 GANUN	1.0	g_B a_I n_I u_I n_E
 GANUNG	1.0	g_B a_I n_I u_I N_E
 GANYAN	1.0	g_B 6_I n_I j_I a_I n_E
 GANYANG	1.0	g_B 6_I n_I j_I a_I N_E
+GARDEN	1.0	g_B 6_I r_I d_I e_I n_E
 GAYA	1.0	g_B 6_I j_I 6_E
+GAYUN	1.0	g_B 6_I j_I u_I n_E
 GAYUNDIN	1.0	g_B 6_I j_I u_I n_I d_I i_I n_E
 GENERAL	1.0	dZ_B e_I n_I e_I r_I a_I l_E
 GENERALLY	1.0	dZ_B e_I n_I e_I r_I a_I l_I i_E
 GEOHAZARD	1.0	dZ_B @_I U_I h_I {_I z_I a_I r_I d_E
+GILID	1.0	g_B i_I l_I i_I d_E
 GINAGANAP	1.0	g_B i_I n_I a_I g_I 6_I n_I a_I p_E
 GINAGAWA	1.0	g_B i_I n_I a_I g_I 6_I w_I a_E
 GINOONG	1.0	g_B i_I n_I o_I o_I N_E
 GITNA	1.0	g_B i_I t_I n_I a_E
+GITNANG	1.0	g_B i_I t_I n_I 6_I N_E
 GIWAN	1.0	g_B i_I w_I a_I n_E
 GLAIZA	1.0	g_B l_I aj_I z_I a_E
+GLAYSA	1.0	g_B l_I 6_I j_I s_I a_E
+GLENDA	1.0	g_B l_I e_I n_I d_I a_E
+GLYSA	1.0	g_B l_I j_I s_I a_E
 GMA	1.0	dZ_B i_I e_I m_I ej_E
 GOOD	1.0	g_B u_I d_E
 GOV	1.0	g_B o_I v_E
+GRABE	1.0	g_B r_I 6_I b_I e_E
+GRADUAL	1.0	g_B r_I 6_I d_I w_I 6_I l_E
+GRANDE	1.0	g_B r_I 6_I n_I d_I e_E
 GREEN	1.0	g_B r_I i_I n_E
 GROUP	1.0	g_B r_I U_I p_E
 GROUPS	1.0	g_B r_I U_I p_I s_E
 GUARD	1.0	g_B a_I r_I d_E
+GUHO	1.0	g_B u_I h_I o_E
+GUIMARAS	1.0	g_B i_I m_I 6_I r_I 6_I s_E
 GUMAGAMIT	1.0	g_B u_I m_I a_I g_I 6_I m_I i_I t_E
 GUMAMIT	1.0	g_B u_I m_I a_I m_I i_I t_E
+GUMUHO	1.0	g_B u_I m_I u_I h_I o_E
 GUSTINESS	1.0	g_B u_I s_I t_I i_I n_I e_I s_E
+GUSTO	1.0	g_B u_I s_I t_I o_E
+H	1.0	ej_B tS_E
 HA	1.0	h_B a_E
+HABA	1.0	h_B 6_I b_I a_E
 HABAGAT	1.0	h_B a_I b_I 6_I g_I a_I t_E
 HABANG	1.0	h_B a_I b_I 6_I N_E
+HAHARAPIN	1.0	h_B 6_I h_I 6_I r_I 6_I p_I i_I n_E
 HAHATAKIN	1.0	h_B a_I h_I a_I t_I a_I k_I i_I n_E
 HAILSTORM	1.0	h_B ej_I l_I s_I t_I o_I r_I m_E
+HALF	1.0	h_B 6_I f_E
+HALIMBAWA	1.0	h_B 6_I l_I i_I m_I b_I 6_I w_I a_E
 HALOS	1.0	h_B a_I l_I o_I s_E
 HAMOG	1.0	h_B a_I m_I o_I g_E
+HAMPAS	1.0	h_B 6_I m_I p_I a_I s_E
+HANDA	1.0	h_B 6_I n_I d_I a_E
+HANGAING	1.0	h_B 6_I N_I 6_I i_I N_E
 HANGGANG	1.0	h_B a_I N_I g_I a_I N_E
+HANGGAT	1.0	h_B 6_I N_I g_I a_I t_E
 HANGIN	1.0	h_B a_I N_I i_I n_E
 HANGING	1.0	h_B a_I N_I i_I N_E
 HAPON	1.0	h_B a_I p_I o_I n_E
 HAPONG	1.0	h_B a_I p_I o_I N_E
-HAPPY	1.0	h_B {_I p_I j_E
+HAPPY	1.0	h_B 6_I p_I j_E
 HATAKIN	1.0	h_B 6_I t_I 6_I k_I i_I n_E
-HAVE	1.0	h_B {_I v_E
+HAVE	1.0	h_B 6_I v_E
+HAZARD	1.0	h_B 6_I z_I a_I r_I d_E
 HEADLIGHT	1.0	h_B e_I d_I l_I j_I t_E
 HEAT	1.0	h_B i_I t_E
 HEAVY	1.0	h_B e_I v_I j_E
+HELEN	1.0	h_B e_I l_I e_I n_E
+HELLO	1.0	h_B e_I l_I o_E
 HIGHLY	1.0	h_B j_I l_I j_E
+HIGHWAY	1.0	h_B i_I w_I ej_E
+HIGIT	1.0	h_B i_I g_I i_I t_E
 HIHIGUPIN	1.0	h_B i_I h_I i_I g_I u_I p_I i_I n_E
 HIHINA	1.0	h_B i_I h_I i_I n_I a_E
-HILAGANG	1.0	h_B i_I l_I 6_I g_I 6_I N_E
 HILAGA	1.0	h_B i_I l_I 6_I g_I a_E
+HILAGANG	1.0	h_B i_I l_I 6_I g_I 6_I N_E
 HIMAWARI	1.0	h_B i_I m_I 6_I w_I 6_I r_I i_E
+HINA	1.0	h_B i_I n_I a_E
 HINAHATAK	1.0	h_B i_I n_I 6_I h_I 6_I t_I 6_I k_E
+HINAHAYAAN	1.0	h_B i_I n_I 6_I h_I 6_I j_I 6_I a_I n_E
 HINATUAN	1.0	h_B i_I n_I 6_I t_I u_I 6_I n_E
 HINDI	1.0	h_B i_I n_I d_I i_E
 HIRIT	1.0	h_B i_I r_I i_I t_E
 HISTORY	1.0	h_B i_I s_I t_I o_I r_I i_E
 HO	1.0	h_B o_E
+HOPEFULLY	1.0	h_B o_I u_I p_I f_I u_I l_I j_E
 HOUR	1.0	a_B r_E
+HOURS	1.0	6_B o_I r_I s_E
 HULI	1.0	h_B u_I l_I i_E
 HULING	1.0	h_B u_I l_I i_I N_E
+HUMAHABA	1.0	h_B u_I m_I 6_I h_I 6_I b_I a_E
 HUMAHARANG	1.0	h_B u_I m_I 6_I h_I 6_I r_I a_I N_E
+HUMANAP	1.0	h_B u_I m_I 6_I n_I a_I p_E
 HUMIHINA	1.0	h_B u_I m_I i_I h_I i_I n_I a_E
 HUMIHINGA	1.0	h_B u_I m_I i_I h_I i_I N_I a_E
+HUMINA	1.0	h_B u_I m_I i_I n_I a_E
 HUNDRED	1.0	h_B u_I n_I d_I r_I e_I d_E
+HUNDRES	1.0	h_B u_I n_I d_I r_I e_I s_E
+HUNYO	1.0	h_B u_I n_I j_I o_E
 HUWEBES	1.0	h_B u_I w_I e_I b_I e_I s_E
 I	1.0	aj_S
 I	1.0	i_S #2
 IBA	1.0	i_B b_I 6_E
+IBABANG	1.0	i_B b_I 6_I b_I 6_I N_E
+IBANDILA	1.0	i_B b_I 6_I n_I d_I i_I l_I a_E
+IBANG	1.0	i_B b_I 6_I N_E
+IBAT	1.0	i_B b_I 6_I t_E
 IBA'T	1.0	i_B b_I a_I t_E
 IBA'T-IBANG	1.0	i_B b_I a_I t_I i_I b_I a_I N_E
-IBABANG	1.0	i_B b_I 6_I b_I 6_I N_E
-IBANG	1.0	i_B b_I 6_I N_E
+IBIBIGAY	1.0	i_B b_I i_I b_I i_I g_I aj_E
 IBIG	1.0	i_B b_I i_I k_E
 IDENTIFIED	1.0	i_B d_I e_I n_I t_I i_I f_I aj_I d_E
 IEXPLAIN	1.0	i_B e_I k_I s_I p_I l_I ej_I n_E
+IFOLLOW	1.0	i_B f_I o_I l_I o_I w_E
 IFUGAO	1.0	i_B f_I u_I g_I a_I o_E
 IGNACIO	1.0	i_B g_I n_I a_I s_I i_I o_E
 IINGAT	1.0	i_B i_I N_I 6_I t_E
@@ -378,44 +573,77 @@ IKALAWA	1.0	i_B k_I 6_I l_I 6_I w_I a_E
 IKALAWANG	1.0	i_B k_I 6_I l_I 6_I w_I a_I N_E
 IKATLO	1.0	i_B k_I a_I t_I l_I o_E
 IKOCLOSE	1.0	i_B k_I o_I k_I l_I o_I s_E
+ILAGANG	1.0	i_B l_I 6_I g_I a_I N_E
 ILALIM	1.0	i_B l_I a_I l_I i_I m_E
 ILAN	1.0	i_B l_I 6_I n_E
 ILANG	1.0	i_B l_I 6_I N_E
 ILIGAN	1.0	i_B l_I i_I g_I a_I n_E
+ILIKE	1.0	i_B l_I j_I k_E
 ILOCOS	1.0	i_B l_I o_I k_I o_I s_E
+ILOG	1.0	i_B l_I o_I g_E
 ILOILO	1.0	i_B l_I o_I i_I l_I o_E
 IMAGE	1.0	i_B m_I ej_I tS_E
 IMEDIA	1.0	i_B m_I e_I d_I j_I a_E
 IMPORMASYON	1.0	i_B m_I p_I o_I r_I m_I 6_I S_I o_I n_E
+IMPROVING	1.0	i_B m_I p_I r_I u_I v_I i_I N_E
 IN	1.0	i_B n_E
 INA	1.0	i_B n_I a_E
 INAASAHAN	1.0	i_B n_I a_I 6_I s_I 6_I h_I a_I n_E
 INAASAHANG	1.0	i_B n_I a_I 6_I s_I 6_I h_I a_I N_E
+INCLUDING	1.0	i_B n_I k_I l_I u_I d_I i_I N_E
 INDEX	1.0	i_B n_I d_I e_I k_I s_E
+INDIKASYON	1.0	i_B n_I d_I i_I k_I 6_I s_I j_I o_I n_E
+INEESTIMATE	1.0	i_B n_I e_I e_I s_I t_I i_I m_I ej_I t_E
 INFANTA	1.0	i_B n_I f_I a_I n_I t_I 6_E
 INGAT	1.0	i_B N_I a_I t_E
 INGATAN	1.0	i_B N_I 6_I t_I a_I n_E
 INIT	1.0	i_B n_I i_I t_E
+INOM	1.0	i_B n_I o_I m_E
+INS	1.0	i_B n_I s_E
 INTENSE	1.0	i_B n_I t_I e_I n_I s_E
 INTENSITY	1.0	i_B n_I t_I e_I n_I s_I i_I t_I i_E
-INTERTROPICAL	1.0	i_B n_I t_I e_I r_I t_I r_I o_I p_I i_I c_I a_I l_E
+INTERNATIONAL	1.0	i_B n_I t_I e_I r_I n_I 6_I s_I j_I o_I n_I a_I l_E
+INTERTROPICAL	1.0	i_B n_I t_I e_I r_I t_I r_I o_I p_I i_I k_I a_I l_E
+INTI	1.0	i_B n_I t_I i_E
+INUUKA	1.0	i_B n_I u_I u_I k_I a_E
+INYO	1.0	i_B n_I j_I o_E
 INYONG	1.0	i_B n_I j_I o_I N_E
+IPAPALABAS	1.0	i_B p_I 6_I p_I 6_I l_I 6_I b_I a_I s_E
+IPILING	1.0	i_B p_I i_I l_I i_I N_E
+IRAL	1.0	i_B r_I 6_I l_E
 IS	1.0	i_B s_E
 ISA	1.0	i_B s_I 6_E
 ISABELA	1.0	i_B s_I 6_I b_I e_I l_I 6_E
+ISABELLA	1.0	i_B s_I 6_I b_I e_I l_I a_E
+ISAHANG	1.0	i_B s_I 6_I h_I 6_I N_E
 ISANG	1.0	i_B s_I 6_I N_E
+ISEARCH	1.0	i_B s_I e_I r_I t_I s_E
+ISIP	1.0	i_B s_I i_I p_E
 ISLA	1.0	i_B s_I l_I 6_E
 ISLAND	1.0	aj_B l_I a_I n_I d_E
 ISLANDS	1.0	aj_B l_I a_I n_I d_I s_E
 ISOLATED	1.0	aj_B s_I o_I l_I ej_I t_I e_I d_E
+ISTASYON	1.0	i_B s_I t_I 6_I s_I j_I o_I n_E
+ITAAS	1.0	i_B t_I 6_I a_I s_E
 ITCZ	1.0	aj_B t_I i_I s_I i_I z_I i_E
 ITINAAS	1.0	i_B t_I i_I n_I 6_I a_I s_E
 ITO	1.0	i_B t_I o_E
-ITO'Y	1.0	i_B t_I oj_E
 ITONG	1.0	i_B t_I o_I N_E
+ITOY	1.0	i_B t_I o_I j_E
+ITO'Y	1.0	i_B t_I oj_E
+ITYPE	1.0	i_B t_I j_I p_E
+IYAN	1.0	i_B j_I 6_I n_E
 JACKET	1.0	dZ_B 6_I k_I e_I t_E
-JENNY	1.0	g_B e_I n_I i_E
+JANUARY	1.0	dZ_B 6_I n_I u_I w_I a_I r_I j_E
+JEFF	1.0	dZ_B e_I f_E
+JENNY	1.0	dZ_B e_I n_I i_E
+JERVIS	1.0	dZ_B e_I r_I v_I i_I s_E
 JESSICA	1.0	g_B e_I s_I i_I k_I a_E
+JUAN	1.0	h_B u_I a_I n_E
+JUBAN	1.0	dZ_B u_I b_I a_I n_E
+JULIUS	1.0	dZ_B u_I l_I i_I u_I s_E
+JULY	1.0	dZ_B u_I l_I j_E
+JUST	1.0	dZ_B u_I s_I t_E
 KA	1.0	k_B 6_E
 KAALINSANGAN	1.0	k_B 6_I 6_I l_I i_I n_I s_I 6_I N_I a_I n_E
 KABABAYAN	1.0	k_B 6_I b_I 6_I b_I 6_I j_I a_I n_E
@@ -426,96 +654,155 @@ KABILA	1.0	k_B 6_I b_I i_I l_I 6_E
 KABILANG	1.0	k_B 6_I b_I i_I l_I a_I N_E
 KABILISAN	1.0	k_B 6_I b_I i_I l_I i_I s_I a_I n_E
 KABISAYAAN	1.0	k_B 6_I b_I i_I s_I a_I j_I 6_I a_I n_E
+KABUUHAN	1.0	k_B 6_I b_I u_I u_I h_I a_I n_E
 KADA	1.0	k_B 6_I d_I 6_E
+KADALASAN	1.0	k_B 6_I d_I 6_I l_I 6_I s_I a_I n_E
 KAGABI	1.0	k_B 6_I g_I 6_I b_I i_E
 KAHAPON	1.0	k_B 6_I h_I 6_I p_I o_I n_E
 KAHIT	1.0	k_B 6_I h_I i_I t_E
+KAHOY	1.0	k_B 6_I h_I o_I j_E
 KAILAN	1.0	k_B 6_I i_I l_I a_I n_E
 KAILANGAN	1.0	k_B a_I i_I l_I 6_I N_I a_I n_E
 KAKAIBANG	1.0	k_B 6_I k_I 6_I i_I b_I 6_I N_E
 KAKALIMUTAN	1.0	k_B 6_I k_I 6_I l_I i_I m_I u_I t_I a_I n_E
 KAKAUNTI	1.0	k_B 6_I k_I 6_I u_I n_I t_I i_E
+KALA	1.0	k_B 6_I l_I a_E
+KALAGAYAN	1.0	k_B 6_I l_I 6_I g_I 6_I j_I a_I n_E
+KALAGITNAAN	1.0	k_B 6_I l_I 6_I g_I i_I t_I n_I 6_I a_I n_E
 KALAKAS	1.0	k_B 6_I l_I 6_I k_I a_I s_E
 KALAKASAN	1.0	k_B 6_I l_I 6_I k_I 6_I s_I a_I n_E
+KALAMIGAN	1.0	k_B 6_I l_I 6_I m_I i_I g_I a_I n_E
 KALANGITAN	1.0	k_B 6_I l_I a_I N_I i_I t_I a_I n_E
+KALAT	1.0	k_B 6_I l_I a_I t_E
 KALAT-KALAT	1.0	k_B 6_I l_I a_I t_I k_I 6_I l_I a_I t_E
 KALAYAAN	1.0	k_B 6_I l_I 6_I j_I 6_I a_I n_E
+KALAYAN	1.0	k_B 6_I l_I 6_I j_I a_I n_E #2
 KALINGA	1.0	k_B 6_I l_I i_I N_I a_E
+KALSADA	1.0	k_B 6_I l_I s_I 6_I d_I a_E
 KALUPAAN	1.0	k_B 6_I l_I u_I p_I 6_I a_I n_E
 KAMAYNILAAN	1.0	k_B 6_I m_I aj_I n_I i_I l_I 6_I a_I n_E
+KAMUSTA	1.0	k_B 6_I m_I u_I s_I t_I a_E
 KANG	1.0	k_B 6_I N_E
+KANI	1.0	k_B 6_I n_I i_E
 KANILANG	1.0	k_B 6_I n_I i_I l_I a_I N_E
 KANINA	1.0	k_B 6_I n_I i_I n_I a_E
 KANINANG	1.0	k_B 6_I n_I i_I n_I 6_I N_E
+KANINA'Y	1.0	k_B 6_I n_I i_I n_I a_I j_E
 KANLURAN	1.0	k_B 6_I n_I l_I u_I r_I a_I n_E
 KANLURANG	1.0	k_B 6_I n_I l_I u_I r_I a_I N_E
 KANYANG	1.0	k_B a_I n_I j_I a_I N_E
 KAPAG	1.0	k_B 6_I p_I a_I k_E
 KAPAL	1.0	k_B 6_I p_I a_I l_E
 KAPAMILYA	1.0	k_B 6_I p_I 6_I m_I i_I l_I j_I a_E
+KAPAREHO	1.0	k_B 6_I p_I 6_I r_I e_I h_I o_E
+KAPAREHONG	1.0	k_B 6_I p_I 6_I r_I e_I h_I o_I N_E
+KAPULUAN	1.0	k_B 6_I p_I u_I l_I u_I a_I n_E
 KAPUSO	1.0	k_B 6_I p_I u_I s_I o_E
+KARAGA	1.0	k_B 6_I r_I 6_I g_I a_E
 KARAGATAN	1.0	k_B 6_I r_I 6_I g_I 6_I t_I a_I n_E
+KARAGDAGANG	1.0	k_B 6_I r_I 6_I g_I d_I 6_I g_I a_I N_E
+KAREN	1.0	k_B 6_I r_I e_I n_E
 KAROON	1.0	k_B 6_I r_I o_I o_I n_E
+KASAGSAGAN	1.0	k_B 6_I s_I 6_I g_I s_I 6_I g_I a_I n_E
 KASALUKUYAN	1.0	k_B 6_I s_I 6_I l_I u_I k_I u_I j_I a_I n_E
+KASALUKUYANG	1.0	k_B 6_I s_I 6_I l_I u_I k_I u_I j_I a_I N_E
 KASAMA	1.0	k_B 6_I s_I 6_I m_I a_E
+KASAMANG	1.0	k_B 6_I s_I 6_I m_I a_I N_E
 KASI	1.0	k_B 6_I s_I i_E
 KASING	1.0	k_B 6_I s_I i_I N_E
 KATAMTAMAN	1.0	k_B 6_I t_I a_I m_I t_I a_I m_I a_I n_E
 KATAMTAMANG	1.0	k_B 6_I t_I a_I m_I t_I a_I m_I a_I N_E
+KATARMAN	1.0	k_B 6_I t_I 6_I r_I m_I a_I n_E #2
+KATATAMTAMAN	1.0	k_B 6_I t_I 6_I m_I t_I a_I m_I a_I n_E
+KATATAMTAMANG	1.0	k_B 6_I t_I 6_I m_I t_I a_I m_I a_I N_E
 KATAWAN	1.0	k_B 6_I t_I 6_I w_I a_I n_E
+KATEGORYA	1.0	k_B 6_I t_I e_I g_I o_I r_I j_I a_E
+KATIMUGANG	1.0	k_B 6_I t_I i_I m_I u_I g_I a_I N_E
 KATULAD	1.0	k_B 6_I t_I u_I l_I a_I d_E
 KAUGNAY	1.0	k_B 6_I u_I g_I n_I aj_E
+KAULAPAN	1.0	k_B 6_I u_I l_I 6_I p_I a_I n_E
 KAULAPANG	1.0	k_B 6_I u_I l_I 6_I p_I a_I N_E
+KAUNTING	1.0	k_B 6_I u_I n_I t_I i_I N_E
 KAY	1.0	k_B aj_E
 KAYA	1.0	k_B 6_I j_I a_E
+KAYAT	1.0	k_B 6_I j_I a_I t_E #1
+KAYA'T	1.0	k_B 6_I j_I a_I t_E #2
 KAYA'Y	1.0	k_B 6_I j_I aj_E
-KAYAT	1.0	k_B 6_I j_I a_I t_E
 KAYO	1.0	k_B 6_I j_I o_E
+KAYO'Y	1.0	k_B 6_I j_I o_I j_E
 KESA	1.0	k_B e_I s_I a_E
 KIDLAT	1.0	k_B i_I t_I l_I a_I t_E
 KIKILOS	1.0	k_B i_I k_I i_I l_I o_I s_E
+KILOMETER	1.0	k_B i_I l_I o_I m_I i_I t_I e_I r_E
 KILOMETERS	1.0	k_B i_I a_I m_I i_I t_I e_I r_I s_E
 KILOMETRO	1.0	k_B i_I l_I o_I m_I e_I t_I r_I o_E
 KILOS	1.0	k_B i_I l_I o_I s_E
 KIM	1.0	k_B i_I m_E
+KINACLASSIFY	1.0	k_B i_I n_I 6_I k_I l_I a_I s_I i_I f_I i_E
+KIT	1.0	k_B i_I t_E
+KLASE	1.0	k_B l_I a_I s_I e_E
 KLASENG	1.0	k_B l_I 6_I s_I e_I N_E
 KLIMA	1.0	k_B l_I i_I m_I a_E
 KO	1.0	k_B o_E
 KONG	1.0	k_B o_I N_E
+KONTI	1.0	k_B o_I n_I t_I i_E
+KORI	1.0	k_B o_I r_I i_E #2
 KPH	1.0	k_B ej_I p_I i_I ej_I tS_E
+KRIS	1.0	k_B r_I i_I s_E #2
+KRISDANO	1.0	k_B r_I i_I s_I d_I 6_I n_I o_E
 KRITIKAL	1.0	k_B r_I i_I t_I i_I k_I a_I l_E
+KROSA	1.0	k_B r_I o_I s_I a_E
+KUDARAT	1.0	k_B u_I d_I 6_I r_I a_I t_E
+KULANG	1.0	k_B u_I l_I 6_I N_E
 KULAY	1.0	k_B u_I l_I aj_E
 KULOG	1.0	k_B u_I l_I o_I g_E
+KUMAIN	1.0	k_B u_I m_I 6_I i_I n_E
 KUMIKILOS	1.0	k_B u_I m_I i_I k_I i_I l_I o_I s_E
 KUMPARA	1.0	k_B u_I m_I p_I a_I r_I a_E
+KUNDI	1.0	k_B u_I n_I d_I i_E
 KUNG	1.0	k_B u_I N_E
+KURYENTE	1.0	k_B u_I r_I j_I e_I n_I t_I e_E
+KUSA	1.0	k_B u_I s_I a_E
 KUYA	1.0	k_B u_I j_I a_E
+KWARENTA	1.0	k_B w_I 6_I r_I e_I n_I t_I a_E
+KWARENTAY	1.0	k_B w_I 6_I r_I e_I n_I t_I aj_E
+KWATRO	1.0	k_B w_I 6_I t_I r_I o_E #1
 LA	1.0	l_B 6_E
 LABAS	1.0	l_B a_I b_I a_I s_E
 LAGAY	1.0	l_B a_I g_I aj_E
 LAGING	1.0	l_B a_I g_I i_I N_E
 LAGUNA	1.0	l_B a_I g_I u_I n_I 6_E
 LAHAT	1.0	l_B a_I h_I a_I t_E
+LAK	1.0	l_B 6_I k_E
 LAKAS	1.0	l_B a_I k_I a_I s_E
 LALABAS	1.0	l_B 6_I l_I 6_I b_I a_I s_E
 LALAKAS	1.0	l_B 6_I l_I 6_I k_I a_I s_E
+LALAKI	1.0	l_B 6_I l_I 6_I k_I i_E
 LALANDFALL	1.0	l_B 6_I l_I a_I n_I f_I o_I l_E
 LALAWIGAN	1.0	l_B 6_I l_I 6_I w_I i_I g_I a_I n_E
 LALO	1.0	l_B 6_I l_I o_E
 LALONG	1.0	l_B 6_I l_I o_I N_E
+LALYONG	1.0	l_B 6_I l_I j_I o_I N_E
 LAMANG	1.0	l_B a_I m_I a_I N_E
+LAMIG	1.0	l_B 6_I m_I i_I g_E
 LANAO	1.0	l_B 6_I n_I a_I o_E
 LAND	1.0	l_B a_I n_I d_E
 LANDFALL	1.0	l_B a_I n_I d_I f_I o_I l_E
 LANDMASS	1.0	l_B a_I n_I d_I m_I a_I s_E
 LANDSLIDE	1.0	l_B a_I n_I d_I s_I l_I aj_I d_E
+LANDSLIDES	1.0	l_B a_I n_I d_I s_I l_I aj_I d_I s_E
 LANG	1.0	l_B a_I N_E
+LANGIT	1.0	l_B 6_I N_I i_I t_E
 LAOAG	1.0	l_B aw_I 6_I g_E
+LAPAD	1.0	l_B 6_I p_I a_I d_E
 LAPU	1.0	l_B 6_I p_I u_E
 LAST	1.0	l_B a_I s_I t_E
+LASTLY	1.0	l_B 6_I s_I t_I l_I j_E
 LATE	1.0	l_B ej_I t_E
 LATEST	1.0	l_B ej_I t_I e_I s_I t_E
+LAWAK	1.0	l_B 6_I w_I a_I k_E
 LAYAG	1.0	l_B 6_I j_I a_I g_E
+LAYANG	1.0	l_B 6_I j_I a_I N_E
 LAYO	1.0	l_B 6_I j_I o_E
 LAYONG	1.0	l_B 6_I j_I o_I N_E
 LEBEL	1.0	l_B ej_I b_I e_I l_E
@@ -524,77 +811,140 @@ LESS	1.0	l_B e_I s_E
 LEYTE	1.0	l_B ej_I t_I e_E
 LIGHT	1.0	l_B aj_I t_E
 LIKE	1.0	l_B aj_I k_E
+LILIM	1.0	l_B i_I l_I i_I m_E
+LIMANG	1.0	l_B i_I m_I a_I N_E
 LINDOL	1.0	l_B i_I n_I d_I o_I l_E
-LINGGO	1.0	l_B i_I n_I g_I o_E
+LINE	1.0	l_B j_I n_E
+LINGGO	1.0	l_B i_I N_I g_I o_E
 LINYA	1.0	l_B i_I n_I j_I a_E
+LIVE	1.0	l_B i_I v_E
 LIWAYWAY	1.0	l_B i_I w_I aj_I w_I aj_E
+LOCAL	1.0	l_B o_I k_I a_I l_E
 LOCALIZE	1.0	l_B o_I k_I a_I l_I aj_I z_E
 LOCALIZED	1.0	l_B o_I k_I a_I l_I aj_I z_I d_E
+LOCATION	1.0	l_B o_I k_I 6_I s_I j_I o_I n_E #1
+LOG	1.0	l_B o_I g_E
+LOKASYON	1.0	l_B o_I k_I 6_I s_I j_I o_I n_E #2
 LOOB	1.0	l_B o_I o_I b_E
+LOPEZ	1.0	l_B o_I p_I e_I z_E
+LOREDIN	1.0	l_B o_I r_I e_I d_I i_I n_E
+LORI	1.0	l_B o_I r_I i_E
 LORIDIN	1.0	l_B o_I r_I i_I d_I i_I n_E
 LOW	1.0	l_B ow_E
 LPA	1.0	e_B l_I p_I i_I ej_E
 LUBHA	1.0	l_B u_I b_I h_I a_E
 LUGAR	1.0	l_B u_I g_I a_I r_E
 LULUBOG	1.0	l_B u_I l_I u_I b_I o_I g_E
+LUMABAS	1.0	l_B u_I m_I 6_I b_I a_I s_E
 LUMAKAS	1.0	l_B u_I m_I 6_I k_I a_I s_E
+LUMAKO	1.0	l_B u_I m_I 6_I k_I o_E
 LUMALABAS	1.0	l_B u_I m_I 6_I l_I 6_I b_I a_I s_E
 LUMALAKAS	1.0	l_B u_I m_I 6_I l_I 6_I k_I a_I s_E
 LUMALAPIT	1.0	l_B u_I m_I 6_I l_I 6_I p_I i_I t_E
+LUMANG	1.0	l_B u_I m_I 6_I N_E
+LUMIKAS	1.0	l_B u_I m_I i_I k_I a_I s_E
+LUMUBOG	1.0	l_B u_I m_I u_I b_I o_I g_E
+LUNES	1.0	l_B u_I n_I e_I s_E
+LUNGSOD	1.0	l_B u_I N_I s_I o_I d_E
 LUPA	1.0	l_B u_I p_I a_E
 LUZON	1.0	l_B u_I z_I o_I n_E
+LYING	1.0	l_B j_I i_I N_E
 MA	1.0	m_B a_E
 MAAARI	1.0	m_B a_I 6_I 6_I r_I i_E
+MAAARING	1.0	m_B 6_I 6_I a_I r_I i_I N_E
+MAAGA	1.0	m_B 6_I a_I g_I a_E
 MAALINSANGAN	1.0	m_B a_I 6_I l_I i_I n_I s_I a_I N_I a_I n_E
 MAALINSANGANG	1.0	m_B a_I 6_I l_I i_I n_I s_I a_I N_I a_I N_E
 MAALIWALAS	1.0	m_B a_I 6_I l_I i_I w_I a_I l_I a_I s_E
 MAALON	1.0	m_B a_I 6_I l_I o_I n_E
+MAAPEKTOHAN	1.0	m_B 6_I a_I p_I e_I k_I t_I o_I h_I a_I n_E
 MAAPEKTUHAN	1.0	m_B a_I 6_I p_I e_I k_I t_I u_I h_I a_I n_E
 MAARAW	1.0	m_B a_I 6_I r_I aw_E
 MAARI	1.0	m_B a_I 6_I r_I i_E
+MAARING	1.0	m_B 6_I a_I r_I i_I N_E
 MAAYOS	1.0	m_B a_I 6_I j_I o_I s_E
 MABABA	1.0	m_B a_I b_I 6_I b_I 6_E
-MABABANG	1.0	m_B a_I b_I 6_I b_I 6_I N_E
+MABABABANG	1.0	m_B 6_I b_I 6_I b_I 6_I b_I a_I N_E
+MABABANG	1.0	m_B 6_I b_I 6_I b_I 6_I N_E
+MABABAWASAN	1.0	m_B 6_I b_I 6_I b_I 6_I w_I 6_I s_I a_I n_E
+MABAGAL	1.0	m_B 6_I b_I 6_I g_I a_I l_E
 MABAWASAN	1.0	m_B a_I b_I 6_I w_I 6_I s_I a_I n_E
 MABILIS	1.0	m_B a_I b_I i_I l_I i_I s_E
+MABUO	1.0	m_B 6_I b_I u_I o_E
+MADAAN	1.0	m_B 6_I d_I 6_I a_I n_E
 MADALAS	1.0	m_B a_I d_I a_I l_I a_I s_E
 MADALING	1.0	m_B a_I d_I 6_I l_I i_I N_E
 MADRE	1.0	m_B a_I d_I r_I e_E
+MADULOT	1.0	m_B 6_I d_I u_I l_I o_I t_E
+MAFEFEEL	1.0	m_B 6_I f_I i_I f_I i_I l_E
 MAG	1.0	m_B a_I g_E
 MAGAGANAP	1.0	m_B a_I g_I 6_I g_I 6_I n_I a_I p_E
+MAGALIMIN	1.0	m_B 6_I g_I 6_I l_I i_I m_I i_I n_E
 MAGANDA	1.0	m_B a_I g_I 6_I n_I d_I a_E
 MAGANDANG	1.0	m_B a_I g_I 6_I n_I d_I a_I N_E
+MAGANTABAY	1.0	m_B 6_I g_I 6_I n_I t_I 6_I b_I aj_E
 MAGBABAGO	1.0	m_B a_I g_I b_I 6_I b_I 6_I g_I o_E
 MAGBAGO	1.0	m_B a_I g_I b_I 6_I g_I o_E
+MAGBIBIGAY	1.0	m_B 6_I b_I i_I b_I i_I g_I aj_E
 MAGDADALA	1.0	m_B a_I g_I d_I 6_I d_I 6_I l_I a_E
 MAGDAMAG	1.0	m_B a_I g_I d_I 6_I m_I a_I g_E
+MAGDIDISSIPATE	1.0	m_B 6_I g_I d_I i_I d_I i_I s_I i_I p_I ej_I t_E
+MAGDUDULOT	1.0	m_B 6_I g_I d_I u_I d_I u_I l_I o_I t_E
 MAGDULOT	1.0	m_B a_I g_I d_I u_I l_I o_I t_E
+MAGFOLLOW	1.0	m_B 6_I g_I f_I o_I l_I o_I w_E
 MAGHAPON	1.0	m_B a_I g_I h_I 6_I p_I o_I n_E
 MAGHAPONG	1.0	m_B a_I g_I h_I 6_I p_I o_I N_E
+MAGI	1.0	m_B 6_I g_I i_E
 MAGIGING	1.0	m_B a_I g_I i_I g_I i_I N_E
 MAGING	1.0	m_B a_I g_I i_I N_E
+MAGINGAT	1.0	m_B 6_I g_I i_I N_I a_I t_E
+MAGKAGAYUNMAN	1.0	m_B 6_I g_I k_I 6_I g_I 6_I j_I u_I n_I m_I a_I n_E
+MAGKAIBA	1.0	m_B 6_I g_I k_I 6_I i_I b_I a_E
+MAGKAIBANG	1.0	m_B 6_I g_I k_I 6_I i_I b_I a_I N_E
 MAGKAKAROON	1.0	m_B a_I g_I k_I 6_I k_I 6_I r_I o_I o_I n_E
+MAGKAKATAON	1.0	m_B 6_I g_I k_I 6_I k_I 6_I t_I a_I o_I n_E
+MAGKAROON	1.0	m_B 6_I g_I k_I 6_I r_I o_I o_I n_E
 MAGLALANDFALL	1.0	m_B a_I g_I l_I 6_I l_I 6_I n_I d_I f_I a_I l_E
+MAGLANDFALL	1.0	m_B a_I g_I l_I 6_I n_I d_I f_I a_I l_E
+MAGLAYAG	1.0	m_B 6_I g_I l_I 6_I j_I a_I g_E
+MAGLOG	1.0	m_B 6_I g_I l_I o_I g_E
+MAGLOGON	1.0	m_B 6_I g_I l_I o_I g_I o_I n_E
+MAGPAPALABAS	1.0	m_B 6_I g_I p_I 6_I p_I 6_I l_I 6_I b_I a_I s_E
+MAGPAPALAKAS	1.0	m_B 6_I g_I p_I 6_I p_I 6_I l_I 6_I k_I a_I s_E
 MAGPAPATULOY	1.0	m_B a_I g_I p_I 6_I p_I 6_I t_I u_I l_I oj_E
 MAGPAPAULAN	1.0	m_B a_I g_I p_I 6_I p_I 6_I u_I l_I a_I n_E
 MAGPLANO	1.0	m_B a_I g_I p_I l_I 6_I n_I o_E
+MAGSIMULA	1.0	m_B 6_I g_I s_I i_I m_I u_I l_I a_E
+MAGSUBSCRIBE	1.0	m_B 6_I g_I s_I u_I b_I s_I k_I r_I j_I b_E
 MAGTUTULOY	1.0	m_B a_I g_I t_I u_I t_I u_I l_I oj_E
 MAGUINDANAO	1.0	m_B a_I g_I i_I n_I d_I 6_I n_I aw_E
+MAHAHAGIP	1.0	m_B 6_I h_I 6_I h_I 6_I g_I i_I p_E
 MAHAL	1.0	m_B a_I h_I a_I l_E
+MAHIHINA	1.0	m_B 6_I h_I i_I h_I i_I n_I a_E
 MAHIHINANG	1.0	m_B a_I h_I i_I h_I i_I n_I a_I N_E
 MAHINA	1.0	m_B a_I h_I i_I n_I a_E
 MAHINANG	1.0	m_B a_I h_I i_I n_I a_I N_E
 MAINIT	1.0	m_B a_I i_I n_I i_I t_E
 MAINLAND	1.0	m_B ej_I n_I l_I 6_I n_I d_E
 MAINTAIN	1.0	m_B ej_I n_I t_I a_I i_I n_E
+MAITUTULAD	1.0	m_B 6_I i_I t_I u_I t_I u_I l_I a_I d_E
 MAKAKAAPEKTO	1.0	m_B a_I k_I 6_I k_I 6_I 6_I p_I e_I k_I t_I o_E
 MAKAKAASA	1.0	m_B a_I k_I 6_I k_I 6_I 6_I s_I 6_E
 MAKAKAIPON	1.0	m_B a_I k_I 6_I k_I 6_I i_I p_I o_I n_E
+MAKAKALABAS	1.0	m_B 6_I k_I 6_I k_I 6_I l_I 6_I b_I a_I s_E
 MAKAKAPAL	1.0	m_B a_I k_I 6_I k_I 6_I p_I 6_I l_E
+MAKAKAPALAOT	1.0	m_B 6_I k_I 6_I k_I 6_I p_I 6_I l_I a_I o_I t_E
 MAKAKARANAS	1.0	m_B a_I k_I 6_I k_I 6_I r_I 6_I n_I a_I s_E
+MAKAKAROON	1.0	m_B 6_I k_I 6_I k_I 6_I r_I o_I o_I n_E
+MAKALAGPAS	1.0	m_B 6_I k_I 6_I l_I 6_I g_I p_I a_I s_E
+MAKAPAG	1.0	m_B 6_I k_I 6_I p_I a_I g_E
 MAKAPAL	1.0	m_B a_I k_I 6_I p_I 6_I l_E
 MAKARANAS	1.0	m_B a_I k_I 6_I r_I 6_I n_I a_I s_E
 MAKARARANAS	1.0	m_B a_I k_I 6_I r_I 6_I r_I 6_I n_I a_I s_E
+MAKASIRA	1.0	m_B 6_I k_I 6_I s_I i_I r_I a_E
+MAKATANGGAL	1.0	m_B 6_I k_I 6_I t_I 6_I N_I g_I a_I l_E
+MAKATULOG	1.0	m_B 6_I k_I 6_I t_I u_I l_I o_I g_E
+MAKIKISALUBONG	1.0	m_B 6_I k_I i_I k_I i_I s_I 6_I l_I u_I b_I o_I N_E
 MAKIKITA	1.0	m_B a_I k_I i_I k_I i_I t_I a_E
 MAKITA	1.0	m_B a_I k_I i_I t_I a_E
 MAKULIMLIM	1.0	m_B a_I k_I u_I l_I i_I m_I l_I i_I m_E
@@ -609,27 +959,42 @@ MALALAMIG	1.0	m_B a_I l_I 6_I l_I 6_I m_I i_I g_E
 MALAMIG	1.0	m_B a_I l_I 6_I m_I i_I g_E
 MALAPIT	1.0	m_B a_I l_I a_I p_I i_I t_E
 MALAWAK	1.0	m_B a_I l_I 6_I w_I a_I k_E
+MALAWAKANG	1.0	m_B 6_I l_I 6_I w_I 6_I k_I a_I N_E
+MALAYA	1.0	m_B 6_I l_I 6_I j_I a_E
+MALAYANG	1.0	m_B 6_I l_I 6_I j_I a_I N_E
 MALAYO	1.0	m_B a_I l_I a_I j_I o_E
 MALIBAN	1.0	m_B a_I l_I i_I b_I a_I n_E
 MALIIT	1.0	m_B a_I l_I i_I i_I t_E
 MALILIIT	1.0	m_B a_I l_I i_I l_I i_I i_I t_E
+MAM	1.0	m_B 6_I m_E
+MAMAMAYANG	1.0	m_B 6_I m_I 6_I m_I 6_I j_I a_I N_E
 MAMASYAL	1.0	m_B a_I m_I a_I S_I a_I l_E
 MAMAYA	1.0	m_B a_I m_I a_I j_I a_E
+MAMAYAN	1.0	m_B 6_I m_I 6_I j_I a_I n_E
 MAMAYANG	1.0	m_B 6_I m_I 6_I j_I a_I N_E
+MAN	1.0	m_B a_I n_E
+MANAHAN	1.0	m_B 6_I n_I 6_I h_I a_I n_E
 MANATILING	1.0	m_B 6_I n_I 6_I t_I i_I l_I i_I N_E
 MANG	1.0	m_B 6_I N_E
 MANGINGISDA	1.0	m_B 6_I N_I i_I N_I i_I s_I d_I a_E
+MANGKABISAYAN	1.0	m_B 6_I N_I k_I 6_I b_I i_I s_I 6_I j_I a_I n_E
+MANGYARI	1.0	m_B 6_I N_I j_I a_I r_I i_E
 MANILA	1.0	m_B 6_I n_I i_I l_I a_E
 MANOLO	1.0	m_B a_I n_I o_I l_I o_E
+MANONOOD	1.0	m_B 6_I n_I o_I n_I o_I o_I d_E
+MANOOD	1.0	m_B 6_I n_I o_I o_I d_E
 MAP	1.0	m_B a_I p_E
+MAPAKALI	1.0	m_B 6_I p_I 6_I k_I a_I l_I i_E
 MAPAMINSALA	1.0	m_B a_I p_I 6_I m_I i_I n_I s_I a_I l_I a_E
 MAPANGANIB	1.0	m_B a_I p_I a_I N_I a_I n_I i_I b_E
 MAPANSING	1.0	m_B a_I p_I a_I n_I s_I i_I N_E
+MAPAPANATILI	1.0	m_B 6_I p_I 6_I p_I 6_I n_I 6_I t_I i_I l_I i_E
 MAPAPANSIN	1.0	m_B a_I p_I a_I p_I a_I n_I s_I i_I n_E
 MARA	1.0	m_B 6_I r_I a_E
 MARAMDAMAN	1.0	m_B a_I r_I a_I m_I d_I a_I m_I a_I n_E
 MARAMI	1.0	m_B a_I r_I a_I m_I i_E
 MARAMING	1.0	m_B a_I r_I a_I m_I i_I N_E
+MARANASAN	1.0	m_B 6_I r_I 6_I n_I 6_I s_I a_I n_E
 MARARAMDAMAN	1.0	m_B a_I r_I 6_I r_I a_I m_I d_I a_I m_I a_I n_E
 MARARAMDAMANG	1.0	m_B 6_I r_I 6_I r_I 6_I m_I d_I 6_I m_I 6_I N_E
 MARARANASAN	1.0	m_B 6_I r_I 6_I r_I 6_I n_I 6_I s_I 6_I n_E
@@ -637,29 +1002,41 @@ MARCH	1.0	m_B 6_I r_I tS_E
 MARILYN	1.0	m_B 6_I r_I i_I l_I i_I n_E
 MARINDUQUE	1.0	m_B 6_I r_I i_I n_I d_I u_I k_I e_E
 MARTES	1.0	m_B 6_I r_I t_I e_I s_E
-MAS	1.0	m_B 6_I s_E
+MAS	1.0	m_B 6_I s_E #1
 MASASABAYAN	1.0	m_B 6_I s_I 6_I s_I 6_I b_I 6_I j_I 6_I n_E
 MASAYA	1.0	m_B 6_I s_I 6_I j_I 6_E
 MASBATE	1.0	m_B 6_I s_I b_I 6_I t_I e_E
-MASS	1.0	m_B {_I s_E
+MASS	1.0	m_B 6_I s_E #2
 MASUNGIT	1.0	m_B 6_I s_I 6_I N_I i_I t_E
 MASYADONG	1.0	m_B 6_I s_I j_I 6_I d_I o_I N_E
 MATA	1.0	m_B 6_I t_I 6_E
+MATAAN	1.0	m_B 6_I t_I 6_I a_I n_E
 MATAAS	1.0	m_B 6_I t_I 6_I a_I s_E
 MATAGAL	1.0	m_B 6_I t_I 6_I g_I 6_I l_E
+MATALADOS	1.0	m_B 6_I t_I 6_I l_I a_I d_I o_I s_E
+MATAMAAN	1.0	m_B 6_I t_I 6_I m_I 6_I a_I n_E
 MATANAO	1.0	m_B 6_I t_I 6_I n_I 6_I o_E
 MATAPOS	1.0	m_B 6_I t_I 6_I p_I o_I s_E
+MATATAAS	1.0	m_B 6_I t_I 6_I t_I 6_I a_I s_E
+MATATAPOS	1.0	m_B 6_I t_I 6_I t_I 6_I p_I o_I s_E
+MATEO	1.0	m_B 6_I t_I e_I o_E
 MATINDING	1.0	m_B 6_I t_I i_I n_I d_I i_I N_E
 MATITINDING	1.0	m_B 6_I t_I i_I t_I i_I n_I d_I i_I N_E
+MATRO	1.0	m_B 6_I t_I r_I o_E
+MATULOG	1.0	m_B 6_I t_I u_I l_I o_I g_E
 MAULAN	1.0	m_B 6_I u_I l_I a_I n_E
 MAULANG	1.0	m_B 6_I u_I l_I 6_I N_E
 MAULAP	1.0	m_B 6_I u_I l_I 6_I p_E
+MAULAPIN	1.0	m_B 6_I u_I l_I 6_I p_I i_I n_E
+MAULIN	1.0	m_B 6_I u_I l_I i_I n_E
+MAUULAP	1.0	m_B 6_I u_I u_I l_I a_I p_E
 MAWAWALA	1.0	m_B 6_I w_I 6_I w_I 6_I l_I 6_E
 MAXIMUM	1.0	m_B 6_I k_I s_I i_I m_I u_I m_E
 MAY	1.0	m_B 6_I j_E
+MAYNILA	1.0	m_B 6_I j_I n_I i_I l_I a_E
 MAYO	1.0	m_B 6_I j_I o_E
 MAYROON	1.0	m_B 6_I j_I r_I o_I o_I n_E
-MABABANG	1.0	m_B 6_I b_I 6_I b_I 6_I N_E
+ME	1.0	m_B i_E
 MEDIUM	1.0	m_B e_I d_I i_I u_I m_E
 MEDYO	1.0	m_B e_I d_I j_I o_E
 MERON	1.0	m_B e_I r_I o_I n_E
@@ -667,12 +1044,15 @@ MERONG	1.0	m_B e_I r_I o_I N_E
 METEOROLOGIST	1.0	m_B e_I t_I e_I o_I r_I o_I l_I o_I g_I j_I s_I t_E
 METRAWEATHER	1.0	m_B e_I t_I r_I 6_I w_I e_I T_I e_I r_E
 METRO	1.0	m_B e_I t_I r_I o_E
+METRONG	1.0	m_B e_I t_I r_I o_I N_E
 MGA	1.0	m_B N_I 6_E
 MID	1.0	m_B i_I d_E
 MIMAROPA	1.0	m_B i_I m_I 6_I r_I o_I p_I 6_E
+MINDAANAO	1.0	m_B i_I n_I d_I 6_I a_I n_I a_I o_E
 MINDANAO	1.0	m_B i_I n_I d_I 6_I n_I 6_I o_E
 MINDORO	1.0	m_B i_I n_I d_I o_I r_I o_E
 MINIMUM	1.0	m_B i_I n_I i_I m_I u_I m_E
+MINOMONITOR	1.0	m_B i_I n_I o_I m_I o_I n_I i_I t_I o_I r_E
 MINSAN	1.0	m_B i_I n_I s_I 6_I n_E
 MINSANG	1.0	m_B i_I n_I s_I 6_I N_E
 MISAMIS	1.0	m_B i_I s_I 6_I m_I i_I s_E
@@ -681,23 +1061,40 @@ MO	1.0	m_B o_E
 MODERATE	1.0	m_B o_I d_I e_I r_I 6_I j_I t_E
 MOISTURE	1.0	m_B o_I j_I s_I t_I u_I r_E
 MOMENTUM	1.0	m_B o_I m_I e_I n_I t_I u_I m_E
+MONDAY	1.0	m_B o_I n_I d_I aj_E
+MONITOR	1.0	m_B o_I n_I i_I t_I o_I r_E
+MONITORING	1.0	m_B o_I n_I i_I t_I o_I r_I i_I N_E
 MONSOON	1.0	m_B o_I n_I s_I u_I n_E
+MOR	1.0	m_B o_I r_E #1
+MORE	1.0	m_B o_I r_E #2
 MORNING	1.0	m_B o_I r_I n_I i_I N_E
 MOTORISTA	1.0	m_B o_I t_I o_I r_I i_I s_I t_I a_E
 MOUNTAIN	1.0	m_B o_I u_I n_I t_I {_I i_I n_E
+MUKHA	1.0	m_B u_I k_I a_E
 MULA	1.0	m_B u_I l_I a_E
 MULI	1.0	m_B u_I l_I i_E
+MULING	1.0	m_B u_I l_I i_I N_E
 MUNA	1.0	m_B u_I n_I 6_E
+MUNANG	1.0	m_B u_I n_I 6_I N_E
 NA	1.0	n_B 6_E
 NAAPEKTUHAN	1.0	n_B 6_I a_I p_I e_I k_I t_I u_I h_I 6_I n_E
 NABALOT	1.0	n_B 6_I b_I 6_I l_I o_I t_E
 NABANGGIT	1.0	n_B 6_I b_I 6_I N_I g_I i_I t_E
+NABAWASAN	1.0	m_B 6_I b_I 6_I w_I 6_I s_I a_I n_E
 NABUBUO	1.0	n_B 6_I b_I u_I b_I u_I o_E
 NABUO	1.0	n_B 6_I b_I u_I o_E
+NADITO	1.0	n_B 6_I d_I i_I t_I o_E
+NADUDULOT	1.0	n_B 6_I d_I u_I d_I u_I l_I o_I t_E
+NADULOT	1.0	n_B 6_I d_I u_I l_I o_I t_E
 NAFORECAST	1.0	n_B 6_I f_I o_I r_I k_I 6_I s_I t_E
 NAG	1.0	n_B 6_I g_E
+NAGBABADYANG	1.0	n_B 6_I g_I b_I 6_I b_I 6_I d_I j_I a_I N_E
 NAGBABAGANG	1.0	n_B 6_I g_I b_I 6_I b_I 6_I g_I 6_I N_E
+NAGBABALA	1.0	n_B 6_I g_I b_I 6_I b_I 6_I l_I a_E
 NAGBIBIGAY	1.0	n_B 6_I g_I b_I i_I b_I i_I g_I 6j_E
+NAGDAAN	1.0	n_B 6_I g_I d_I 6_I a_I n_E
+NAGDUDULOT	1.0	n_B 6_I g_I d_I u_I d_I u_I l_I o_I t_E
+NAGDULOT	1.0	n_B 6_I g_I d_I u_I l_I o_I t_E
 NAGI	1.0	n_B 6_I g_I i_E
 NAGIGING	1.0	n_B 6_I g_I i_I g_I i_I N_E
 NAGING	1.0	n_B 6_I g_I i_I N_E
@@ -705,22 +1102,36 @@ NAGKA	1.0	n_B 6_I g_I k_I a_E
 NAGKAKAMALI	1.0	n_B 6_I g_I k_I 6_I k_I 6_I m_I 6_I l_I i_E
 NAGKAKAROON	1.0	n_B 6_I g_I k_I 6_I k_I 6_I r_I o_I o_I n_E
 NAGKAROON	1.0	n_B 6_I g_I k_I 6_I r_I o_I o_I n_E
+NAGLABAS	1.0	n_B 6_I g_I l_I 6_I b_I a_I s_E
 NAGLALARO	1.0	n_B 6_I g_I l_I 6_I l_I 6_I r_I o_E
+NAGMOMONITOR	1.0	n_B 6_I g_I m_I o_I n_I i_I t_I o_I r_E
 NAGPAPALAKAS	1.0	n_B 6_I g_I p_I 6_I p_I 6_I l_I 6_I k_I 6_I s_E
 NAGPAPATULOY	1.0	n_B 6_I g_I p_I 6_I p_I 6_I t_I u_I l_I o_I j_E
 NAGPAPAULAN	1.0	n_B 6_I g_I p_I 6_I p_I 6_I u_I l_I 6_I n_E
 NAGPAULAN	1.0	n_B 6_I g_I p_I 6_I u_I l_I 6_I n_E
+NAGSASALUBONG	1.0	n_B 6_I g_I s_I 6_I s_I 6_I l_I u_I b_I o_I N_E
 NAGTAAS	1.0	n_B 6_I t_I 6_I a_I s_E
+NAGTATAGAL	1.0	n_B 6_I g_I t_I 6_I t_I 6_I g_I a_I l_E
 NAGULAT	1.0	n_B 6_I g_I u_I l_I 6_I t_E
+NAGUULAP	1.0	n_B 6_I g_I u_I u_I l_I a_I p_E
+NAGUULAT	1.0	n_B 6_I g_I u_I u_I l_I a_I t_E
 NAIA	1.0	n_B 6_I i_I j_I 6_E
 NAITALA	1.0	n_B 6_I i_I t_I 6_I l_I a_E
+NAIWANG	1.0	n_B 6_I i_I w_I a_I N_E
 NAKA	1.0	n_B 6_I k_I 6_E
 NAKAKAAPEKTO	1.0	n_B 6_I k_I 6_I k_I 6_I a_I p_I e_I k_I t_I o_E
+NAKAKAAPEKTONG	1.0	n_B 6_I k_I 6_I k_I 6_I a_I p_I e_I k_I t_I o_I N_E
+NAKAKAIMPLUWENSYA	1.0	n_B 6_I k_I 6_I k_I 6_I i_I m_I p_I l_I u_I w_I e_I n_I s_I j_I a_E
 NAKAKAKUHA	1.0	n_B 6_I k_I 6_I k_I 6_I k_I u_I h_I 6_E
 NAKAKAPAG	1.0	n_B 6_I k_I 6_I k_I 6_I p_I 6_I g_E
+NAKAKARANAS	1.0	n_B 6_I k_I 6_I k_I 6_I r_I 6_I n_I a_I s_E
 NAKAKATAKOT	1.0	n_B 6_I k_I 6_I k_I 6_I t_I 6_I k_I o_I t_E
 NAKAKATULONG	1.0	n_B 6_I k_I 6_I k_I 6_I t_I u_I l_I o_I N_E
+NAKALABAS	1.0	n_B 6_I k_I 6_I l_I 6_I b_I a_I s_E
+NAKALIPAS	1.0	n_B 6_I k_I 6_I l_I i_I p_I a_I s_E
 NAKAMOTOR	1.0	n_B 6_I k_I 6_I m_I o_I t_I o_I r_E
+NAKAPAALONG	1.0	n_B 6_I k_I 6_I p_I 6_I a_I l_I o_I N_E
+NAKAPAGTALA	1.0	n_B 6_I k_I 6_I p_I 6_I g_I t_I 6_I l_I a_E
 NAKAPALOOB	1.0	n_B 6_I k_I 6_I p_I 6_I l_I o_I o_I b_E
 NAKAR	1.0	n_B 6_I k_I 6_I r_E
 NAKARAANG	1.0	n_B 6_I k_I 6_I r_I 6_I a_I N_E
@@ -731,47 +1142,80 @@ NAKATIRA	1.0	n_B 6_I k_I 6_I t_I i_I r_I a_E
 NAKATUTOK	1.0	n_B 6_I k_I 6_I t_I u_I t_I o_I k_E
 NAKIKITA	1.0	n_B 6_I k_I i_I k_I i_I t_I a_E
 NAKIKITANG	1.0	n_B 6_I k_I i_I k_I i_I t_I 6_I N_E
+NAKUHA	1.0	n_B 6_I k_I u_I h_I a_E
+NALALABI	1.0	n_B 6_I l_I 6_I l_I a_I b_I i_E
 NALALABING	1.0	n_B 6_I l_I 6_I l_I 6_I b_I i_I N_E
 NALAMANG	1.0	n_B 6_I l_I 6_I m_I 6_I N_E
+NALANG	1.0	n_B 6_I l_I a_I N_E
+NALUSAW	1.0	n_B 6_I l_I u_I s_I a_I w_E
+NAMADAAN	1.0	n_B 6_I m_I 6_I d_I 6_I a_I n_E
+NAMAMALAYAN	1.0	n_B 6_I m_I 6_I m_I 6_I l_I 6_I j_I a_I n_E
 NAMAMATAAN	1.0	n_B 6_I m_I 6_I m_I 6_I t_I 6_I a_I n_E
 NAMAMAYANI	1.0	n_B 6_I m_I 6_I m_I 6_I j_I 6_I n_I i_E
 NAMAN	1.0	n_B 6_I m_I 6_I n_E
 NAMANG	1.0	n_B 6_I m_I 6_I N_E
 NAMATAAN	1.0	n_B 6_I m_I 6_I t_I 6_I a_I n_E
+NAME	1.0	n_B ej_I m_E
 NAMIN	1.0	n_B 6_I m_I i_I n_E
+NAMOMONITOR	1.0	n_B 6_I m_I o_I m_I o_I n_I i_I t_I o_I r_E
+NAMONIKLA	1.0	n_B 6_I m_I o_I n_I i_I k_I l_I a_E
+NANAHIGITONG	1.0	n_B 6_I n_I 6_I h_I i_I g_I i_I t_I o_I N_E
+NANAMAN	1.0	n_B 6_I n_I 6_I m_I a_I n_E
 NANANATILI	1.0	n_B 6_I n_I 6_I n_I 6_I t_I i_I l_I i_E
+NANANATILING	1.0	n_B 6_I n_I 6_I n_I 6_I t_I i_I l_I i_I N_E
 NANATILI	1.0	n_B 6_I n_I 6_I t_I i_I l_I i_E
+NANATILING	1.0	n_B 6_I n_I 6_I t_I i_I l_I i_I N_E
 NANDITO	1.0	n_B 6_I n_I d_I i_I t_I o_E
 NANDOON	1.0	n_B 6_I n_I d_I o_I o_I n_E
 NANDUN	1.0	n_B 6_I n_I d_I u_I n_E
 NANDYAN	1.0	n_B 6_I n_I d_I j_I 6_I n_E
+NANGGAGALING	1.0	n_B 6_I N_I g_I 6_I g_I 6_I l_I i_I N_E
 NANGYARI	1.0	n_B 6_I N_I j_I 6_I r_I i_E
 NANGYAYARI	1.0	n_B 6_I N_I j_I 6_I j_I 6_I r_I i_E
 NAPAKA	1.0	n_B 6_I p_I 6_I k_I a_E
 NAPAKAALON	1.0	n_B 6_I p_I 6_I k_I a_I 6_I l_I o_I n_E
 NAPAKALAKAS	1.0	n_B 6_I p_I 6_I k_I 6_I k_I 6_I l_I 6_I k_I 6_I s_E
+NAPANATILI	1.0	n_B 6_I p_I 6_I n_I 6_I t_I i_I l_I i_E
 NAPANSIN	1.0	n_B 6_I p_I 6_I n_I s_I i_I n_E
 NAPAPADALAS	1.0	n_B 6_I p_I 6_I p_I 6_I d_I 6_I l_I 6_I s_E
 NARAMDAMAN	1.0	n_B 6_I r_I 6_I m_I d_I 6_I m_I 6_I n_E
 NARANASAN	1.0	n_B 6_I r_I 6_I n_I s_I 6_I n_E
 NARARAMDAMAN	1.0	n_B 6_I r_I 6_I r_I 6_I m_I d_I 6_I m_I 6_I n_E
+NARARANASAN	1.0	n_B 6_I r_I 6_I r_I 6_I n_I 6_I s_I a_I n_E
+NARIN	1.0	n_B 6_I r_I i_I n_E
 NARITO	1.0	m_B 6_I r_I i_I t_I o_E
 NASA	1.0	n_B 6_I s_I a_E
+NASAAN	1.0	n_B 6_I s_I 6_I a_I n_E
 NASABI	1.0	n_B 6_I s_I 6_I b_I i_E
+NASABING	1.0	n_B 6_I s_I 6_I b_I i_I N_E
+NASASAKUPAN	1.0	n_B 6_I s_I 6_I s_I 6_I k_I u_I p_I a_I n_E
+NA'T	1.0	n_B 6_I t_E
+NATANONG	1.0	n_B 6_I t_I 6_I n_I o_I N_E
+NATATAKOT	1.0	n_B 6_I t_I 6_I t_I 6_I k_I o_I t_E
 NATATANAW	1.0	n_B 6_I t_I 6_I t_I 6_I n_I 6_I w_E
 NATHANIEL	1.0	n_B 6_I T_I a_I n_I i_I e_I l_E
 NATIN	1.0	n_B 6_I t_I i_I n_E
 NATING	1.0	n_B 6_I t_I i_I N_E
+NATIONAL	1.0	n_B 6_I s_I j_I o_I n_I a_I l_E
 NATITIRANG	1.0	n_B 6_I t_I i_I t_I i_I r_I 6_I N_E
 NATURANG	1.0	n_B 6_I t_I u_I r_I 6_I N_E
 NAUNA	1.0	n_B 6_I u_I n_I a_E
 NAUUNA	1.0	n_B 6_I u_I u_I n_I a_E
 NAUWI	1.0	n_B 6_I u_I w_I i_E
+NAZARENO	1.0	n_B 6_I z_I a_I r_I e_I n_I o_E
+NEAREST	1.0	n_B i_I r_I e_I s_E
 NEGROS	1.0	n_B e_I g_I r_I o_I s_E
+NEIGHBORING	1.0	n_B ej_I b_I o_I r_I i_I N_E
 NETONG	1.0	n_B e_I t_I o_I N_E
+NEVER	1.0	n_B e_I v_I e_I r_E
+NEW	1.0	n_B i_I w_E
 NEWS	1.0	n_B j_I w_I s_E
-NG	1.0	N_S
+NEXT	1.0	n_B e_I k_I s_E
+NG	1.0	n_B 6_I N_E
 NGA	1.0	N_B a_E
+NGAB	1.0	N_B 6_I b_E
+NGAM	1.0	N_B 6_I m_E
+NGANG	1.0	N_B 6_I N_E
 NGAY	1.0	N_B 6_I j_E
 NGAYON	1.0	N_B g_I 6_I j_I o_I n_E
 NGAYONG	1.0	N_B 6_I j_I o_I N_E
@@ -783,105 +1227,176 @@ NINA	1.0	n_B i_I n_I a_E
 NINE	1.0	n_B j_I n_E
 NINETEEN	1.0	n_B j_I n_I t_I i_I n_E
 NINETY	1.0	n_B j_I n_I t_I j_E
+NIÃ‘O	1.0	n_B i_I n_I j_I o_E #1
+NINYO	1.0	n_B i_I n_I j_I o_E #2
 NINYONG	1.0	n_B i_I n_I j_I o_I N_E
 NITO	1.0	n_B i_I t_I o_E
 NITONG	1.0	n_B i_I t_I o_I N_E
 NIYA	1.0	n_B i_I j_I a_E
+NIYAAN	1.0	n_B i_I j_I 6_I a_I n_E
 NIYAN	1.0	n_B i_I j_I 6_I n_E
 NIYO	1.0	n_B i_I j_I o_E
 NIYONG	1.0	n_B i_I j_I o_I N_E
-NIÑO	1.0	n_B i_I n_I j_I o_E
-NO	1.0	n_B o_E
+NO	1.0	n_B o_E #1
 NOBYEMBRE	1.0	n_B o_I b_I j_I e_I m_I b_I r_I e_E
-NONE	1.0	n_B o_I n_E
+NOH	1.0	n_B o_E #2
+NON	1.0	n_B o_I n_E #1
+NONE	1.0	n_B o_I n_E #2
+NOONG	1.0	n_B o_I o_I N_E
+NORMAL	1.0	n_B o_I r_I m_I 6_I l_E
 NORTE	1.0	n_B o_I r_I t_I e_E
 NORTH	1.0	n_B o_I r_I T_E
 NORTHEAST	1.0	n_B o_I r_I T_I i_I s_I t_E
+NORTHEASTERN	1.0	n_B o_I r_I T_I i_I s_I t_I e_I r_I n_E
 NORTHERN	1.0	n_B o_I r_I T_I e_I r_I n_E
 NORTHWEST	1.0	n_B o_I r_I T_I w_I e_I s_I t_E
 NORZAGARAY	1.0	n_B o_I r_I z_I 6_I g_I 6_I r_I 6_I j_E
+NOW	1.0	n_B 6_I w_E
 NUEBE	1.0	n_B u_I e_I b_I e_E
 NUEVA	1.0	n_B u_I e_I v_I 6_E
 NUMBER	1.0	n_B u_I m_I b_I e_I r_E
 NUNG	1.0	n_B u_I N_E
+NUWEBE	1.0	n_B u_I w_I e_I b_I e_E
 NYAN	1.0	n_B j_I a_I n_E
 NYO	1.0	n_B j_I o_E
 NYONG	1.0	n_B j_I o_I N_E
-O	1.0	o_S
+O	1.0	o_S #1
+OC	1.0	o_B s_I i_E
+OCCASION	1.0	o_B k_I ej_I s_I j_I o_I n_E
+OCCASIONAL	1.0	o_B k_I ej_I s_I j_I o_I n_I a_I l_E
 OCCASIONALLY	1.0	o_B k_I 6_I s_I j_I o_I n_I 6_I l_I j_E
 OCCIDENTAL	1.0	o_B k_I s_I i_I d_I e_I n_I t_I 6_I l_E
 OCEAN	1.0	o_B S_I j_I e_I n_E
-OF	1.0	o_B f_E
+OCTOBER	1.0	o_B k_I t_I o_I b_I e_I r_E
+OF	1.0	o_B f_E #1
+OFF	1.0	o_B f_E #2
+OH	1.0	o_S #2
 OK	1.0	o_B k_E
+ON	1.0	o_B n_E
+ONDOY	1.0	o_B n_I d_I o_I j_E
 ONE	1.0	w_B o_I n_E
 ONSE	1.0	o_B n_I s_I e_E
+ONWARDS	1.0	o_B n_I w_I 6_I r_I d_I s_E
 ONYOK	1.0	o_B n_I j_I o_I k_E
+OO	1.0	o_B o_E
 OPERATION	1.0	o_B p_I e_I r_I 6_I s_I j_I o_I n_E
 OPO	1.0	o_B p_I o_E
-OR	1.0	o_B r_E
+OR	1.0	o_B r_E #1
 ORANGE	1.0	o_B r_I 6_I N_I dZ_E
 ORAS	1.0	o_B r_I 6_I s_E
+ORDINARYO	1.0	o_B r_I d_I i_I n_I 6_I r_I j_I o_E
+ORGANIZE	1.0	o_B r_I g_I 6_I n_I i_I z_E
 ORIENTAL	1.0	o_B r_I i_I e_I n_I t_I 6_I l_E
 ORIENTATION	1.0	o_B r_I i_I e_I n_I t_I 6_I s_I j_I o_I n_E
+OTSO	1.0	o_B t_I s_I o_E
+OUR	1.0	o_B r_E #2
 OUTING	1.0	o_B w_I t_I i_I N_E
+OVER	1.0	o_B v_I e_I r_E
+P	1.0	p_B i_E
 PA	1.0	p_B i_I ej_E
 PAALALA	1.0	p_B 6_I a_I l_I 6_I l_I a_E
 PAALIS	1.0	p_B 6_I a_I l_I i_I s_E
 PABABA	1.0	p_B 6_I b_I 6_I b_I a_E
 PABLO	1.0	p_B 6_I b_I l_I o_E
+PABUGSO	1.0	p_B 6_I g_I b_I u_I g_I s_I o_E #1
+PAC	1.0	p_B 6_I k_E
 PACIFIC	1.0	p_B 6_I s_I i_I f_I i_I k_E
+PACIFIKO	1.0	p_B 6_I s_I i_I f_I i_I k_I o_E
+PAENG	1.0	p_B 6_I e_I N_E
 PAG	1.0	p_B 6_I g_E
 PAGALON	1.0	p_B 6_I g_I 6_I l_I o_I n_E
+PAGAMBON	1.0	p_B 6_I g_I 6_I m_I b_I o_I n_E
 PAGASA	1.0	p_B 6_I g_I 6_I s_I a_E
 PAGBAHA	1.0	p_B 6_I g_I b_I 6_I h_I a_E
 PAGBATI	1.0	p_B 6_I g_I b_I 6_I t_I i_E
-PAGBUGSO	1.0	p_B 6_I g_I b_I u_I g_I s_I o_E
+PAGBUGSO	1.0	p_B 6_I g_I b_I u_I g_I s_I o_E #2
 PAGBUGSONG	1.0	p_B 6_I g_I b_I u_I g_I s_I o_I N_E
+PAGDA	1.0	p_B 6_I g_I d_I a_E
 PAGDATING	1.0	p_B 6_I g_I d_I 6_I t_I i_I N_E
+PAGDIRIWANG	1.0	p_B 6_I g_I d_I i_I r_I i_I w_I a_I N_E
+PAGE	1.0	p_B ej_I dZ_E
+PAGES	1.0	p_B ej_I dZ_I e_I s_E
 PAGGUHO	1.0	p_B 6_I g_I u_I h_I o_E
+PAGGUHOL	1.0	p_B 6_I g_I g_I u_I h_I o_I l_E
+PAGHAHAKOT	1.0	p_B 6_I g_I h_I 6_I h_I 6_I k_I o_I t_E
+PAGHAMPAS	1.0	p_B 6_I g_I h_I 6_I m_I p_I a_I s_E
+PAGHANDAAN	1.0	p_B 6_I g_I h_I 6_I n_I d_I 6_I a_I n_E
+PAGHINA	1.0	p_B 6_I g_I h_I i_I n_I a_E
+PAGIINGAT	1.0	p_B 6_I g_I i_I i_I N_I a_I t_E
 PAGITAN	1.0	p_B 6_I g_I i_I t_I 6_I n_E
 PAGKABUHAY	1.0	p_B 6_I g_I k_I 6_I b_I u_I h_I aj_E
 PAGKAKAIBA	1.0	p_B 6_I g_I k_I 6_I k_I 6_I i_I b_I a_E
+PAGKAKATAON	1.0	p_B 6_I g_I k_I 6_I k_I 6_I t_I a_I o_I n_E
 PAGKAKATAONG	1.0	p_B 6_I g_I k_I 6_I k_I 6_I t_I 6_I o_I N_E
+PAGKAT	1.0	p_B 6_I g_I k_I a_I t_E
 PAGKATAPOS	1.0	p_B 6_I g_I k_I 6_I t_I 6_I p_I o_I s_E
 PAGKAWALA	1.0	p_B 6_I g_I k_I 6_I w_I 6_I l_I a_E
 PAGKIDLAT	1.0	p_B 6_I g_I k_I i_I d_I l_I 6_I t_E
 PAGKILOS	1.0	p_B 6_I g_I k_I i_I l_I o_I s_E
+PAGKULOB	1.0	p_B 6_I g_I k_I u_I l_I o_I b_E
 PAGKULOG	1.0	p_B 6_I g_I k_I u_I l_I o_I N_E
+PAGLAKAS	1.0	p_B 6_I g_I l_I 6_I k_I a_I s_E
 PAGLALAYAG	1.0	p_B 6_I g_I l_I 6_I l_I 6_I j_I 6_I g_E
+PAGLAMIG	1.0	p_B 6_I g_I l_I a_I m_I i_I g_E
+PAGLUBOG	1.0	p_B 6_I g_I l_I u_I b_I o_I g_E
+PAGLUPO	1.0	p_B 6_I g_I l_I u_I p_I o_E
 PAGPAPAULAN	1.0	p_B 6_I g_I p_I 6_I p_I 6_I u_I l_I 6_I n_E
+PAGPASOK	1.0	p_B 6_I g_I p_I a_I s_I o_I k_E
+PAGSABIT	1.0	p_B 6_I g_I s_I a_I b_I i_I t_E
 PAGSAPIT	1.0	p_B 6_I g_I s_I 6_I p_I i_I t_E
 PAGSASALUBONG	1.0	p_B 6_I g_I s_I a_I l_I u_I b_I o_I N_E
+PAGSISIMULA	1.0	p_B 6_I g_I s_I i_I s_I i_I m_I u_I l_I a_E
 PAGTAAS	1.0	p_B 6_I g_I t_I 6_I a_I s_E
+PAGTAKBO	1.0	p_B 6_I g_I t_I a_I k_I b_I o_E
 PAGTAMA	1.0	p_B 6_I g_I t_I 6_I m_I a_E
 PAGTAWID	1.0	p_B 6_I g_I t_I 6_I w_I i_I d_E
+PAGTAYA	1.0	p_B 6_I g_I t_I 6_I j_I a_E
 PAGULAN	1.0	p_B 6_I g_I u_I l_I 6_I n_E
+PAHABA	1.0	p_B 6_I h_I 6_I b_I a_E
 PAHILAGA	1.0	p_B 6_I h_I i_I l_I 6_I g_I a_E
 PAHILAGANG	1.0	p_B 6_I h_I I_I l_I 6_I g_I 6_I N_E
+PAHINGA	1.0	p_B 6_I h_I i_I N_I a_E
+PAIRAL	1.0	p_B 6_I i_I r_I a_I l_E
 PAKANLURAN	1.0	p_B 6_I k_I 6_I n_I l_I u_I r_I 6_I n_E
 PALALAKASIN	1.0	p_B 6_I l_I 6_I l_I 6_I k_I 6_I s_I i_I n_E
 PALARONG	1.0	p_B 6_I l_I 6_I r_I o_I N_E
 PALAWAN	1.0	p_B 6_I l_I 6_I w_I 6_I n_E
+PALAYO	1.0	p_B 6_I l_I a_I j_I o_E
 PALIBOT	1.0	p_B 6_I l_I i_I b_I o_I t_E
+PALIGID	1.0	p_B 6_I l_I i_I g_I i_I d_E
 PALISADA	1.0	p_B 6_I l_I i_I s_I d_I a_E
 PAMBANSA	1.0	p_B 6_I m_I b_I 6_I n_I s_I a_E
 PAMILYA	1.0	p_B 6_I m_I i_I l_I j_I a_E
 PAMINSAN	1.0	p_B 6_I m_I i_I n_I s_I 6_I n_E
+PAMINSANG	1.0	p_B 6_I m_I i_I n_I s_I a_I N_E
 PAMPANGA	1.0	p_B 6_I m_I p_I 6_I N_I g_I 6_E
+PAMPUBLIKO	1.0	p_B 6_I m_I p_I u_I b_I l_I i_I k_I o_E
 PAN	1.0	p_B 6_I n_E
 PANAHON	1.0	p_B 6_I n_I 6_I h_I o_I n_E
+PANAHONG	1.0	p_B 6_I n_I 6_I h_I o_I N_E
 PANANDALIAN	1.0	p_B 6_I n_I 6_I n_I d_I 6_I l_I 6_I n_E
+PANANDALIANG	1.0	p_B 6_I n_I 6_I n_I d_I 6_I l_I i_I 6_I N_E
+PANANDILAAN	1.0	p_B 6_I n_I 6_I n_I d_I 6_I l_I i_I 6_I n_E
 PANANGGA	1.0	p_B 6_I n_I 6_I N_I g_I a_E
+PANANGHALIAN	1.0	p_B 6_I n_I 6_I N_I h_I 6_I l_I i_I a_I n_E
 PANAY	1.0	p_B 6_I n_I 6_I j_E
 PANDAGAT	1.0	p_B 6_I n_I d_I 6_I g_I 6_I t_E
 PANG	1.0	p_B 6_I N_E
+PANGALAN	1.0	p_B 6_I N_I 6_I l_I a_I n_E
+PANGALAWA	1.0	p_B 6_I N_I 6_I l_I 6_I w_I a_E
+PANGALAWANG	1.0	p_B 6_I N_I 6_I l_I 6_I w_I a_I N_E
 PANGANIB	1.0	p_B N_I 6_I n_I i_I b_E
 PANGASINAN	1.0	p_B 6_I N_I g_I 6_I s_I i_I n_I 6_I n_E
 PANGATLONG	1.0	p_B 6_I N_I 6_I t_I l_I o_I N_E
+PANGDAGAT	1.0	p_B 6_I N_I d_I 6_I g_I a_I t_E
+PANGGABI	1.0	p_B 6_I N_I g_I a_I b_I i_E
+PANGGASINAN	1.0	p_B 6_I N_I g_I a_I s_I i_I n_I a_I n_E
 PANGUNAHING	1.0	p_B 6_I N_I u_I n_I 6_I h_I i_I N_E
 PANIBAGONG	1.0	p_B 6_I n_I i_I b_I 6_I g_I o_I N_E
+PANIG	1.0	p_B 6_I n_I i_I g_E
 PANONOOD	1.0	p_B 6_I n_I o_I n_I o_I o_I d_E
 PANOOD	1.0	p_B 6_I n_I o_I o_I d_E
+PANOORIN	1.0	p_B 6_I n_I o_I o_I r_I i_I n_E
 PANSAMANTALANG	1.0	p_B 6_I n_I s_I 6_I m_I 6_I n_I t_I 6_I l_I 6_I N_E
 PAPAANO	1.0	p_B 6_I p_I 6_I a_I n_I o_E
 PAPALABAS	1.0	p_B 6_I p_I 6_I l_I a_I b_I a_I s_E
@@ -892,44 +1407,77 @@ PAPALO	1.0	p_B 6_I p_I 6_I l_I o_E
 PAPANO	1.0	p_B 6_I p_I 6_I n_I o_E
 PAPASOK	1.0	p_B 6_I p_I 6_I s_I o_I k_E
 PAPAULAN	1.0	p_B 6_I p_I 6_I u_I l_I 6_I n_E
+PAPAYAGAN	1.0	p_B 6_I p_I 6_I j_I 6_I g_I a_I n_E
 PAPUNTA	1.0	p_B 6_I p_I u_I n_I t_I 6_E
 PAR	1.0	p_B 6_I r_E
 PARA	1.0	p_B 6_I r_I 6_E
 PARANG	1.0	p_B 6_I r_I 6_I N_E
+PAREHAS	1.0	p_B 6_I r_I e_I h_I a_I s_E
+PARIN	1.0	p_B 6_I r_I i_I n_E
+PARING	1.0	p_B 6_I r_I i_I N_E
+PARS	1.0	p_B 6_I r_I s_E
 PART	1.0	p_B 6_I r_I t_E
 PARTE	1.0	p_B 6_I r_I t_I e_E
 PARTENG	1.0	p_B 6_I r_I t_I e_I N_E
+PARTICULAR	1.0	p_B 6_I r_I t_I i_I k_I u_I l_I a_I r_E
+PARTICULARLY	1.0	p_B 6_I r_I t_I i_I k_I u_I l_I a_I r_I l_I j_E
 PARTIKULAR	1.0	p_B 6_I r_I t_I i_I k_I u_I l_I 6_I r_E
+PARTS	1.0	p_B 6_I r_I t_I s_E
+PASAY	1.0	p_B 6_I s_I aj_E
+PASIPIKO	1.0	p_B 6_I s_I i_I p_I i_I k_I o_E
+PASKO	1.0	p_B 6_I s_I k_I o_E
+PASOK	1.0	p_B 6_I s_I o_I k_E
 PATAAS	1.0	p_B 6_I t_I 6_I a_I s_E
 PATAY	1.0	p_B 6_I t_I 6j_E
 PATI	1.0	p_B 6_I t_I i_E
 PATROL	1.0	p_B 6_I t_I r_I o_I l_E
 PATULOY	1.0	p_B 6_I t_I u_I l_I o_I j_E
+PATUMBA	1.0	p_B 6_I t_I u_I m_I b_I a_E
+PATUNGO	1.0	p_B 6_I t_I u_I N_I o_E
 PATUNGONG	1.0	p_B 6_I t_I u_I N_I o_I N_E
 PAU	1.0	p_B 6_I u_E
 PAULAN	1.0	p_B 6_I u_I l_I 6_I n_E
+PAYO	1.0	p_B 6_I j_I o_E
 PENINSULA	1.0	p_B e_I n_I i_I n_I s_I u_I l_I a_E
 PEPITO	1.0	p_B e_I p_I i_I t_I o_E
 PER	1.0	p_B e_I r_E
 PERCENT	1.0	p_B e_I r_I s_I e_I n_I t_E
+PEREZ	1.0	p_B e_I r_I e_I z_E
+PERIOD	1.0	p_B i_I r_I i_I u_I d_E
 PERO	1.0	p_B e_I r_I o_E
+PERSONNEL	1.0	p_B e_I r_I s_I o_I n_I e_I l_E
 PH	1.0	p_B i_I ej_I tS_E
 PHILIPPINE	1.0	f_B i_I l_I i_I p_I i_I n_E
+PHILIPPINES	1.0	f_B i_I l_I i_I p_I i_I n_I s_E
 PHILLIPS	1.0	f_B i_I l_I i_I p_I s_E
 PHYSICS	1.0	f_B j_I s_I i_I k_I s_E
 PILING	1.0	p_B i_I l_I i_I N_E
 PILIPINAS	1.0	p_B i_I l_I i_I p_I i_I n_I 6_I s_E
 PINAG	1.0	p_B i_I n_I 6_I g_E
+PINAGBAWALAN	1.0	p_B i_I n_I 6_I g_I b_I 6_I w_I 6_I l_I a_I n_E
+PINAGIBAYANG	1.0	p_B i_I n_I 6_I g_I i_I b_I 6_I j_I a_I N_E
+PINAGIINGAT	1.0	p_B i_I n_I 6_I g_I i_I i_I N_I a_I t_E
 PINAGSANIB	1.0	p_B i_I N_I 6_I g_I s_I 6_I n_I i_I b_E
 PINAIGTING	1.0	p_B i_I n_I 6_I i_I g_I t_I i_I N_E
 PINAKA	1.0	p_B i_I n_I 6_I k_I a_E
+PINAKAAPEKTADO	1.0	p_B i_I n_I 6_I k_I 6_I a_I p_I e_I k_I t_I 6_I d_I o_E
+PINAKABAGONG	1.0	p_B i_I n_I 6_I k_I 6_I b_I a_I g_I o_I N_E
 PINAKAHULING	1.0	p_B i_I n_I 6_I k_I 6_I h_I u_I l_I i_I N_E
+PINAKALATEST	1.0	p_B i_I n_I 6_I k_I 6_I l_I a_I t_I e_I s_I t_E
+PINAKAMABABA	1.0	p_B i_I n_I 6_I k_I 6_I m_I 6_I b_I 6_I b_I a_E
 PINAKAMALAMIG	1.0	o_B i_I n_I 6_I k_I 6_I m_I 6_I l_I 6_I m_I i_I g_E
 PINAKAMATAAS	1.0	p_B i_I n_I 6_I k_I 6_I m_I 6_I t_I 6_I a_I s_E
+PINALABAS	1.0	p_B i_I n_I 6_I l_I 6_I b_I a_I s_E
 PINANGGAGALINGAN	1.0	p_B i_I n_I 6_I N_I g_I 6_I g_I 6_I l_E
+PINAPAALALA	1.0	p_B i_I n_I 6_I p_I 6_I a_I l_I 6_I l_I a_E
+PINAPAALALAHANAN	1.0	p_B i_I n_I 6_I p_I 6_I a_I l_I 6_I l_I a_I h_I 6_I n_I a_I n_E
+PINAPAKITANG	1.0	p_B i_I n_I 6_I p_I 6_I k_I i_I t_I a_I N_E
 PINAPAYAGAN	1.0	p_B i_I n_I 6_I p_I 6_I j_I 6_I g_I 6_I n_E
 PINAPAYAGANG	1.0	p_B i_I n_I 6_I p_I 6_I j_I 6_I g_I 6_I N_E
+PINAPAYAN	1.0	p_B i_I n_I 6_I p_I a_I j_I a_I n_E
+PINAPAYUHAN	1.0	p_B i_I n_I 6_I p_I a_I j_I u_I h_I a_I n_E
 PINAPAYUHANG	1.0	p_B i_I n_I 6_I p_I 6_I j_I u_I h_I 6_I N_E
+PINASUSUNGIT	1.0	p_B i_I n_I 6_I s_I u_I s_I u_I N_I i_I t_E
 PINK	1.0	p_B i_I n_I k_E
 PM	1.0	p_B i_I e_I m_E
 PO	1.0	p_B o_E
@@ -938,52 +1486,83 @@ POLILLO	1.0	p_B o_I l_I i_I l_I j_I o_E
 PONG	1.0	p_B o_I N_E
 POPULATED	1.0	p_B o_I p_I j_I u_I l_I {_I t_I e_I d_E
 PORSYENTO	1.0	p_B o_I r_I S_I e_I n_I t_I o_E
+PORT	1.0	p_B o_I r_I t_E
 PORTION	1.0	p_B o_I r_I t_I i_I o_I n_E
-POSIBLE	1.0	p_B o_I s_I i_I b_I l_E
-POSIBLENG	1.0	p_B o_I s_I i_I b_I l_I e_I N_E
+POSIBILIDAD	1.0	p_B o_I s_I i_I b_I i_I l_I i_I d_I a_I d_E
+POSIBILITY	1.0	p_B o_I s_I i_I b_I i_I l_I i_I t_I i_E
+POSIBLE	1.0	p_B o_I s_I i_I b_I l_I e_E
+POSIBLENG	1.0	p_B o_I s_I i_I b_I l_I e_I N_E #1
+POSSIBLE	1.0	p_B o_I s_I i_I b_I l_E
+POSSIBLENG	1.0	p_B o_I s_I i_I b_I l_I e_I N_E #2
+POSTE	1.0	p_B o_I s_I t_I e_E
+PO'Y	1.0	p_B o_I j_E
 PRE	1.0	p_B r_I e_E
+PRESSCON	1.0	p_B r_I e_I s_I k_I o_I n_E
 PRESSURE	1.0	p_B r_I e_I s_I u_I r_I e_E
 PREVAILING	1.0	p_B r_I e_I v_I 6_I i_I l_I i_I N_E
-PRINCESA	1.0	p_B r_I i_I n_I s_I e_I s_I a_E
+PRIBADO	1.0	p_B r_I i_I b_I 6_I d_I o_E
+PRINCESA	1.0	p_B r_I i_I n_I s_I e_I s_I a_E #1
+PRINSESA	1.0	p_B r_I i_I n_I s_I e_I s_I a_E #2
 PROBABILITY	1.0	p_B r_I o_I b_I 6_I b_I i_I l_I i_I t_I j_E
 PROBINSYA	1.0	p_B r_I o_I b_I i_I n_I S_I a_E
 PROBLEMA	1.0	p_B r_I o_I b_I l_I e_I m_I 6_E
+PROMINENTE	1.0	p_B r_I o_I m_I i_I n_I e_I n_I t_I e_E
 PRONE	1.0	p_B r_I o_I n_E
+PROTECTION	1.0	p_B r_I o_I t_I e_I k_I s_I j_I o_I n_E
 PROVINCE	1.0	p_B r_I o_I v_I i_I n_I s_E
 PROVINCES	1.0	p_B r_I o_I v_I i_I n_I s_I e_I s_E
+PUBLIC	1.0	p_B u_I b_I l_I i_I k_E
+PUBLIKO	1.0	p_B u_I b_I l_I i_I k_I o_E
 PUERTO	1.0	p_B u_I w_I e_I r_I t_I o_E
 PULA	1.0	p_B u_I l_I a_E
 PULO	1.0	p_B u_I l_I o_E
-PULO-PULONG	1.0	p_B u_I l_I o_I p_I u_I l_I o_I N_E
+PULONG	1.0	p_B u_I l_I o_I N_E
+PULOPULONG	1.0	p_B u_I l_I o_I p_I u_I l_I o_I N_E #1
+PULO-PULONG	1.0	p_B u_I l_I o_I p_I u_I l_I o_I N_E #2
+PULU-PULONG	1.0	p_B u_I l_I u_I p_I u_I l_I o_I N_E
 PUMALAOT	1.0	p_B u_I m_I 6_I l_I 6_I o_I t_E
 PUMALO	1.0	p_B u_I m_I 6_I l_I o_E
 PUMAPALO	1.0	p_B u_I m_I 6_I p_I 6_I l_I o_E
 PUMAPATAK	1.0	p_B u_I m_I 6_I p_I 6_I t_I 6_I k_E
 PUMASOK	1.0	p_B u_I m_I 6_I s_I o_I k_E
+PUMUNTA	1.0	p_B u_I m_I u_I n_I t_I a_E
 PUNG	1.0	p_B u_I N_E
 PUNO	1.0	p_B u_I n_I o_E
+PUNTA	1.0	p_B u_I n_I t_I a_E
+PUNTAHAN	1.0	p_B u_I n_I t_I 6_I h_I a_I n_E
 PUPUNTA	1.0	p_B u_I p_I u_I n_I t_I a_E
 PURO	1.0	p_B u_I r_I o_E
 PUWERSA	1.0	p_B u_I w_I e_I r_I s_I a_E
 PWEDE	1.0	p_B w_I e_I d_I e_E
 PWEDENG	1.0	p_B w_I e_I d_I e_I N_E
+QUARENTE	1.0	k_B w_I 6_I r_I e_I n_I t_I e_E
 QUARTER	1.0	k_B w_I a_I r_I t_I e_I r_E
-QUATRO	1.0	k_B w_I 6_I t_I r_I o_E
+QUATRO	1.0	k_B w_I 6_I t_I r_I o_E #2
+QUEENIE	1.0	k_B w_I i_I n_I i_E
 QUEZON	1.0	k_B e_I s_I o_I n_E
+QUINTOS	1.0	k_B i_I n_I t_I o_I s_E
 QUIRINO	1.0	k_B i_I r_I i_I n_I o_E
+R	1.0	6_B r_E #2
+RADIUS	1.0	r_B ej_I d_I i_I u_I s_E
 RADYO	1.0	r_B 6_I j_I ow_E
 RAIN	1.0	r_B 6j_I n_E
 RAINFALL	1.0	r_B 6j_I n_I f_I a_I l_E
 RAINS	1.0	r_B 6j_I n_I s_E
 RAINSHOWERS	1.0	r_B 6j_I n_I S_I o_I w_I e_I r_I s_E
+RAINY	1.0	r_B 6j_I n_I j_E
 RAMDAM	1.0	r_B 6_I m_I d_I 6_I m_E
-RANGE	1.0	r_B {_I n_I g_E
-RANGES	1.0	r_B {_I n_I g_I s_E
+RANGE	1.0	r_B 6j_I n_I g_E
+RANGES	1.0	r_B 6j_I n_I g_I s_E
+RAYMOND	1.0	r_B 6j_I m_I o_I n_I d_E
+RAYS	1.0	r_B 6j_I s_E
 READY	1.0	r_B e_I d_I j_E
 REAL	1.0	r_B i_I l_E
+RECENT	1.0	r_B e_I s_I e_I n_I t_E
 RECORD	1.0	r_B e_I k_I o_I r_I d_E
-REGION	1.0	r_B e_I g_I i_I o_I n_E
+REGION	1.0	r_B i_I g_I i_I o_I n_E
+REGIONS	1.0	r_B i_I g_I i_I o_I n_I s_E
 REHIYON	1.0	r_B e_I h_I i_I j_I o_I n_E
+REPORT	1.0	r_B e_I p_I o_I r_I t_E
 RESCUE	1.0	r_B e_I s_I k_I j_I u_E
 RESIDENT	1.0	r_B e_I s_I i_I d_I e_I n_I t_E
 RESIDENTE	1.0	r_B e_I s_I i_I d_I e_I n_I t_I e_E
@@ -992,44 +1571,74 @@ REST	1.0	r_B e_I s_I t_E
 RETRIEVAL	1.0	r_B e_I t_I r_I i_I v_I 6_I l_E
 RIN	1.0	r_B i_I n_E
 RING	1.0	r_B i_I N_E
+RISKY	1.0	r_B i_I s_I k_I i_E
 RITO	1.0	r_B i_I t_I o_E
+RIVER	1.0	r_B i_I v_I e_I r_E
 RIZAL	1.0	r_B i_I z_I 6_I l_E
 ROMBLON	1.0	r_B o_I m_I b_I l_I o_I n_E
 ROSITA	1.0	r_B o_I s_I i_I t_I a_E
+S	1.0	e_B s_E
 SA	1.0	s_B 6_E
 SAAN	1.0	s_B 6_I a_I n_E
 SABADO	1.0	s_B 6_I b_I 6_I d_I o_E
+SABI	1.0	s_B 6_I b_I i_E
 SABIHIN	1.0	s_B 6_I b_I i_I h_I i_I n_E
 SAIS	1.0	s_B 6_I i_I s_E
+SAK	1.0	s_B 6_I k_E
 SAKAHAN	1.0	s_B 6_I k_I 6_I h_I a_I n_E
+SAKALING	1.0	s_B 6_I k_I 6_I l_I i_I N_E
+SALAGAY	1.0	s_B 6_I l_I 6_I g_I aj_E
 SALAMAT	1.0	s_B 6_I l_I 6_I m_I 6_I t_E
 SAMA	1.0	s_B 6_I m_I a_E
+SAMAHAN	1.0	s_B 6_I m_I 6_I h_I a_I n_E
 SAMANTALA	1.0	s_B 6_I m_I 6_I n_I t_I 6_I l_I 6_E
 SAMANTALANG	1.0	s_B 6_I m_I 6_I n_I t_I 6_I l_I 6_I N_E
+SAMANTLA	1.0	m_B 6_I m_I 6_I n_I t_I 6_I l_I a_E
 SAMAR	1.0	s_B 6_I m_I 6_I r_E
+SAME	1.0	s_B ej_I m_E
 SAMUEL	1.0	s_B 6_I m_I u_I e_I l_E
+SAN	1.0	s_B 6_I n_E
 SANTO	1.0	s_B 6_I n_I t_I o_E
 SANTOS	1.0	s_B 6_I n_I t_I o_I s_E
 SAPAGKAT	1.0	s_B 6_I p_I 6_I g_I k_I 6_I t_E
+SARANGGANI	1.0	s_B 6_I r_I 6_I N_I g_I 6_I n_I i_E
+SASAKYAN	1.0	s_B 6_I s_I 6_I k_I j_I a_I n_E
 SASAKYANG	1.0	s_B a_I s_I a_I k_I j_I 6_I n_E
 SATELLITE	1.0	s_B a_I t_I e_I l_I aj_I t_E
+SATURDAY	1.0	s_B 6_I t_I u_I r_I d_I ej_E
+SCENARIO	1.0	s_B e_I n_I 6_I r_I j_I o_E
+SCIENCE	1.0	s_B i_I e_I n_I s_E
+SCTEX	1.0	e_B s_I s_I i_I t_I e_I k_I s_E
 SEA	1.0	s_B i_E #1
 SEABOARD	1.0	s_B i_I b_I o_I r_I d_E
 SEABOARDS	1.0	s_B i_I b_I o_I r_I d_I s_E
+SEARCH	1.0	s_B e_I r_I t_I s_E
 SEASON	1.0	s_B i_I s_I o_I n_E
 SECTION	1.0	s_B e_I k_I S_I o_I n_E
+SEN	1.0	s_B e_I n_E
 SENDONG	1.0	s_B e_I n_I d_I o_I N_E
+SENTRO	1.0	s_B e_I n_I t_I r_I o_E #2
+SENYALES	1.0	s_B e_I n_I j_I 6_I l_I e_I s_E
+SEPTEMBER	1.0	s_B e_I p_I t_I e_I m_I b_I e_I r_E
 SERBISYONG	1.0	s_B e_I r_I b_I i_I S_I o_I N_E
+SERVICES	1.0	s_B e_I r_I v_I i_I s_I e_I s_E
 SEVEN	1.0	s_B e_I v_I e_I n_E
 SEVENTEEN	1.0	s_B e_I v_I e_I t_I i_I n_E
 SEVENTY	1.0	s_B e_I v_I e_I n_I t_I j_E
+SEVERE	1.0	s_B e_I v_I i_I r_E
 SHANSHAN	1.0	S_B 6_I n_I S_I a_I n_E
+SHEAR	1.0	S_B i_I r_E
+SHELLY	1.0	S_B e_I l_I j_E
 SHERY	1.0	S_B e_I r_I j_E
 SHERYL	1.0	S_B e_I r_I i_I l_E
+SHIFTING	1.0	S_B i_I f_I t_I i_I N_E
+SHIPPING	1.0	S_B i_I p_I i_I N_E
 SHOWERS	1.0	S_B ow_I e_I r_I s_E
 SI	1.0	s_B i_E #2
+SIARGAO	1.0	s_B i_I 6_I r_I g_I a_I o_E
 SIDE	1.0	s_B i_I d_E
 SIERRA	1.0	s_B i_I e_I r_I a_E
+SIGE	1.0	s_B i_I g_I e_E
 SIGNAL	1.0	s_B i_I g_I n_I 6_I l_E
 SIGNALS	1.0	s_B i_I g_I n_I 6_I l_I s_E
 SIGURADO	1.0	s_B i_I g_I u_I r_I 6_I d_I o_E
@@ -1041,29 +1650,58 @@ SILIPIN	1.0	s_B i_I l_I i_I p_I i_I n_E
 SIMULA	1.0	s_B i_I m_I u_I l_I a_E
 SINABING	1.0	s_B i_I n_I 6_I b_I i_I N_E
 SINAIT	1.0	s_B i_I n_I 6_I i_I t_E
+SINALANTA	1.0	s_B i_I n_I 6_I l_I 6_I n_I t_I a_E
+SINGKWENTA	1.0	s_B i_I N_I k_I w_I e_I n_I t_I a_E
 SINGKO	1.0	s_B i_I N_I k_I o_E
+SINIMULAN	1.0	s_B i_I n_I i_I m_I u_I l_I a_I n_E
+SINKO	1.0	s_B i_I n_I k_I o_E
 SINUSUNDAN	1.0	s_B i_I n_I u_I s_I u_I n_I d_I 6_I n_E
+SIPON	1.0	s_B i_I p_I o_I n_E
 SIQUIJOR	1.0	s_B i_I k_I i_I h_I o_I r_E
+SIR	1.0	s_B e_I r_E
+SIRA	1.0	s_B i_I r_I a_E
+SIRKULASYON	1.0	s_B i_I r_I k_I u_I l_I a_I s_I j_I o_I n_E
 SISIKAT	1.0	s_B i_I s_I i_I k_I 6_I t_E
+SITWASYON	1.0	s_B i_I t_I w_I a_I s_I j_I o_I n_E
 SIX	1.0	s_B i_I k_I s_E
 SIXTEEN	1.0	s_B i_I k_I s_I t_I i_I n_E
 SIXTY	1.0	s_B i_I k_I s_I t_I j_E
 SIYA	1.0	s_B i_I j_I 6_E
 SIYANG	1.0	s_B i_I j_I 6_I N_E
+SIYETE	1.0	s_B i_I j_I e_I t_I e_E
+SIYUDAD	1.0	s_B j_I u_I d_I a_I d_E
+SKY	1.0	s_B k_I j_E
 SO	1.0	s_B o_E
-SOCSARGEN	1.0	s_B o_I c_I s_I 6_I r_I g_I e_I n_E
+SOBRANG	1.0	s_B o_I b_I r_I 6_I N_E
+SOCSARGEN	1.0	s_B o_I k_I s_I 6_I r_I g_I e_I n_E
+SOME	1.0	s_B o_I m_E
+SORSOGON	1.0	s_B o_I r_I s_I o_I g_I o_I n_E
+SOULIK	1.0	s_B o_I u_I l_I i_I k_E
 SOUTH	1.0	s_B aw_I T_E
+SOUTHEAST	1.0	s_B aw_I T_I i_I s_I t_E
 SOUTHERN	1.0	s_B aw_I T_I e_I r_I n_E
 SOUTHWEST	1.0	s_B aw_I T_I w_I e_I s_I t_E
+SOWANG	1.0	s_B o_I w_I 6_I N_E
+SPECIALIST	1.0	s_B p_I e_I s_I j_I a_I l_I i_I s_I t_E
+SPECIFIC	1.0	s_B p_I e_I s_I i_I f_I i_I k_E
 SPELL	1.0	s_B p_I e_I l_E
 STANLEY	1.0	s_B t_I 6_I n_I l_I e_I j_E
+START	1.0	s_B t_I 6_I r_I t_E
+STATION	1.0	s_B t_I 6_I s_I j_I o_I n_E
 STORM	1.0	s_B t_I o_I r_I m_E
 STRENGTH	1.0	s_B t_I r_I e_I N_I T_E
 STRESS	1.0	s_B t_I r_I e_I s_E
-SUBAYBAY	1.0	s_B u_I b_I 6_I j_I b_I 6_I j_E
 STROKE	1.0	s_B t_I r_I o_I k_E
+STUDIO	1.0	s_B t_I u_I d_I i_I o_E
+SUBALIT	1.0	s_B u_I b_I 6_I l_I i_I t_E
+SUBAYBAY	1.0	s_B u_I b_I 6_I j_I b_I 6_I j_E
 SUBIC	1.0	s_B u_I b_I i_I k_E
+SUBJECT	1.0	s_B u_I b_I dZ_I e_I k_E
+SUCH	1.0	s_B u_I t_I s_E
 SUGATAN	1.0	s_B u_I g_I 6_I t_I 6_I n_E
+SULTAN	1.0	s_B u_I l_I t_I a_I n_E
+SULU	1.0	s_B u_I l_I u_E
+SUMIKAT	1.0	s_B u_I m_I i_I k_I a_I t_E
 SUNDAY	1.0	s_B u_I n_I d_I ej_E
 SUNGIT	1.0	s_B u_I N_I i_I t_E
 SUNOG	1.0	s_B u_I n_I o_I g_E
@@ -1071,94 +1709,156 @@ SUNRISE	1.0	s_B u_I n_I r_I i_I s_I V_E
 SUNSET	1.0	s_B u_I n_I s_I e_I t_E
 SUPER	1.0	s_B u_I p_I e_I r_E
 SUR	1.0	s_B u_I r_E
+SURERO	1.0	s_B u_I r_I e_I r_I o_E
+SURFACE	1.0	s_B u_I r_I f_I ej_I s_E
 SURGE	1.0	s_B u_I r_I dZ_E
 SURIGAO	1.0	s_B u_I r_I i_I g_I 6_I o_E
+SUSPENDIDO	1.0	s_B u_I s_I p_I e_I n_I d_I i_I d_I o_E
 SUSTAINED	1.0	s_B u_I s_I t_I aj_I n_I d_E
 SUSUNOD	1.0	s_B u_I s_I u_I n_I o_I d_E
 SYSTEM	1.0	s_B i_I s_I t_I e_I m_E
 SYUDAD	1.0	s_B j_I u_I d_I 6_I d_E
+T	1.0	t_B i_E
+TA	1.0	t_B a_E
 TAAS	1.0	t_B 6_I a_I s_E
+TAG	1.0	t_B 6_I g_E
 TAGA	1.0	t_B 6_I g_I a_E
+TAGAPAKINIG	1.0	t_B 6_I g_I 6_I p_I 6_I k_I i_I n_I i_I g_E
 TAGAPANOOD	1.0	t_B 6_I g_I 6_I p_I 6_I n_I o_I o_I d_E
+TAGASUBAYBAY	1.0	t_B 6_I g_I 6_I s_I u_I b_I 6j_I b_I aj_E
 TAGAYTAY	1.0	t_B 6_I g_I 6j_I t_I aj_E
 TAGBILARAN	1.0	t_B 6_I g_I b_I i_I l_I 6_I r_I 6_I n_E
 TAGLAY	1.0	t_B 6_I g_I l_I 6_I j_E
+TAGUM-LIBUGANON	1.0	t_B 6_I g_I u_I m_I l_I i_I b_I u_I g_I 6_I n_I o_I n_E
 TAIL	1.0	t_B ej_I l_E
 TAKBO	1.0	t_B 6_I k_I b_I o_E
+TALAGA	1.0	t_B 6_I l_I 6_I g_I a_E
+TALAGANG	1.0	t_B 6_I l_I 6_I g_I a_I N_E
 TAMA	1.0	t_B 6_I m_I 6_E
 TAMAAN	1.0	t_B 6_I m_I 6_I a_I n_E
+TAMBAK	1.0	t_B 6_I m_I b_I a_I k_E
 TANGHALI	1.0	t_B 6_I N_I h_I 6_I l_I i_E
 TANI	1.0	t_B 6_I n_I i_E
+TANONG	1.0	t_B 6_I n_I o_I N_E
+TANUNGIN	1.0	t_B 6_I n_I u_I N_I i_I n_E
 TAO	1.0	t_B 6_I o_E
+TAON	1.0	t_B 6_I o_I n_E
 TAPOS	1.0	t_B 6_I p_I o_I s_E
-TARLAC	1.0	t_B 6_I r_I l_I 6_I c_E
+TARLAC	1.0	t_B 6_I r_I l_I 6_I k_E
 TATAAS	1.0	t_B 6_I t_I 6_I a_I s_E
+TATAHAKING	1.0	t_B 6_I t_I 6_I h_I 6_I k_I i_I N_E
 TATAMA	1.0	t_B 6_I t_I 6_I m_I 6_E
+TATAWAGIN	1.0	t_B 6_I t_I 6_I w_I 6_I g_I i_I n_E
+TATAWID	1.0	t_B 6_I t_I 6_I w_I i_I d_E
 TATAWIDIN	1.0	t_B 6_I t_I 6w_I i_I d_I i_I n_E
 TATAWIRIN	1.0	t_B 6_I t_I 6w_I i_I r_I i_I n_E
 TATLO	1.0	t_B 6_I t_I l_I o_E
 TATLONG	1.0	t_B 6_I t_I l_I o_I N_E
+TAUHAN	1.0	t_B 6_I u_I h_I a_I n_E
 TAYA	1.0	t_B 6_I j_I 6_E
 TAYO	1.0	t_B 6_I j_I o_E
 TAYONG	1.0	t_B 6_I j_I o_I N_E
+TAYO'Y	1.0	t_B 6_I j_I o_I j_E
 TED	1.0	t_B e_I d_E
 TEMPERATURA	1.0	t_B e_I m_I p_I e_I r_I 6_I t_I u_I r_I 6_E
-TEMPERATURE	1.0	t_B e_I m_I p_I e_I r_I {_I t_I u_I r_E
-TEMPERATURES	1.0	t_B e_I m_I p_I e_I r_I {_I t_I u_I r_I s_E
+TEMPERATURE	1.0	t_B e_I m_I p_I e_I r_I ej_I t_I u_I r_E
+TEMPERATURES	1.0	t_B e_I m_I p_I e_I r_I ej_I t_I u_I r_I s_E
 TEN	1.0	t_B e_I n_E
+TERMINO	1.0	t_B e_I r_I m_I i_I n_I o_E
 TERMS	1.0	t_B e_I r_I m_I s_E
-THAT	1.0	T_B {_I t_E
+THANK	1.0	T_B ej_I n_I k_E
+THAT	1.0	T_B 6_I t_E
 THE	1.0	T_B a_E
+THEN	1.0	T_B e_I n_E
+THIRTEEN	1.0	T_B i_I r_I t_I i_I n_E
 THIRTY	1.0	T_B 3_I r_I t_I j_E
+THIRTY-NINE	1.0	T_B i_I r_I t_I j_I n_I j_I n_E #1
 THIS	1.0	T_B I_I s_E
 THOUSAND	1.0	T_B o_I u_I s_I a_I n_I d_E
 THREE	1.0	T_B r_I i_E
+THRITY-EIGHT	1.0	T_B i_I r_I t_I j_I ej_I t_E
+THRITY-NINE	1.0	T_B i_I r_I t_I j_I n_I j_I n_E #2
+THRITY-SIX	1.0	T_B i_I r_I t_I j_I s_I i_I k_I s_E
+THROUGH	1.0	T_B r_I u_E
 THUNDERSTORM	1.0	T_B u_I n_I d_I e_I r_I s_I t_I o_I r_I m_E
 THUNDERSTORMS	1.0	T_B u_I n_I d_I e_I r_I s_I t_I o_I r_I m_I s_E
+THURSDAY	1.0	T_B u_I r_I s_I d_I aj_E
+TICAO	1.0	t_B i_I k_I a_I o_E
+TIGIL	1.0	t_B i_I g_I i_I l_E
+TIKAW	1.0	t_B i_I k_I 6_I w_E
+TILL	1.0	t_B i_I l_E
 TIME	1.0	t_B i_I m_E
 TIMOG	1.0	t_B i_I m_I o_I g_E
+TINA	1.0	t_B i_I n_I a_E
 TINAAS	1.0	t_B i_I n_I 6_I a_I s_E
 TINATAWAG	1.0	t_B i_I n_I 6_I t_I 6_I w_I 6_I g_E
 TINATAYA	1.0	t_B i_I n_I 6_I t_I 6_I j_I 6_E
 TINATAYANG	1.0	t_B i_I n_I a_I t_I j_I 6_I N_E
+TINATWAG	1.0	t_B i_I n_I 6_I t_I 6_I w_I a_I g_E
 TINAWAG	1.0	t_B i_I n_I 6_I w_I 6_I g_E
+TINGNAN	1.0	t_B i_I N_I n_I a_I n_E
 TININGNAN	1.0	t_B i_I n_I i_I N_I n_I 6_I n_E
+TISOY	1.0	t_B i_I s_I o_I j_E
 TITIGNAN	1.0	t_B i_I t_I i_I g_I 6_I n_E
+TITINGIN	1.0	t_B i_I t_I i_I N_I i_I n_E
 TITINGNAN	1.0	t_B i_I t_I i_I N_I n_I 6_I n_E
 TO	1.0	t_B o_E
 TODAY	1.0	t_B o_I d_I ej_E
+TOMAS	1.0	t_B o_I m_I a_I s_E
 TOMORROW	1.0	t_B o_I m_I o_I r_I o_I w_E
+TONG	1.0	t_B o_I N_E
 TORNADO	1.0	t_B o_I r_I n_I ej_I d_I o_E
+TOTALLY	1.0	t_B o_I t_I 6_I l_I i_E
 TOTOO	1.0	t_B o_I t_I o_I o_E
 TOWARDS	1.0	t_B o_I w_I 6_I r_I d_I s_E
 TRACK	1.0	t_B r_I 6_I k_E
 TRAHEDYA	1.0	t_B r_I 6_I h_I e_I d_I j_I 6_E
+TRANSITION	1.0	t_B r_I 6_I n_I s_I i_I s_I j_I o_I n_E
+TRAVEL	1.0	t_B r_I 6_I v_I e_I l_E
+TREND	1.0	t_B r_I e_I n_I d_E
 TRENTAY	1.0	t_B r_I e_I t_I aj_E
+TRES	1.0	t_B r_I e_I s_E
 TRESE	1.0	t_B r_I e_I s_I e_E
+TRIPLE	1.0	t_B r_I i_I p_I l_I e_E
 TROPICAL	1.0	t_B r_I o_I p_I i_I k_I 6_I l_E
 TROUGH	1.0	t_B r_I 6_I f_E
 TSAKA	1.0	tS_B 6_I k_I 6_E
 TSANSA	1.0	tS_B 6_I n_I s_I 6_E
 TSANSANG	1.0	tS_B 6_I n_I s_I 6_I N_E
+TU	1.0	t_B u_E #1
 TUBIG	1.0	t_B u_I b_I i_I g_E
 TUGUEGARAO	1.0	t_B u_I g_I e_I g_I 6_I r_I 6_I o_E
+TUGUERAO	1.0	t_B u_I g_I e_I g_I 6_I r_I a_I o_E
 TULAD	1.0	t_B u_I l_I 6_I d_E
+TULOG	1.0	t_B u_I l_I o_I g_E
 TULOY	1.0	t_B u_I l_I o_I j_E
+TULUYAN	1.0	t_B u_I l_I u_I j_I a_I n_E
+TULUYANG	1.0	t_B u_I l_I u_I j_I a_I N_E
+TULUY-TULOY	1.0	t_B u_I l_I u_I j_I t_I u_I l_I o_I j_E
 TUMAMA	1.0	t_B u_I m_I 6_I m_I 6_E
 TUMAMANG	1.0	t_B u_I m_I 6_I m_I 6_I N_E
+TUMATAAS	1.0	t_B u_I m_I 6_I t_I 6_I a_I s_E
 TUMATAMA	1.0	t_B u_I m_I 6_I t_I 6_I m_I 6_E
 TUNGKOL	1.0	t_B u_I N_I k_I o_I l_E
+TUNGO	1.0	t_B u_I N_I o_E
 TUTUMBUKIN	1.0	t_B u_I t_I u_I m_I b_I u_I k_I i_I n_E
 TUWING	1.0	t_B u_I w_I i_I N_E
 TUYONG	1.0	t_B u_I j_I o_I N_E
 TV	1.0	t_B i_I v_I i_E
 TWELVE	1.0	t_B u_I e_I l_I v_E
+TWEN	1.0	t_B w_I e_I n_E
 TWENTY	1.0	t_B u_I e_I n_I t_I i_E
 TWITTER	1.0	t_B u_I i_I t_I e_I r_E
-TWO	1.0	t_B u_E
+TWO	1.0	t_B u_E #2
+TYO	1.0	t_B i_I j_I o_E
 TYPHOON	1.0	t_B aj_I f_I U_I n_E
 U	1.0	u_S
+UAN	1.0	j_B u_I ej_I e_I n_E
+UH	1.0	u_B h_E
+UKOL	1.0	u_B k_I o_I l_E
 ULAN	1.0	u_B l_I 6_I n_E
+ULANG	1.0	u_B l_I a_I N_E
+ULANIN	1.0	u_B l_I a_I n_I i_I n_E
 ULAP	1.0	u_B l_I 6_I p_E
 ULAT	1.0	u_B l_I 6_I t_E
 ULI	1.0	u_B l_I i_E
@@ -1166,33 +1866,62 @@ ULIT	1.0	u_B l_I i_I t_E
 UMAABOT	1.0	u_B m_I 6_I a_I b_I o_I t_E
 UMABOT	1.0	u_B m_I 6_I b_I o_I t_E
 UMAGA	1.0	u_B m_I 6_I g_I 6_E
+UMAKYAT	1.0	u_B m_I 6_I k_I j_I a_I t_E
+UMANTABAY	1.0	u_B m_I 6_I n_I t_I 6_I b_I a_I j_E
+UMAPAO	1.0	u_B m_I 6_I p_I a_I o_E
 UMIIRAL	1.0	u_B m_I i_I i_I l_I 6_I w_E
+UMINIT	1.0	u_B m_I i_I n_I i_I t_E
 UMULAN	1.0	u_B m_I u_I l_I 6_I n_E
+UMUULAN	1.0	u_B m_I u_I u_I l_I a_I n_E
+UN	1.0	j_B u_I e_I n_E
 UNA	1.0	u_B n_I 6_E
+UNAHIN	1.0	u_B n_I 6_I h_I i_I n_E
 UNANG	1.0	u_B n_I 6_I N_E
 UNA'Y	1.0	u_B n_I 6_I aj_E
+UNDER	1.0	u_B n_I d_I e_I r_E
 UNDERSCORE	1.0	6_B n_I d_I e_I r_I s_I k_I o_I r_E
+UNG	1.0	j_B u_I N_E
 UNION	1.0	j_B u_I n_I i_I o_I n_E
+UNO	1.0	u_B n_I o_E
+UNTI-UNTI	1.0	u_B n_I t_I i_I u_I n_I t_I i_E
 UP	1.0	j_B u_I p_I i_E
 UPDATE	1.0	6_B p_I d_I 6_I j_I t_E
+UPDATED	1.0	u_B p_I d_I ej_I t_I e_I d_E
+UPDATES	1.0	u_B p_I d_I ej_I t_I s_E
+URING	1.0	u_B r_I i_I N_E
+URSULA	1.0	u_B r_I s_I u_I l_I a_E
+US	1.0	j_B u_I e_I s_E
+USAPIN	1.0	u_B s_I 6_I p_I i_I n_E
+USERNAME	1.0	j_B u_I s_I e_I r_I n_I ej_I m_E
+USUALLY	1.0	j_B u_I s_I u_I 6_I l_I i_E
 UULAN	1.0	u_B u_I l_I 6_I n_E
+UULANIN	1.0	u_B u_I l_I 6_I n_I i_I n_E
 UULAT	1.0	u_B u_I l_I 6_I t_E
 UUSAPAN	1.0	u_B u_I s_I 6_I p_I 6_I n_E
 UUWI	1.0	u_B u_I w_I i_E
 VALLEY	1.0	v_B 6_I l_I i_E
+VENUE	1.0	v_B e_I n_I j_I u_E
 VICINITY	1.0	v_B i_I s_I i_I n_I i_I t_I i_E
+VIDEO	1.0	v_B i_I d_I e_I o_E
+VIDEOS	1.0	v_B i_I d_I e_I o_I s_E
+VIETNAM	1.0	v_B i_I e_I t_I n_I a_I m_E
 VISAYAS	1.0	v_B i_I s_I 6_I j_I 6_I s_E
 VISIBILITY	1.0	v_B i_I s_I i_I b_I i_I l_I i_I t_I i_E
+VISIT	1.0	v_B i_I s_I i_I t_E
+VITAMIN	1.0	v_B i_I t_I 6_I m_I i_I n_E
 VIZCAYA	1.0	v_B i_I z_I k_I 6_I j_I 6_E
 VIZCAYAT	1.0	v_B i_I z_I k_I 6_I j_I 6_I t_E
-WW	1.0	d_B a_I b_I 6_I l_I j_I u_I d_I a_I b_I 6_I l_I j_I u_E
+W	1.0	d_B u_I b_I j_I u_E
 WAG	1.0	w_B 6_I g_E
+WAL	1.0	w_B 6_I l_E
 WALA	1.0	w_B 6_I l_I 6_E
 WALANG	1.0	w_B 6_I l_I 6_I N_E
+WALL	1.0	w_B o_I l_E
 WARNING	1.0	w_B 6_I r_I n_I i_I N_E
 WE	1.0	w_B i_E
 WEATHER	1.0	w_B e_I T_I e_I r_E
 WEBSITE	1.0	w_B e_I b_I s_I aj_I t_E
+WEDNESDAY	1.0	w_B e_I d_I n_I e_I s_I d_I 6_I j_E
 WEEK	1.0	w_B i_I k_E
 WEEKEND	1.0	w_B i_I k_I e_I n_I d_E
 WELCOME	1.0	w_B e_I l_I k_I 6_I m_E
@@ -1200,18 +1929,30 @@ WELL	1.0	w_B e_I l_E
 WEST	1.0	w_B e_I s_I t_E
 WESTERN	1.0	w_B e_I s_I t_I e_I r_I n_E
 WESTWARD	1.0	w_B e_I s_I t_I w_I 6_I r_I d_E
+WE'VE	1.0	w_B i_I v_E
 WHICH	1.0	w_B i_I tS_E
+WILL	1.0	w_B i_I l_E
 WIND	1.0	w_B i_I n_I d_E
+WINDFLOW	1.0	w_B i_I n_I d_I f_I l_I o_I w_E
 WINDS	1.0	w_B i_I n_I d_I s_E
+WINDY	1.0	w_B i_I n_I d_I i_E
+WITH	1.0	w_B i_I T_E
+WITHIN	1.0	w_B i_I T_I i_I n_E
+WORSE	1.0	w_B o_I r_I s_E
 WOW	1.0	w_B 6_I w_E
+WW	1.0	d_B a_I b_I 6_I l_I j_I u_I d_I a_I b_I 6_I l_I j_I u_E
 YAN	1.0	j_B 6_I n_E
 YANG	1.0	j_B 6_I N_E
+YARI	1.0	j_B 6_I r_I i_E
+YEA	1.0	j_B e_I a_E
 YEAR	1.0	j_B i_I r_E
 YELLOW	1.0	j_B e_I l_I ow_E
 YELO	1.0	j_B e_I l_I o_E
 YES	1.0	j_B e_I s_E
 YOLANDA	1.0	j_B o_I l_I 6_I n_I d_I 6_E
 YOLANDANG	1.0	j_B o_I l_I 6_I n_I d_I 6_I N_E
+YON	1.0	j_B o_I n_E
+YOU	1.0	j_B u_E
 YOUTUBE	1.0	j_B U_I t_I u_I b_E
 YUN	1.0	j_B U_I n_E
 YUNG	1.0	j_B U_I N_E

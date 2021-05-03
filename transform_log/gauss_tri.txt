@@ -1,0 +1,2082 @@
+
+===== GETTING OPTIMAL GAUSSIANS FOR TRIPHONE =====
+
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 10000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.5589353612% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.5171102662% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+7 warnings in exp/tri1/log/init_model.log
+46 warnings in exp/tri1/log/align.*.*.log
+143 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/build_tree.log
+102 warnings in exp/tri1/log/acc.*.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+exp/tri1: nj=4 align prob=-98.74 over 0.78h [retry=2.6%, fail=1.1%] states=168 gauss=10022 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237848
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.8787878788% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 22.7272727273% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=5.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.88 [ 379 / 2386, 69 ins, 66 del, 244 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_11
+%WER 14.96 [ 357 / 2386, 64 ins, 70 del, 223 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.75 [ 352 / 2386, 62 ins, 73 del, 217 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_13
+%WER 14.08 [ 336 / 2386, 56 ins, 77 del, 203 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.50 [ 322 / 2386, 51 ins, 79 del, 192 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.91 [ 308 / 2386, 43 ins, 84 del, 181 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.95 [ 309 / 2386, 43 ins, 86 del, 180 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.99 [ 310 / 2386, 40 ins, 96 del, 174 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.21 [ 506 / 2386, 105 ins, 66 del, 335 sub ]
+%SER 90.91 [ 60 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.70 [ 470 / 2386, 93 ins, 72 del, 305 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_9
+%WER 18.15 [ 433 / 2386, 86 ins, 70 del, 277 sub ]
+%SER 86.36 [ 57 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.55%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 12000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 32.6996197719% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.897338403% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+46 warnings in exp/tri1/log/align.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+191 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/build_tree.log
+exp/tri1: nj=4 align prob=-97.98 over 0.78h [retry=2.3%, fail=1.1%] states=168 gauss=12026 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498325 -0.237924
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.8787878788% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 25.7575757576% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=5.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 16.76 [ 400 / 2386, 73 ins, 76 del, 251 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.13 [ 361 / 2386, 60 ins, 74 del, 227 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.33 [ 342 / 2386, 53 ins, 77 del, 212 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.87 [ 331 / 2386, 47 ins, 78 del, 206 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.03 [ 311 / 2386, 41 ins, 79 del, 191 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.87 [ 307 / 2386, 36 ins, 86 del, 185 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.99 [ 310 / 2386, 31 ins, 96 del, 183 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.82 [ 306 / 2386, 28 ins, 98 del, 180 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.42 [ 511 / 2386, 113 ins, 70 del, 328 sub ]
+%SER 90.91 [ 60 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.61 [ 468 / 2386, 97 ins, 69 del, 302 sub ]
+%SER 90.91 [ 60 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.77 [ 424 / 2386, 82 ins, 70 del, 272 sub ]
+%SER 89.39 [ 59 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.51%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 14000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.9391634981% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 26.6159695817% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+7 warnings in exp/tri1/log/init_model.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+45 warnings in exp/tri1/log/align.*.*.log
+347 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/build_tree.log
+exp/tri1: nj=4 align prob=-97.31 over 0.78h [retry=2.6%, fail=1.1%] states=168 gauss=13932 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237831
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.303030303% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,12) and mean=5.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 16.26 [ 388 / 2386, 71 ins, 69 del, 248 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.34 [ 366 / 2386, 59 ins, 73 del, 234 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.46 [ 345 / 2386, 50 ins, 75 del, 220 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_13
+%WER 14.25 [ 340 / 2386, 48 ins, 85 del, 207 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.91 [ 332 / 2386, 47 ins, 84 del, 201 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_15
+%WER 13.62 [ 325 / 2386, 42 ins, 85 del, 198 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_16
+%WER 13.50 [ 322 / 2386, 41 ins, 86 del, 195 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 13.12 [ 313 / 2386, 37 ins, 91 del, 185 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.50 [ 513 / 2386, 115 ins, 66 del, 332 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.36 [ 462 / 2386, 97 ins, 63 del, 302 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.23 [ 411 / 2386, 76 ins, 65 del, 270 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.69%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 16000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 32.6996197719% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.7566539924% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+1 warnings in exp/tri1/log/build_tree.log
+102 warnings in exp/tri1/log/acc.*.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+45 warnings in exp/tri1/log/align.*.*.log
+411 warnings in exp/tri1/log/update.*.log
+7 warnings in exp/tri1/log/init_model.log
+exp/tri1: nj=4 align prob=-97.14 over 0.78h [retry=2.3%, fail=1.1%] states=168 gauss=13932 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498337 -0.237895
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 40.9090909091% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,11) and mean=5.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.26 [ 364 / 2386, 65 ins, 67 del, 232 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_11
+%WER 14.04 [ 335 / 2386, 50 ins, 71 del, 214 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_12
+%WER 13.03 [ 311 / 2386, 43 ins, 77 del, 191 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_13
+%WER 12.74 [ 304 / 2386, 37 ins, 82 del, 185 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.41 [ 296 / 2386, 34 ins, 83 del, 179 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.24 [ 292 / 2386, 31 ins, 84 del, 177 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.11 [ 289 / 2386, 28 ins, 89 del, 172 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_17
+%WER 11.74 [ 280 / 2386, 24 ins, 90 del, 166 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_7
+%WER 20.49 [ 489 / 2386, 108 ins, 64 del, 317 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_8
+%WER 18.40 [ 439 / 2386, 86 ins, 63 del, 290 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_9
+%WER 16.68 [ 398 / 2386, 71 ins, 65 del, 262 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 14.47%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 18000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.7984790875% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.1368821293% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+1 warnings in exp/tri1/log/build_tree.log
+42 warnings in exp/tri1/log/align.*.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+462 warnings in exp/tri1/log/update.*.log
+exp/tri1: nj=4 align prob=-97.10 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13932 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237908
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.303030303% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=5.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 17.14 [ 409 / 2386, 80 ins, 70 del, 259 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.72 [ 375 / 2386, 69 ins, 78 del, 228 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.29 [ 341 / 2386, 57 ins, 80 del, 204 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.58 [ 324 / 2386, 45 ins, 80 del, 199 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.95 [ 309 / 2386, 42 ins, 80 del, 187 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.24 [ 292 / 2386, 36 ins, 84 del, 172 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.11 [ 289 / 2386, 34 ins, 88 del, 167 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_17
+%WER 11.99 [ 286 / 2386, 31 ins, 90 del, 165 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.75 [ 519 / 2386, 123 ins, 69 del, 327 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.70 [ 470 / 2386, 105 ins, 68 del, 297 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_9
+%WER 18.27 [ 436 / 2386, 93 ins, 68 del, 275 sub ]
+%SER 83.33 [ 55 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.43%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 20000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.5589353612% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.3764258555% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+41 warnings in exp/tri1/log/align.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+528 warnings in exp/tri1/log/update.*.log
+exp/tri1: nj=4 align prob=-97.10 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13938 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498716 -0.237904
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.3939393939% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 16.6666666667% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,12) and mean=5.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.30 [ 365 / 2386, 69 ins, 64 del, 232 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_11
+%WER 14.33 [ 342 / 2386, 60 ins, 69 del, 213 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_12
+%WER 13.41 [ 320 / 2386, 51 ins, 72 del, 197 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_13
+%WER 12.91 [ 308 / 2386, 45 ins, 75 del, 188 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.53 [ 299 / 2386, 39 ins, 81 del, 179 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.32 [ 294 / 2386, 38 ins, 84 del, 172 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.15 [ 290 / 2386, 36 ins, 87 del, 167 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.07 [ 288 / 2386, 33 ins, 88 del, 167 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_7
+%WER 20.70 [ 494 / 2386, 114 ins, 59 del, 321 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_8
+%WER 18.73 [ 447 / 2386, 98 ins, 60 del, 289 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_9
+%WER 16.68 [ 398 / 2386, 82 ins, 62 del, 254 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 14.65%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 22000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.1787072243% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 26.9961977186% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+1 warnings in exp/tri1/log/build_tree.log
+102 warnings in exp/tri1/log/acc.*.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+562 warnings in exp/tri1/log/update.*.log
+42 warnings in exp/tri1/log/align.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+exp/tri1: nj=4 align prob=-97.09 over 0.78h [retry=2.3%, fail=1.1%] states=168 gauss=13942 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498846 -0.237972
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 33.3333333333% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,12) and mean=5.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.97 [ 381 / 2386, 77 ins, 76 del, 228 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_11
+%WER 14.50 [ 346 / 2386, 63 ins, 75 del, 208 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.12 [ 337 / 2386, 56 ins, 80 del, 201 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.45 [ 321 / 2386, 48 ins, 80 del, 193 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.08 [ 312 / 2386, 45 ins, 81 del, 186 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_15
+%WER 13.03 [ 311 / 2386, 43 ins, 83 del, 185 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.49 [ 298 / 2386, 40 ins, 81 del, 177 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.66 [ 302 / 2386, 40 ins, 84 del, 178 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.00 [ 501 / 2386, 109 ins, 58 del, 334 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.49 [ 465 / 2386, 96 ins, 63 del, 306 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.90 [ 427 / 2386, 87 ins, 69 del, 271 sub ]
+%SER 87.88 [ 58 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.24%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 24000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 32.319391635% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.7566539924% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+40 warnings in exp/tri1/log/align.*.*.log
+102 warnings in exp/tri1/log/acc.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+7 warnings in exp/tri1/log/init_model.log
+608 warnings in exp/tri1/log/update.*.log
+exp/tri1: nj=4 align prob=-97.10 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13944 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237971
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.8181818182% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 22.7272727273% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,12) and mean=5.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 16.09 [ 384 / 2386, 61 ins, 72 del, 251 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.63 [ 373 / 2386, 56 ins, 73 del, 244 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.50 [ 346 / 2386, 47 ins, 80 del, 219 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.75 [ 328 / 2386, 41 ins, 83 del, 204 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.33 [ 318 / 2386, 37 ins, 84 del, 197 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.99 [ 310 / 2386, 37 ins, 84 del, 189 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_16
+%WER 13.08 [ 312 / 2386, 33 ins, 90 del, 189 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.87 [ 307 / 2386, 31 ins, 93 del, 183 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_7
+%WER 20.41 [ 487 / 2386, 104 ins, 67 del, 316 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri1/decode/wer_8
+%WER 18.57 [ 443 / 2386, 83 ins, 65 del, 295 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_9
+%WER 16.60 [ 396 / 2386, 65 ins, 69 del, 262 sub ]
+%SER 83.33 [ 55 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.26%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 26000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.9391634981% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.3764258555% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+683 warnings in exp/tri1/log/update.*.log
+102 warnings in exp/tri1/log/acc.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+1 warnings in exp/tri1/log/build_tree.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+42 warnings in exp/tri1/log/align.*.*.log
+exp/tri1: nj=4 align prob=-97.09 over 0.78h [retry=2.3%, fail=1.1%] states=168 gauss=13937 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498656 -0.237907
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.8787878788% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.2424242424% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=5.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 17.44 [ 416 / 2386, 72 ins, 79 del, 265 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_11
+%WER 16.18 [ 386 / 2386, 59 ins, 83 del, 244 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_12
+%WER 15.09 [ 360 / 2386, 54 ins, 84 del, 222 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.62 [ 325 / 2386, 45 ins, 89 del, 191 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.50 [ 322 / 2386, 41 ins, 91 del, 190 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_15
+%WER 13.24 [ 316 / 2386, 37 ins, 95 del, 184 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_16
+%WER 13.08 [ 312 / 2386, 36 ins, 97 del, 179 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.87 [ 307 / 2386, 36 ins, 96 del, 175 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.79 [ 520 / 2386, 110 ins, 63 del, 347 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri1/decode/wer_8
+%WER 20.37 [ 486 / 2386, 98 ins, 68 del, 320 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri1/decode/wer_9
+%WER 19.07 [ 455 / 2386, 89 ins, 71 del, 295 sub ]
+%SER 89.39 [ 59 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 16.02%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 28000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.9391634981% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.5171102662% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+690 warnings in exp/tri1/log/update.*.log
+7 warnings in exp/tri1/log/init_model.log
+102 warnings in exp/tri1/log/acc.*.*.log
+42 warnings in exp/tri1/log/align.*.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+1 warnings in exp/tri1/log/build_tree.log
+exp/tri1: nj=4 align prob=-97.10 over 0.78h [retry=2.6%, fail=1.1%] states=168 gauss=13937 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498745 -0.237911
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.3939393939% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.2424242424% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=5.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.76 [ 376 / 2386, 67 ins, 76 del, 233 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.00 [ 358 / 2386, 52 ins, 78 del, 228 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.00 [ 334 / 2386, 44 ins, 83 del, 207 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.54 [ 323 / 2386, 40 ins, 84 del, 199 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.08 [ 312 / 2386, 33 ins, 85 del, 194 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.70 [ 303 / 2386, 31 ins, 87 del, 185 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_16
+%WER 13.03 [ 311 / 2386, 30 ins, 95 del, 186 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.70 [ 303 / 2386, 27 ins, 98 del, 178 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_7
+%WER 20.54 [ 490 / 2386, 103 ins, 61 del, 326 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri1/decode/wer_8
+%WER 18.94 [ 452 / 2386, 92 ins, 66 del, 294 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.60 [ 420 / 2386, 80 ins, 68 del, 272 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.17%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 30000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.1787072243% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.1368821293% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+778 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/build_tree.log
+102 warnings in exp/tri1/log/acc.*.*.log
+39 warnings in exp/tri1/log/align.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+exp/tri1: nj=4 align prob=-97.08 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13942 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237891
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.3939393939% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.2727272727% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,14) and mean=5.5
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 17.23 [ 411 / 2386, 65 ins, 80 del, 266 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.93 [ 380 / 2386, 58 ins, 81 del, 241 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_12
+%WER 15.05 [ 359 / 2386, 49 ins, 84 del, 226 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_13
+%WER 14.75 [ 352 / 2386, 44 ins, 91 del, 217 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_14
+%WER 14.08 [ 336 / 2386, 41 ins, 89 del, 206 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_15
+%WER 13.91 [ 332 / 2386, 38 ins, 94 del, 200 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_16
+%WER 13.66 [ 326 / 2386, 38 ins, 96 del, 192 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 13.50 [ 322 / 2386, 37 ins, 97 del, 188 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.67 [ 517 / 2386, 110 ins, 63 del, 344 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_8
+%WER 20.37 [ 486 / 2386, 94 ins, 69 del, 323 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_9
+%WER 18.65 [ 445 / 2386, 81 ins, 73 del, 291 sub ]
+%SER 86.36 [ 57 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 16.25%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 32000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.1787072243% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.3764258555% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+1 warnings in exp/tri1/log/build_tree.log
+862 warnings in exp/tri1/log/update.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+42 warnings in exp/tri1/log/align.*.*.log
+exp/tri1: nj=4 align prob=-97.09 over 0.78h [retry=2.3%, fail=1.1%] states=168 gauss=13938 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498381 -0.237895
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.3636363636% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=5.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.80 [ 377 / 2386, 61 ins, 74 del, 242 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_11
+%WER 14.33 [ 342 / 2386, 44 ins, 74 del, 224 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_12
+%WER 13.16 [ 314 / 2386, 41 ins, 74 del, 199 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_13
+%WER 12.74 [ 304 / 2386, 40 ins, 75 del, 189 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.28 [ 293 / 2386, 33 ins, 81 del, 179 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.15 [ 290 / 2386, 31 ins, 90 del, 169 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_16
+%WER 11.57 [ 276 / 2386, 29 ins, 90 del, 157 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_17
+%WER 11.48 [ 274 / 2386, 26 ins, 93 del, 155 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.00 [ 501 / 2386, 104 ins, 69 del, 328 sub ]
+%SER 90.91 [ 60 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.24 [ 459 / 2386, 86 ins, 73 del, 300 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.81 [ 425 / 2386, 77 ins, 75 del, 273 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 14.69%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 34000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.5589353612% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.3764258555% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+40 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+7 warnings in exp/tri1/log/init_model.log
+924 warnings in exp/tri1/log/update.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+exp/tri1: nj=4 align prob=-97.06 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13943 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498293 -0.237927
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 33.3333333333% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=5.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 16.43 [ 392 / 2386, 71 ins, 72 del, 249 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.09 [ 360 / 2386, 61 ins, 77 del, 222 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.25 [ 340 / 2386, 54 ins, 80 del, 206 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.20 [ 315 / 2386, 44 ins, 77 del, 194 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.87 [ 307 / 2386, 40 ins, 81 del, 186 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.28 [ 293 / 2386, 35 ins, 85 del, 173 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.20 [ 291 / 2386, 33 ins, 91 del, 167 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 11.94 [ 285 / 2386, 31 ins, 92 del, 162 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_7
+%WER 20.49 [ 489 / 2386, 104 ins, 64 del, 321 sub ]
+%SER 90.91 [ 60 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.03 [ 454 / 2386, 90 ins, 68 del, 296 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.31 [ 413 / 2386, 78 ins, 68 del, 267 sub ]
+%SER 83.33 [ 55 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.01%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 36000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.5589353612% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.5171102662% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+39 warnings in exp/tri1/log/align.*.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+1 warnings in exp/tri1/log/build_tree.log
+1040 warnings in exp/tri1/log/update.*.log
+exp/tri1: nj=4 align prob=-97.07 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13942 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498333 -0.237874
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.8787878788% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,12) and mean=5.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 16.55 [ 395 / 2386, 70 ins, 73 del, 252 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.47 [ 369 / 2386, 65 ins, 74 del, 230 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.46 [ 345 / 2386, 56 ins, 76 del, 213 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.79 [ 329 / 2386, 47 ins, 81 del, 201 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.41 [ 320 / 2386, 42 ins, 86 del, 192 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_15
+%WER 13.16 [ 314 / 2386, 43 ins, 88 del, 183 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.66 [ 302 / 2386, 41 ins, 88 del, 173 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.57 [ 300 / 2386, 36 ins, 92 del, 172 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_7
+%WER 22.30 [ 532 / 2386, 116 ins, 64 del, 352 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri1/decode/wer_8
+%WER 20.03 [ 478 / 2386, 100 ins, 70 del, 308 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri1/decode/wer_9
+%WER 18.36 [ 438 / 2386, 87 ins, 71 del, 280 sub ]
+%SER 89.39 [ 59 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.71%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 38000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.1787072243% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.1368821293% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+7 warnings in exp/tri1/log/init_model.log
+1 warnings in exp/tri1/log/build_tree.log
+39 warnings in exp/tri1/log/align.*.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+1163 warnings in exp/tri1/log/update.*.log
+102 warnings in exp/tri1/log/acc.*.*.log
+exp/tri1: nj=4 align prob=-97.09 over 0.78h [retry=2.3%, fail=1.1%] states=168 gauss=13934 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237912
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 34.8484848485% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.2727272727% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,11) and mean=4.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.63 [ 373 / 2386, 68 ins, 70 del, 235 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_11
+%WER 14.33 [ 342 / 2386, 60 ins, 73 del, 209 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_12
+%WER 13.75 [ 328 / 2386, 55 ins, 75 del, 198 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_13
+%WER 12.78 [ 305 / 2386, 47 ins, 76 del, 182 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.11 [ 289 / 2386, 42 ins, 76 del, 171 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.07 [ 288 / 2386, 40 ins, 82 del, 166 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_16
+%WER 11.82 [ 282 / 2386, 39 ins, 81 del, 162 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_17
+%WER 11.53 [ 275 / 2386, 38 ins, 84 del, 153 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_7
+%WER 20.79 [ 496 / 2386, 108 ins, 64 del, 324 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_8
+%WER 18.06 [ 431 / 2386, 89 ins, 61 del, 281 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_9
+%WER 16.26 [ 388 / 2386, 71 ins, 65 del, 252 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 14.47%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 40000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.1787072243% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.7566539924% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+37 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+1228 warnings in exp/tri1/log/update.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+7 warnings in exp/tri1/log/init_model.log
+exp/tri1: nj=4 align prob=-97.08 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13943 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237937
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.8181818182% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,13) and mean=5.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 16.30 [ 389 / 2386, 68 ins, 70 del, 251 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.47 [ 369 / 2386, 61 ins, 76 del, 232 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.54 [ 347 / 2386, 55 ins, 78 del, 214 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.58 [ 324 / 2386, 48 ins, 78 del, 198 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.74 [ 304 / 2386, 40 ins, 81 del, 183 sub ]
+%SER 75.76 [ 50 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.70 [ 303 / 2386, 37 ins, 87 del, 179 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.49 [ 298 / 2386, 35 ins, 86 del, 177 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.07 [ 288 / 2386, 30 ins, 90 del, 168 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.37 [ 510 / 2386, 112 ins, 57 del, 341 sub ]
+%SER 90.91 [ 60 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.61 [ 468 / 2386, 99 ins, 63 del, 306 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri1/decode/wer_9
+%WER 18.11 [ 432 / 2386, 86 ins, 69 del, 277 sub ]
+%SER 89.39 [ 59 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.36%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 42000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.7984790875% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.7566539924% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+39 warnings in exp/tri1/log/align.*.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+1330 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/build_tree.log
+exp/tri1: nj=4 align prob=-97.08 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13938 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237987
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 33.3333333333% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 27.2727272727% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,14) and mean=5.4
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 16.51 [ 394 / 2386, 66 ins, 67 del, 261 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.76 [ 376 / 2386, 59 ins, 74 del, 243 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.38 [ 343 / 2386, 49 ins, 80 del, 214 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.54 [ 323 / 2386, 43 ins, 82 del, 198 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.95 [ 309 / 2386, 42 ins, 81 del, 186 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.91 [ 308 / 2386, 39 ins, 86 del, 183 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.70 [ 303 / 2386, 36 ins, 90 del, 177 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.41 [ 296 / 2386, 32 ins, 89 del, 175 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_7
+%WER 22.34 [ 533 / 2386, 120 ins, 63 del, 350 sub ]
+%SER 92.42 [ 61 / 66 ]
+exp/tri1/decode/wer_8
+%WER 20.66 [ 493 / 2386, 100 ins, 69 del, 324 sub ]
+%SER 92.42 [ 61 / 66 ]
+exp/tri1/decode/wer_9
+%WER 18.82 [ 449 / 2386, 84 ins, 68 del, 297 sub ]
+%SER 90.91 [ 60 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.73%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 44000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.4182509506% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.897338403% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+38 warnings in exp/tri1/log/align.*.*.log
+102 warnings in exp/tri1/log/acc.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+1 warnings in exp/tri1/log/build_tree.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+1471 warnings in exp/tri1/log/update.*.log
+exp/tri1: nj=4 align prob=-97.08 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13945 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498906 -0.238023
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 34.8484848485% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.2424242424% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,11) and mean=5.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 16.64 [ 397 / 2386, 68 ins, 72 del, 257 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.42 [ 368 / 2386, 56 ins, 76 del, 236 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.50 [ 346 / 2386, 44 ins, 76 del, 226 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.75 [ 328 / 2386, 39 ins, 77 del, 212 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.91 [ 308 / 2386, 34 ins, 80 del, 194 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.74 [ 304 / 2386, 32 ins, 87 del, 185 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.74 [ 304 / 2386, 31 ins, 89 del, 184 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.74 [ 304 / 2386, 31 ins, 94 del, 179 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_7
+%WER 20.12 [ 480 / 2386, 102 ins, 67 del, 311 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_8
+%WER 18.61 [ 444 / 2386, 87 ins, 70 del, 287 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.69 [ 422 / 2386, 81 ins, 70 del, 271 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.26%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 46000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.9391634981% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.5171102662% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+1631 warnings in exp/tri1/log/update.*.log
+38 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+exp/tri1: nj=4 align prob=-97.08 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13936 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237925
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.8787878788% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,12) and mean=5.5
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.93 [ 380 / 2386, 70 ins, 72 del, 238 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_11
+%WER 14.38 [ 343 / 2386, 60 ins, 70 del, 213 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_12
+%WER 13.54 [ 323 / 2386, 53 ins, 69 del, 201 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_13
+%WER 12.87 [ 307 / 2386, 47 ins, 68 del, 192 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.20 [ 291 / 2386, 42 ins, 72 del, 177 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.15 [ 290 / 2386, 38 ins, 80 del, 172 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.07 [ 288 / 2386, 35 ins, 84 del, 169 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_17
+%WER 11.74 [ 280 / 2386, 32 ins, 88 del, 160 sub ]
+%SER 77.27 [ 51 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.04 [ 502 / 2386, 110 ins, 71 del, 321 sub ]
+%SER 92.42 [ 61 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.40 [ 463 / 2386, 101 ins, 67 del, 295 sub ]
+%SER 92.42 [ 61 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.56 [ 419 / 2386, 82 ins, 72 del, 265 sub ]
+%SER 89.39 [ 59 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 14.81%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 48000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.5589353612% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.897338403% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+102 warnings in exp/tri1/log/acc.*.*.log
+1775 warnings in exp/tri1/log/update.*.log
+7 warnings in exp/tri1/log/init_model.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+39 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+exp/tri1: nj=4 align prob=-97.08 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13945 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.557005 -0.237946
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.8787878788% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 22.7272727273% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,12) and mean=5.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.63 [ 373 / 2386, 65 ins, 69 del, 239 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_11
+%WER 14.71 [ 351 / 2386, 54 ins, 67 del, 230 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_12
+%WER 14.04 [ 335 / 2386, 50 ins, 73 del, 212 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.79 [ 329 / 2386, 44 ins, 79 del, 206 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_14
+%WER 12.95 [ 309 / 2386, 37 ins, 79 del, 193 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_15
+%WER 12.66 [ 302 / 2386, 34 ins, 86 del, 182 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.53 [ 299 / 2386, 34 ins, 84 del, 181 sub ]
+%SER 81.82 [ 54 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.57 [ 300 / 2386, 31 ins, 92 del, 177 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.29 [ 508 / 2386, 112 ins, 63 del, 333 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_8
+%WER 19.66 [ 469 / 2386, 95 ins, 62 del, 312 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_9
+%WER 17.98 [ 429 / 2386, 79 ins, 66 del, 284 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.26%.
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 200 50000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.7984790875% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.1368821293% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+1 warnings in exp/tri1/log/build_tree.log
+39 warnings in exp/tri1/log/align.*.*.log
+102 warnings in exp/tri1/log/acc.*.*.log
+7 warnings in exp/tri1/log/init_model.log
+1848 warnings in exp/tri1/log/update.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+exp/tri1: nj=4 align prob=-97.08 over 0.78h [retry=1.9%, fail=1.1%] states=168 gauss=13937 tree-impr=4.03
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+0.498873 -0.238018
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.8181818182% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.2424242424% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,12) and mean=5.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 15.59 [ 372 / 2386, 58 ins, 77 del, 237 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_11
+%WER 15.17 [ 362 / 2386, 54 ins, 78 del, 230 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_12
+%WER 13.91 [ 332 / 2386, 48 ins, 78 del, 206 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_13
+%WER 13.54 [ 323 / 2386, 44 ins, 80 del, 199 sub ]
+%SER 80.30 [ 53 / 66 ]
+exp/tri1/decode/wer_14
+%WER 13.16 [ 314 / 2386, 43 ins, 81 del, 190 sub ]
+%SER 78.79 [ 52 / 66 ]
+exp/tri1/decode/wer_15
+%WER 13.16 [ 314 / 2386, 40 ins, 86 del, 188 sub ]
+%SER 75.76 [ 50 / 66 ]
+exp/tri1/decode/wer_16
+%WER 12.78 [ 305 / 2386, 38 ins, 85 del, 182 sub ]
+%SER 75.76 [ 50 / 66 ]
+exp/tri1/decode/wer_17
+%WER 12.57 [ 300 / 2386, 35 ins, 88 del, 177 sub ]
+%SER 75.76 [ 50 / 66 ]
+exp/tri1/decode/wer_7
+%WER 21.17 [ 505 / 2386, 110 ins, 64 del, 331 sub ]
+%SER 90.91 [ 60 / 66 ]
+exp/tri1/decode/wer_8
+%WER 18.65 [ 445 / 2386, 87 ins, 67 del, 291 sub ]
+%SER 90.91 [ 60 / 66 ]
+exp/tri1/decode/wer_9
+%WER 16.72 [ 399 / 2386, 69 ins, 72 del, 258 sub ]
+%SER 84.85 [ 56 / 66 ]
+local/get_average_wer.py: Average WER for tri1 is 15.13%.

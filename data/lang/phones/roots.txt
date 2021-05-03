@@ -6,8 +6,6 @@ shared split 6j_B 6j_E 6j_I 6j_S
 shared split 6w_B 6w_E 6w_I 6w_S
 shared split @_B @_E @_I @_S
 shared split D_B D_E D_I D_S
-shared split E_B E_E E_I E_S
-shared split F_B F_E F_I F_S
 shared split I_B I_E I_I I_S
 shared split N_B N_E N_I N_S
 shared split S_B S_E S_I S_S
@@ -18,7 +16,6 @@ shared split a_B a_E a_I a_S
 shared split aj_B aj_E aj_I aj_S
 shared split aw_B aw_E aw_I aw_S
 shared split b_B b_E b_I b_S
-shared split c_B c_E c_I c_S
 shared split d_B d_E d_I d_S
 shared split dZ_B dZ_E dZ_I dZ_S
 shared split e_B e_E e_I e_S

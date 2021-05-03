@@ -4,8 +4,6 @@
 6w
 @
 D
-E
-F
 I
 N
 S
@@ -16,7 +14,6 @@ a
 aj
 aw
 b
-c
 d
 dZ
 e

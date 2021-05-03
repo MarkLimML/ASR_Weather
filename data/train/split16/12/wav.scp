@@ -1,0 +1,4 @@
+weather044 cat waves_weather/weather044.wav | /usr/bin/sox -t wav - -c 1 -b 16 -t wav - rate 16000 |
+weather046 cat waves_weather/weather046.wav | /usr/bin/sox -t wav - -c 1 -b 16 -t wav - rate 16000 |
+weather047 cat waves_weather/weather047.wav | /usr/bin/sox -t wav - -c 1 -b 16 -t wav - rate 16000 |
+weather048 cat waves_weather/weather048.wav | /usr/bin/sox -t wav - -c 1 -b 16 -t wav - rate 16000 |

@@ -6,8 +6,6 @@ SPN SPN_B SPN_E SPN_I SPN_S
 6w_B 6w_E 6w_I 6w_S
 @_B @_E @_I @_S
 D_B D_E D_I D_S
-E_B E_E E_I E_S
-F_B F_E F_I F_S
 I_B I_E I_I I_S
 N_B N_E N_I N_S
 S_B S_E S_I S_S
@@ -18,7 +16,6 @@ a_B a_E a_I a_S
 aj_B aj_E aj_I aj_S
 aw_B aw_E aw_I aw_S
 b_B b_E b_I b_S
-c_B c_E c_I c_S
 d_B d_E d_I d_S
 dZ_B dZ_E dZ_I dZ_S
 e_B e_E e_I e_S

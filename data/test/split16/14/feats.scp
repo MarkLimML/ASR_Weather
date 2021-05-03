@@ -1,4 +1,11 @@
-weather031_026 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:15
-weather031_027 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:32499
-weather031_028 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:48018
-weather031_029 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:71558
+weather066_006 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.13.ark:113283
+weather067_001 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.13.ark:123680
+weather067_002 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:15
+weather067_003 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:8358
+weather067_004 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:32808
+weather067_005 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:38616
+weather067_006 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:46855
+weather067_007 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:58422
+weather067_008 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:66674
+weather067_009 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:87445
+weather068_001 /mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_test.14.ark:96334

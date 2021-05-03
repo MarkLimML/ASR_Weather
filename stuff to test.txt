@@ -1,0 +1,70 @@
+score_combine.sh (nothing interesting)
+local/score_combine.sh --cmd $train_cmd data/train exp/tri4a/graph exp/mono/decode exp/tri1/decode exp/tri2a/decode exp/tri3a/decode exp/tri4a/decode exp/tri4a_score
+
+Experiment with this maybe (makes it worse, must leave as is)
+usage: utils/prepare_lang.sh <dict-src-dir> <oov-dict-entry> <tmp-dir> <lang-dir>
+e.g.: utils/prepare_lang.sh data/local/dict <SPOKEN_NOISE> data/local/lang data/lang
+options:
+     --num-sil-states <number of states>             # default: 5, #states in silence models.
+     --num-nonsil-states <number of states>          # default: 3, #states in non-silence models.
+     --position-dependent-phones (true|false)        # default: true; if true, use _B, _E, _S & _I
+                                                     # markers on phones to indicate word-internal positions.
+     --share-silence-phones (true|false)             # default: false; if true, share pdfs of
+                                                     # all non-silence phones.
+     --sil-prob <probability of silence>             # default: 0.5 [must have 0 < silprob < 1]
+
+
+Test for demo
+http://jrmeyer.github.io/asr/2016/09/12/Using-built-GMM-model-Kaldi.html
+
+experiment leaves and gaussians (helps)
+http://jrmeyer.github.io/asr/2019/08/17/Kaldi-cheatsheet.html
+
+possible to get aligned transcript
+But utils/convert_ctm.pl does convert the timings from within-utterance to within-recording.
+
+aligned ctm
+https://groups.google.com/g/kaldi-help/c/Fye4gkL51T0
+aligned phone and word ctm
+https://groups.google.com/g/kaldi-help/c/Ie40bOzpU6E
+
+daniel povey lecture slides
+https://sites.google.com/site/dpovey/kaldi-lectures
+
+Current issue
+tri > mono in WER (possible cause by lexicon)
+not caused by lexicon, caused by excess of leaves and gaussians
+
+concat test.ctm
+cat exp/tri4a/decode/score_*/test.ctm  | perl -npe 's/(.*)-(S\d+)---(\S+)/\1_\3_\2/' > ctm
+
+ctm2srt (works great)
+got it from some arabic asr
+
+use gmm
+https://15443711306802725422.googlegroups.com/attach/53ce80b082c67/tri_decode%20voxforge.sh?part=0.2&view=1&vt=ANaJVrErqVerW4YLTX9wCRen_nwLqUTCcE2bzRCci55VdYLV26mXyW8G1Asc8S-RlLQ5F-_OaEgdNgKQrKM-4TTlsIKS76bV-KOjB-R-0PWxN3NzNPpkn8A
+
+generate confusion matrix (phone-level) (must use same decode and train)
+local/generate_confusion_matrix.sh
+_________  (possible matrix setup)
+| A | I |
+|_S_|_D_|
+
+possible data setup
+each step (mono|tri|lda|sat) has increasing train size 10k->20k->nk
+
+fancy effect
+. ./asr.sh | whiptail --title 'Taglish ASR System' --gauge "Processing Audio..." 6 60 0
+
+solve long segment; do
+steps/cleanup/segment_long_utterances.sh
+steps/cleanup/clean_and_segment_data.sh
+
+possible getter of segmented transcript
+local/run_segmentation.sh (must copy/link wsj\local folder)
+
+need to check further on delta and lda
+step/cleanup/find_bad_utts.sh
+
+test lower samplerate (lower WER for mono)
+utils/data/resample_data_dir.sh 16000 data/train

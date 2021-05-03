@@ -1,0 +1,2712 @@
+
+===== GETTING OPTIMAL GAUSSIANS FOR MONO =====
+
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1000 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 40.6754772394% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 49.1923641703% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2 warnings in exp/mono/log/analyze_alignments.log
+2269 warnings in exp/mono/log/align.*.*.log
+755 warnings in exp/mono/log/update.*.log
+423 warnings in exp/mono/log/acc.*.*.log
+exp/mono: nj=16 align prob=-108.40 over 2.05h [retry=5.5%, fail=1.3%] states=145 gauss=989
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstdeterminizestar --use-log=true
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmepslocal
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.5722543353% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 43.9306358382% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,14,128) and mean=46.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 47.12 [ 1930 / 4096, 91 ins, 475 del, 1364 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 47.61 [ 1950 / 4096, 85 ins, 509 del, 1356 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_12
+%WER 48.19 [ 1974 / 4096, 74 ins, 548 del, 1352 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 48.88 [ 2002 / 4096, 73 ins, 592 del, 1337 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_14
+%WER 48.90 [ 2003 / 4096, 62 ins, 621 del, 1320 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_15
+%WER 49.37 [ 2022 / 4096, 59 ins, 649 del, 1314 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 50.07 [ 2051 / 4096, 53 ins, 672 del, 1326 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 50.59 [ 2072 / 4096, 51 ins, 693 del, 1328 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_7
+%WER 48.17 [ 1973 / 4096, 165 ins, 354 del, 1454 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_8
+%WER 47.56 [ 1948 / 4096, 139 ins, 393 del, 1416 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 47.36 [ 1940 / 4096, 124 ins, 441 del, 1375 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 48.53%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1100 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.6304985337% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 47.2140762463% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2 warnings in exp/mono/log/analyze_alignments.log
+2251 warnings in exp/mono/log/align.*.*.log
+406 warnings in exp/mono/log/acc.*.*.log
+755 warnings in exp/mono/log/update.*.log
+exp/mono: nj=16 align prob=-108.28 over 2.05h [retry=5.2%, fail=1.2%] states=145 gauss=1080
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstdeterminizestar --use-log=true
+fstrmepslocal
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000228776 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.7919075145% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 42.774566474% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,13,127) and mean=45.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 47.71 [ 1954 / 4096, 104 ins, 484 del, 1366 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 47.95 [ 1964 / 4096, 77 ins, 512 del, 1375 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_12
+%WER 48.12 [ 1971 / 4096, 67 ins, 536 del, 1368 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_13
+%WER 48.54 [ 1988 / 4096, 59 ins, 576 del, 1353 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_14
+%WER 48.80 [ 1999 / 4096, 59 ins, 610 del, 1330 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_15
+%WER 49.41 [ 2024 / 4096, 57 ins, 623 del, 1344 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 50.44 [ 2066 / 4096, 56 ins, 658 del, 1352 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 50.95 [ 2087 / 4096, 50 ins, 687 del, 1350 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 48.71 [ 1995 / 4096, 170 ins, 387 del, 1438 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 48.22 [ 1975 / 4096, 135 ins, 427 del, 1413 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 47.68 [ 1953 / 4096, 115 ins, 458 del, 1380 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 48.78%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1200 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.2434017595% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 48.5337243402% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+414 warnings in exp/mono/log/acc.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+754 warnings in exp/mono/log/update.*.log
+2269 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=16 align prob=-108.10 over 2.05h [retry=5.4%, fail=1.2%] states=145 gauss=1200
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fstminimizeencoded
+fstrmepslocal
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstisstochastic exp/mono/graph/HCLGa.fst
+0 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.2601156069% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 41.6184971098% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,14,125) and mean=45.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 47.46 [ 1944 / 4096, 105 ins, 490 del, 1349 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 47.31 [ 1938 / 4096, 87 ins, 530 del, 1321 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_12
+%WER 47.71 [ 1954 / 4096, 84 ins, 560 del, 1310 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_13
+%WER 47.88 [ 1961 / 4096, 72 ins, 573 del, 1316 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_14
+%WER 48.83 [ 2000 / 4096, 63 ins, 608 del, 1329 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_15
+%WER 49.24 [ 2017 / 4096, 55 ins, 633 del, 1329 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 49.58 [ 2031 / 4096, 54 ins, 670 del, 1307 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 49.88 [ 2043 / 4096, 53 ins, 683 del, 1307 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 48.68 [ 1994 / 4096, 181 ins, 364 del, 1449 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 47.14 [ 1931 / 4096, 154 ins, 406 del, 1371 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 47.02 [ 1926 / 4096, 120 ins, 450 del, 1356 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 48.25%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1300 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.6304985337% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 45.8944281525% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+757 warnings in exp/mono/log/update.*.log
+2258 warnings in exp/mono/log/align.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+403 warnings in exp/mono/log/acc.*.*.log
+exp/mono: nj=16 align prob=-107.97 over 2.05h [retry=5.7%, fail=1.2%] states=145 gauss=1286
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstdeterminizestar --use-log=true
+fstrmepslocal
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+9.47986e-05 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.838150289% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.8843930636% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,13,121) and mean=44.5
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 46.51 [ 1905 / 4096, 105 ins, 505 del, 1295 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 46.85 [ 1919 / 4096, 89 ins, 540 del, 1290 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 47.12 [ 1930 / 4096, 81 ins, 568 del, 1281 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 47.56 [ 1948 / 4096, 70 ins, 588 del, 1290 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_14
+%WER 47.80 [ 1958 / 4096, 66 ins, 609 del, 1283 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_15
+%WER 48.66 [ 1993 / 4096, 61 ins, 642 del, 1290 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 49.34 [ 2021 / 4096, 52 ins, 660 del, 1309 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_17
+%WER 50.02 [ 2049 / 4096, 52 ins, 691 del, 1306 sub ]
+%SER 99.42 [ 172 / 173 ]
+exp/mono/decode/wer_7
+%WER 47.83 [ 1959 / 4096, 162 ins, 379 del, 1418 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 47.39 [ 1941 / 4096, 143 ins, 445 del, 1353 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 46.75 [ 1915 / 4096, 125 ins, 471 del, 1319 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 47.80%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1400 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.0922401171% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 47.4377745242% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+756 warnings in exp/mono/log/update.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+2210 warnings in exp/mono/log/align.*.*.log
+398 warnings in exp/mono/log/acc.*.*.log
+exp/mono: nj=16 align prob=-107.88 over 2.05h [retry=4.9%, fail=1.0%] states=145 gauss=1380
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstdeterminizestar --use-log=true
+fstminimizeencoded
+fstrmepslocal
+fstisstochastic exp/mono/graph/HCLGa.fst
+0 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.9942196532% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 42.774566474% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,121) and mean=45.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 46.22 [ 1893 / 4096, 95 ins, 495 del, 1303 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 46.53 [ 1906 / 4096, 80 ins, 542 del, 1284 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_12
+%WER 47.24 [ 1935 / 4096, 74 ins, 579 del, 1282 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_13
+%WER 47.83 [ 1959 / 4096, 71 ins, 596 del, 1292 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 48.22 [ 1975 / 4096, 66 ins, 623 del, 1286 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_15
+%WER 48.88 [ 2002 / 4096, 65 ins, 643 del, 1294 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_16
+%WER 49.32 [ 2020 / 4096, 65 ins, 672 del, 1283 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_17
+%WER 50.00 [ 2048 / 4096, 62 ins, 710 del, 1276 sub ]
+%SER 99.42 [ 172 / 173 ]
+exp/mono/decode/wer_7
+%WER 47.02 [ 1926 / 4096, 169 ins, 373 del, 1384 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_8
+%WER 46.34 [ 1898 / 4096, 138 ins, 417 del, 1343 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 46.29 [ 1896 / 4096, 108 ins, 457 del, 1331 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 47.63%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1500 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.2434017595% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 45.6011730205% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+405 warnings in exp/mono/log/acc.*.*.log
+754 warnings in exp/mono/log/update.*.log
+2160 warnings in exp/mono/log/align.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+exp/mono: nj=16 align prob=-107.71 over 2.05h [retry=4.3%, fail=1.2%] states=145 gauss=1498
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstdeterminizestar --use-log=true
+fstrmepslocal
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000360293 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.2601156069% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.5722543353% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,13,133) and mean=50.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 46.19 [ 1892 / 4096, 98 ins, 479 del, 1315 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 46.26 [ 1895 / 4096, 92 ins, 488 del, 1315 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_12
+%WER 46.68 [ 1912 / 4096, 85 ins, 528 del, 1299 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_13
+%WER 47.34 [ 1939 / 4096, 80 ins, 571 del, 1288 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_14
+%WER 48.00 [ 1966 / 4096, 68 ins, 608 del, 1290 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_15
+%WER 48.44 [ 1984 / 4096, 63 ins, 615 del, 1306 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.93 [ 2004 / 4096, 60 ins, 635 del, 1309 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 49.63 [ 2033 / 4096, 57 ins, 676 del, 1300 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_7
+%WER 47.34 [ 1939 / 4096, 165 ins, 346 del, 1428 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_8
+%WER 46.46 [ 1903 / 4096, 142 ins, 387 del, 1374 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 45.78 [ 1875 / 4096, 111 ins, 444 del, 1320 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 47.37%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1600 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.7360703812% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 44.4281524927% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2 warnings in exp/mono/log/analyze_alignments.log
+398 warnings in exp/mono/log/acc.*.*.log
+757 warnings in exp/mono/log/update.*.log
+2153 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=16 align prob=-107.62 over 2.05h [retry=4.5%, fail=1.2%] states=145 gauss=1590
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmepslocal
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000319099 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.2601156069% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.9942196532% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,124) and mean=43.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 46.31 [ 1897 / 4096, 103 ins, 485 del, 1309 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 46.19 [ 1892 / 4096, 79 ins, 514 del, 1299 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_12
+%WER 46.80 [ 1917 / 4096, 69 ins, 554 del, 1294 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 47.49 [ 1945 / 4096, 67 ins, 597 del, 1281 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 47.51 [ 1946 / 4096, 55 ins, 618 del, 1273 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_15
+%WER 48.12 [ 1971 / 4096, 50 ins, 637 del, 1284 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.88 [ 2002 / 4096, 53 ins, 647 del, 1302 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_17
+%WER 49.44 [ 2025 / 4096, 51 ins, 671 del, 1303 sub ]
+%SER 99.42 [ 172 / 173 ]
+exp/mono/decode/wer_7
+%WER 47.17 [ 1932 / 4096, 155 ins, 372 del, 1405 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 47.09 [ 1929 / 4096, 139 ins, 417 del, 1373 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 46.22 [ 1893 / 4096, 118 ins, 447 del, 1328 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 47.38%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1700 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.1495601173% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 47.8005865103% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2177 warnings in exp/mono/log/align.*.*.log
+392 warnings in exp/mono/log/acc.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+754 warnings in exp/mono/log/update.*.log
+exp/mono: nj=16 align prob=-107.53 over 2.05h [retry=4.6%, fail=1.2%] states=145 gauss=1680
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstrmepslocal
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.2601156069% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 43.3526011561% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,116) and mean=42.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.73 [ 1873 / 4096, 106 ins, 476 del, 1291 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.78 [ 1875 / 4096, 95 ins, 504 del, 1276 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 45.85 [ 1878 / 4096, 87 ins, 530 del, 1261 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 46.14 [ 1890 / 4096, 81 ins, 563 del, 1246 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 46.73 [ 1914 / 4096, 73 ins, 589 del, 1252 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.22 [ 1934 / 4096, 64 ins, 618 del, 1252 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 47.66 [ 1952 / 4096, 57 ins, 630 del, 1265 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.05 [ 1968 / 4096, 50 ins, 652 del, 1266 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 47.29 [ 1937 / 4096, 175 ins, 357 del, 1405 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_8
+%WER 46.34 [ 1898 / 4096, 148 ins, 413 del, 1337 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 46.07 [ 1887 / 4096, 124 ins, 444 del, 1319 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.62%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1800 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.2434017595% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 45.6011730205% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+754 warnings in exp/mono/log/update.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+2157 warnings in exp/mono/log/align.*.*.log
+393 warnings in exp/mono/log/acc.*.*.log
+exp/mono: nj=16 align prob=-107.43 over 2.05h [retry=4.8%, fail=1.2%] states=145 gauss=1802
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fstrmepslocal
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000234261 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 38.7283236994% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 40.4624277457% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,13,126) and mean=44.7
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.90 [ 1880 / 4096, 100 ins, 459 del, 1321 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.56 [ 1866 / 4096, 85 ins, 478 del, 1303 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 46.26 [ 1895 / 4096, 81 ins, 524 del, 1290 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 46.83 [ 1918 / 4096, 76 ins, 555 del, 1287 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_14
+%WER 47.56 [ 1948 / 4096, 73 ins, 588 del, 1287 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_15
+%WER 48.22 [ 1975 / 4096, 65 ins, 620 del, 1290 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 49.00 [ 2007 / 4096, 60 ins, 664 del, 1283 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 49.56 [ 2030 / 4096, 59 ins, 682 del, 1289 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 46.80 [ 1917 / 4096, 161 ins, 325 del, 1431 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 46.34 [ 1898 / 4096, 136 ins, 373 del, 1389 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 45.90 [ 1880 / 4096, 121 ins, 415 del, 1344 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 47.08%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 1900 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.6281112738% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 42.8989751098% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+755 warnings in exp/mono/log/update.*.log
+2079 warnings in exp/mono/log/align.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+367 warnings in exp/mono/log/acc.*.*.log
+exp/mono: nj=16 align prob=-107.34 over 2.05h [retry=3.6%, fail=1.0%] states=145 gauss=1893
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fstrmepslocal
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+8.4234e-05 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.9942196532% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.9942196532% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,118) and mean=42.7
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.61 [ 1868 / 4096, 105 ins, 470 del, 1293 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.90 [ 1880 / 4096, 91 ins, 496 del, 1293 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_12
+%WER 46.61 [ 1909 / 4096, 86 ins, 538 del, 1285 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_13
+%WER 46.90 [ 1921 / 4096, 79 ins, 567 del, 1275 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_14
+%WER 47.58 [ 1949 / 4096, 73 ins, 599 del, 1277 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_15
+%WER 48.36 [ 1981 / 4096, 73 ins, 625 del, 1283 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.49 [ 1986 / 4096, 68 ins, 644 del, 1274 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.97 [ 2006 / 4096, 63 ins, 656 del, 1287 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 46.29 [ 1896 / 4096, 166 ins, 356 del, 1374 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 45.80 [ 1876 / 4096, 137 ins, 401 del, 1338 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 45.58 [ 1867 / 4096, 112 ins, 441 del, 1314 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.92%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2000 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.3538913363% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 45.5212922173% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2108 warnings in exp/mono/log/align.*.*.log
+409 warnings in exp/mono/log/acc.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+757 warnings in exp/mono/log/update.*.log
+exp/mono: nj=16 align prob=-107.24 over 2.05h [retry=4.3%, fail=1.3%] states=145 gauss=1981
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstrmepslocal
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000205865 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.838150289% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 38.1502890173% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,115) and mean=42.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.19 [ 1851 / 4096, 101 ins, 458 del, 1292 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.00 [ 1843 / 4096, 81 ins, 481 del, 1281 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 45.53 [ 1865 / 4096, 69 ins, 520 del, 1276 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 45.97 [ 1883 / 4096, 59 ins, 545 del, 1279 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 46.80 [ 1917 / 4096, 62 ins, 572 del, 1283 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.46 [ 1944 / 4096, 61 ins, 603 del, 1280 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_16
+%WER 47.78 [ 1957 / 4096, 56 ins, 626 del, 1275 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.66 [ 1993 / 4096, 58 ins, 647 del, 1288 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 46.24 [ 1894 / 4096, 154 ins, 348 del, 1392 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 46.12 [ 1889 / 4096, 142 ins, 398 del, 1349 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 45.63 [ 1869 / 4096, 111 ins, 439 del, 1319 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.40%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2100 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 38.3601756955% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 44.6559297218% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+405 warnings in exp/mono/log/acc.*.*.log
+2103 warnings in exp/mono/log/align.*.*.log
+756 warnings in exp/mono/log/update.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+exp/mono: nj=16 align prob=-107.16 over 2.05h [retry=4.1%, fail=1.0%] states=145 gauss=2100
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fstrmepslocal
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstminimizeencoded
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstisstochastic exp/mono/graph/HCLGa.fst
+0 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.5722543353% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.838150289% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,124) and mean=46.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.48 [ 1863 / 4096, 98 ins, 474 del, 1291 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.61 [ 1868 / 4096, 85 ins, 502 del, 1281 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 46.07 [ 1887 / 4096, 78 ins, 538 del, 1271 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_13
+%WER 46.63 [ 1910 / 4096, 68 ins, 567 del, 1275 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 47.51 [ 1946 / 4096, 65 ins, 601 del, 1280 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_15
+%WER 48.41 [ 1983 / 4096, 66 ins, 621 del, 1296 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.80 [ 1999 / 4096, 61 ins, 635 del, 1303 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_17
+%WER 49.51 [ 2028 / 4096, 60 ins, 661 del, 1307 sub ]
+%SER 99.42 [ 172 / 173 ]
+exp/mono/decode/wer_7
+%WER 47.00 [ 1925 / 4096, 168 ins, 333 del, 1424 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_8
+%WER 46.24 [ 1894 / 4096, 141 ins, 376 del, 1377 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 46.09 [ 1888 / 4096, 118 ins, 441 del, 1329 sub ]
+%SER 97.11 [ 168 / 173 ]
+local/get_average_wer.py: Average WER for mono is 47.03%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2200 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.7771260997% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 47.3607038123% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+399 warnings in exp/mono/log/acc.*.*.log
+754 warnings in exp/mono/log/update.*.log
+2118 warnings in exp/mono/log/align.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+exp/mono: nj=16 align prob=-107.09 over 2.05h [retry=4.9%, fail=1.2%] states=145 gauss=2193
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstrmepslocal
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.00012087 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.4161849711% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 41.6184971098% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,115) and mean=41.4
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.41 [ 1860 / 4096, 100 ins, 450 del, 1310 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.39 [ 1859 / 4096, 82 ins, 476 del, 1301 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_12
+%WER 45.92 [ 1881 / 4096, 72 ins, 499 del, 1310 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 45.97 [ 1883 / 4096, 73 ins, 518 del, 1292 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 46.46 [ 1903 / 4096, 67 ins, 546 del, 1290 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.68 [ 1953 / 4096, 65 ins, 591 del, 1297 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.22 [ 1975 / 4096, 58 ins, 612 del, 1305 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.44 [ 1984 / 4096, 54 ins, 630 del, 1300 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 46.44 [ 1902 / 4096, 175 ins, 338 del, 1389 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 45.53 [ 1865 / 4096, 140 ins, 375 del, 1350 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 45.39 [ 1859 / 4096, 121 ins, 411 del, 1327 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.44%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2300 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.8960468521% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 45.3879941435% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+388 warnings in exp/mono/log/acc.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+758 warnings in exp/mono/log/update.*.log
+2103 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=16 align prob=-107.03 over 2.05h [retry=4.2%, fail=1.0%] states=145 gauss=2282
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmepslocal
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000362893 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.9942196532% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 40.4624277457% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,123) and mean=44.7
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.39 [ 1859 / 4096, 110 ins, 441 del, 1308 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.39 [ 1859 / 4096, 97 ins, 482 del, 1280 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_12
+%WER 45.48 [ 1863 / 4096, 88 ins, 510 del, 1265 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_13
+%WER 46.31 [ 1897 / 4096, 80 ins, 546 del, 1271 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_14
+%WER 46.73 [ 1914 / 4096, 73 ins, 573 del, 1268 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.02 [ 1926 / 4096, 68 ins, 599 del, 1259 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 47.46 [ 1944 / 4096, 62 ins, 624 del, 1258 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.07 [ 1969 / 4096, 66 ins, 642 del, 1261 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_7
+%WER 45.87 [ 1879 / 4096, 160 ins, 329 del, 1390 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 45.29 [ 1855 / 4096, 130 ins, 362 del, 1363 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 45.26 [ 1854 / 4096, 119 ins, 407 del, 1328 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.21%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2400 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 38.1578947368% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 45.1754385965% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2 warnings in exp/mono/log/analyze_alignments.log
+383 warnings in exp/mono/log/acc.*.*.log
+2072 warnings in exp/mono/log/align.*.*.log
+754 warnings in exp/mono/log/update.*.log
+exp/mono: nj=16 align prob=-106.97 over 2.06h [retry=3.5%, fail=0.9%] states=145 gauss=2402
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstdeterminizestar --use-log=true
+fstrmepslocal
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000256788 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.9942196532% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 41.0404624277% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,135) and mean=48.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.51 [ 1864 / 4096, 110 ins, 450 del, 1304 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.92 [ 1881 / 4096, 99 ins, 472 del, 1310 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_12
+%WER 46.17 [ 1891 / 4096, 83 ins, 505 del, 1303 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_13
+%WER 46.51 [ 1905 / 4096, 75 ins, 536 del, 1294 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_14
+%WER 47.00 [ 1925 / 4096, 69 ins, 562 del, 1294 sub ]
+%SER 98.84 [ 171 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.58 [ 1949 / 4096, 63 ins, 575 del, 1311 sub ]
+%SER 99.42 [ 172 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.00 [ 1966 / 4096, 61 ins, 607 del, 1298 sub ]
+%SER 99.42 [ 172 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.71 [ 1995 / 4096, 60 ins, 638 del, 1297 sub ]
+%SER 99.42 [ 172 / 173 ]
+exp/mono/decode/wer_7
+%WER 46.88 [ 1920 / 4096, 174 ins, 333 del, 1413 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 46.12 [ 1889 / 4096, 144 ins, 369 del, 1376 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 45.53 [ 1865 / 4096, 125 ins, 414 del, 1326 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.72%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2500 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 34.6998535871% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 47.2140762463% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+757 warnings in exp/mono/log/update.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+360 warnings in exp/mono/log/acc.*.*.log
+2054 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=16 align prob=-106.87 over 2.05h [retry=4.1%, fail=1.0%] states=145 gauss=2494
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstrmepslocal
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000168688 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 33.5260115607% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 42.774566474% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,11,108) and mean=40.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.48 [ 1863 / 4096, 105 ins, 463 del, 1295 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 46.04 [ 1886 / 4096, 88 ins, 506 del, 1292 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_12
+%WER 46.41 [ 1901 / 4096, 73 ins, 536 del, 1292 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_13
+%WER 46.58 [ 1908 / 4096, 68 ins, 556 del, 1284 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 47.27 [ 1936 / 4096, 63 ins, 599 del, 1274 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_15
+%WER 48.10 [ 1970 / 4096, 63 ins, 629 del, 1278 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.68 [ 1994 / 4096, 63 ins, 649 del, 1282 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 49.00 [ 2007 / 4096, 56 ins, 664 del, 1287 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 45.70 [ 1872 / 4096, 166 ins, 352 del, 1354 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 44.92 [ 1840 / 4096, 142 ins, 400 del, 1298 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 44.78 [ 1834 / 4096, 125 ins, 420 del, 1289 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.63%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2600 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 33.8213762811% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 45.3879941435% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2084 warnings in exp/mono/log/align.*.*.log
+375 warnings in exp/mono/log/acc.*.*.log
+757 warnings in exp/mono/log/update.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+exp/mono: nj=16 align prob=-106.80 over 2.05h [retry=4.1%, fail=1.0%] states=145 gauss=2581
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmepslocal
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000246183 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 32.3699421965% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.8843930636% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,11,128) and mean=45.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.07 [ 1846 / 4096, 104 ins, 453 del, 1289 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.29 [ 1855 / 4096, 88 ins, 495 del, 1272 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 45.61 [ 1868 / 4096, 74 ins, 521 del, 1273 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_13
+%WER 45.85 [ 1878 / 4096, 71 ins, 535 del, 1272 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_14
+%WER 46.39 [ 1900 / 4096, 65 ins, 558 del, 1277 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.05 [ 1927 / 4096, 64 ins, 579 del, 1284 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_16
+%WER 47.61 [ 1950 / 4096, 55 ins, 607 del, 1288 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.44 [ 1984 / 4096, 59 ins, 628 del, 1297 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_7
+%WER 45.29 [ 1855 / 4096, 160 ins, 325 del, 1370 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_8
+%WER 45.09 [ 1847 / 4096, 138 ins, 376 del, 1333 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 44.60 [ 1827 / 4096, 123 ins, 412 del, 1292 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.03%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2700 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.7745241581% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 42.6061493411% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+386 warnings in exp/mono/log/acc.*.*.log
+2048 warnings in exp/mono/log/align.*.*.log
+758 warnings in exp/mono/log/update.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+exp/mono: nj=16 align prob=-106.74 over 2.05h [retry=3.9%, fail=1.0%] states=145 gauss=2703
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstdeterminizestar --use-log=true
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstrmepslocal
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000234663 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.5722543353% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.9942196532% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,11,125) and mean=44.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 44.92 [ 1840 / 4096, 111 ins, 440 del, 1289 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 44.68 [ 1830 / 4096, 101 ins, 460 del, 1269 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_12
+%WER 44.78 [ 1834 / 4096, 68 ins, 481 del, 1285 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_13
+%WER 45.73 [ 1873 / 4096, 65 ins, 517 del, 1291 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 46.34 [ 1898 / 4096, 55 ins, 556 del, 1287 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_15
+%WER 46.97 [ 1924 / 4096, 54 ins, 570 del, 1300 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_16
+%WER 47.90 [ 1962 / 4096, 52 ins, 614 del, 1296 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.29 [ 1978 / 4096, 45 ins, 637 del, 1296 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_7
+%WER 45.97 [ 1883 / 4096, 169 ins, 323 del, 1391 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 45.36 [ 1858 / 4096, 146 ins, 366 del, 1346 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 44.92 [ 1840 / 4096, 124 ins, 399 del, 1317 sub ]
+%SER 97.11 [ 168 / 173 ]
+local/get_average_wer.py: Average WER for mono is 45.99%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2800 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.0439882698% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 45.6011730205% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+399 warnings in exp/mono/log/acc.*.*.log
+761 warnings in exp/mono/log/update.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+2022 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=16 align prob=-106.67 over 2.05h [retry=4.2%, fail=1.2%] states=145 gauss=2792
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstminimizeencoded
+fstrmepslocal
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstisstochastic exp/mono/graph/HCLGa.fst
+0.000411912 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 34.6820809249% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 40.4624277457% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,120) and mean=44.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 44.95 [ 1841 / 4096, 114 ins, 443 del, 1284 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 44.75 [ 1833 / 4096, 94 ins, 475 del, 1264 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 45.26 [ 1854 / 4096, 81 ins, 517 del, 1256 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_13
+%WER 45.95 [ 1882 / 4096, 72 ins, 553 del, 1257 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_14
+%WER 47.00 [ 1925 / 4096, 69 ins, 575 del, 1281 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.44 [ 1943 / 4096, 63 ins, 593 del, 1287 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.44 [ 1984 / 4096, 57 ins, 623 del, 1304 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.80 [ 1999 / 4096, 57 ins, 645 del, 1297 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_7
+%WER 45.73 [ 1873 / 4096, 178 ins, 333 del, 1362 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 45.24 [ 1853 / 4096, 149 ins, 380 del, 1324 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 45.19 [ 1851 / 4096, 133 ins, 407 del, 1311 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.25%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 2900 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 35.9237536657% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 44.7870778267% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+1973 warnings in exp/mono/log/align.*.*.log
+757 warnings in exp/mono/log/update.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+396 warnings in exp/mono/log/acc.*.*.log
+exp/mono: nj=16 align prob=-106.61 over 2.05h [retry=2.9%, fail=1.2%] states=145 gauss=2886
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstdeterminizestar --use-log=true
+fstrmepslocal
+fstminimizeencoded
+fstisstochastic exp/mono/graph/HCLGa.fst
+0 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 38.7283236994% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.8843930636% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,11,126) and mean=41.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 45.04 [ 1845 / 4096, 103 ins, 449 del, 1293 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_11
+%WER 45.09 [ 1847 / 4096, 85 ins, 486 del, 1276 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 45.65 [ 1870 / 4096, 74 ins, 527 del, 1269 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 46.41 [ 1901 / 4096, 70 ins, 559 del, 1272 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_14
+%WER 46.73 [ 1914 / 4096, 63 ins, 583 del, 1268 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.51 [ 1946 / 4096, 60 ins, 616 del, 1270 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_16
+%WER 48.05 [ 1968 / 4096, 63 ins, 631 del, 1274 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.88 [ 2002 / 4096, 59 ins, 650 del, 1293 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_7
+%WER 45.48 [ 1863 / 4096, 170 ins, 328 del, 1365 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 44.87 [ 1838 / 4096, 140 ins, 371 del, 1327 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_9
+%WER 44.95 [ 1841 / 4096, 124 ins, 415 del, 1302 sub ]
+%SER 98.27 [ 170 / 173 ]
+local/get_average_wer.py: Average WER for mono is 46.24%.
+steps/train_mono.sh --boost-silence 1.25 --nj 16 --cmd run.pl --totgauss 3000 data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 33.724340176% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 44.2815249267% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2032 warnings in exp/mono/log/align.*.*.log
+396 warnings in exp/mono/log/acc.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+758 warnings in exp/mono/log/update.*.log
+exp/mono: nj=16 align prob=-106.54 over 2.05h [retry=3.8%, fail=1.2%] states=145 gauss=3001
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree
+tree-info exp/mono/tree
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl
+fstdeterminizestar --use-log=true
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst
+fstrmsymbols exp/mono/graph/disambig_tid.int
+fstminimizeencoded
+fstrmepslocal
+fstisstochastic exp/mono/graph/HCLGa.fst
+0 -0.179217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 16 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 31.7919075145% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 41.0404624277% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,11,127) and mean=45.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 44.17 [ 1809 / 4096, 101 ins, 418 del, 1290 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_11
+%WER 44.38 [ 1818 / 4096, 85 ins, 455 del, 1278 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_12
+%WER 45.02 [ 1844 / 4096, 75 ins, 501 del, 1268 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_13
+%WER 45.58 [ 1867 / 4096, 67 ins, 542 del, 1258 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_14
+%WER 46.56 [ 1907 / 4096, 67 ins, 554 del, 1286 sub ]
+%SER 97.11 [ 168 / 173 ]
+exp/mono/decode/wer_15
+%WER 47.46 [ 1944 / 4096, 68 ins, 588 del, 1288 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_16
+%WER 47.83 [ 1959 / 4096, 64 ins, 603 del, 1292 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_17
+%WER 48.17 [ 1973 / 4096, 62 ins, 623 del, 1288 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_7
+%WER 45.36 [ 1858 / 4096, 168 ins, 317 del, 1373 sub ]
+%SER 98.27 [ 170 / 173 ]
+exp/mono/decode/wer_8
+%WER 44.58 [ 1826 / 4096, 145 ins, 348 del, 1333 sub ]
+%SER 97.69 [ 169 / 173 ]
+exp/mono/decode/wer_9
+%WER 44.31 [ 1815 / 4096, 124 ins, 385 del, 1306 sub ]
+%SER 97.69 [ 169 / 173 ]
+local/get_average_wer.py: Average WER for mono is 45.77%.

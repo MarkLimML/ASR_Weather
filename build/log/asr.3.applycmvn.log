@@ -1,0 +1,7 @@
+# set -o pipefail && apply-cmvn scp:data/dev/cmvn.scp scp:data/dev/feats.scp ark:data/dev/cmvn-feats.ark 
+# Started at Tue Apr 27 18:07:49 CST 2021
+#
+apply-cmvn scp:data/dev/cmvn.scp scp:data/dev/feats.scp ark:data/dev/cmvn-feats.ark 
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 2 utterances, errors on 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Apr 27 18:07:49 CST 2021, elapsed time 0 seconds

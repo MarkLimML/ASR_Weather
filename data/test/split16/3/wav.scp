@@ -1,2 +1,1 @@
-weather029 waves_weather/weather029.wav
-weather030 waves_weather/weather030.wav
+weather058 cat waves_weather/weather058.wav | /usr/bin/sox -t wav - -c 1 -b 16 -t wav - rate 16000 |

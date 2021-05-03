@@ -1,0 +1,10 @@
+Param: 200 20000
+WER: 14.65
+Param: 300 20000
+WER: 14.78
+Param: 400 20000
+WER: 15.10
+Param: 500 20000
+WER: 15.75
+Minimum WER: 14.65
+With param: 200 20000

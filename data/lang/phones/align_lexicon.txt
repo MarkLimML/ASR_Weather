@@ -6,44 +6,76 @@ AALALA AALALA 6_B 6_I l_I a_I l_I a_E
 AALAMIN AALAMIN 6_B 6_I l_I a_I m_I i_I n_E
 AALAS AALAS 6_B 6_I l_I a_I s_E
 AASAHAN AASAHAN 6_B 6_I s_I a_I h_I a_I n_E
+ABA'Y ABA'Y 6_B b_I 6j_E
 ABRA ABRA 6_B b_I r_I a_E
 ABRIL ABRIL 6_B b_I r_I i_I l_E
 ABS ABS ej_B b_I i_I e_I s_E
 ABS-CBN ABS-CBN ej_B b_I i_I e_I s_I s_I i_I b_I i_I e_I n_E
 ACCOUNT ACCOUNT 6_B k_I a_I w_I n_I t_E
+ACTIVITY ACTIVITY 6_B k_I t_I i_I b_I i_I t_I j_E
 ACTUALLY ACTUALLY 6_B k_I t_I U_I a_I l_I i_E
 ADMINISTRATIVE ADMINISTRATIVE 6_B d_I m_I i_I n_I i_I s_I t_I r_I a_I t_I I_I v_E
+ADN ADN ej_B d_I i_I e_I n_E
+ADVANCE ADVANCE 6_B d_I v_I 6_I n_I s_E
+ADVISORY ADVISORY 6_B d_I v_I i_I s_I o_I r_I j_E
+AFFECTING AFFECTING 6_B f_I e_I k_I t_I i_I N_E
+AFTER AFTER 6_B f_I t_I e_I r_E
 AFTERNOON AFTERNOON 6_B f_I t_I e_I r_I n_I U_I n_E
+AGOSTO AGOSTO 6_B g_I o_I s_I t_I o_E
 AGUSAN AGUSAN 6_B g_I u_I s_I a_I n_E
 AGWAT AGWAT 6_B g_I w_I a_I t_E
 AH AH 6_S
+AHENSYA AHENSYA 6_B h_I e_I n_I s_I j_I a_E
+AHH AHH 6_S
+AHM AHM 6_B m_E
+AILEEN AILEEN 6_B i_I l_I i_I n_E
 AIR AIR ej_B r_E
+AKAN AKAN 6_B k_I a_I n_E
 AKLAN AKLAN 6_B k_I l_I a_I n_E
 AKO AKO 6_B k_I o_E
 ALA ALA 6_B l_I a_E
 ALABAT ALABAT 6_B l_I a_I b_I a_I t_E
+ALAM ALAM 6_B l_I a_I m_E
 ALAMIN ALAMIN 6_B l_I a_I m_I i_I n_E
 ALAS ALAS 6_B l_I a_I s_E
+ALASDOSE ALASDOSE 6_B l_I a_I s_I d_I o_I s_I e_E
+ALBAY ALBAY 6_B l_I b_I aj_E
+ALDZAR ALDZAR 6_B l_I d_I z_I 6_I r_E
+ALERTO ALERTO 6_B l_I e_I r_I t_I o_E
 ALINSANGAN ALINSANGAN 6_B l_I i_I n_I s_I a_I N_I a_I n_E
 ALON ALON 6_B l_I o_I n_E
+ALRIGHT ALRIGHT 6_B l_I r_I j_I t_E
 AM AM e_B m_E
 AMA AMA 6_B m_I a_E
+AMBON AMBON 6_B m_I b_I o_I n_E
 AMIHAN AMIHAN 6_B m_I i_I h_I a_I n_E
+AMING AMING 6_B m_I i_I N_E
 AN AN 6_B n_E
+ANALYSIS ANALYSIS 6_B n_I a_I l_I j_I s_I i_I s_E
 ANC ANC ej_B e_I n_I s_I i_E
 AND AND e_B n_I d_E
+ANDYAN ANDYAN 6_B n_I d_I j_I a_I n_E
 ANG ANG 6_B N_E
 ANGAT ANGAT 6_B N_I a_I t_E
+ANIMATION ANIMATION 6_B n_I i_I m_I 6j_I s_I j_I o_I n_E
 ANO ANO 6_B n_I o_E
 ANONG ANONG 6_B n_I o_I N_E
+ANTABAYANAN ANTABAYANAN 6_B n_I t_I 6_I b_I 6_I j_I 6_I n_I a_I n_E
 ANTIQUE ANTIQUE 6_B n_I t_I I_I k_E
 ANUMANG ANUMANG 6_B n_I u_I m_I a_I N_E
 ANYOS ANYOS 6_B n_I j_I o_I s_E
+ANYTIME ANYTIME e_B n_I j_I t_I j_I m_E
 APARRI APARRI 6_B p_I a_I r_I i_E
 APAYAO APAYAO 6_B p_I 6_I j_I aw_E
 APEKTADO APEKTADO 6_B p_I e_I k_I t_I a_I d_I o_E
+ARAS ARAS 6_B r_I a_I s_E
 ARAW ARAW 6_B r_I aw_E
+ARAY ARAY 6_B r_I 6j_E
+ARCHIPELAGO ARCHIPELAGO 6_B r_I k_I i_I p_I e_I l_I 6_I g_I o_E
+ARE ARE 6_B r_E
 AREA AREA ej_B r_I i_I j_I a_E
+AREAS AREAS ej_B r_I i_I j_I a_I s_E
+AROUND AROUND 6_B r_I 6_I w_I n_I d_E
 AS AS 6_B s_E
 ASAHAN ASAHAN 6_B s_I 6_I h_I a_I n_E
 ASAHANG ASAHANG 6_B s_I 6_I h_I a_I N_E
@@ -51,14 +83,19 @@ ASUL ASUL 6_B s_I u_I l_E
 AT AT 6_B t_E
 ATIN ATIN 6_B t_I I_I n_E
 ATING ATING 6_B t_I I_I N_E
+AUGUST AUGUST o_B g_I u_I s_I t_E
+AURING AURING 6_B w_I r_I i_I N_E
 AURORA AURORA a_B o_I r_I o_I r_I a_E
 AURORAT AURORAT a_B o_I r_I o_I r_I a_I t_E
+AUTUMNAL AUTUMNAL o_B t_I u_I m_I n_I a_I l_E
 AWAY AWAY 6_B w_I 6j_E
+AWTORIDAD AWTORIDAD 6_B w_I t_I o_I r_I i_I d_I a_I d_E
 AXIS AXIS a_B k_I s_I i_I s_E
 AY AY 6j_S
 AYON AYON 6_B j_I o_I n_E
 B B b_B i_E
 BA BA b_B 6_E
+BA'Y BA'Y b_B aj_E
 BABA BABA b_B 6_I b_I 6_E
 BABALA BABALA b_B 6_I b_I 6_I l_I a_E
 BABALIK BABALIK b_B 6_I b_I 6_I l_I i_I k_E
@@ -74,20 +111,32 @@ BAGYONG BAGYONG b_B 6_I g_I j_I o_I N_E
 BAHA BAHA b_B 6_I h_I a_E
 BAHAGI BAHAGI b_B 6_I h_I a_I g_I i_E
 BAHAGING BAHAGING b_B 6_I h_I a_I g_I i_I N_E
+BAHAGYA BAHAGYA b_B 6_I h_I a_I g_I j_I a_E
 BAHAGYANG BAHAGYANG b_B 6_I h_I a_I g_I j_I a_I N_E
+BAHAIN BAHAIN b_B 6_I h_I a_I i_I n_E
 BAHAY BAHAY b_B 6_I h_I 6j_E
+BAKA BAKA b_B 6_I k_I a_E
+BAKASYUNAN BAKASYUNAN b_B a_I k_I a_I s_I j_I u_I n_I a_I n_E
 BAKIT BAKIT b_B 6_I k_I i_I t_E
 BALER BALER b_B 6_I l_I e_I r_E
+BALIK BALIK b_B 6_I l_I i_I k_E
+BALIKAN BALIKAN b_B 6_I l_I i_I k_I a_I n_E
 BALITA BALITA b_B 6_I l_I i_I t_I a_E
+BANDA BANDA b_B 6_I n_I d_I a_E
+BANDANG BANDANG b_B 6_I n_I d_I a_I N_E
 BANG BANG b_B a_I N_E
 BANGKA BANGKA b_B 6_I N_I k_I a_E
 BANGSAMORO BANGSAMORO b_B 6_I N_I s_I a_I m_I o_I r_I o_E
 BANSA BANSA b_B 6_I n_I s_I a_E
+BANSA'Y BANSA'Y b_B 6_I n_I s_I aj_E
 BANTA BANTA b_B 6_I n_I t_I a_E
+BARANGAY BARANGAY b_B 6_I r_I 6_I N_I g_I aj_E
 BARMM BARMM b_B 6_I r_I m_E
 BASA BASA b_B 6_I s_I a_E
 BASCO BASCO b_B 6_I s_I k_I o_E
 BASE BASE b_B ej_I s_E
+BASIN BASIN b_B ej_I s_I i_I n_E
+BASURA BASURA b_B 6_I s_I u_I r_I a_E
 BATAAN BATAAN b_B 6_I t_I a_I a_I n_E
 BATANES BATANES b_B 6_I t_I a_I n_I e_I s_E
 BATANGAS BATANGAS b_B 6_I t_I a_I N_I g_I 6_I s_E
@@ -98,26 +147,39 @@ BAY BAY b_B ej_E
 BAYBAYIN BAYBAYIN b_B 6j_I b_I 6j_I i_I n_E
 BAYBAYING BAYBAYING b_B 6j_I b_I 6j_I i_I N_E
 BAYONG BAYONG b_B 6_I j_I o_I N_E
-BENGUET BENGUET b_B E_I n_I g_I V_I e_I t_E
-BENISON BENISON b_B E_I n_I i_I s_I o_I n_E
+BE BE b_B i_E
+BEEN BEEN b_B i_I n_E
+BEFORE BEFORE b_B i_I f_I o_I r_E
+BENGUET BENGUET b_B e_I n_I g_I e_I t_E
+BENISON BENISON b_B e_I n_I i_I s_I o_I n_E
+BENNY BENNY b_B e_I n_I i_E
 BENTE BENTE b_B e_I n_I t_I e_E
 BERNADETTE BERNADETTE b_B e_I r_I n_I a_I d_I e_I t_E
+BETWEEN BETWEEN b_B e_I t_I w_I i_I n_E
 BHAGYA BHAGYA b_B 6_I g_I j_I a_E
 BICOL BICOL b_B i_I k_I o_I l_E
-BIGLAANG BIGLAANG b_B i_I k_I l_I 6_I a_I N_E
-BIGLANG BIGLANG b_B i_I k_I l_I 6_I N_E
+BIGLA BIGLA b_B i_I g_I l_I a_E
+BIGLAANG BIGLAANG b_B i_I g_I l_I 6_I a_I N_E
+BIGLANG BIGLANG b_B i_I g_I l_I 6_I N_E
 BIKOL BIKOL b_B i_I k_I o_I l_E
 BIKTIMA BIKTIMA b_B i_I k_I t_I i_I m_I a_E
+BILANG BILANG b_B i_I l_I 6_I N_E
 BILIRAN BILIRAN b_B i_I l_I i_I r_I a_I n_E
 BILIS BILIS b_B i_I l_I i_I s_E
 BINABANTAYAN BINABANTAYAN b_B i_I n_I a_I b_I 6_I n_I t_I a_I j_I a_I n_E
 BINABANTAYANG BINABANTAYANG b_B i_I n_I a_I b_I 6_I n_I t_I a_I j_I a_I N_E
+BINANGGIT BINANGGIT b_B i_I n_I a_I N_I g_I i_I t_E
+BINANTAYAN BINANTAYAN b_B i_I n_I a_I n_I t_I a_I j_I a_I n_E
 BINATAYAN BINATAYAN b_B i_I n_I a_I t_I 6_I j_I a_I n_E
 BINATILYO BINATILYO b_B i_I n_I a_I t_I i_I l_I j_I o_E
+BINIGYAN BINIGYAN b_B i_I n_I i_I g_I j_I a_I n_E
 BISITAHIN BISITAHIN b_B i_I s_I i_I t_I a_I h_I i_I n_E
 BIYERNES BIYERNES b_B i_I r_I n_I e_I s_E
+BLUE BLUE b_B l_I u_E
+BOARDS BOARDS b_B o_I r_I d_I s_E
 BOHOL BOHOL b_B o_I h_I o_I l_E
 BORACAY BORACAY b_B o_I r_I a_I k_I aj_E
+BORONGAN BORONGAN b_B o_I r_I o_I N_I a_I n_E
 BOUNDARY BOUNDARY b_B aw_I n_I d_I e_I r_I i_E
 BREAK BREAK b_B r_I ej_I k_E
 BUBONG BUBONG b_B u_I b_I o_I N_E
@@ -132,54 +194,86 @@ BUKAS BUKAS b_B u_I k_I a_I s_E
 BUKIDNON BUKIDNON b_B u_I k_I i_I t_I n_I o_I n_E
 BULACAN BULACAN b_B u_I l_I 6_I k_I a_I n_E
 BULLETIN BULLETIN b_B u_I l_I i_I t_I i_I n_E
+BULUBUNDUKIN BULUBUNDUKIN b_B u_I l_I u_I b_I u_I n_I d_I u_I k_I i_I n_E
 BUMABA BUMABA b_B u_I m_I 6_I b_I a_E
+BUMAGAL BUMAGAL b_B u_I m_I 6_I g_I a_I l_E
 BUMAGSAK BUMAGSAK b_B u_I m_I 6_I s_I a_I k_E
 BUMILIS BUMILIS b_B u_I m_I i_I l_I i_I s_E
 BUNDOK BUNDOK b_B u_I n_I d_I o_I k_E
+BUNG BUNG b_B u_I N_E
+BUNOT BUNOT b_B u_I n_I o_I t_E
 BUNTOT BUNTOT b_B u_I n_I t_I o_I t_E
 BUONG BUONG b_B u_I o_I N_E
+BURIAS BURIAS b_B u_I r_I i_I a_I s_E
+BUT BUT b_B u_I t_E
 BUWAN BUWAN b_B u_I w_I 6_I n_E
+BY BY b_B aj_E
 CABANATUAN CABANATUAN k_B 6_I b_I 6_I n_I 6_I t_I u_I 6_I n_E
-CACAUSE CACAUSE c_B ow_I c_I ow_I s_E
+CACAUSE CACAUSE k_B ow_I k_I ow_I s_E
 CAGAYAN CAGAYAN k_B 6_I g_I 6_I j_I a_I n_E
 CALABARZON CALABARZON k_B 6_I l_I 6_I b_I 6_I r_I s_I o_I n_E
+CALAMIAN CALAMIAN k_B 6_I l_I 6_I m_I i_I a_I n_E
 CALAPAN CALAPAN k_B 6_I l_I 6_I p_I a_I n_E
 CALAYAN CALAYAN k_B 6_I l_I 6_I j_I a_I n_E
+CAMANAVA CAMANAVA k_B 6_I m_I 6_I n_I 6_I v_I 6_E
 CAMARINES CAMARINES k_B 6_I m_I 6_I r_I i_I n_I e_I s_E
 CAMIGUIN CAMIGUIN k_B 6_I m_I i_I g_I u_I i_I n_E
 CAMP CAMP k_B 6_I m_I p_E
+CAN CAN k_B 6_I n_E
 CAPIZ CAPIZ k_B 6_I p_I i_I s_E
 CARAGA CARAGA k_B 6_I r_I 6_I g_I 6_E
+CASE CASE k_B ej_I s_E
+CASES CASES k_B ej_I s_I e_I s_E
 CASIGURAN CASIGURAN k_B 6_I s_I i_I g_I u_I r_I a_I n_E
 CATANDUANES CATANDUANES k_B 6_I t_I a_I n_I d_I u_I 6_I n_I e_I s_E
+CATARMAN CATARMAN k_B 6_I t_I 6_I r_I m_I a_I n_E
 CATBALOGAN CATBALOGAN k_B 6_I t_I b_I 6_I l_I o_I g_I a_I n_E
 CATEGORY CATEGORY l_B 6_I t_I e_I g_I o_I r_I i_E
-CAUSE CAUSE c_B ow_I s_E
+CAUSE CAUSE k_B ow_I s_E
 CAVITE CAVITE k_B a_I v_I i_I t_I e_E
 CBN CBN s_B i_I b_I i_I e_I n_E
 CEBU CEBU s_B e_I b_I u_E
+CELCIUS CELCIUS s_B e_I l_I s_I i_I u_I s_E
 CELSIUS CELSIUS s_B e_I l_I s_I i_I u_I s_E
 CENTER CENTER s_B e_I n_I t_I e_I r_E
 CENTRAL CENTRAL s_B e_I n_I t_I r_I a_I l_E
 CENTRO CENTRO s_B e_I n_I t_I r_I o_E
 CHANCE CHANCE tS_B a_I n_I S_E
+CHANNEL CHANNEL t_B s_I 6_I n_I e_I l_E
+CHANSA CHANSA t_B s_I 6_I n_I s_I a_E
+CHANSANG CHANSANG t_B s_I 6_I n_I s_I a_I N_E
+CHINESE CHINESE t_B s_I i_I n_I i_I s_E
+CHRIS CHRIS k_B r_I i_I s_E
 CI CI S_S
+CIMARON CIMARON S_B m_I 6_I r_I o_I n_E
 CITIES CITIES S_B t_I i_I e_I S_E
 CITY CITY S_B t_I i_E
+CLARK CLARK k_B l_I a_I r_I k_E
 CLOSE CLOSE k_B l_I o_I s_E
+CLOUDINESS CLOUDINESS k_B l_I ow_I d_I i_I n_I e_I s_E
 COAST COAST k_B o_I a_I s_I t_E
+COASTAL COASTAL k_B o_I s_I t_I 6_I l_E
 COLD COLD k_B o_I l_I d_E
 COM COM k_B o_I m_E
 COMPANY COMPANY k_B o_I m_I p_I a_I n_I i_E
+COMPARED COMPARED k_B o_I m_I p_I e_I r_I d_E
 COMPOSTELA COMPOSTELA k_B o_I m_I p_I o_I s_I t_I e_I l_I 6_E
+COMPOSTELLA COMPOSTELLA k_B o_I m_I p_I o_I s_I t_I e_I l_I a_E
+CONCREAT CONCREAT k_B o_I n_I k_I r_I i_I t_E
 CONDITION CONDITION k_B o_I n_I d_I i_I S_I o_I n_E
-CONVERGENCE CONVERGENCE k_B o_I n_I v_I e_I r_I g_I e_I n_I c_I e_E
+CONTINUOUS CONTINUOUS k_B o_I n_I t_I n_I i_I u_I s_E
+CONVERGENCE CONVERGENCE k_B o_I n_I v_I e_I r_I g_I e_I n_I s_E
 COOL COOL k_B U_I l_E
 CORDILLERA CORDILLERA k_B o_I r_I d_I i_I l_I e_I r_I a_E
+CORY CORY k_B o_I r_I i_E
 COTABATO COTABATO k_B o_I t_I 6_I b_I 6_I t_I o_E
 COUNTRY COUNTRY k_B aw_I n_I t_I r_I i_E
 CRUZ CRUZ k_B r_I u_I z_E
+CURRENT CURRENT k_B u_I r_I e_I n_I t_E
+CUYO CUYO k_B u_I j_I o_E
 CYCLONE CYCLONE s_B 6j_I k_I l_I o_I n_E
+CYCLONES CYCLONES s_B 6j_I k_I l_I o_I n_I s_E
+D D d_B i_E
 DA DA d_B 6_E
 DAAN DAAN d_B 6_I a_I n_E
 DAANG DAANG d_B 6_I a_I N_E
@@ -190,31 +284,48 @@ DAGAT DAGAT d_B 6_I g_I 6_I t_E
 DAGUPAN DAGUPAN d_B 6_I g_I u_I p_I a_I n_E
 DAHIL DAHIL d_B 6_I h_I i_I l_E
 DAHILAN DAHILAN d_B 6_I h_I i_I l_I a_I n_E
+DAKO DAKO d_B 6_I k_I o_E
+DAKONG DAKONG d_B 6_I k_I o_I N_E
 DALA DALA d_B 6_I l_I a_E
 DALANG DALANG d_B 6_I l_I a_I N_E
+DALAWA DALAWA d_B 6_I l_I 6_I w_I a_E
 DALAWANG DALAWANG d_B 6_I l_I a_I w_I a_I N_E
+DALUYONG DALUYONG d_B 6_I l_I u_I j_I o_I N_E
 DAM DAM d_B 6_I m_E
 DAMA DAMA d_B 6_I m_I 6_E
+DAMAGES DAMAGES d_B 6_I m_I ej_I dZ_I e_I s_E
+DAMAGING DAMAGING d_B 6_I m_I ej_I dZ_I i_I N_E
 DAMANG DAMANG d_B 6_I m_I a_I N_E
+DAMAY DAMAY d_B 6_I m_I aj_E
 DAMI DAMI d_B 6_I m_I i_E
 DAPAT DAPAT d_B 6_I p_I a_I t_E
 DAPITAN DAPITAN d_B 6_I p_I i_I t_I a_I n_E
 DARANAS DARANAS d_B 6_I r_I 6_I n_I a_I s_E
 DARATING DARATING d_B 6_I r_I 6_I t_I i_I N_E
 DASH DASH d_B a_I S_E
+DATE DATE d_B ej_I t_E
 DATI DATI d_B a_I t_I i_E
 DATING DATING d_B 6_I t_I i_I N_E
 DATOS DATOS d_B a_I t_I o_I s_E
 DAVAO DAVAO d_B a_I v_I aw_E
 DAW DAW d_B 6w_E
+DAY DAY d_B ej_E
+DE DE d_B i_E
+DEAN DEAN d_B i_I n_E
 DECEMBER DECEMBER d_B e_I s_I e_I m_I b_I e_I r_E
 DEFINITELY DEFINITELY d_B e_I f_I i_I n_I i_I t_I l_I i_E
+DEGREE DEGREE d_B e_I g_I r_I i_E
 DEGREES DEGREES d_B e_I g_I r_I i_I s_E
 DEL DEL d_B e_I l_E
 DELA DELA d_B e_I l_I a_E
+DELAY DELAY d_B i_I l_I ej_E
+DELAYED DELAYED d_B i_I l_I ej_I d_E
 DELIKADO DELIKADO d_B e_I l_I i_I k_I a_I d_I o_E
 DENR DENR d_B i_I e_I e_I n_I a_I r_E
+DEPARTMENT DEPARTMENT d_B e_I p_I 6_I r_I t_I m_I e_I n_I t_E
 DEPRESSION DEPRESSION d_B e_I p_I r_I e_I S_I o_I n_E
+DETALYE DETALYE d_B e_I t_I 6_I l_I j_I e_E
+DEVELOPMENT DEVELOPMENT d_B e_I v_I e_I l_I o_I p_I m_I e_I n_I t_E
 DI DI d_B i_E
 DIFFERENCE DIFFERENCE d_B i_I f_I e_I r_I e_I n_I s_E
 DILAW DILAW d_B i_I l_I aw_E
@@ -222,7 +333,14 @@ DIN DIN d_B i_I n_E
 DINAGAT DINAGAT d_B i_I n_I a_I g_I 6_I t_E
 DING DING d_B i_I N_E
 DIRECTION DIRECTION d_B i_I r_I e_I k_I s_I i_I o_I n_E
+DIRECTLY DIRECTLY d_B i_I r_I e_I k_I t_I l_I j_E
+DIREKSYON DIREKSYON d_B i_I r_I e_I k_I s_I j_I o_I n_E
+DIREKSYONG DIREKSYONG d_B i_I r_I e_I k_I s_I j_I o_I N_E
+DIREKTANG DIREKTANG d_B i_I r_I e_I k_I t_I 6_I N_E
+DISTANCE DISTANCE d_B i_I s_I t_I 6_I n_I s_E
+DITA DITA d_B i_I t_I a_E
 DITO DITO d_B i_I t_I o_E
+DIYAAN DIYAAN d_B i_I j_I 6_I a_I n_E
 DIYAN DIYAN d_B i_I a_I n_E
 DIYES DIYES d_B j_I e_I s_E
 DOBLE DOBLE d_B o_I b_I l_I e_E
@@ -232,17 +350,25 @@ DOON DOON d_B o_I o_I n_E
 DOS DOS d_B o_I s_E
 DOST DOST d_B i_I ow_I e_I s_I t_I i_E
 DOT DOT d_B i_I ow_I t_I i_E
+DOUBLE DOUBLE d_B o_I b_I l_I e_E
+DOWN DOWN d_B o_I w_I n_E
 DROUGHT DROUGHT d_B r_I aw_I t_E
 DRY DRY d_B r_I aj_E
 DULONG DULONG d_B u_I l_I o_I N_E
 DULOT DULOT d_B u_I l_I o_I t_E
 DUMAAN DUMAAN d_B V_I m_I a_I 6_I n_E
-DUMAGUETE DUMAGUETE d_B u_I m_I a_I g_I e_I t_I E_E
+DUMAGUETE DUMAGUETE d_B u_I m_I a_I g_I e_I t_I e_E
 DUMAKO DUMAKO d_B u_I m_I a_I k_I o_E
+DUN DUN d_B u_I n_E
+DURING DURING d_B u_I r_I i_I N_E
+DYAN DYAN d_B j_I a_I n_E
+DYES DYES d_B j_I e_I s_E
+DYKE DYKE d_B j_I k_E
 DZ DZ d_B i_I z_I i_E
 DZMM DZMM d_B i_I z_I i_I e_I m_I e_I m_E
 E E i_S
 EACH EACH i_B t_I s_E
+EARLY EARLY e_B r_I l_I j_E
 EAST EAST i_B S_I t_E
 EASTER EASTER i_B S_I t_I e_I r_E
 EASTERLIES EASTERLIES i_B S_I t_I e_I r_I l_I i_I s_E
@@ -258,108 +384,173 @@ EL EL e_B l_E
 ELEVEN ELEVEN I_B l_I e_I v_I n_E
 END END e_B n_I d_E
 ENERGY ENERGY e_B n_I e_I r_I dZ_I i_E
+ENHANCING ENHANCING e_B n_I h_I 6_I n_I s_I i_I N_E
 EPEKTO EPEKTO e_B p_I e_I k_I t_I o_E
+EPEKTONG EPEKTONG e_B p_I e_I k_I t_I o_I N_E
+EQUINOX EQUINOX e_B k_I w_I i_I n_I o_I k_I s_E
 ESCOLIAR ESCOLIAR e_B s_I k_I o_I l_I j_I a_I r_E
+ESCOLYAR ESCOLYAR e_B s_I k_I o_I l_I j_I a_I r_E
+ESPECIFICALLY ESPECIFICALLY e_B s_I p_I e_I s_I i_I f_I i_I k_I 6_I l_I j_E
 ESTAREJA ESTAREJA e_B s_I t_I a_I r_I e_I h_I 6_E
 ETO ETO e_B t_I o_E
+ETONG ETONG e_B t_I o_I N_E
 EUROPEAN EUROPEAN j_B U_I r_I o_I p_I I_I a_I n_E
-EVACUATE EVACUATE I_B v_I {_I k_I j_I u_I ej_I t_E
+EVACUATE EVACUATE I_B v_I 6_I k_I j_I u_I ej_I t_E
 EVENING EVENING I_B v_I n_I i_I N_E
-EXCEPT EXCEPT I_B k_I s_I e_I p_I t_E
+EXACT EXACT e_B k_I s_I a_I t_E
+EXCEPT EXCEPT e_B k_I s_I e_I p_I t_E
+EXIT EXIT e_B k_I s_I i_I t_E
+EXPECT EXPECT e_B k_I s_I p_I e_I k_E
 EXTENSION EXTENSION I_B k_I s_I t_I e_I n_I S_I o_I n_E
 EXTREME EXTREME I_B k_I s_I t_I r_I i_I m_E
+EYE EYE e_B j_E
+EYEWALL EYEWALL e_B j_I w_I 6_I l_E
 FACEBOOK FACEBOOK f_B ej_I s_I b_I U_I k_E
 FACTOR FACTOR f_B {_I k_I t_I o_I r_E
 FAIR FAIR f_B @_I r_E
-FAIRWEATHER FAIRWEATHER F_B @_I r_I w_I i_I D_I e_I r_E
+FAIRWEATHER FAIRWEATHER f_B e_I r_I w_I i_I D_I e_I r_E
+FALCON FALCON f_B 6_I l_I k_I o_I n_E
 FAR FAR f_B a_I r_E
 FEBRUARY FEBRUARY f_B e_I b_I w_I a_I r_I i_E
+FIESTA FIESTA f_B i_I e_I s_I t_I a_E
 FIFTEEN FIFTEEN f_B I_I f_I t_I i_I n_E
 FIFTY FIFTY f_B I_I f_I t_I I_E
+FINALLY FINALLY f_B i_I n_I 6_I l_I j_E
+FIRST FIRST f_B e_I r_I s_I t_E
 FIVE FIVE f_B aj_I v_E
-FLASH FLASH f_B l_I {_I S_E
+FLASH FLASH f_B l_I a_I S_E
+FLASHFLOODS FLASHFLOODS f_B l_I a_I S_I f_I l_I a_I d_I s_E
 FLOOD FLOOD f_B l_I V_I d_E
 FLOODING FLOODING f_B l_I V_I d_I I_I N_E
+FLOODS FLOODS f_B l_I V_I d_I s_E
 FOLLOW FOLLOW f_B a_I l_I ow_E
+FONT FONT f_B o_I n_I t_E
 FOR FOR f_B o_I r_E
 FORECAST FORECAST f_B o_I r_I k_I a_I s_I t_E
 FORECASTER FORECASTER f_B o_I r_I k_I a_I s_I t_I e_I r_E
 FORECASTING FORECASTING f_B o_I r_I k_I a_I s_I t_I I_I N_E
+FORMERLY FORMERLY f_B o_I r_I m_I e_I r_I l_I j_E
 FORTICH FORTICH f_B o_I r_I i_I tS_E
 FORTY FORTY f_B o_I r_I t_I i_E
+FORTY-ONE FORTY-ONE f_B o_I r_I t_I j_I o_I n_I e_E
 FOUR FOUR f_B o_I r_E
 FOURTEEN FOURTEEN f_B o_I r_I t_I i_I n_E
+FOURTY FOURTY f_B o_I r_I t_I j_E
+FOUT FOUT f_B o_I u_I t_E
 FROM FROM f_B r_I o_I m_E
 FRONT FRONT f_B r_I V_I n_I t_E
+FULL FULL f_B u_I l_E
 GAANO GAANO g_B a_I 6_I n_I o_E
 GABI GABI g_B 6_I b_I i_E
+GAGANDA GAGANDA g_B 6_I g_I 6_I n_I d_I a_E
 GAIN GAIN g_B ej_I n_E
+GALAW GALAW g_B 6_I l_I a_I w_E
 GALE GALE g_B ej_I l_E
 GALING GALING g_B 6_I l_I I_I N_E
+GAMES GAMES g_B ej_I m_I s_E
 GANAP GANAP g_B 6_I n_I a_I p_E
+GANITO GANITO g_B 6_I n_I i_I t_I o_E
 GANITONG GANITONG g_B a_I n_I i_I t_I o_I N_E
+GANON GANON g_B 6_I n_I o_I n_E
 GANUN GANUN g_B a_I n_I u_I n_E
 GANUNG GANUNG g_B a_I n_I u_I N_E
 GANYAN GANYAN g_B 6_I n_I j_I a_I n_E
 GANYANG GANYANG g_B 6_I n_I j_I a_I N_E
+GARDEN GARDEN g_B 6_I r_I d_I e_I n_E
 GAYA GAYA g_B 6_I j_I 6_E
+GAYUN GAYUN g_B 6_I j_I u_I n_E
 GAYUNDIN GAYUNDIN g_B 6_I j_I u_I n_I d_I i_I n_E
 GENERAL GENERAL dZ_B e_I n_I e_I r_I a_I l_E
 GENERALLY GENERALLY dZ_B e_I n_I e_I r_I a_I l_I i_E
 GEOHAZARD GEOHAZARD dZ_B @_I U_I h_I {_I z_I a_I r_I d_E
+GILID GILID g_B i_I l_I i_I d_E
 GINAGANAP GINAGANAP g_B i_I n_I a_I g_I 6_I n_I a_I p_E
 GINAGAWA GINAGAWA g_B i_I n_I a_I g_I 6_I w_I a_E
 GINOONG GINOONG g_B i_I n_I o_I o_I N_E
 GITNA GITNA g_B i_I t_I n_I a_E
+GITNANG GITNANG g_B i_I t_I n_I 6_I N_E
 GIWAN GIWAN g_B i_I w_I a_I n_E
 GLAIZA GLAIZA g_B l_I aj_I z_I a_E
+GLAYSA GLAYSA g_B l_I 6_I j_I s_I a_E
+GLENDA GLENDA g_B l_I e_I n_I d_I a_E
+GLYSA GLYSA g_B l_I j_I s_I a_E
 GMA GMA dZ_B i_I e_I m_I ej_E
 GOOD GOOD g_B u_I d_E
 GOV GOV g_B o_I v_E
+GRABE GRABE g_B r_I 6_I b_I e_E
+GRADUAL GRADUAL g_B r_I 6_I d_I w_I 6_I l_E
+GRANDE GRANDE g_B r_I 6_I n_I d_I e_E
 GREEN GREEN g_B r_I i_I n_E
 GROUP GROUP g_B r_I U_I p_E
 GROUPS GROUPS g_B r_I U_I p_I s_E
 GUARD GUARD g_B a_I r_I d_E
+GUHO GUHO g_B u_I h_I o_E
+GUIMARAS GUIMARAS g_B i_I m_I 6_I r_I 6_I s_E
 GUMAGAMIT GUMAGAMIT g_B u_I m_I a_I g_I 6_I m_I i_I t_E
 GUMAMIT GUMAMIT g_B u_I m_I a_I m_I i_I t_E
+GUMUHO GUMUHO g_B u_I m_I u_I h_I o_E
 GUSTINESS GUSTINESS g_B u_I s_I t_I i_I n_I e_I s_E
+GUSTO GUSTO g_B u_I s_I t_I o_E
+H H ej_B tS_E
 HA HA h_B a_E
+HABA HABA h_B 6_I b_I a_E
 HABAGAT HABAGAT h_B a_I b_I 6_I g_I a_I t_E
 HABANG HABANG h_B a_I b_I 6_I N_E
+HAHARAPIN HAHARAPIN h_B 6_I h_I 6_I r_I 6_I p_I i_I n_E
 HAHATAKIN HAHATAKIN h_B a_I h_I a_I t_I a_I k_I i_I n_E
 HAILSTORM HAILSTORM h_B ej_I l_I s_I t_I o_I r_I m_E
+HALF HALF h_B 6_I f_E
+HALIMBAWA HALIMBAWA h_B 6_I l_I i_I m_I b_I 6_I w_I a_E
 HALOS HALOS h_B a_I l_I o_I s_E
 HAMOG HAMOG h_B a_I m_I o_I g_E
+HAMPAS HAMPAS h_B 6_I m_I p_I a_I s_E
+HANDA HANDA h_B 6_I n_I d_I a_E
+HANGAING HANGAING h_B 6_I N_I 6_I i_I N_E
 HANGGANG HANGGANG h_B a_I N_I g_I a_I N_E
+HANGGAT HANGGAT h_B 6_I N_I g_I a_I t_E
 HANGIN HANGIN h_B a_I N_I i_I n_E
 HANGING HANGING h_B a_I N_I i_I N_E
 HAPON HAPON h_B a_I p_I o_I n_E
 HAPONG HAPONG h_B a_I p_I o_I N_E
-HAPPY HAPPY h_B {_I p_I j_E
+HAPPY HAPPY h_B 6_I p_I j_E
 HATAKIN HATAKIN h_B 6_I t_I 6_I k_I i_I n_E
-HAVE HAVE h_B {_I v_E
+HAVE HAVE h_B 6_I v_E
+HAZARD HAZARD h_B 6_I z_I a_I r_I d_E
 HEADLIGHT HEADLIGHT h_B e_I d_I l_I j_I t_E
 HEAT HEAT h_B i_I t_E
 HEAVY HEAVY h_B e_I v_I j_E
+HELEN HELEN h_B e_I l_I e_I n_E
+HELLO HELLO h_B e_I l_I o_E
 HIGHLY HIGHLY h_B j_I l_I j_E
+HIGHWAY HIGHWAY h_B i_I w_I ej_E
+HIGIT HIGIT h_B i_I g_I i_I t_E
 HIHIGUPIN HIHIGUPIN h_B i_I h_I i_I g_I u_I p_I i_I n_E
 HIHINA HIHINA h_B i_I h_I i_I n_I a_E
 HILAGA HILAGA h_B i_I l_I 6_I g_I a_E
 HILAGANG HILAGANG h_B i_I l_I 6_I g_I 6_I N_E
 HIMAWARI HIMAWARI h_B i_I m_I 6_I w_I 6_I r_I i_E
+HINA HINA h_B i_I n_I a_E
 HINAHATAK HINAHATAK h_B i_I n_I 6_I h_I 6_I t_I 6_I k_E
+HINAHAYAAN HINAHAYAAN h_B i_I n_I 6_I h_I 6_I j_I 6_I a_I n_E
 HINATUAN HINATUAN h_B i_I n_I 6_I t_I u_I 6_I n_E
 HINDI HINDI h_B i_I n_I d_I i_E
 HIRIT HIRIT h_B i_I r_I i_I t_E
 HISTORY HISTORY h_B i_I s_I t_I o_I r_I i_E
 HO HO h_B o_E
+HOPEFULLY HOPEFULLY h_B o_I u_I p_I f_I u_I l_I j_E
 HOUR HOUR a_B r_E
+HOURS HOURS 6_B o_I r_I s_E
 HULI HULI h_B u_I l_I i_E
 HULING HULING h_B u_I l_I i_I N_E
+HUMAHABA HUMAHABA h_B u_I m_I 6_I h_I 6_I b_I a_E
 HUMAHARANG HUMAHARANG h_B u_I m_I 6_I h_I 6_I r_I a_I N_E
+HUMANAP HUMANAP h_B u_I m_I 6_I n_I a_I p_E
 HUMIHINA HUMIHINA h_B u_I m_I i_I h_I i_I n_I a_E
 HUMIHINGA HUMIHINGA h_B u_I m_I i_I h_I i_I N_I a_E
+HUMINA HUMINA h_B u_I m_I i_I n_I a_E
 HUNDRED HUNDRED h_B u_I n_I d_I r_I e_I d_E
+HUNDRES HUNDRES h_B u_I n_I d_I r_I e_I s_E
+HUNYO HUNYO h_B u_I n_I j_I o_E
 HUWEBES HUWEBES h_B u_I w_I e_I b_I e_I s_E
 I I aj_S
 I I i_S
@@ -367,10 +558,14 @@ IBA IBA i_B b_I 6_E
 IBA'T IBA'T i_B b_I a_I t_E
 IBA'T-IBANG IBA'T-IBANG i_B b_I a_I t_I i_I b_I a_I N_E
 IBABANG IBABANG i_B b_I 6_I b_I 6_I N_E
+IBANDILA IBANDILA i_B b_I 6_I n_I d_I i_I l_I a_E
 IBANG IBANG i_B b_I 6_I N_E
+IBAT IBAT i_B b_I 6_I t_E
+IBIBIGAY IBIBIGAY i_B b_I i_I b_I i_I g_I aj_E
 IBIG IBIG i_B b_I i_I k_E
 IDENTIFIED IDENTIFIED i_B d_I e_I n_I t_I i_I f_I aj_I d_E
 IEXPLAIN IEXPLAIN i_B e_I k_I s_I p_I l_I ej_I n_E
+IFOLLOW IFOLLOW i_B f_I o_I l_I o_I w_E
 IFUGAO IFUGAO i_B f_I u_I g_I a_I o_E
 IGNACIO IGNACIO i_B g_I n_I a_I s_I i_I o_E
 IINGAT IINGAT i_B i_I N_I 6_I t_E
@@ -379,44 +574,77 @@ IKALAWA IKALAWA i_B k_I 6_I l_I 6_I w_I a_E
 IKALAWANG IKALAWANG i_B k_I 6_I l_I 6_I w_I a_I N_E
 IKATLO IKATLO i_B k_I a_I t_I l_I o_E
 IKOCLOSE IKOCLOSE i_B k_I o_I k_I l_I o_I s_E
+ILAGANG ILAGANG i_B l_I 6_I g_I a_I N_E
 ILALIM ILALIM i_B l_I a_I l_I i_I m_E
 ILAN ILAN i_B l_I 6_I n_E
 ILANG ILANG i_B l_I 6_I N_E
 ILIGAN ILIGAN i_B l_I i_I g_I a_I n_E
+ILIKE ILIKE i_B l_I j_I k_E
 ILOCOS ILOCOS i_B l_I o_I k_I o_I s_E
+ILOG ILOG i_B l_I o_I g_E
 ILOILO ILOILO i_B l_I o_I i_I l_I o_E
 IMAGE IMAGE i_B m_I ej_I tS_E
 IMEDIA IMEDIA i_B m_I e_I d_I j_I a_E
 IMPORMASYON IMPORMASYON i_B m_I p_I o_I r_I m_I 6_I S_I o_I n_E
+IMPROVING IMPROVING i_B m_I p_I r_I u_I v_I i_I N_E
 IN IN i_B n_E
 INA INA i_B n_I a_E
 INAASAHAN INAASAHAN i_B n_I a_I 6_I s_I 6_I h_I a_I n_E
 INAASAHANG INAASAHANG i_B n_I a_I 6_I s_I 6_I h_I a_I N_E
+INCLUDING INCLUDING i_B n_I k_I l_I u_I d_I i_I N_E
 INDEX INDEX i_B n_I d_I e_I k_I s_E
+INDIKASYON INDIKASYON i_B n_I d_I i_I k_I 6_I s_I j_I o_I n_E
+INEESTIMATE INEESTIMATE i_B n_I e_I e_I s_I t_I i_I m_I ej_I t_E
 INFANTA INFANTA i_B n_I f_I a_I n_I t_I 6_E
 INGAT INGAT i_B N_I a_I t_E
 INGATAN INGATAN i_B N_I 6_I t_I a_I n_E
 INIT INIT i_B n_I i_I t_E
+INOM INOM i_B n_I o_I m_E
+INS INS i_B n_I s_E
 INTENSE INTENSE i_B n_I t_I e_I n_I s_E
 INTENSITY INTENSITY i_B n_I t_I e_I n_I s_I i_I t_I i_E
-INTERTROPICAL INTERTROPICAL i_B n_I t_I e_I r_I t_I r_I o_I p_I i_I c_I a_I l_E
+INTERNATIONAL INTERNATIONAL i_B n_I t_I e_I r_I n_I 6_I s_I j_I o_I n_I a_I l_E
+INTERTROPICAL INTERTROPICAL i_B n_I t_I e_I r_I t_I r_I o_I p_I i_I k_I a_I l_E
+INTI INTI i_B n_I t_I i_E
+INUUKA INUUKA i_B n_I u_I u_I k_I a_E
+INYO INYO i_B n_I j_I o_E
 INYONG INYONG i_B n_I j_I o_I N_E
+IPAPALABAS IPAPALABAS i_B p_I 6_I p_I 6_I l_I 6_I b_I a_I s_E
+IPILING IPILING i_B p_I i_I l_I i_I N_E
+IRAL IRAL i_B r_I 6_I l_E
 IS IS i_B s_E
 ISA ISA i_B s_I 6_E
 ISABELA ISABELA i_B s_I 6_I b_I e_I l_I 6_E
+ISABELLA ISABELLA i_B s_I 6_I b_I e_I l_I a_E
+ISAHANG ISAHANG i_B s_I 6_I h_I 6_I N_E
 ISANG ISANG i_B s_I 6_I N_E
+ISEARCH ISEARCH i_B s_I e_I r_I t_I s_E
+ISIP ISIP i_B s_I i_I p_E
 ISLA ISLA i_B s_I l_I 6_E
 ISLAND ISLAND aj_B l_I a_I n_I d_E
 ISLANDS ISLANDS aj_B l_I a_I n_I d_I s_E
 ISOLATED ISOLATED aj_B s_I o_I l_I ej_I t_I e_I d_E
+ISTASYON ISTASYON i_B s_I t_I 6_I s_I j_I o_I n_E
+ITAAS ITAAS i_B t_I 6_I a_I s_E
 ITCZ ITCZ aj_B t_I i_I s_I i_I z_I i_E
 ITINAAS ITINAAS i_B t_I i_I n_I 6_I a_I s_E
 ITO ITO i_B t_I o_E
 ITO'Y ITO'Y i_B t_I oj_E
 ITONG ITONG i_B t_I o_I N_E
+ITOY ITOY i_B t_I o_I j_E
+ITYPE ITYPE i_B t_I j_I p_E
+IYAN IYAN i_B j_I 6_I n_E
 JACKET JACKET dZ_B 6_I k_I e_I t_E
-JENNY JENNY g_B e_I n_I i_E
+JANUARY JANUARY dZ_B 6_I n_I u_I w_I a_I r_I j_E
+JEFF JEFF dZ_B e_I f_E
+JENNY JENNY dZ_B e_I n_I i_E
+JERVIS JERVIS dZ_B e_I r_I v_I i_I s_E
 JESSICA JESSICA g_B e_I s_I i_I k_I a_E
+JUAN JUAN h_B u_I a_I n_E
+JUBAN JUBAN dZ_B u_I b_I a_I n_E
+JULIUS JULIUS dZ_B u_I l_I i_I u_I s_E
+JULY JULY dZ_B u_I l_I j_E
+JUST JUST dZ_B u_I s_I t_E
 KA KA k_B 6_E
 KAALINSANGAN KAALINSANGAN k_B 6_I 6_I l_I i_I n_I s_I 6_I N_I a_I n_E
 KABABAYAN KABABAYAN k_B 6_I b_I 6_I b_I 6_I j_I a_I n_E
@@ -427,26 +655,39 @@ KABILA KABILA k_B 6_I b_I i_I l_I 6_E
 KABILANG KABILANG k_B 6_I b_I i_I l_I a_I N_E
 KABILISAN KABILISAN k_B 6_I b_I i_I l_I i_I s_I a_I n_E
 KABISAYAAN KABISAYAAN k_B 6_I b_I i_I s_I a_I j_I 6_I a_I n_E
+KABUUHAN KABUUHAN k_B 6_I b_I u_I u_I h_I a_I n_E
 KADA KADA k_B 6_I d_I 6_E
+KADALASAN KADALASAN k_B 6_I d_I 6_I l_I 6_I s_I a_I n_E
 KAGABI KAGABI k_B 6_I g_I 6_I b_I i_E
 KAHAPON KAHAPON k_B 6_I h_I 6_I p_I o_I n_E
 KAHIT KAHIT k_B 6_I h_I i_I t_E
+KAHOY KAHOY k_B 6_I h_I o_I j_E
 KAILAN KAILAN k_B 6_I i_I l_I a_I n_E
 KAILANGAN KAILANGAN k_B a_I i_I l_I 6_I N_I a_I n_E
 KAKAIBANG KAKAIBANG k_B 6_I k_I 6_I i_I b_I 6_I N_E
 KAKALIMUTAN KAKALIMUTAN k_B 6_I k_I 6_I l_I i_I m_I u_I t_I a_I n_E
 KAKAUNTI KAKAUNTI k_B 6_I k_I 6_I u_I n_I t_I i_E
+KALA KALA k_B 6_I l_I a_E
+KALAGAYAN KALAGAYAN k_B 6_I l_I 6_I g_I 6_I j_I a_I n_E
+KALAGITNAAN KALAGITNAAN k_B 6_I l_I 6_I g_I i_I t_I n_I 6_I a_I n_E
 KALAKAS KALAKAS k_B 6_I l_I 6_I k_I a_I s_E
 KALAKASAN KALAKASAN k_B 6_I l_I 6_I k_I 6_I s_I a_I n_E
+KALAMIGAN KALAMIGAN k_B 6_I l_I 6_I m_I i_I g_I a_I n_E
 KALANGITAN KALANGITAN k_B 6_I l_I a_I N_I i_I t_I a_I n_E
+KALAT KALAT k_B 6_I l_I a_I t_E
 KALAT-KALAT KALAT-KALAT k_B 6_I l_I a_I t_I k_I 6_I l_I a_I t_E
 KALAYAAN KALAYAAN k_B 6_I l_I 6_I j_I 6_I a_I n_E
+KALAYAN KALAYAN k_B 6_I l_I 6_I j_I a_I n_E
 KALINGA KALINGA k_B 6_I l_I i_I N_I a_E
+KALSADA KALSADA k_B 6_I l_I s_I 6_I d_I a_E
 KALUPAAN KALUPAAN k_B 6_I l_I u_I p_I 6_I a_I n_E
 KAMAYNILAAN KAMAYNILAAN k_B 6_I m_I aj_I n_I i_I l_I 6_I a_I n_E
+KAMUSTA KAMUSTA k_B 6_I m_I u_I s_I t_I a_E
 KANG KANG k_B 6_I N_E
+KANI KANI k_B 6_I n_I i_E
 KANILANG KANILANG k_B 6_I n_I i_I l_I a_I N_E
 KANINA KANINA k_B 6_I n_I i_I n_I a_E
+KANINA'Y KANINA'Y k_B 6_I n_I i_I n_I a_I j_E
 KANINANG KANINANG k_B 6_I n_I i_I n_I 6_I N_E
 KANLURAN KANLURAN k_B 6_I n_I l_I u_I r_I a_I n_E
 KANLURANG KANLURANG k_B 6_I n_I l_I u_I r_I a_I N_E
@@ -454,69 +695,115 @@ KANYANG KANYANG k_B a_I n_I j_I a_I N_E
 KAPAG KAPAG k_B 6_I p_I a_I k_E
 KAPAL KAPAL k_B 6_I p_I a_I l_E
 KAPAMILYA KAPAMILYA k_B 6_I p_I 6_I m_I i_I l_I j_I a_E
+KAPAREHO KAPAREHO k_B 6_I p_I 6_I r_I e_I h_I o_E
+KAPAREHONG KAPAREHONG k_B 6_I p_I 6_I r_I e_I h_I o_I N_E
+KAPULUAN KAPULUAN k_B 6_I p_I u_I l_I u_I a_I n_E
 KAPUSO KAPUSO k_B 6_I p_I u_I s_I o_E
+KARAGA KARAGA k_B 6_I r_I 6_I g_I a_E
 KARAGATAN KARAGATAN k_B 6_I r_I 6_I g_I 6_I t_I a_I n_E
+KARAGDAGANG KARAGDAGANG k_B 6_I r_I 6_I g_I d_I 6_I g_I a_I N_E
+KAREN KAREN k_B 6_I r_I e_I n_E
 KAROON KAROON k_B 6_I r_I o_I o_I n_E
+KASAGSAGAN KASAGSAGAN k_B 6_I s_I 6_I g_I s_I 6_I g_I a_I n_E
 KASALUKUYAN KASALUKUYAN k_B 6_I s_I 6_I l_I u_I k_I u_I j_I a_I n_E
+KASALUKUYANG KASALUKUYANG k_B 6_I s_I 6_I l_I u_I k_I u_I j_I a_I N_E
 KASAMA KASAMA k_B 6_I s_I 6_I m_I a_E
+KASAMANG KASAMANG k_B 6_I s_I 6_I m_I a_I N_E
 KASI KASI k_B 6_I s_I i_E
 KASING KASING k_B 6_I s_I i_I N_E
 KATAMTAMAN KATAMTAMAN k_B 6_I t_I a_I m_I t_I a_I m_I a_I n_E
 KATAMTAMANG KATAMTAMANG k_B 6_I t_I a_I m_I t_I a_I m_I a_I N_E
+KATARMAN KATARMAN k_B 6_I t_I 6_I r_I m_I a_I n_E
+KATATAMTAMAN KATATAMTAMAN k_B 6_I t_I 6_I m_I t_I a_I m_I a_I n_E
+KATATAMTAMANG KATATAMTAMANG k_B 6_I t_I 6_I m_I t_I a_I m_I a_I N_E
 KATAWAN KATAWAN k_B 6_I t_I 6_I w_I a_I n_E
+KATEGORYA KATEGORYA k_B 6_I t_I e_I g_I o_I r_I j_I a_E
+KATIMUGANG KATIMUGANG k_B 6_I t_I i_I m_I u_I g_I a_I N_E
 KATULAD KATULAD k_B 6_I t_I u_I l_I a_I d_E
 KAUGNAY KAUGNAY k_B 6_I u_I g_I n_I aj_E
+KAULAPAN KAULAPAN k_B 6_I u_I l_I 6_I p_I a_I n_E
 KAULAPANG KAULAPANG k_B 6_I u_I l_I 6_I p_I a_I N_E
+KAUNTING KAUNTING k_B 6_I u_I n_I t_I i_I N_E
 KAY KAY k_B aj_E
 KAYA KAYA k_B 6_I j_I a_E
+KAYA'T KAYA'T k_B 6_I j_I a_I t_E
 KAYA'Y KAYA'Y k_B 6_I j_I aj_E
 KAYAT KAYAT k_B 6_I j_I a_I t_E
 KAYO KAYO k_B 6_I j_I o_E
+KAYO'Y KAYO'Y k_B 6_I j_I o_I j_E
 KESA KESA k_B e_I s_I a_E
 KIDLAT KIDLAT k_B i_I t_I l_I a_I t_E
 KIKILOS KIKILOS k_B i_I k_I i_I l_I o_I s_E
+KILOMETER KILOMETER k_B i_I l_I o_I m_I i_I t_I e_I r_E
 KILOMETERS KILOMETERS k_B i_I a_I m_I i_I t_I e_I r_I s_E
 KILOMETRO KILOMETRO k_B i_I l_I o_I m_I e_I t_I r_I o_E
 KILOS KILOS k_B i_I l_I o_I s_E
 KIM KIM k_B i_I m_E
+KINACLASSIFY KINACLASSIFY k_B i_I n_I 6_I k_I l_I a_I s_I i_I f_I i_E
+KIT KIT k_B i_I t_E
+KLASE KLASE k_B l_I a_I s_I e_E
 KLASENG KLASENG k_B l_I 6_I s_I e_I N_E
 KLIMA KLIMA k_B l_I i_I m_I a_E
 KO KO k_B o_E
 KONG KONG k_B o_I N_E
+KONTI KONTI k_B o_I n_I t_I i_E
+KORI KORI k_B o_I r_I i_E
 KPH KPH k_B ej_I p_I i_I ej_I tS_E
+KRIS KRIS k_B r_I i_I s_E
+KRISDANO KRISDANO k_B r_I i_I s_I d_I 6_I n_I o_E
 KRITIKAL KRITIKAL k_B r_I i_I t_I i_I k_I a_I l_E
+KROSA KROSA k_B r_I o_I s_I a_E
+KUDARAT KUDARAT k_B u_I d_I 6_I r_I a_I t_E
+KULANG KULANG k_B u_I l_I 6_I N_E
 KULAY KULAY k_B u_I l_I aj_E
 KULOG KULOG k_B u_I l_I o_I g_E
+KUMAIN KUMAIN k_B u_I m_I 6_I i_I n_E
 KUMIKILOS KUMIKILOS k_B u_I m_I i_I k_I i_I l_I o_I s_E
 KUMPARA KUMPARA k_B u_I m_I p_I a_I r_I a_E
+KUNDI KUNDI k_B u_I n_I d_I i_E
 KUNG KUNG k_B u_I N_E
+KURYENTE KURYENTE k_B u_I r_I j_I e_I n_I t_I e_E
+KUSA KUSA k_B u_I s_I a_E
 KUYA KUYA k_B u_I j_I a_E
+KWARENTA KWARENTA k_B w_I 6_I r_I e_I n_I t_I a_E
+KWARENTAY KWARENTAY k_B w_I 6_I r_I e_I n_I t_I aj_E
+KWATRO KWATRO k_B w_I 6_I t_I r_I o_E
 LA LA l_B 6_E
 LABAS LABAS l_B a_I b_I a_I s_E
 LAGAY LAGAY l_B a_I g_I aj_E
 LAGING LAGING l_B a_I g_I i_I N_E
 LAGUNA LAGUNA l_B a_I g_I u_I n_I 6_E
 LAHAT LAHAT l_B a_I h_I a_I t_E
+LAK LAK l_B 6_I k_E
 LAKAS LAKAS l_B a_I k_I a_I s_E
 LALABAS LALABAS l_B 6_I l_I 6_I b_I a_I s_E
 LALAKAS LALAKAS l_B 6_I l_I 6_I k_I a_I s_E
+LALAKI LALAKI l_B 6_I l_I 6_I k_I i_E
 LALANDFALL LALANDFALL l_B 6_I l_I a_I n_I f_I o_I l_E
 LALAWIGAN LALAWIGAN l_B 6_I l_I 6_I w_I i_I g_I a_I n_E
 LALO LALO l_B 6_I l_I o_E
 LALONG LALONG l_B 6_I l_I o_I N_E
+LALYONG LALYONG l_B 6_I l_I j_I o_I N_E
 LAMANG LAMANG l_B a_I m_I a_I N_E
+LAMIG LAMIG l_B 6_I m_I i_I g_E
 LANAO LANAO l_B 6_I n_I a_I o_E
 LAND LAND l_B a_I n_I d_E
 LANDFALL LANDFALL l_B a_I n_I d_I f_I o_I l_E
 LANDMASS LANDMASS l_B a_I n_I d_I m_I a_I s_E
 LANDSLIDE LANDSLIDE l_B a_I n_I d_I s_I l_I aj_I d_E
+LANDSLIDES LANDSLIDES l_B a_I n_I d_I s_I l_I aj_I d_I s_E
 LANG LANG l_B a_I N_E
+LANGIT LANGIT l_B 6_I N_I i_I t_E
 LAOAG LAOAG l_B aw_I 6_I g_E
+LAPAD LAPAD l_B 6_I p_I a_I d_E
 LAPU LAPU l_B 6_I p_I u_E
 LAST LAST l_B a_I s_I t_E
+LASTLY LASTLY l_B 6_I s_I t_I l_I j_E
 LATE LATE l_B ej_I t_E
 LATEST LATEST l_B ej_I t_I e_I s_I t_E
+LAWAK LAWAK l_B 6_I w_I a_I k_E
 LAYAG LAYAG l_B 6_I j_I a_I g_E
+LAYANG LAYANG l_B 6_I j_I a_I N_E
 LAYO LAYO l_B 6_I j_I o_E
 LAYONG LAYONG l_B 6_I j_I o_I N_E
 LEBEL LEBEL l_B ej_I b_I e_I l_E
@@ -525,78 +812,140 @@ LESS LESS l_B e_I s_E
 LEYTE LEYTE l_B ej_I t_I e_E
 LIGHT LIGHT l_B aj_I t_E
 LIKE LIKE l_B aj_I k_E
+LILIM LILIM l_B i_I l_I i_I m_E
+LIMANG LIMANG l_B i_I m_I a_I N_E
 LINDOL LINDOL l_B i_I n_I d_I o_I l_E
-LINGGO LINGGO l_B i_I n_I g_I o_E
+LINE LINE l_B j_I n_E
+LINGGO LINGGO l_B i_I N_I g_I o_E
 LINYA LINYA l_B i_I n_I j_I a_E
+LIVE LIVE l_B i_I v_E
 LIWAYWAY LIWAYWAY l_B i_I w_I aj_I w_I aj_E
+LOCAL LOCAL l_B o_I k_I a_I l_E
 LOCALIZE LOCALIZE l_B o_I k_I a_I l_I aj_I z_E
 LOCALIZED LOCALIZED l_B o_I k_I a_I l_I aj_I z_I d_E
+LOCATION LOCATION l_B o_I k_I 6_I s_I j_I o_I n_E
+LOG LOG l_B o_I g_E
+LOKASYON LOKASYON l_B o_I k_I 6_I s_I j_I o_I n_E
 LOOB LOOB l_B o_I o_I b_E
+LOPEZ LOPEZ l_B o_I p_I e_I z_E
+LOREDIN LOREDIN l_B o_I r_I e_I d_I i_I n_E
+LORI LORI l_B o_I r_I i_E
 LORIDIN LORIDIN l_B o_I r_I i_I d_I i_I n_E
 LOW LOW l_B ow_E
 LPA LPA e_B l_I p_I i_I ej_E
 LUBHA LUBHA l_B u_I b_I h_I a_E
 LUGAR LUGAR l_B u_I g_I a_I r_E
 LULUBOG LULUBOG l_B u_I l_I u_I b_I o_I g_E
+LUMABAS LUMABAS l_B u_I m_I 6_I b_I a_I s_E
 LUMAKAS LUMAKAS l_B u_I m_I 6_I k_I a_I s_E
+LUMAKO LUMAKO l_B u_I m_I 6_I k_I o_E
 LUMALABAS LUMALABAS l_B u_I m_I 6_I l_I 6_I b_I a_I s_E
 LUMALAKAS LUMALAKAS l_B u_I m_I 6_I l_I 6_I k_I a_I s_E
 LUMALAPIT LUMALAPIT l_B u_I m_I 6_I l_I 6_I p_I i_I t_E
+LUMANG LUMANG l_B u_I m_I 6_I N_E
+LUMIKAS LUMIKAS l_B u_I m_I i_I k_I a_I s_E
+LUMUBOG LUMUBOG l_B u_I m_I u_I b_I o_I g_E
+LUNES LUNES l_B u_I n_I e_I s_E
+LUNGSOD LUNGSOD l_B u_I N_I s_I o_I d_E
 LUPA LUPA l_B u_I p_I a_E
 LUZON LUZON l_B u_I z_I o_I n_E
+LYING LYING l_B j_I i_I N_E
 MA MA m_B a_E
 MAAARI MAAARI m_B a_I 6_I 6_I r_I i_E
+MAAARING MAAARING m_B 6_I 6_I a_I r_I i_I N_E
+MAAGA MAAGA m_B 6_I a_I g_I a_E
 MAALINSANGAN MAALINSANGAN m_B a_I 6_I l_I i_I n_I s_I a_I N_I a_I n_E
 MAALINSANGANG MAALINSANGANG m_B a_I 6_I l_I i_I n_I s_I a_I N_I a_I N_E
 MAALIWALAS MAALIWALAS m_B a_I 6_I l_I i_I w_I a_I l_I a_I s_E
 MAALON MAALON m_B a_I 6_I l_I o_I n_E
+MAAPEKTOHAN MAAPEKTOHAN m_B 6_I a_I p_I e_I k_I t_I o_I h_I a_I n_E
 MAAPEKTUHAN MAAPEKTUHAN m_B a_I 6_I p_I e_I k_I t_I u_I h_I a_I n_E
 MAARAW MAARAW m_B a_I 6_I r_I aw_E
 MAARI MAARI m_B a_I 6_I r_I i_E
+MAARING MAARING m_B 6_I a_I r_I i_I N_E
 MAAYOS MAAYOS m_B a_I 6_I j_I o_I s_E
 MABABA MABABA m_B a_I b_I 6_I b_I 6_E
+MABABABANG MABABABANG m_B 6_I b_I 6_I b_I 6_I b_I a_I N_E
 MABABANG MABABANG m_B 6_I b_I 6_I b_I 6_I N_E
-MABABANG MABABANG m_B a_I b_I 6_I b_I 6_I N_E
+MABABAWASAN MABABAWASAN m_B 6_I b_I 6_I b_I 6_I w_I 6_I s_I a_I n_E
+MABAGAL MABAGAL m_B 6_I b_I 6_I g_I a_I l_E
 MABAWASAN MABAWASAN m_B a_I b_I 6_I w_I 6_I s_I a_I n_E
 MABILIS MABILIS m_B a_I b_I i_I l_I i_I s_E
+MABUO MABUO m_B 6_I b_I u_I o_E
+MADAAN MADAAN m_B 6_I d_I 6_I a_I n_E
 MADALAS MADALAS m_B a_I d_I a_I l_I a_I s_E
 MADALING MADALING m_B a_I d_I 6_I l_I i_I N_E
 MADRE MADRE m_B a_I d_I r_I e_E
+MADULOT MADULOT m_B 6_I d_I u_I l_I o_I t_E
+MAFEFEEL MAFEFEEL m_B 6_I f_I i_I f_I i_I l_E
 MAG MAG m_B a_I g_E
 MAGAGANAP MAGAGANAP m_B a_I g_I 6_I g_I 6_I n_I a_I p_E
+MAGALIMIN MAGALIMIN m_B 6_I g_I 6_I l_I i_I m_I i_I n_E
 MAGANDA MAGANDA m_B a_I g_I 6_I n_I d_I a_E
 MAGANDANG MAGANDANG m_B a_I g_I 6_I n_I d_I a_I N_E
+MAGANTABAY MAGANTABAY m_B 6_I g_I 6_I n_I t_I 6_I b_I aj_E
 MAGBABAGO MAGBABAGO m_B a_I g_I b_I 6_I b_I 6_I g_I o_E
 MAGBAGO MAGBAGO m_B a_I g_I b_I 6_I g_I o_E
+MAGBIBIGAY MAGBIBIGAY m_B 6_I b_I i_I b_I i_I g_I aj_E
 MAGDADALA MAGDADALA m_B a_I g_I d_I 6_I d_I 6_I l_I a_E
 MAGDAMAG MAGDAMAG m_B a_I g_I d_I 6_I m_I a_I g_E
+MAGDIDISSIPATE MAGDIDISSIPATE m_B 6_I g_I d_I i_I d_I i_I s_I i_I p_I ej_I t_E
+MAGDUDULOT MAGDUDULOT m_B 6_I g_I d_I u_I d_I u_I l_I o_I t_E
 MAGDULOT MAGDULOT m_B a_I g_I d_I u_I l_I o_I t_E
+MAGFOLLOW MAGFOLLOW m_B 6_I g_I f_I o_I l_I o_I w_E
 MAGHAPON MAGHAPON m_B a_I g_I h_I 6_I p_I o_I n_E
 MAGHAPONG MAGHAPONG m_B a_I g_I h_I 6_I p_I o_I N_E
+MAGI MAGI m_B 6_I g_I i_E
 MAGIGING MAGIGING m_B a_I g_I i_I g_I i_I N_E
 MAGING MAGING m_B a_I g_I i_I N_E
+MAGINGAT MAGINGAT m_B 6_I g_I i_I N_I a_I t_E
+MAGKAGAYUNMAN MAGKAGAYUNMAN m_B 6_I g_I k_I 6_I g_I 6_I j_I u_I n_I m_I a_I n_E
+MAGKAIBA MAGKAIBA m_B 6_I g_I k_I 6_I i_I b_I a_E
+MAGKAIBANG MAGKAIBANG m_B 6_I g_I k_I 6_I i_I b_I a_I N_E
 MAGKAKAROON MAGKAKAROON m_B a_I g_I k_I 6_I k_I 6_I r_I o_I o_I n_E
+MAGKAKATAON MAGKAKATAON m_B 6_I g_I k_I 6_I k_I 6_I t_I a_I o_I n_E
+MAGKAROON MAGKAROON m_B 6_I g_I k_I 6_I r_I o_I o_I n_E
 MAGLALANDFALL MAGLALANDFALL m_B a_I g_I l_I 6_I l_I 6_I n_I d_I f_I a_I l_E
+MAGLANDFALL MAGLANDFALL m_B a_I g_I l_I 6_I n_I d_I f_I a_I l_E
+MAGLAYAG MAGLAYAG m_B 6_I g_I l_I 6_I j_I a_I g_E
+MAGLOG MAGLOG m_B 6_I g_I l_I o_I g_E
+MAGLOGON MAGLOGON m_B 6_I g_I l_I o_I g_I o_I n_E
+MAGPAPALABAS MAGPAPALABAS m_B 6_I g_I p_I 6_I p_I 6_I l_I 6_I b_I a_I s_E
+MAGPAPALAKAS MAGPAPALAKAS m_B 6_I g_I p_I 6_I p_I 6_I l_I 6_I k_I a_I s_E
 MAGPAPATULOY MAGPAPATULOY m_B a_I g_I p_I 6_I p_I 6_I t_I u_I l_I oj_E
 MAGPAPAULAN MAGPAPAULAN m_B a_I g_I p_I 6_I p_I 6_I u_I l_I a_I n_E
 MAGPLANO MAGPLANO m_B a_I g_I p_I l_I 6_I n_I o_E
+MAGSIMULA MAGSIMULA m_B 6_I g_I s_I i_I m_I u_I l_I a_E
+MAGSUBSCRIBE MAGSUBSCRIBE m_B 6_I g_I s_I u_I b_I s_I k_I r_I j_I b_E
 MAGTUTULOY MAGTUTULOY m_B a_I g_I t_I u_I t_I u_I l_I oj_E
 MAGUINDANAO MAGUINDANAO m_B a_I g_I i_I n_I d_I 6_I n_I aw_E
+MAHAHAGIP MAHAHAGIP m_B 6_I h_I 6_I h_I 6_I g_I i_I p_E
 MAHAL MAHAL m_B a_I h_I a_I l_E
+MAHIHINA MAHIHINA m_B 6_I h_I i_I h_I i_I n_I a_E
 MAHIHINANG MAHIHINANG m_B a_I h_I i_I h_I i_I n_I a_I N_E
 MAHINA MAHINA m_B a_I h_I i_I n_I a_E
 MAHINANG MAHINANG m_B a_I h_I i_I n_I a_I N_E
 MAINIT MAINIT m_B a_I i_I n_I i_I t_E
 MAINLAND MAINLAND m_B ej_I n_I l_I 6_I n_I d_E
 MAINTAIN MAINTAIN m_B ej_I n_I t_I a_I i_I n_E
+MAITUTULAD MAITUTULAD m_B 6_I i_I t_I u_I t_I u_I l_I a_I d_E
 MAKAKAAPEKTO MAKAKAAPEKTO m_B a_I k_I 6_I k_I 6_I 6_I p_I e_I k_I t_I o_E
 MAKAKAASA MAKAKAASA m_B a_I k_I 6_I k_I 6_I 6_I s_I 6_E
 MAKAKAIPON MAKAKAIPON m_B a_I k_I 6_I k_I 6_I i_I p_I o_I n_E
+MAKAKALABAS MAKAKALABAS m_B 6_I k_I 6_I k_I 6_I l_I 6_I b_I a_I s_E
 MAKAKAPAL MAKAKAPAL m_B a_I k_I 6_I k_I 6_I p_I 6_I l_E
+MAKAKAPALAOT MAKAKAPALAOT m_B 6_I k_I 6_I k_I 6_I p_I 6_I l_I a_I o_I t_E
 MAKAKARANAS MAKAKARANAS m_B a_I k_I 6_I k_I 6_I r_I 6_I n_I a_I s_E
+MAKAKAROON MAKAKAROON m_B 6_I k_I 6_I k_I 6_I r_I o_I o_I n_E
+MAKALAGPAS MAKALAGPAS m_B 6_I k_I 6_I l_I 6_I g_I p_I a_I s_E
+MAKAPAG MAKAPAG m_B 6_I k_I 6_I p_I a_I g_E
 MAKAPAL MAKAPAL m_B a_I k_I 6_I p_I 6_I l_E
 MAKARANAS MAKARANAS m_B a_I k_I 6_I r_I 6_I n_I a_I s_E
 MAKARARANAS MAKARARANAS m_B a_I k_I 6_I r_I 6_I r_I 6_I n_I a_I s_E
+MAKASIRA MAKASIRA m_B 6_I k_I 6_I s_I i_I r_I a_E
+MAKATANGGAL MAKATANGGAL m_B 6_I k_I 6_I t_I 6_I N_I g_I a_I l_E
+MAKATULOG MAKATULOG m_B 6_I k_I 6_I t_I u_I l_I o_I g_E
+MAKIKISALUBONG MAKIKISALUBONG m_B 6_I k_I i_I k_I i_I s_I 6_I l_I u_I b_I o_I N_E
 MAKIKITA MAKIKITA m_B a_I k_I i_I k_I i_I t_I a_E
 MAKITA MAKITA m_B a_I k_I i_I t_I a_E
 MAKULIMLIM MAKULIMLIM m_B a_I k_I u_I l_I i_I m_I l_I i_I m_E
@@ -611,27 +960,42 @@ MALALAMIG MALALAMIG m_B a_I l_I 6_I l_I 6_I m_I i_I g_E
 MALAMIG MALAMIG m_B a_I l_I 6_I m_I i_I g_E
 MALAPIT MALAPIT m_B a_I l_I a_I p_I i_I t_E
 MALAWAK MALAWAK m_B a_I l_I 6_I w_I a_I k_E
+MALAWAKANG MALAWAKANG m_B 6_I l_I 6_I w_I 6_I k_I a_I N_E
+MALAYA MALAYA m_B 6_I l_I 6_I j_I a_E
+MALAYANG MALAYANG m_B 6_I l_I 6_I j_I a_I N_E
 MALAYO MALAYO m_B a_I l_I a_I j_I o_E
 MALIBAN MALIBAN m_B a_I l_I i_I b_I a_I n_E
 MALIIT MALIIT m_B a_I l_I i_I i_I t_E
 MALILIIT MALILIIT m_B a_I l_I i_I l_I i_I i_I t_E
+MAM MAM m_B 6_I m_E
+MAMAMAYANG MAMAMAYANG m_B 6_I m_I 6_I m_I 6_I j_I a_I N_E
 MAMASYAL MAMASYAL m_B a_I m_I a_I S_I a_I l_E
 MAMAYA MAMAYA m_B a_I m_I a_I j_I a_E
+MAMAYAN MAMAYAN m_B 6_I m_I 6_I j_I a_I n_E
 MAMAYANG MAMAYANG m_B 6_I m_I 6_I j_I a_I N_E
+MAN MAN m_B a_I n_E
+MANAHAN MANAHAN m_B 6_I n_I 6_I h_I a_I n_E
 MANATILING MANATILING m_B 6_I n_I 6_I t_I i_I l_I i_I N_E
 MANG MANG m_B 6_I N_E
 MANGINGISDA MANGINGISDA m_B 6_I N_I i_I N_I i_I s_I d_I a_E
+MANGKABISAYAN MANGKABISAYAN m_B 6_I N_I k_I 6_I b_I i_I s_I 6_I j_I a_I n_E
+MANGYARI MANGYARI m_B 6_I N_I j_I a_I r_I i_E
 MANILA MANILA m_B 6_I n_I i_I l_I a_E
 MANOLO MANOLO m_B a_I n_I o_I l_I o_E
+MANONOOD MANONOOD m_B 6_I n_I o_I n_I o_I o_I d_E
+MANOOD MANOOD m_B 6_I n_I o_I o_I d_E
 MAP MAP m_B a_I p_E
+MAPAKALI MAPAKALI m_B 6_I p_I 6_I k_I a_I l_I i_E
 MAPAMINSALA MAPAMINSALA m_B a_I p_I 6_I m_I i_I n_I s_I a_I l_I a_E
 MAPANGANIB MAPANGANIB m_B a_I p_I a_I N_I a_I n_I i_I b_E
 MAPANSING MAPANSING m_B a_I p_I a_I n_I s_I i_I N_E
+MAPAPANATILI MAPAPANATILI m_B 6_I p_I 6_I p_I 6_I n_I 6_I t_I i_I l_I i_E
 MAPAPANSIN MAPAPANSIN m_B a_I p_I a_I p_I a_I n_I s_I i_I n_E
 MARA MARA m_B 6_I r_I a_E
 MARAMDAMAN MARAMDAMAN m_B a_I r_I a_I m_I d_I a_I m_I a_I n_E
 MARAMI MARAMI m_B a_I r_I a_I m_I i_E
 MARAMING MARAMING m_B a_I r_I a_I m_I i_I N_E
+MARANASAN MARANASAN m_B 6_I r_I 6_I n_I 6_I s_I a_I n_E
 MARARAMDAMAN MARARAMDAMAN m_B a_I r_I 6_I r_I a_I m_I d_I a_I m_I a_I n_E
 MARARAMDAMANG MARARAMDAMANG m_B 6_I r_I 6_I r_I 6_I m_I d_I 6_I m_I 6_I N_E
 MARARANASAN MARARANASAN m_B 6_I r_I 6_I r_I 6_I n_I 6_I s_I 6_I n_E
@@ -643,24 +1007,37 @@ MAS MAS m_B 6_I s_E
 MASASABAYAN MASASABAYAN m_B 6_I s_I 6_I s_I 6_I b_I 6_I j_I 6_I n_E
 MASAYA MASAYA m_B 6_I s_I 6_I j_I 6_E
 MASBATE MASBATE m_B 6_I s_I b_I 6_I t_I e_E
-MASS MASS m_B {_I s_E
+MASS MASS m_B 6_I s_E
 MASUNGIT MASUNGIT m_B 6_I s_I 6_I N_I i_I t_E
 MASYADONG MASYADONG m_B 6_I s_I j_I 6_I d_I o_I N_E
 MATA MATA m_B 6_I t_I 6_E
+MATAAN MATAAN m_B 6_I t_I 6_I a_I n_E
 MATAAS MATAAS m_B 6_I t_I 6_I a_I s_E
 MATAGAL MATAGAL m_B 6_I t_I 6_I g_I 6_I l_E
+MATALADOS MATALADOS m_B 6_I t_I 6_I l_I a_I d_I o_I s_E
+MATAMAAN MATAMAAN m_B 6_I t_I 6_I m_I 6_I a_I n_E
 MATANAO MATANAO m_B 6_I t_I 6_I n_I 6_I o_E
 MATAPOS MATAPOS m_B 6_I t_I 6_I p_I o_I s_E
+MATATAAS MATATAAS m_B 6_I t_I 6_I t_I 6_I a_I s_E
+MATATAPOS MATATAPOS m_B 6_I t_I 6_I t_I 6_I p_I o_I s_E
+MATEO MATEO m_B 6_I t_I e_I o_E
 MATINDING MATINDING m_B 6_I t_I i_I n_I d_I i_I N_E
 MATITINDING MATITINDING m_B 6_I t_I i_I t_I i_I n_I d_I i_I N_E
+MATRO MATRO m_B 6_I t_I r_I o_E
+MATULOG MATULOG m_B 6_I t_I u_I l_I o_I g_E
 MAULAN MAULAN m_B 6_I u_I l_I a_I n_E
 MAULANG MAULANG m_B 6_I u_I l_I 6_I N_E
 MAULAP MAULAP m_B 6_I u_I l_I 6_I p_E
+MAULAPIN MAULAPIN m_B 6_I u_I l_I 6_I p_I i_I n_E
+MAULIN MAULIN m_B 6_I u_I l_I i_I n_E
+MAUULAP MAUULAP m_B 6_I u_I u_I l_I a_I p_E
 MAWAWALA MAWAWALA m_B 6_I w_I 6_I w_I 6_I l_I 6_E
 MAXIMUM MAXIMUM m_B 6_I k_I s_I i_I m_I u_I m_E
 MAY MAY m_B 6_I j_E
+MAYNILA MAYNILA m_B 6_I j_I n_I i_I l_I a_E
 MAYO MAYO m_B 6_I j_I o_E
 MAYROON MAYROON m_B 6_I j_I r_I o_I o_I n_E
+ME ME m_B i_E
 MEDIUM MEDIUM m_B e_I d_I i_I u_I m_E
 MEDYO MEDYO m_B e_I d_I j_I o_E
 MERON MERON m_B e_I r_I o_I n_E
@@ -668,12 +1045,15 @@ MERONG MERONG m_B e_I r_I o_I N_E
 METEOROLOGIST METEOROLOGIST m_B e_I t_I e_I o_I r_I o_I l_I o_I g_I j_I s_I t_E
 METRAWEATHER METRAWEATHER m_B e_I t_I r_I 6_I w_I e_I T_I e_I r_E
 METRO METRO m_B e_I t_I r_I o_E
+METRONG METRONG m_B e_I t_I r_I o_I N_E
 MGA MGA m_B N_I 6_E
 MID MID m_B i_I d_E
 MIMAROPA MIMAROPA m_B i_I m_I 6_I r_I o_I p_I 6_E
+MINDAANAO MINDAANAO m_B i_I n_I d_I 6_I a_I n_I a_I o_E
 MINDANAO MINDANAO m_B i_I n_I d_I 6_I n_I 6_I o_E
 MINDORO MINDORO m_B i_I n_I d_I o_I r_I o_E
 MINIMUM MINIMUM m_B i_I n_I i_I m_I u_I m_E
+MINOMONITOR MINOMONITOR m_B i_I n_I o_I m_I o_I n_I i_I t_I o_I r_E
 MINSAN MINSAN m_B i_I n_I s_I 6_I n_E
 MINSANG MINSANG m_B i_I n_I s_I 6_I N_E
 MISAMIS MISAMIS m_B i_I s_I 6_I m_I i_I s_E
@@ -682,23 +1062,41 @@ MO MO m_B o_E
 MODERATE MODERATE m_B o_I d_I e_I r_I 6_I j_I t_E
 MOISTURE MOISTURE m_B o_I j_I s_I t_I u_I r_E
 MOMENTUM MOMENTUM m_B o_I m_I e_I n_I t_I u_I m_E
+MONDAY MONDAY m_B o_I n_I d_I aj_E
+MONITOR MONITOR m_B o_I n_I i_I t_I o_I r_E
+MONITORING MONITORING m_B o_I n_I i_I t_I o_I r_I i_I N_E
 MONSOON MONSOON m_B o_I n_I s_I u_I n_E
+MOR MOR m_B o_I r_E
+MORE MORE m_B o_I r_E
 MORNING MORNING m_B o_I r_I n_I i_I N_E
 MOTORISTA MOTORISTA m_B o_I t_I o_I r_I i_I s_I t_I a_E
 MOUNTAIN MOUNTAIN m_B o_I u_I n_I t_I {_I i_I n_E
+MUKHA MUKHA m_B u_I k_I a_E
 MULA MULA m_B u_I l_I a_E
 MULI MULI m_B u_I l_I i_E
+MULING MULING m_B u_I l_I i_I N_E
 MUNA MUNA m_B u_I n_I 6_E
+MUNANG MUNANG m_B u_I n_I 6_I N_E
 NA NA n_B 6_E
+NA'T NA'T n_B 6_I t_E
 NAAPEKTUHAN NAAPEKTUHAN n_B 6_I a_I p_I e_I k_I t_I u_I h_I 6_I n_E
 NABALOT NABALOT n_B 6_I b_I 6_I l_I o_I t_E
 NABANGGIT NABANGGIT n_B 6_I b_I 6_I N_I g_I i_I t_E
+NABAWASAN NABAWASAN m_B 6_I b_I 6_I w_I 6_I s_I a_I n_E
 NABUBUO NABUBUO n_B 6_I b_I u_I b_I u_I o_E
 NABUO NABUO n_B 6_I b_I u_I o_E
+NADITO NADITO n_B 6_I d_I i_I t_I o_E
+NADUDULOT NADUDULOT n_B 6_I d_I u_I d_I u_I l_I o_I t_E
+NADULOT NADULOT n_B 6_I d_I u_I l_I o_I t_E
 NAFORECAST NAFORECAST n_B 6_I f_I o_I r_I k_I 6_I s_I t_E
 NAG NAG n_B 6_I g_E
+NAGBABADYANG NAGBABADYANG n_B 6_I g_I b_I 6_I b_I 6_I d_I j_I a_I N_E
 NAGBABAGANG NAGBABAGANG n_B 6_I g_I b_I 6_I b_I 6_I g_I 6_I N_E
+NAGBABALA NAGBABALA n_B 6_I g_I b_I 6_I b_I 6_I l_I a_E
 NAGBIBIGAY NAGBIBIGAY n_B 6_I g_I b_I i_I b_I i_I g_I 6j_E
+NAGDAAN NAGDAAN n_B 6_I g_I d_I 6_I a_I n_E
+NAGDUDULOT NAGDUDULOT n_B 6_I g_I d_I u_I d_I u_I l_I o_I t_E
+NAGDULOT NAGDULOT n_B 6_I g_I d_I u_I l_I o_I t_E
 NAGI NAGI n_B 6_I g_I i_E
 NAGIGING NAGIGING n_B 6_I g_I i_I g_I i_I N_E
 NAGING NAGING n_B 6_I g_I i_I N_E
@@ -706,22 +1104,36 @@ NAGKA NAGKA n_B 6_I g_I k_I a_E
 NAGKAKAMALI NAGKAKAMALI n_B 6_I g_I k_I 6_I k_I 6_I m_I 6_I l_I i_E
 NAGKAKAROON NAGKAKAROON n_B 6_I g_I k_I 6_I k_I 6_I r_I o_I o_I n_E
 NAGKAROON NAGKAROON n_B 6_I g_I k_I 6_I r_I o_I o_I n_E
+NAGLABAS NAGLABAS n_B 6_I g_I l_I 6_I b_I a_I s_E
 NAGLALARO NAGLALARO n_B 6_I g_I l_I 6_I l_I 6_I r_I o_E
+NAGMOMONITOR NAGMOMONITOR n_B 6_I g_I m_I o_I n_I i_I t_I o_I r_E
 NAGPAPALAKAS NAGPAPALAKAS n_B 6_I g_I p_I 6_I p_I 6_I l_I 6_I k_I 6_I s_E
 NAGPAPATULOY NAGPAPATULOY n_B 6_I g_I p_I 6_I p_I 6_I t_I u_I l_I o_I j_E
 NAGPAPAULAN NAGPAPAULAN n_B 6_I g_I p_I 6_I p_I 6_I u_I l_I 6_I n_E
 NAGPAULAN NAGPAULAN n_B 6_I g_I p_I 6_I u_I l_I 6_I n_E
+NAGSASALUBONG NAGSASALUBONG n_B 6_I g_I s_I 6_I s_I 6_I l_I u_I b_I o_I N_E
 NAGTAAS NAGTAAS n_B 6_I t_I 6_I a_I s_E
+NAGTATAGAL NAGTATAGAL n_B 6_I g_I t_I 6_I t_I 6_I g_I a_I l_E
 NAGULAT NAGULAT n_B 6_I g_I u_I l_I 6_I t_E
+NAGUULAP NAGUULAP n_B 6_I g_I u_I u_I l_I a_I p_E
+NAGUULAT NAGUULAT n_B 6_I g_I u_I u_I l_I a_I t_E
 NAIA NAIA n_B 6_I i_I j_I 6_E
 NAITALA NAITALA n_B 6_I i_I t_I 6_I l_I a_E
+NAIWANG NAIWANG n_B 6_I i_I w_I a_I N_E
 NAKA NAKA n_B 6_I k_I 6_E
 NAKAKAAPEKTO NAKAKAAPEKTO n_B 6_I k_I 6_I k_I 6_I a_I p_I e_I k_I t_I o_E
+NAKAKAAPEKTONG NAKAKAAPEKTONG n_B 6_I k_I 6_I k_I 6_I a_I p_I e_I k_I t_I o_I N_E
+NAKAKAIMPLUWENSYA NAKAKAIMPLUWENSYA n_B 6_I k_I 6_I k_I 6_I i_I m_I p_I l_I u_I w_I e_I n_I s_I j_I a_E
 NAKAKAKUHA NAKAKAKUHA n_B 6_I k_I 6_I k_I 6_I k_I u_I h_I 6_E
 NAKAKAPAG NAKAKAPAG n_B 6_I k_I 6_I k_I 6_I p_I 6_I g_E
+NAKAKARANAS NAKAKARANAS n_B 6_I k_I 6_I k_I 6_I r_I 6_I n_I a_I s_E
 NAKAKATAKOT NAKAKATAKOT n_B 6_I k_I 6_I k_I 6_I t_I 6_I k_I o_I t_E
 NAKAKATULONG NAKAKATULONG n_B 6_I k_I 6_I k_I 6_I t_I u_I l_I o_I N_E
+NAKALABAS NAKALABAS n_B 6_I k_I 6_I l_I 6_I b_I a_I s_E
+NAKALIPAS NAKALIPAS n_B 6_I k_I 6_I l_I i_I p_I a_I s_E
 NAKAMOTOR NAKAMOTOR n_B 6_I k_I 6_I m_I o_I t_I o_I r_E
+NAKAPAALONG NAKAPAALONG n_B 6_I k_I 6_I p_I 6_I a_I l_I o_I N_E
+NAKAPAGTALA NAKAPAGTALA n_B 6_I k_I 6_I p_I 6_I g_I t_I 6_I l_I a_E
 NAKAPALOOB NAKAPALOOB n_B 6_I k_I 6_I p_I 6_I l_I o_I o_I b_E
 NAKAR NAKAR n_B 6_I k_I 6_I r_E
 NAKARAANG NAKARAANG n_B 6_I k_I 6_I r_I 6_I a_I N_E
@@ -732,47 +1144,79 @@ NAKATIRA NAKATIRA n_B 6_I k_I 6_I t_I i_I r_I a_E
 NAKATUTOK NAKATUTOK n_B 6_I k_I 6_I t_I u_I t_I o_I k_E
 NAKIKITA NAKIKITA n_B 6_I k_I i_I k_I i_I t_I a_E
 NAKIKITANG NAKIKITANG n_B 6_I k_I i_I k_I i_I t_I 6_I N_E
+NAKUHA NAKUHA n_B 6_I k_I u_I h_I a_E
+NALALABI NALALABI n_B 6_I l_I 6_I l_I a_I b_I i_E
 NALALABING NALALABING n_B 6_I l_I 6_I l_I 6_I b_I i_I N_E
 NALAMANG NALAMANG n_B 6_I l_I 6_I m_I 6_I N_E
+NALANG NALANG n_B 6_I l_I a_I N_E
+NALUSAW NALUSAW n_B 6_I l_I u_I s_I a_I w_E
+NAMADAAN NAMADAAN n_B 6_I m_I 6_I d_I 6_I a_I n_E
+NAMAMALAYAN NAMAMALAYAN n_B 6_I m_I 6_I m_I 6_I l_I 6_I j_I a_I n_E
 NAMAMATAAN NAMAMATAAN n_B 6_I m_I 6_I m_I 6_I t_I 6_I a_I n_E
 NAMAMAYANI NAMAMAYANI n_B 6_I m_I 6_I m_I 6_I j_I 6_I n_I i_E
 NAMAN NAMAN n_B 6_I m_I 6_I n_E
 NAMANG NAMANG n_B 6_I m_I 6_I N_E
 NAMATAAN NAMATAAN n_B 6_I m_I 6_I t_I 6_I a_I n_E
+NAME NAME n_B ej_I m_E
 NAMIN NAMIN n_B 6_I m_I i_I n_E
+NAMOMONITOR NAMOMONITOR n_B 6_I m_I o_I m_I o_I n_I i_I t_I o_I r_E
+NAMONIKLA NAMONIKLA n_B 6_I m_I o_I n_I i_I k_I l_I a_E
+NANAHIGITONG NANAHIGITONG n_B 6_I n_I 6_I h_I i_I g_I i_I t_I o_I N_E
+NANAMAN NANAMAN n_B 6_I n_I 6_I m_I a_I n_E
 NANANATILI NANANATILI n_B 6_I n_I 6_I n_I 6_I t_I i_I l_I i_E
+NANANATILING NANANATILING n_B 6_I n_I 6_I n_I 6_I t_I i_I l_I i_I N_E
 NANATILI NANATILI n_B 6_I n_I 6_I t_I i_I l_I i_E
+NANATILING NANATILING n_B 6_I n_I 6_I t_I i_I l_I i_I N_E
 NANDITO NANDITO n_B 6_I n_I d_I i_I t_I o_E
 NANDOON NANDOON n_B 6_I n_I d_I o_I o_I n_E
 NANDUN NANDUN n_B 6_I n_I d_I u_I n_E
 NANDYAN NANDYAN n_B 6_I n_I d_I j_I 6_I n_E
+NANGGAGALING NANGGAGALING n_B 6_I N_I g_I 6_I g_I 6_I l_I i_I N_E
 NANGYARI NANGYARI n_B 6_I N_I j_I 6_I r_I i_E
 NANGYAYARI NANGYAYARI n_B 6_I N_I j_I 6_I j_I 6_I r_I i_E
 NAPAKA NAPAKA n_B 6_I p_I 6_I k_I a_E
 NAPAKAALON NAPAKAALON n_B 6_I p_I 6_I k_I a_I 6_I l_I o_I n_E
 NAPAKALAKAS NAPAKALAKAS n_B 6_I p_I 6_I k_I 6_I k_I 6_I l_I 6_I k_I 6_I s_E
+NAPANATILI NAPANATILI n_B 6_I p_I 6_I n_I 6_I t_I i_I l_I i_E
 NAPANSIN NAPANSIN n_B 6_I p_I 6_I n_I s_I i_I n_E
 NAPAPADALAS NAPAPADALAS n_B 6_I p_I 6_I p_I 6_I d_I 6_I l_I 6_I s_E
 NARAMDAMAN NARAMDAMAN n_B 6_I r_I 6_I m_I d_I 6_I m_I 6_I n_E
 NARANASAN NARANASAN n_B 6_I r_I 6_I n_I s_I 6_I n_E
 NARARAMDAMAN NARARAMDAMAN n_B 6_I r_I 6_I r_I 6_I m_I d_I 6_I m_I 6_I n_E
+NARARANASAN NARARANASAN n_B 6_I r_I 6_I r_I 6_I n_I 6_I s_I a_I n_E
+NARIN NARIN n_B 6_I r_I i_I n_E
 NARITO NARITO m_B 6_I r_I i_I t_I o_E
 NASA NASA n_B 6_I s_I a_E
+NASAAN NASAAN n_B 6_I s_I 6_I a_I n_E
 NASABI NASABI n_B 6_I s_I 6_I b_I i_E
+NASABING NASABING n_B 6_I s_I 6_I b_I i_I N_E
+NASASAKUPAN NASASAKUPAN n_B 6_I s_I 6_I s_I 6_I k_I u_I p_I a_I n_E
+NATANONG NATANONG n_B 6_I t_I 6_I n_I o_I N_E
+NATATAKOT NATATAKOT n_B 6_I t_I 6_I t_I 6_I k_I o_I t_E
 NATATANAW NATATANAW n_B 6_I t_I 6_I t_I 6_I n_I 6_I w_E
 NATHANIEL NATHANIEL n_B 6_I T_I a_I n_I i_I e_I l_E
 NATIN NATIN n_B 6_I t_I i_I n_E
 NATING NATING n_B 6_I t_I i_I N_E
+NATIONAL NATIONAL n_B 6_I s_I j_I o_I n_I a_I l_E
 NATITIRANG NATITIRANG n_B 6_I t_I i_I t_I i_I r_I 6_I N_E
 NATURANG NATURANG n_B 6_I t_I u_I r_I 6_I N_E
 NAUNA NAUNA n_B 6_I u_I n_I a_E
 NAUUNA NAUUNA n_B 6_I u_I u_I n_I a_E
 NAUWI NAUWI n_B 6_I u_I w_I i_E
+NAZARENO NAZARENO n_B 6_I z_I a_I r_I e_I n_I o_E
+NEAREST NEAREST n_B i_I r_I e_I s_E
 NEGROS NEGROS n_B e_I g_I r_I o_I s_E
+NEIGHBORING NEIGHBORING n_B ej_I b_I o_I r_I i_I N_E
 NETONG NETONG n_B e_I t_I o_I N_E
+NEVER NEVER n_B e_I v_I e_I r_E
+NEW NEW n_B i_I w_E
 NEWS NEWS n_B j_I w_I s_E
-NG NG N_S
+NEXT NEXT n_B e_I k_I s_E
+NG NG n_B 6_I N_E
 NGA NGA N_B a_E
+NGAB NGAB N_B 6_I b_E
+NGAM NGAM N_B 6_I m_E
+NGANG NGANG N_B 6_I N_E
 NGAY NGAY N_B 6_I j_E
 NGAYON NGAYON N_B g_I 6_I j_I o_I n_E
 NGAYONG NGAYONG N_B 6_I j_I o_I N_E
@@ -784,105 +1228,176 @@ NINA NINA n_B i_I n_I a_E
 NINE NINE n_B j_I n_E
 NINETEEN NINETEEN n_B j_I n_I t_I i_I n_E
 NINETY NINETY n_B j_I n_I t_I j_E
+NINYO NINYO n_B i_I n_I j_I o_E
 NINYONG NINYONG n_B i_I n_I j_I o_I N_E
 NITO NITO n_B i_I t_I o_E
 NITONG NITONG n_B i_I t_I o_I N_E
 NIYA NIYA n_B i_I j_I a_E
+NIYAAN NIYAAN n_B i_I j_I 6_I a_I n_E
 NIYAN NIYAN n_B i_I j_I 6_I n_E
 NIYO NIYO n_B i_I j_I o_E
 NIYONG NIYONG n_B i_I j_I o_I N_E
-NIÑO NIÑO n_B i_I n_I j_I o_E
+NIÃ‘O NIÃ‘O n_B i_I n_I j_I o_E
 NO NO n_B o_E
 NOBYEMBRE NOBYEMBRE n_B o_I b_I j_I e_I m_I b_I r_I e_E
+NOH NOH n_B o_E
+NON NON n_B o_I n_E
 NONE NONE n_B o_I n_E
+NOONG NOONG n_B o_I o_I N_E
+NORMAL NORMAL n_B o_I r_I m_I 6_I l_E
 NORTE NORTE n_B o_I r_I t_I e_E
 NORTH NORTH n_B o_I r_I T_E
 NORTHEAST NORTHEAST n_B o_I r_I T_I i_I s_I t_E
+NORTHEASTERN NORTHEASTERN n_B o_I r_I T_I i_I s_I t_I e_I r_I n_E
 NORTHERN NORTHERN n_B o_I r_I T_I e_I r_I n_E
 NORTHWEST NORTHWEST n_B o_I r_I T_I w_I e_I s_I t_E
 NORZAGARAY NORZAGARAY n_B o_I r_I z_I 6_I g_I 6_I r_I 6_I j_E
+NOW NOW n_B 6_I w_E
 NUEBE NUEBE n_B u_I e_I b_I e_E
 NUEVA NUEVA n_B u_I e_I v_I 6_E
 NUMBER NUMBER n_B u_I m_I b_I e_I r_E
 NUNG NUNG n_B u_I N_E
+NUWEBE NUWEBE n_B u_I w_I e_I b_I e_E
 NYAN NYAN n_B j_I a_I n_E
 NYO NYO n_B j_I o_E
 NYONG NYONG n_B j_I o_I N_E
 O O o_S
+OC OC o_B s_I i_E
+OCCASION OCCASION o_B k_I ej_I s_I j_I o_I n_E
+OCCASIONAL OCCASIONAL o_B k_I ej_I s_I j_I o_I n_I a_I l_E
 OCCASIONALLY OCCASIONALLY o_B k_I 6_I s_I j_I o_I n_I 6_I l_I j_E
 OCCIDENTAL OCCIDENTAL o_B k_I s_I i_I d_I e_I n_I t_I 6_I l_E
 OCEAN OCEAN o_B S_I j_I e_I n_E
+OCTOBER OCTOBER o_B k_I t_I o_I b_I e_I r_E
 OF OF o_B f_E
+OFF OFF o_B f_E
+OH OH o_S
 OK OK o_B k_E
+ON ON o_B n_E
+ONDOY ONDOY o_B n_I d_I o_I j_E
 ONE ONE w_B o_I n_E
 ONSE ONSE o_B n_I s_I e_E
+ONWARDS ONWARDS o_B n_I w_I 6_I r_I d_I s_E
 ONYOK ONYOK o_B n_I j_I o_I k_E
+OO OO o_B o_E
 OPERATION OPERATION o_B p_I e_I r_I 6_I s_I j_I o_I n_E
 OPO OPO o_B p_I o_E
 OR OR o_B r_E
 ORANGE ORANGE o_B r_I 6_I N_I dZ_E
 ORAS ORAS o_B r_I 6_I s_E
+ORDINARYO ORDINARYO o_B r_I d_I i_I n_I 6_I r_I j_I o_E
+ORGANIZE ORGANIZE o_B r_I g_I 6_I n_I i_I z_E
 ORIENTAL ORIENTAL o_B r_I i_I e_I n_I t_I 6_I l_E
 ORIENTATION ORIENTATION o_B r_I i_I e_I n_I t_I 6_I s_I j_I o_I n_E
+OTSO OTSO o_B t_I s_I o_E
+OUR OUR o_B r_E
 OUTING OUTING o_B w_I t_I i_I N_E
+OVER OVER o_B v_I e_I r_E
+P P p_B i_E
 PA PA p_B i_I ej_E
 PAALALA PAALALA p_B 6_I a_I l_I 6_I l_I a_E
 PAALIS PAALIS p_B 6_I a_I l_I i_I s_E
 PABABA PABABA p_B 6_I b_I 6_I b_I a_E
 PABLO PABLO p_B 6_I b_I l_I o_E
+PABUGSO PABUGSO p_B 6_I g_I b_I u_I g_I s_I o_E
+PAC PAC p_B 6_I k_E
 PACIFIC PACIFIC p_B 6_I s_I i_I f_I i_I k_E
+PACIFIKO PACIFIKO p_B 6_I s_I i_I f_I i_I k_I o_E
+PAENG PAENG p_B 6_I e_I N_E
 PAG PAG p_B 6_I g_E
 PAGALON PAGALON p_B 6_I g_I 6_I l_I o_I n_E
+PAGAMBON PAGAMBON p_B 6_I g_I 6_I m_I b_I o_I n_E
 PAGASA PAGASA p_B 6_I g_I 6_I s_I a_E
 PAGBAHA PAGBAHA p_B 6_I g_I b_I 6_I h_I a_E
 PAGBATI PAGBATI p_B 6_I g_I b_I 6_I t_I i_E
 PAGBUGSO PAGBUGSO p_B 6_I g_I b_I u_I g_I s_I o_E
 PAGBUGSONG PAGBUGSONG p_B 6_I g_I b_I u_I g_I s_I o_I N_E
+PAGDA PAGDA p_B 6_I g_I d_I a_E
 PAGDATING PAGDATING p_B 6_I g_I d_I 6_I t_I i_I N_E
+PAGDIRIWANG PAGDIRIWANG p_B 6_I g_I d_I i_I r_I i_I w_I a_I N_E
+PAGE PAGE p_B ej_I dZ_E
+PAGES PAGES p_B ej_I dZ_I e_I s_E
 PAGGUHO PAGGUHO p_B 6_I g_I u_I h_I o_E
+PAGGUHOL PAGGUHOL p_B 6_I g_I g_I u_I h_I o_I l_E
+PAGHAHAKOT PAGHAHAKOT p_B 6_I g_I h_I 6_I h_I 6_I k_I o_I t_E
+PAGHAMPAS PAGHAMPAS p_B 6_I g_I h_I 6_I m_I p_I a_I s_E
+PAGHANDAAN PAGHANDAAN p_B 6_I g_I h_I 6_I n_I d_I 6_I a_I n_E
+PAGHINA PAGHINA p_B 6_I g_I h_I i_I n_I a_E
+PAGIINGAT PAGIINGAT p_B 6_I g_I i_I i_I N_I a_I t_E
 PAGITAN PAGITAN p_B 6_I g_I i_I t_I 6_I n_E
 PAGKABUHAY PAGKABUHAY p_B 6_I g_I k_I 6_I b_I u_I h_I aj_E
 PAGKAKAIBA PAGKAKAIBA p_B 6_I g_I k_I 6_I k_I 6_I i_I b_I a_E
+PAGKAKATAON PAGKAKATAON p_B 6_I g_I k_I 6_I k_I 6_I t_I a_I o_I n_E
 PAGKAKATAONG PAGKAKATAONG p_B 6_I g_I k_I 6_I k_I 6_I t_I 6_I o_I N_E
+PAGKAT PAGKAT p_B 6_I g_I k_I a_I t_E
 PAGKATAPOS PAGKATAPOS p_B 6_I g_I k_I 6_I t_I 6_I p_I o_I s_E
 PAGKAWALA PAGKAWALA p_B 6_I g_I k_I 6_I w_I 6_I l_I a_E
 PAGKIDLAT PAGKIDLAT p_B 6_I g_I k_I i_I d_I l_I 6_I t_E
 PAGKILOS PAGKILOS p_B 6_I g_I k_I i_I l_I o_I s_E
+PAGKULOB PAGKULOB p_B 6_I g_I k_I u_I l_I o_I b_E
 PAGKULOG PAGKULOG p_B 6_I g_I k_I u_I l_I o_I N_E
+PAGLAKAS PAGLAKAS p_B 6_I g_I l_I 6_I k_I a_I s_E
 PAGLALAYAG PAGLALAYAG p_B 6_I g_I l_I 6_I l_I 6_I j_I 6_I g_E
+PAGLAMIG PAGLAMIG p_B 6_I g_I l_I a_I m_I i_I g_E
+PAGLUBOG PAGLUBOG p_B 6_I g_I l_I u_I b_I o_I g_E
+PAGLUPO PAGLUPO p_B 6_I g_I l_I u_I p_I o_E
 PAGPAPAULAN PAGPAPAULAN p_B 6_I g_I p_I 6_I p_I 6_I u_I l_I 6_I n_E
+PAGPASOK PAGPASOK p_B 6_I g_I p_I a_I s_I o_I k_E
+PAGSABIT PAGSABIT p_B 6_I g_I s_I a_I b_I i_I t_E
 PAGSAPIT PAGSAPIT p_B 6_I g_I s_I 6_I p_I i_I t_E
 PAGSASALUBONG PAGSASALUBONG p_B 6_I g_I s_I a_I l_I u_I b_I o_I N_E
+PAGSISIMULA PAGSISIMULA p_B 6_I g_I s_I i_I s_I i_I m_I u_I l_I a_E
 PAGTAAS PAGTAAS p_B 6_I g_I t_I 6_I a_I s_E
+PAGTAKBO PAGTAKBO p_B 6_I g_I t_I a_I k_I b_I o_E
 PAGTAMA PAGTAMA p_B 6_I g_I t_I 6_I m_I a_E
 PAGTAWID PAGTAWID p_B 6_I g_I t_I 6_I w_I i_I d_E
+PAGTAYA PAGTAYA p_B 6_I g_I t_I 6_I j_I a_E
 PAGULAN PAGULAN p_B 6_I g_I u_I l_I 6_I n_E
+PAHABA PAHABA p_B 6_I h_I 6_I b_I a_E
 PAHILAGA PAHILAGA p_B 6_I h_I i_I l_I 6_I g_I a_E
 PAHILAGANG PAHILAGANG p_B 6_I h_I I_I l_I 6_I g_I 6_I N_E
+PAHINGA PAHINGA p_B 6_I h_I i_I N_I a_E
+PAIRAL PAIRAL p_B 6_I i_I r_I a_I l_E
 PAKANLURAN PAKANLURAN p_B 6_I k_I 6_I n_I l_I u_I r_I 6_I n_E
 PALALAKASIN PALALAKASIN p_B 6_I l_I 6_I l_I 6_I k_I 6_I s_I i_I n_E
 PALARONG PALARONG p_B 6_I l_I 6_I r_I o_I N_E
 PALAWAN PALAWAN p_B 6_I l_I 6_I w_I 6_I n_E
+PALAYO PALAYO p_B 6_I l_I a_I j_I o_E
 PALIBOT PALIBOT p_B 6_I l_I i_I b_I o_I t_E
+PALIGID PALIGID p_B 6_I l_I i_I g_I i_I d_E
 PALISADA PALISADA p_B 6_I l_I i_I s_I d_I a_E
 PAMBANSA PAMBANSA p_B 6_I m_I b_I 6_I n_I s_I a_E
 PAMILYA PAMILYA p_B 6_I m_I i_I l_I j_I a_E
 PAMINSAN PAMINSAN p_B 6_I m_I i_I n_I s_I 6_I n_E
+PAMINSANG PAMINSANG p_B 6_I m_I i_I n_I s_I a_I N_E
 PAMPANGA PAMPANGA p_B 6_I m_I p_I 6_I N_I g_I 6_E
+PAMPUBLIKO PAMPUBLIKO p_B 6_I m_I p_I u_I b_I l_I i_I k_I o_E
 PAN PAN p_B 6_I n_E
 PANAHON PANAHON p_B 6_I n_I 6_I h_I o_I n_E
+PANAHONG PANAHONG p_B 6_I n_I 6_I h_I o_I N_E
 PANANDALIAN PANANDALIAN p_B 6_I n_I 6_I n_I d_I 6_I l_I 6_I n_E
+PANANDALIANG PANANDALIANG p_B 6_I n_I 6_I n_I d_I 6_I l_I i_I 6_I N_E
+PANANDILAAN PANANDILAAN p_B 6_I n_I 6_I n_I d_I 6_I l_I i_I 6_I n_E
 PANANGGA PANANGGA p_B 6_I n_I 6_I N_I g_I a_E
+PANANGHALIAN PANANGHALIAN p_B 6_I n_I 6_I N_I h_I 6_I l_I i_I a_I n_E
 PANAY PANAY p_B 6_I n_I 6_I j_E
 PANDAGAT PANDAGAT p_B 6_I n_I d_I 6_I g_I 6_I t_E
 PANG PANG p_B 6_I N_E
+PANGALAN PANGALAN p_B 6_I N_I 6_I l_I a_I n_E
+PANGALAWA PANGALAWA p_B 6_I N_I 6_I l_I 6_I w_I a_E
+PANGALAWANG PANGALAWANG p_B 6_I N_I 6_I l_I 6_I w_I a_I N_E
 PANGANIB PANGANIB p_B N_I 6_I n_I i_I b_E
 PANGASINAN PANGASINAN p_B 6_I N_I g_I 6_I s_I i_I n_I 6_I n_E
 PANGATLONG PANGATLONG p_B 6_I N_I 6_I t_I l_I o_I N_E
+PANGDAGAT PANGDAGAT p_B 6_I N_I d_I 6_I g_I a_I t_E
+PANGGABI PANGGABI p_B 6_I N_I g_I a_I b_I i_E
+PANGGASINAN PANGGASINAN p_B 6_I N_I g_I a_I s_I i_I n_I a_I n_E
 PANGUNAHING PANGUNAHING p_B 6_I N_I u_I n_I 6_I h_I i_I N_E
 PANIBAGONG PANIBAGONG p_B 6_I n_I i_I b_I 6_I g_I o_I N_E
+PANIG PANIG p_B 6_I n_I i_I g_E
 PANONOOD PANONOOD p_B 6_I n_I o_I n_I o_I o_I d_E
 PANOOD PANOOD p_B 6_I n_I o_I o_I d_E
+PANOORIN PANOORIN p_B 6_I n_I o_I o_I r_I i_I n_E
 PANSAMANTALANG PANSAMANTALANG p_B 6_I n_I s_I 6_I m_I 6_I n_I t_I 6_I l_I 6_I N_E
 PAPAANO PAPAANO p_B 6_I p_I 6_I a_I n_I o_E
 PAPALABAS PAPALABAS p_B 6_I p_I 6_I l_I a_I b_I a_I s_E
@@ -893,98 +1408,162 @@ PAPALO PAPALO p_B 6_I p_I 6_I l_I o_E
 PAPANO PAPANO p_B 6_I p_I 6_I n_I o_E
 PAPASOK PAPASOK p_B 6_I p_I 6_I s_I o_I k_E
 PAPAULAN PAPAULAN p_B 6_I p_I 6_I u_I l_I 6_I n_E
+PAPAYAGAN PAPAYAGAN p_B 6_I p_I 6_I j_I 6_I g_I a_I n_E
 PAPUNTA PAPUNTA p_B 6_I p_I u_I n_I t_I 6_E
 PAR PAR p_B 6_I r_E
 PARA PARA p_B 6_I r_I 6_E
 PARANG PARANG p_B 6_I r_I 6_I N_E
+PAREHAS PAREHAS p_B 6_I r_I e_I h_I a_I s_E
+PARIN PARIN p_B 6_I r_I i_I n_E
+PARING PARING p_B 6_I r_I i_I N_E
+PARS PARS p_B 6_I r_I s_E
 PART PART p_B 6_I r_I t_E
 PARTE PARTE p_B 6_I r_I t_I e_E
 PARTENG PARTENG p_B 6_I r_I t_I e_I N_E
+PARTICULAR PARTICULAR p_B 6_I r_I t_I i_I k_I u_I l_I a_I r_E
+PARTICULARLY PARTICULARLY p_B 6_I r_I t_I i_I k_I u_I l_I a_I r_I l_I j_E
 PARTIKULAR PARTIKULAR p_B 6_I r_I t_I i_I k_I u_I l_I 6_I r_E
+PARTS PARTS p_B 6_I r_I t_I s_E
+PASAY PASAY p_B 6_I s_I aj_E
+PASIPIKO PASIPIKO p_B 6_I s_I i_I p_I i_I k_I o_E
+PASKO PASKO p_B 6_I s_I k_I o_E
+PASOK PASOK p_B 6_I s_I o_I k_E
 PATAAS PATAAS p_B 6_I t_I 6_I a_I s_E
 PATAY PATAY p_B 6_I t_I 6j_E
 PATI PATI p_B 6_I t_I i_E
 PATROL PATROL p_B 6_I t_I r_I o_I l_E
 PATULOY PATULOY p_B 6_I t_I u_I l_I o_I j_E
+PATUMBA PATUMBA p_B 6_I t_I u_I m_I b_I a_E
+PATUNGO PATUNGO p_B 6_I t_I u_I N_I o_E
 PATUNGONG PATUNGONG p_B 6_I t_I u_I N_I o_I N_E
 PAU PAU p_B 6_I u_E
 PAULAN PAULAN p_B 6_I u_I l_I 6_I n_E
+PAYO PAYO p_B 6_I j_I o_E
 PENINSULA PENINSULA p_B e_I n_I i_I n_I s_I u_I l_I a_E
 PEPITO PEPITO p_B e_I p_I i_I t_I o_E
 PER PER p_B e_I r_E
 PERCENT PERCENT p_B e_I r_I s_I e_I n_I t_E
+PEREZ PEREZ p_B e_I r_I e_I z_E
+PERIOD PERIOD p_B i_I r_I i_I u_I d_E
 PERO PERO p_B e_I r_I o_E
+PERSONNEL PERSONNEL p_B e_I r_I s_I o_I n_I e_I l_E
 PH PH p_B i_I ej_I tS_E
 PHILIPPINE PHILIPPINE f_B i_I l_I i_I p_I i_I n_E
+PHILIPPINES PHILIPPINES f_B i_I l_I i_I p_I i_I n_I s_E
 PHILLIPS PHILLIPS f_B i_I l_I i_I p_I s_E
 PHYSICS PHYSICS f_B j_I s_I i_I k_I s_E
 PILING PILING p_B i_I l_I i_I N_E
 PILIPINAS PILIPINAS p_B i_I l_I i_I p_I i_I n_I 6_I s_E
 PINAG PINAG p_B i_I n_I 6_I g_E
+PINAGBAWALAN PINAGBAWALAN p_B i_I n_I 6_I g_I b_I 6_I w_I 6_I l_I a_I n_E
+PINAGIBAYANG PINAGIBAYANG p_B i_I n_I 6_I g_I i_I b_I 6_I j_I a_I N_E
+PINAGIINGAT PINAGIINGAT p_B i_I n_I 6_I g_I i_I i_I N_I a_I t_E
 PINAGSANIB PINAGSANIB p_B i_I N_I 6_I g_I s_I 6_I n_I i_I b_E
 PINAIGTING PINAIGTING p_B i_I n_I 6_I i_I g_I t_I i_I N_E
 PINAKA PINAKA p_B i_I n_I 6_I k_I a_E
+PINAKAAPEKTADO PINAKAAPEKTADO p_B i_I n_I 6_I k_I 6_I a_I p_I e_I k_I t_I 6_I d_I o_E
+PINAKABAGONG PINAKABAGONG p_B i_I n_I 6_I k_I 6_I b_I a_I g_I o_I N_E
 PINAKAHULING PINAKAHULING p_B i_I n_I 6_I k_I 6_I h_I u_I l_I i_I N_E
+PINAKALATEST PINAKALATEST p_B i_I n_I 6_I k_I 6_I l_I a_I t_I e_I s_I t_E
+PINAKAMABABA PINAKAMABABA p_B i_I n_I 6_I k_I 6_I m_I 6_I b_I 6_I b_I a_E
 PINAKAMALAMIG PINAKAMALAMIG o_B i_I n_I 6_I k_I 6_I m_I 6_I l_I 6_I m_I i_I g_E
 PINAKAMATAAS PINAKAMATAAS p_B i_I n_I 6_I k_I 6_I m_I 6_I t_I 6_I a_I s_E
+PINALABAS PINALABAS p_B i_I n_I 6_I l_I 6_I b_I a_I s_E
 PINANGGAGALINGAN PINANGGAGALINGAN p_B i_I n_I 6_I N_I g_I 6_I g_I 6_I l_E
+PINAPAALALA PINAPAALALA p_B i_I n_I 6_I p_I 6_I a_I l_I 6_I l_I a_E
+PINAPAALALAHANAN PINAPAALALAHANAN p_B i_I n_I 6_I p_I 6_I a_I l_I 6_I l_I a_I h_I 6_I n_I a_I n_E
+PINAPAKITANG PINAPAKITANG p_B i_I n_I 6_I p_I 6_I k_I i_I t_I a_I N_E
 PINAPAYAGAN PINAPAYAGAN p_B i_I n_I 6_I p_I 6_I j_I 6_I g_I 6_I n_E
 PINAPAYAGANG PINAPAYAGANG p_B i_I n_I 6_I p_I 6_I j_I 6_I g_I 6_I N_E
+PINAPAYAN PINAPAYAN p_B i_I n_I 6_I p_I a_I j_I a_I n_E
+PINAPAYUHAN PINAPAYUHAN p_B i_I n_I 6_I p_I a_I j_I u_I h_I a_I n_E
 PINAPAYUHANG PINAPAYUHANG p_B i_I n_I 6_I p_I 6_I j_I u_I h_I 6_I N_E
+PINASUSUNGIT PINASUSUNGIT p_B i_I n_I 6_I s_I u_I s_I u_I N_I i_I t_E
 PINK PINK p_B i_I n_I k_E
 PM PM p_B i_I e_I m_E
 PO PO p_B o_E
+PO'Y PO'Y p_B o_I j_E
 POINT POINT p_B o_I i_I n_I t_E
 POLILLO POLILLO p_B o_I l_I i_I l_I j_I o_E
 PONG PONG p_B o_I N_E
 POPULATED POPULATED p_B o_I p_I j_I u_I l_I {_I t_I e_I d_E
 PORSYENTO PORSYENTO p_B o_I r_I S_I e_I n_I t_I o_E
+PORT PORT p_B o_I r_I t_E
 PORTION PORTION p_B o_I r_I t_I i_I o_I n_E
-POSIBLE POSIBLE p_B o_I s_I i_I b_I l_E
+POSIBILIDAD POSIBILIDAD p_B o_I s_I i_I b_I i_I l_I i_I d_I a_I d_E
+POSIBILITY POSIBILITY p_B o_I s_I i_I b_I i_I l_I i_I t_I i_E
+POSIBLE POSIBLE p_B o_I s_I i_I b_I l_I e_E
 POSIBLENG POSIBLENG p_B o_I s_I i_I b_I l_I e_I N_E
+POSSIBLE POSSIBLE p_B o_I s_I i_I b_I l_E
+POSSIBLENG POSSIBLENG p_B o_I s_I i_I b_I l_I e_I N_E
+POSTE POSTE p_B o_I s_I t_I e_E
 PRE PRE p_B r_I e_E
+PRESSCON PRESSCON p_B r_I e_I s_I k_I o_I n_E
 PRESSURE PRESSURE p_B r_I e_I s_I u_I r_I e_E
 PREVAILING PREVAILING p_B r_I e_I v_I 6_I i_I l_I i_I N_E
+PRIBADO PRIBADO p_B r_I i_I b_I 6_I d_I o_E
 PRINCESA PRINCESA p_B r_I i_I n_I s_I e_I s_I a_E
+PRINSESA PRINSESA p_B r_I i_I n_I s_I e_I s_I a_E
 PROBABILITY PROBABILITY p_B r_I o_I b_I 6_I b_I i_I l_I i_I t_I j_E
 PROBINSYA PROBINSYA p_B r_I o_I b_I i_I n_I S_I a_E
 PROBLEMA PROBLEMA p_B r_I o_I b_I l_I e_I m_I 6_E
+PROMINENTE PROMINENTE p_B r_I o_I m_I i_I n_I e_I n_I t_I e_E
 PRONE PRONE p_B r_I o_I n_E
+PROTECTION PROTECTION p_B r_I o_I t_I e_I k_I s_I j_I o_I n_E
 PROVINCE PROVINCE p_B r_I o_I v_I i_I n_I s_E
 PROVINCES PROVINCES p_B r_I o_I v_I i_I n_I s_I e_I s_E
+PUBLIC PUBLIC p_B u_I b_I l_I i_I k_E
+PUBLIKO PUBLIKO p_B u_I b_I l_I i_I k_I o_E
 PUERTO PUERTO p_B u_I w_I e_I r_I t_I o_E
 PULA PULA p_B u_I l_I a_E
 PULO PULO p_B u_I l_I o_E
 PULO-PULONG PULO-PULONG p_B u_I l_I o_I p_I u_I l_I o_I N_E
+PULONG PULONG p_B u_I l_I o_I N_E
+PULOPULONG PULOPULONG p_B u_I l_I o_I p_I u_I l_I o_I N_E
+PULU-PULONG PULU-PULONG p_B u_I l_I u_I p_I u_I l_I o_I N_E
 PUMALAOT PUMALAOT p_B u_I m_I 6_I l_I 6_I o_I t_E
 PUMALO PUMALO p_B u_I m_I 6_I l_I o_E
 PUMAPALO PUMAPALO p_B u_I m_I 6_I p_I 6_I l_I o_E
 PUMAPATAK PUMAPATAK p_B u_I m_I 6_I p_I 6_I t_I 6_I k_E
 PUMASOK PUMASOK p_B u_I m_I 6_I s_I o_I k_E
+PUMUNTA PUMUNTA p_B u_I m_I u_I n_I t_I a_E
 PUNG PUNG p_B u_I N_E
 PUNO PUNO p_B u_I n_I o_E
+PUNTA PUNTA p_B u_I n_I t_I a_E
+PUNTAHAN PUNTAHAN p_B u_I n_I t_I 6_I h_I a_I n_E
 PUPUNTA PUPUNTA p_B u_I p_I u_I n_I t_I a_E
 PURO PURO p_B u_I r_I o_E
 PUWERSA PUWERSA p_B u_I w_I e_I r_I s_I a_E
 PWEDE PWEDE p_B w_I e_I d_I e_E
 PWEDENG PWEDENG p_B w_I e_I d_I e_I N_E
+QUARENTE QUARENTE k_B w_I 6_I r_I e_I n_I t_I e_E
 QUARTER QUARTER k_B w_I a_I r_I t_I e_I r_E
 QUATRO QUATRO k_B w_I 6_I t_I r_I o_E
+QUEENIE QUEENIE k_B w_I i_I n_I i_E
 QUEZON QUEZON k_B e_I s_I o_I n_E
+QUINTOS QUINTOS k_B i_I n_I t_I o_I s_E
 QUIRINO QUIRINO k_B i_I r_I i_I n_I o_E
+R R 6_B r_E
+RADIUS RADIUS r_B ej_I d_I i_I u_I s_E
 RADYO RADYO r_B 6_I j_I ow_E
 RAIN RAIN r_B 6j_I n_E
 RAINFALL RAINFALL r_B 6j_I n_I f_I a_I l_E
 RAINS RAINS r_B 6j_I n_I s_E
 RAINSHOWERS RAINSHOWERS r_B 6j_I n_I S_I o_I w_I e_I r_I s_E
+RAINY RAINY r_B 6j_I n_I j_E
 RAMDAM RAMDAM r_B 6_I m_I d_I 6_I m_E
-RANGE RANGE r_B {_I n_I g_E
-RANGES RANGES r_B {_I n_I g_I s_E
+RANGE RANGE r_B 6j_I n_I g_E
+RANGES RANGES r_B 6j_I n_I g_I s_E
+RAYMOND RAYMOND r_B 6j_I m_I o_I n_I d_E
+RAYS RAYS r_B 6j_I s_E
 READY READY r_B e_I d_I j_E
 REAL REAL r_B i_I l_E
+RECENT RECENT r_B e_I s_I e_I n_I t_E
 RECORD RECORD r_B e_I k_I o_I r_I d_E
-REGION REGION r_B e_I g_I i_I o_I n_E
+REGION REGION r_B i_I g_I i_I o_I n_E
+REGIONS REGIONS r_B i_I g_I i_I o_I n_I s_E
 REHIYON REHIYON r_B e_I h_I i_I j_I o_I n_E
+REPORT REPORT r_B e_I p_I o_I r_I t_E
 RESCUE RESCUE r_B e_I s_I k_I j_I u_E
 RESIDENT RESIDENT r_B e_I s_I i_I d_I e_I n_I t_E
 RESIDENTE RESIDENTE r_B e_I s_I i_I d_I e_I n_I t_I e_E
@@ -993,44 +1572,74 @@ REST REST r_B e_I s_I t_E
 RETRIEVAL RETRIEVAL r_B e_I t_I r_I i_I v_I 6_I l_E
 RIN RIN r_B i_I n_E
 RING RING r_B i_I N_E
+RISKY RISKY r_B i_I s_I k_I i_E
 RITO RITO r_B i_I t_I o_E
+RIVER RIVER r_B i_I v_I e_I r_E
 RIZAL RIZAL r_B i_I z_I 6_I l_E
 ROMBLON ROMBLON r_B o_I m_I b_I l_I o_I n_E
 ROSITA ROSITA r_B o_I s_I i_I t_I a_E
+S S e_B s_E
 SA SA s_B 6_E
 SAAN SAAN s_B 6_I a_I n_E
 SABADO SABADO s_B 6_I b_I 6_I d_I o_E
+SABI SABI s_B 6_I b_I i_E
 SABIHIN SABIHIN s_B 6_I b_I i_I h_I i_I n_E
 SAIS SAIS s_B 6_I i_I s_E
+SAK SAK s_B 6_I k_E
 SAKAHAN SAKAHAN s_B 6_I k_I 6_I h_I a_I n_E
+SAKALING SAKALING s_B 6_I k_I 6_I l_I i_I N_E
+SALAGAY SALAGAY s_B 6_I l_I 6_I g_I aj_E
 SALAMAT SALAMAT s_B 6_I l_I 6_I m_I 6_I t_E
 SAMA SAMA s_B 6_I m_I a_E
+SAMAHAN SAMAHAN s_B 6_I m_I 6_I h_I a_I n_E
 SAMANTALA SAMANTALA s_B 6_I m_I 6_I n_I t_I 6_I l_I 6_E
 SAMANTALANG SAMANTALANG s_B 6_I m_I 6_I n_I t_I 6_I l_I 6_I N_E
+SAMANTLA SAMANTLA m_B 6_I m_I 6_I n_I t_I 6_I l_I a_E
 SAMAR SAMAR s_B 6_I m_I 6_I r_E
+SAME SAME s_B ej_I m_E
 SAMUEL SAMUEL s_B 6_I m_I u_I e_I l_E
+SAN SAN s_B 6_I n_E
 SANTO SANTO s_B 6_I n_I t_I o_E
 SANTOS SANTOS s_B 6_I n_I t_I o_I s_E
 SAPAGKAT SAPAGKAT s_B 6_I p_I 6_I g_I k_I 6_I t_E
+SARANGGANI SARANGGANI s_B 6_I r_I 6_I N_I g_I 6_I n_I i_E
+SASAKYAN SASAKYAN s_B 6_I s_I 6_I k_I j_I a_I n_E
 SASAKYANG SASAKYANG s_B a_I s_I a_I k_I j_I 6_I n_E
 SATELLITE SATELLITE s_B a_I t_I e_I l_I aj_I t_E
+SATURDAY SATURDAY s_B 6_I t_I u_I r_I d_I ej_E
+SCENARIO SCENARIO s_B e_I n_I 6_I r_I j_I o_E
+SCIENCE SCIENCE s_B i_I e_I n_I s_E
+SCTEX SCTEX e_B s_I s_I i_I t_I e_I k_I s_E
 SEA SEA s_B i_E
 SEABOARD SEABOARD s_B i_I b_I o_I r_I d_E
 SEABOARDS SEABOARDS s_B i_I b_I o_I r_I d_I s_E
+SEARCH SEARCH s_B e_I r_I t_I s_E
 SEASON SEASON s_B i_I s_I o_I n_E
 SECTION SECTION s_B e_I k_I S_I o_I n_E
+SEN SEN s_B e_I n_E
 SENDONG SENDONG s_B e_I n_I d_I o_I N_E
+SENTRO SENTRO s_B e_I n_I t_I r_I o_E
+SENYALES SENYALES s_B e_I n_I j_I 6_I l_I e_I s_E
+SEPTEMBER SEPTEMBER s_B e_I p_I t_I e_I m_I b_I e_I r_E
 SERBISYONG SERBISYONG s_B e_I r_I b_I i_I S_I o_I N_E
+SERVICES SERVICES s_B e_I r_I v_I i_I s_I e_I s_E
 SEVEN SEVEN s_B e_I v_I e_I n_E
 SEVENTEEN SEVENTEEN s_B e_I v_I e_I t_I i_I n_E
 SEVENTY SEVENTY s_B e_I v_I e_I n_I t_I j_E
+SEVERE SEVERE s_B e_I v_I i_I r_E
 SHANSHAN SHANSHAN S_B 6_I n_I S_I a_I n_E
+SHEAR SHEAR S_B i_I r_E
+SHELLY SHELLY S_B e_I l_I j_E
 SHERY SHERY S_B e_I r_I j_E
 SHERYL SHERYL S_B e_I r_I i_I l_E
+SHIFTING SHIFTING S_B i_I f_I t_I i_I N_E
+SHIPPING SHIPPING S_B i_I p_I i_I N_E
 SHOWERS SHOWERS S_B ow_I e_I r_I s_E
 SI SI s_B i_E
+SIARGAO SIARGAO s_B i_I 6_I r_I g_I a_I o_E
 SIDE SIDE s_B i_I d_E
 SIERRA SIERRA s_B i_I e_I r_I a_E
+SIGE SIGE s_B i_I g_I e_E
 SIGNAL SIGNAL s_B i_I g_I n_I 6_I l_E
 SIGNALS SIGNALS s_B i_I g_I n_I 6_I l_I s_E
 SIGURADO SIGURADO s_B i_I g_I u_I r_I 6_I d_I o_E
@@ -1042,29 +1651,58 @@ SILIPIN SILIPIN s_B i_I l_I i_I p_I i_I n_E
 SIMULA SIMULA s_B i_I m_I u_I l_I a_E
 SINABING SINABING s_B i_I n_I 6_I b_I i_I N_E
 SINAIT SINAIT s_B i_I n_I 6_I i_I t_E
+SINALANTA SINALANTA s_B i_I n_I 6_I l_I 6_I n_I t_I a_E
 SINGKO SINGKO s_B i_I N_I k_I o_E
+SINGKWENTA SINGKWENTA s_B i_I N_I k_I w_I e_I n_I t_I a_E
+SINIMULAN SINIMULAN s_B i_I n_I i_I m_I u_I l_I a_I n_E
+SINKO SINKO s_B i_I n_I k_I o_E
 SINUSUNDAN SINUSUNDAN s_B i_I n_I u_I s_I u_I n_I d_I 6_I n_E
+SIPON SIPON s_B i_I p_I o_I n_E
 SIQUIJOR SIQUIJOR s_B i_I k_I i_I h_I o_I r_E
+SIR SIR s_B e_I r_E
+SIRA SIRA s_B i_I r_I a_E
+SIRKULASYON SIRKULASYON s_B i_I r_I k_I u_I l_I a_I s_I j_I o_I n_E
 SISIKAT SISIKAT s_B i_I s_I i_I k_I 6_I t_E
+SITWASYON SITWASYON s_B i_I t_I w_I a_I s_I j_I o_I n_E
 SIX SIX s_B i_I k_I s_E
 SIXTEEN SIXTEEN s_B i_I k_I s_I t_I i_I n_E
 SIXTY SIXTY s_B i_I k_I s_I t_I j_E
 SIYA SIYA s_B i_I j_I 6_E
 SIYANG SIYANG s_B i_I j_I 6_I N_E
+SIYETE SIYETE s_B i_I j_I e_I t_I e_E
+SIYUDAD SIYUDAD s_B j_I u_I d_I a_I d_E
+SKY SKY s_B k_I j_E
 SO SO s_B o_E
-SOCSARGEN SOCSARGEN s_B o_I c_I s_I 6_I r_I g_I e_I n_E
+SOBRANG SOBRANG s_B o_I b_I r_I 6_I N_E
+SOCSARGEN SOCSARGEN s_B o_I k_I s_I 6_I r_I g_I e_I n_E
+SOME SOME s_B o_I m_E
+SORSOGON SORSOGON s_B o_I r_I s_I o_I g_I o_I n_E
+SOULIK SOULIK s_B o_I u_I l_I i_I k_E
 SOUTH SOUTH s_B aw_I T_E
+SOUTHEAST SOUTHEAST s_B aw_I T_I i_I s_I t_E
 SOUTHERN SOUTHERN s_B aw_I T_I e_I r_I n_E
 SOUTHWEST SOUTHWEST s_B aw_I T_I w_I e_I s_I t_E
+SOWANG SOWANG s_B o_I w_I 6_I N_E
+SPECIALIST SPECIALIST s_B p_I e_I s_I j_I a_I l_I i_I s_I t_E
+SPECIFIC SPECIFIC s_B p_I e_I s_I i_I f_I i_I k_E
 SPELL SPELL s_B p_I e_I l_E
 STANLEY STANLEY s_B t_I 6_I n_I l_I e_I j_E
+START START s_B t_I 6_I r_I t_E
+STATION STATION s_B t_I 6_I s_I j_I o_I n_E
 STORM STORM s_B t_I o_I r_I m_E
 STRENGTH STRENGTH s_B t_I r_I e_I N_I T_E
 STRESS STRESS s_B t_I r_I e_I s_E
 STROKE STROKE s_B t_I r_I o_I k_E
+STUDIO STUDIO s_B t_I u_I d_I i_I o_E
+SUBALIT SUBALIT s_B u_I b_I 6_I l_I i_I t_E
 SUBAYBAY SUBAYBAY s_B u_I b_I 6_I j_I b_I 6_I j_E
 SUBIC SUBIC s_B u_I b_I i_I k_E
+SUBJECT SUBJECT s_B u_I b_I dZ_I e_I k_E
+SUCH SUCH s_B u_I t_I s_E
 SUGATAN SUGATAN s_B u_I g_I 6_I t_I 6_I n_E
+SULTAN SULTAN s_B u_I l_I t_I a_I n_E
+SULU SULU s_B u_I l_I u_E
+SUMIKAT SUMIKAT s_B u_I m_I i_I k_I a_I t_E
 SUNDAY SUNDAY s_B u_I n_I d_I ej_E
 SUNGIT SUNGIT s_B u_I N_I i_I t_E
 SUNOG SUNOG s_B u_I n_I o_I g_E
@@ -1072,94 +1710,156 @@ SUNRISE SUNRISE s_B u_I n_I r_I i_I s_I V_E
 SUNSET SUNSET s_B u_I n_I s_I e_I t_E
 SUPER SUPER s_B u_I p_I e_I r_E
 SUR SUR s_B u_I r_E
+SURERO SURERO s_B u_I r_I e_I r_I o_E
+SURFACE SURFACE s_B u_I r_I f_I ej_I s_E
 SURGE SURGE s_B u_I r_I dZ_E
 SURIGAO SURIGAO s_B u_I r_I i_I g_I 6_I o_E
+SUSPENDIDO SUSPENDIDO s_B u_I s_I p_I e_I n_I d_I i_I d_I o_E
 SUSTAINED SUSTAINED s_B u_I s_I t_I aj_I n_I d_E
 SUSUNOD SUSUNOD s_B u_I s_I u_I n_I o_I d_E
 SYSTEM SYSTEM s_B i_I s_I t_I e_I m_E
 SYUDAD SYUDAD s_B j_I u_I d_I 6_I d_E
+T T t_B i_E
+TA TA t_B a_E
 TAAS TAAS t_B 6_I a_I s_E
+TAG TAG t_B 6_I g_E
 TAGA TAGA t_B 6_I g_I a_E
+TAGAPAKINIG TAGAPAKINIG t_B 6_I g_I 6_I p_I 6_I k_I i_I n_I i_I g_E
 TAGAPANOOD TAGAPANOOD t_B 6_I g_I 6_I p_I 6_I n_I o_I o_I d_E
+TAGASUBAYBAY TAGASUBAYBAY t_B 6_I g_I 6_I s_I u_I b_I 6j_I b_I aj_E
 TAGAYTAY TAGAYTAY t_B 6_I g_I 6j_I t_I aj_E
 TAGBILARAN TAGBILARAN t_B 6_I g_I b_I i_I l_I 6_I r_I 6_I n_E
 TAGLAY TAGLAY t_B 6_I g_I l_I 6_I j_E
+TAGUM-LIBUGANON TAGUM-LIBUGANON t_B 6_I g_I u_I m_I l_I i_I b_I u_I g_I 6_I n_I o_I n_E
 TAIL TAIL t_B ej_I l_E
 TAKBO TAKBO t_B 6_I k_I b_I o_E
+TALAGA TALAGA t_B 6_I l_I 6_I g_I a_E
+TALAGANG TALAGANG t_B 6_I l_I 6_I g_I a_I N_E
 TAMA TAMA t_B 6_I m_I 6_E
 TAMAAN TAMAAN t_B 6_I m_I 6_I a_I n_E
+TAMBAK TAMBAK t_B 6_I m_I b_I a_I k_E
 TANGHALI TANGHALI t_B 6_I N_I h_I 6_I l_I i_E
 TANI TANI t_B 6_I n_I i_E
+TANONG TANONG t_B 6_I n_I o_I N_E
+TANUNGIN TANUNGIN t_B 6_I n_I u_I N_I i_I n_E
 TAO TAO t_B 6_I o_E
+TAON TAON t_B 6_I o_I n_E
 TAPOS TAPOS t_B 6_I p_I o_I s_E
-TARLAC TARLAC t_B 6_I r_I l_I 6_I c_E
+TARLAC TARLAC t_B 6_I r_I l_I 6_I k_E
 TATAAS TATAAS t_B 6_I t_I 6_I a_I s_E
+TATAHAKING TATAHAKING t_B 6_I t_I 6_I h_I 6_I k_I i_I N_E
 TATAMA TATAMA t_B 6_I t_I 6_I m_I 6_E
+TATAWAGIN TATAWAGIN t_B 6_I t_I 6_I w_I 6_I g_I i_I n_E
+TATAWID TATAWID t_B 6_I t_I 6_I w_I i_I d_E
 TATAWIDIN TATAWIDIN t_B 6_I t_I 6w_I i_I d_I i_I n_E
 TATAWIRIN TATAWIRIN t_B 6_I t_I 6w_I i_I r_I i_I n_E
 TATLO TATLO t_B 6_I t_I l_I o_E
 TATLONG TATLONG t_B 6_I t_I l_I o_I N_E
+TAUHAN TAUHAN t_B 6_I u_I h_I a_I n_E
 TAYA TAYA t_B 6_I j_I 6_E
 TAYO TAYO t_B 6_I j_I o_E
+TAYO'Y TAYO'Y t_B 6_I j_I o_I j_E
 TAYONG TAYONG t_B 6_I j_I o_I N_E
 TED TED t_B e_I d_E
 TEMPERATURA TEMPERATURA t_B e_I m_I p_I e_I r_I 6_I t_I u_I r_I 6_E
-TEMPERATURE TEMPERATURE t_B e_I m_I p_I e_I r_I {_I t_I u_I r_E
-TEMPERATURES TEMPERATURES t_B e_I m_I p_I e_I r_I {_I t_I u_I r_I s_E
+TEMPERATURE TEMPERATURE t_B e_I m_I p_I e_I r_I ej_I t_I u_I r_E
+TEMPERATURES TEMPERATURES t_B e_I m_I p_I e_I r_I ej_I t_I u_I r_I s_E
 TEN TEN t_B e_I n_E
+TERMINO TERMINO t_B e_I r_I m_I i_I n_I o_E
 TERMS TERMS t_B e_I r_I m_I s_E
-THAT THAT T_B {_I t_E
+THANK THANK T_B ej_I n_I k_E
+THAT THAT T_B 6_I t_E
 THE THE T_B a_E
+THEN THEN T_B e_I n_E
+THIRTEEN THIRTEEN T_B i_I r_I t_I i_I n_E
 THIRTY THIRTY T_B 3_I r_I t_I j_E
+THIRTY-NINE THIRTY-NINE T_B i_I r_I t_I j_I n_I j_I n_E
 THIS THIS T_B I_I s_E
 THOUSAND THOUSAND T_B o_I u_I s_I a_I n_I d_E
 THREE THREE T_B r_I i_E
+THRITY-EIGHT THRITY-EIGHT T_B i_I r_I t_I j_I ej_I t_E
+THRITY-NINE THRITY-NINE T_B i_I r_I t_I j_I n_I j_I n_E
+THRITY-SIX THRITY-SIX T_B i_I r_I t_I j_I s_I i_I k_I s_E
+THROUGH THROUGH T_B r_I u_E
 THUNDERSTORM THUNDERSTORM T_B u_I n_I d_I e_I r_I s_I t_I o_I r_I m_E
 THUNDERSTORMS THUNDERSTORMS T_B u_I n_I d_I e_I r_I s_I t_I o_I r_I m_I s_E
+THURSDAY THURSDAY T_B u_I r_I s_I d_I aj_E
+TICAO TICAO t_B i_I k_I a_I o_E
+TIGIL TIGIL t_B i_I g_I i_I l_E
+TIKAW TIKAW t_B i_I k_I 6_I w_E
+TILL TILL t_B i_I l_E
 TIME TIME t_B i_I m_E
 TIMOG TIMOG t_B i_I m_I o_I g_E
+TINA TINA t_B i_I n_I a_E
 TINAAS TINAAS t_B i_I n_I 6_I a_I s_E
 TINATAWAG TINATAWAG t_B i_I n_I 6_I t_I 6_I w_I 6_I g_E
 TINATAYA TINATAYA t_B i_I n_I 6_I t_I 6_I j_I 6_E
 TINATAYANG TINATAYANG t_B i_I n_I a_I t_I j_I 6_I N_E
+TINATWAG TINATWAG t_B i_I n_I 6_I t_I 6_I w_I a_I g_E
 TINAWAG TINAWAG t_B i_I n_I 6_I w_I 6_I g_E
+TINGNAN TINGNAN t_B i_I N_I n_I a_I n_E
 TININGNAN TININGNAN t_B i_I n_I i_I N_I n_I 6_I n_E
+TISOY TISOY t_B i_I s_I o_I j_E
 TITIGNAN TITIGNAN t_B i_I t_I i_I g_I 6_I n_E
+TITINGIN TITINGIN t_B i_I t_I i_I N_I i_I n_E
 TITINGNAN TITINGNAN t_B i_I t_I i_I N_I n_I 6_I n_E
 TO TO t_B o_E
 TODAY TODAY t_B o_I d_I ej_E
+TOMAS TOMAS t_B o_I m_I a_I s_E
 TOMORROW TOMORROW t_B o_I m_I o_I r_I o_I w_E
+TONG TONG t_B o_I N_E
 TORNADO TORNADO t_B o_I r_I n_I ej_I d_I o_E
+TOTALLY TOTALLY t_B o_I t_I 6_I l_I i_E
 TOTOO TOTOO t_B o_I t_I o_I o_E
 TOWARDS TOWARDS t_B o_I w_I 6_I r_I d_I s_E
 TRACK TRACK t_B r_I 6_I k_E
 TRAHEDYA TRAHEDYA t_B r_I 6_I h_I e_I d_I j_I 6_E
+TRANSITION TRANSITION t_B r_I 6_I n_I s_I i_I s_I j_I o_I n_E
+TRAVEL TRAVEL t_B r_I 6_I v_I e_I l_E
+TREND TREND t_B r_I e_I n_I d_E
 TRENTAY TRENTAY t_B r_I e_I t_I aj_E
+TRES TRES t_B r_I e_I s_E
 TRESE TRESE t_B r_I e_I s_I e_E
+TRIPLE TRIPLE t_B r_I i_I p_I l_I e_E
 TROPICAL TROPICAL t_B r_I o_I p_I i_I k_I 6_I l_E
 TROUGH TROUGH t_B r_I 6_I f_E
 TSAKA TSAKA tS_B 6_I k_I 6_E
 TSANSA TSANSA tS_B 6_I n_I s_I 6_E
 TSANSANG TSANSANG tS_B 6_I n_I s_I 6_I N_E
+TU TU t_B u_E
 TUBIG TUBIG t_B u_I b_I i_I g_E
 TUGUEGARAO TUGUEGARAO t_B u_I g_I e_I g_I 6_I r_I 6_I o_E
+TUGUERAO TUGUERAO t_B u_I g_I e_I g_I 6_I r_I a_I o_E
 TULAD TULAD t_B u_I l_I 6_I d_E
+TULOG TULOG t_B u_I l_I o_I g_E
 TULOY TULOY t_B u_I l_I o_I j_E
+TULUY-TULOY TULUY-TULOY t_B u_I l_I u_I j_I t_I u_I l_I o_I j_E
+TULUYAN TULUYAN t_B u_I l_I u_I j_I a_I n_E
+TULUYANG TULUYANG t_B u_I l_I u_I j_I a_I N_E
 TUMAMA TUMAMA t_B u_I m_I 6_I m_I 6_E
 TUMAMANG TUMAMANG t_B u_I m_I 6_I m_I 6_I N_E
+TUMATAAS TUMATAAS t_B u_I m_I 6_I t_I 6_I a_I s_E
 TUMATAMA TUMATAMA t_B u_I m_I 6_I t_I 6_I m_I 6_E
 TUNGKOL TUNGKOL t_B u_I N_I k_I o_I l_E
+TUNGO TUNGO t_B u_I N_I o_E
 TUTUMBUKIN TUTUMBUKIN t_B u_I t_I u_I m_I b_I u_I k_I i_I n_E
 TUWING TUWING t_B u_I w_I i_I N_E
 TUYONG TUYONG t_B u_I j_I o_I N_E
 TV TV t_B i_I v_I i_E
 TWELVE TWELVE t_B u_I e_I l_I v_E
+TWEN TWEN t_B w_I e_I n_E
 TWENTY TWENTY t_B u_I e_I n_I t_I i_E
 TWITTER TWITTER t_B u_I i_I t_I e_I r_E
 TWO TWO t_B u_E
+TYO TYO t_B i_I j_I o_E
 TYPHOON TYPHOON t_B aj_I f_I U_I n_E
 U U u_S
+UAN UAN j_B u_I ej_I e_I n_E
+UH UH u_B h_E
+UKOL UKOL u_B k_I o_I l_E
 ULAN ULAN u_B l_I 6_I n_E
+ULANG ULANG u_B l_I a_I N_E
+ULANIN ULANIN u_B l_I a_I n_I i_I n_E
 ULAP ULAP u_B l_I 6_I p_E
 ULAT ULAT u_B l_I 6_I t_E
 ULI ULI u_B l_I i_E
@@ -1167,32 +1867,63 @@ ULIT ULIT u_B l_I i_I t_E
 UMAABOT UMAABOT u_B m_I 6_I a_I b_I o_I t_E
 UMABOT UMABOT u_B m_I 6_I b_I o_I t_E
 UMAGA UMAGA u_B m_I 6_I g_I 6_E
+UMAKYAT UMAKYAT u_B m_I 6_I k_I j_I a_I t_E
+UMANTABAY UMANTABAY u_B m_I 6_I n_I t_I 6_I b_I a_I j_E
+UMAPAO UMAPAO u_B m_I 6_I p_I a_I o_E
 UMIIRAL UMIIRAL u_B m_I i_I i_I l_I 6_I w_E
+UMINIT UMINIT u_B m_I i_I n_I i_I t_E
 UMULAN UMULAN u_B m_I u_I l_I 6_I n_E
+UMUULAN UMUULAN u_B m_I u_I u_I l_I a_I n_E
+UN UN j_B u_I e_I n_E
 UNA UNA u_B n_I 6_E
 UNA'Y UNA'Y u_B n_I 6_I aj_E
+UNAHIN UNAHIN u_B n_I 6_I h_I i_I n_E
 UNANG UNANG u_B n_I 6_I N_E
+UNDER UNDER u_B n_I d_I e_I r_E
 UNDERSCORE UNDERSCORE 6_B n_I d_I e_I r_I s_I k_I o_I r_E
+UNG UNG j_B u_I N_E
 UNION UNION j_B u_I n_I i_I o_I n_E
+UNO UNO u_B n_I o_E
+UNTI-UNTI UNTI-UNTI u_B n_I t_I i_I u_I n_I t_I i_E
 UP UP j_B u_I p_I i_E
 UPDATE UPDATE 6_B p_I d_I 6_I j_I t_E
+UPDATED UPDATED u_B p_I d_I ej_I t_I e_I d_E
+UPDATES UPDATES u_B p_I d_I ej_I t_I s_E
+URING URING u_B r_I i_I N_E
+URSULA URSULA u_B r_I s_I u_I l_I a_E
+US US j_B u_I e_I s_E
+USAPIN USAPIN u_B s_I 6_I p_I i_I n_E
+USERNAME USERNAME j_B u_I s_I e_I r_I n_I ej_I m_E
+USUALLY USUALLY j_B u_I s_I u_I 6_I l_I i_E
 UULAN UULAN u_B u_I l_I 6_I n_E
+UULANIN UULANIN u_B u_I l_I 6_I n_I i_I n_E
 UULAT UULAT u_B u_I l_I 6_I t_E
 UUSAPAN UUSAPAN u_B u_I s_I 6_I p_I 6_I n_E
 UUWI UUWI u_B u_I w_I i_E
 VALLEY VALLEY v_B 6_I l_I i_E
+VENUE VENUE v_B e_I n_I j_I u_E
 VICINITY VICINITY v_B i_I s_I i_I n_I i_I t_I i_E
+VIDEO VIDEO v_B i_I d_I e_I o_E
+VIDEOS VIDEOS v_B i_I d_I e_I o_I s_E
+VIETNAM VIETNAM v_B i_I e_I t_I n_I a_I m_E
 VISAYAS VISAYAS v_B i_I s_I 6_I j_I 6_I s_E
 VISIBILITY VISIBILITY v_B i_I s_I i_I b_I i_I l_I i_I t_I i_E
+VISIT VISIT v_B i_I s_I i_I t_E
+VITAMIN VITAMIN v_B i_I t_I 6_I m_I i_I n_E
 VIZCAYA VIZCAYA v_B i_I z_I k_I 6_I j_I 6_E
 VIZCAYAT VIZCAYAT v_B i_I z_I k_I 6_I j_I 6_I t_E
+W W d_B u_I b_I j_I u_E
 WAG WAG w_B 6_I g_E
+WAL WAL w_B 6_I l_E
 WALA WALA w_B 6_I l_I 6_E
 WALANG WALANG w_B 6_I l_I 6_I N_E
+WALL WALL w_B o_I l_E
 WARNING WARNING w_B 6_I r_I n_I i_I N_E
 WE WE w_B i_E
+WE'VE WE'VE w_B i_I v_E
 WEATHER WEATHER w_B e_I T_I e_I r_E
 WEBSITE WEBSITE w_B e_I b_I s_I aj_I t_E
+WEDNESDAY WEDNESDAY w_B e_I d_I n_I e_I s_I d_I 6_I j_E
 WEEK WEEK w_B i_I k_E
 WEEKEND WEEKEND w_B i_I k_I e_I n_I d_E
 WELCOME WELCOME w_B e_I l_I k_I 6_I m_E
@@ -1201,18 +1932,28 @@ WEST WEST w_B e_I s_I t_E
 WESTERN WESTERN w_B e_I s_I t_I e_I r_I n_E
 WESTWARD WESTWARD w_B e_I s_I t_I w_I 6_I r_I d_E
 WHICH WHICH w_B i_I tS_E
+WILL WILL w_B i_I l_E
 WIND WIND w_B i_I n_I d_E
+WINDFLOW WINDFLOW w_B i_I n_I d_I f_I l_I o_I w_E
 WINDS WINDS w_B i_I n_I d_I s_E
+WINDY WINDY w_B i_I n_I d_I i_E
+WITH WITH w_B i_I T_E
+WITHIN WITHIN w_B i_I T_I i_I n_E
+WORSE WORSE w_B o_I r_I s_E
 WOW WOW w_B 6_I w_E
 WW WW d_B a_I b_I 6_I l_I j_I u_I d_I a_I b_I 6_I l_I j_I u_E
 YAN YAN j_B 6_I n_E
 YANG YANG j_B 6_I N_E
+YARI YARI j_B 6_I r_I i_E
+YEA YEA j_B e_I a_E
 YEAR YEAR j_B i_I r_E
 YELLOW YELLOW j_B e_I l_I ow_E
 YELO YELO j_B e_I l_I o_E
 YES YES j_B e_I s_E
 YOLANDA YOLANDA j_B o_I l_I 6_I n_I d_I 6_E
 YOLANDANG YOLANDANG j_B o_I l_I 6_I n_I d_I 6_I N_E
+YON YON j_B o_I n_E
+YOU YOU j_B u_E
 YOUTUBE YOUTUBE j_B U_I t_I u_I b_E
 YUN YUN j_B U_I n_E
 YUNG YUNG j_B U_I N_E

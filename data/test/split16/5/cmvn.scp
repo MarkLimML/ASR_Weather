@@ -1,4 +1,11 @@
-weather030_006 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:4333
-weather030_007 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:4587
-weather030_008 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:4841
-weather030_009 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:5095
+weather058_030 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:11191
+weather058_031 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:11445
+weather058_032 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:11699
+weather058_033 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:11953
+weather058_034 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:12207
+weather058_035 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:12461
+weather059_001 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:12715
+weather059_002 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:12969
+weather059_003 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:13223
+weather059_004 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:13477
+weather059_005 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_test.ark:13731

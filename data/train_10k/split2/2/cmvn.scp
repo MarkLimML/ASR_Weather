@@ -1,8 +1,0 @@
-weather09 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_train.ark:2898
-weather10 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_train.ark:3259
-weather11 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_train.ark:3620
-weather12 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_train.ark:3981
-weather13 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_train.ark:4342
-weather14 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_train.ark:4703
-weather15 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_train.ark:5064
-weather16 /mnt/c/kaldi/egs/thesis/weather/mfcc/cmvn_train.ark:5425

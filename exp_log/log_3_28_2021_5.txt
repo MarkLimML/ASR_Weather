@@ -1,0 +1,853 @@
+
+===== TAKING SUBSET OF DATA =====
+
+utils/subset_data_dir.sh: reducing #utt from 332 to 266
+utils/subset_data_dir.sh: reducing #utt from 332 to 66
+
+===== FEATURES EXTRACTION =====
+
+steps/make_mfcc.sh --nj 16 --cmd run.pl data/train exp/make_mfcc/train mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train
+steps/make_mfcc.sh --nj 16 --cmd run.pl data/test exp/make_mfcc/test mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train mfcc
+Succeeded creating CMVN stats for train
+steps/compute_cmvn_stats.sh data/test exp/make_mfcc/test mfcc
+Succeeded creating CMVN stats for test
+
+===== PREPARING LANGUAGE DATA =====
+
+utils/prepare_lang.sh data/local/lang <oov> data/local/ data/lang
+Checking data/local/lang/silence_phones.txt ...
+--> reading data/local/lang/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lang/silence_phones.txt is OK
+
+Checking data/local/lang/optional_silence.txt ...
+--> reading data/local/lang/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lang/optional_silence.txt is OK
+
+Checking data/local/lang/nonsilence_phones.txt ...
+--> reading data/local/lang/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lang/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/lang/lexicon.txt
+--> reading data/local/lang/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lang/lexicon.txt is OK
+
+Checking data/local/lang/extra_questions.txt ...
+--> data/local/lang/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/lang]
+
+**Creating data/local/lang/lexiconp.txt from data/local/lang/lexicon.txt
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 184 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 4 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 48 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 48 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 194 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 34 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 23 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+
+===== LANGUAGE MODEL CREATION =====
+===== MAKING lm.arpa =====
+
+
+===== MAKING G.fst =====
+
+
+===== MONO TRAINING =====
+
+steps/train_mono.sh --boost-silence 1.25 --nj 10 --cmd run.pl data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.9160305344% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 32.4427480916% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+703 warnings in exp/mono/log/update.*.log
+992 warnings in exp/mono/log/align.*.*.log
+205 warnings in exp/mono/log/acc.*.*.log
+2 warnings in exp/mono/log/analyze_alignments.log
+exp/mono: nj=10 align prob=-105.81 over 0.78h [retry=4.5%, fail=1.5%] states=148 gauss=991
+steps/train_mono.sh: Done training monophone system in exp/mono
+
+===== MONO DECODING =====
+
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+-0.0662341 -0.0959079
+[info]: LG not stochastic.
+-0.0662341 -0.0959079
+[info]: CLG not stochastic.
+0.00027432 -0.176817
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 10 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.3939393939% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.2424242424% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,20) and mean=7.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 17.10 [ 408 / 2386, 27 ins, 141 del, 240 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/mono/decode/wer_11
+%WER 16.72 [ 399 / 2386, 23 ins, 144 del, 232 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/mono/decode/wer_12
+%WER 16.35 [ 390 / 2386, 23 ins, 145 del, 222 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/mono/decode/wer_13
+%WER 16.09 [ 384 / 2386, 21 ins, 150 del, 213 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/mono/decode/wer_14
+%WER 15.80 [ 377 / 2386, 17 ins, 156 del, 204 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/mono/decode/wer_15
+%WER 16.01 [ 382 / 2386, 17 ins, 159 del, 206 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/mono/decode/wer_16
+%WER 16.18 [ 386 / 2386, 16 ins, 164 del, 206 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/mono/decode/wer_17
+%WER 16.14 [ 385 / 2386, 15 ins, 168 del, 202 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/mono/decode/wer_7
+%WER 20.58 [ 491 / 2386, 51 ins, 120 del, 320 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/mono/decode/wer_8
+%WER 18.90 [ 451 / 2386, 46 ins, 124 del, 281 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/mono/decode/wer_9
+%WER 18.23 [ 435 / 2386, 37 ins, 135 del, 263 sub ]
+%SER 90.91 [ 60 / 66 ]
+
+===== MONO ALIGNMENT =====
+
+steps/align_si.sh --boost-silence 1.25 --nj 10 --cmd run.pl data/train data/lang exp/mono exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono_ali
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.9160305344% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 32.0610687023% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== TRI1 (first triphone pass) TRAINING =====
+
+steps/train_deltas.sh --boost-silence 1.25 --cmd run.pl 2000 10000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+WARNING (gmm-init-model[5.5.896~1-8a59]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+** The warnings above about 'no stats' generally mean you have phones **
+** (or groups of phones) in your phone set that had no corresponding data. **
+** You should probably figure out whether something went wrong, **
+** or whether your data just doesn't happen to have examples of those **
+** phones. **
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.8091603053% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 26.3358778626% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+73 warnings in exp/tri1/log/align.*.*.log
+226 warnings in exp/tri1/log/init_model.log
+328 warnings in exp/tri1/log/update.*.log
+2 warnings in exp/tri1/log/analyze_alignments.log
+1 warnings in exp/tri1/log/build_tree.log
+1 warnings in exp/tri1/log/questions.log
+136 warnings in exp/tri1/log/acc.*.*.log
+exp/tri1: nj=10 align prob=-99.21 over 0.78h [retry=3.4%, fail=1.5%] states=1024 gauss=10052 tree-impr=6.82
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+
+===== TRI1 (first triphone pass) DECODING =====
+
+0 -0.0959079
+[info]: CLG not stochastic.
+0.557005 -0.237953
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 10 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 42.4242424242% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 28.7878787879% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,9) and mean=4.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 23.55 [ 562 / 2386, 122 ins, 68 del, 372 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri1/decode/wer_11
+%WER 21.88 [ 522 / 2386, 105 ins, 73 del, 344 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri1/decode/wer_12
+%WER 20.12 [ 480 / 2386, 84 ins, 76 del, 320 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri1/decode/wer_13
+%WER 19.40 [ 463 / 2386, 80 ins, 75 del, 308 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_14
+%WER 18.69 [ 446 / 2386, 76 ins, 78 del, 292 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_15
+%WER 17.77 [ 424 / 2386, 65 ins, 80 del, 279 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri1/decode/wer_16
+%WER 17.27 [ 412 / 2386, 58 ins, 82 del, 272 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_17
+%WER 16.85 [ 402 / 2386, 54 ins, 87 del, 261 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri1/decode/wer_7
+%WER 29.13 [ 695 / 2386, 181 ins, 57 del, 457 sub ]
+%SER 92.42 [ 61 / 66 ]
+exp/tri1/decode/wer_8
+%WER 27.33 [ 652 / 2386, 161 ins, 58 del, 433 sub ]
+%SER 92.42 [ 61 / 66 ]
+exp/tri1/decode/wer_9
+%WER 25.36 [ 605 / 2386, 140 ins, 67 del, 398 sub ]
+%SER 90.91 [ 60 / 66 ]
+
+===== TRI1 ALIGNMENT =====
+
+steps/align_si.sh --nj 10 --cmd run.pl data/train data/lang exp/tri1 exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1_ali
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.8091603053% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 26.3358778626% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== Delta+delta-delta TRI2 TRAINING =====
+
+steps/train_deltas.sh --cmd run.pl 2500 15000 data/train data/lang exp/tri1_ali exp/tri2a
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+WARNING (gmm-init-model[5.5.896~1-8a59]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+** The warnings above about 'no stats' generally mean you have phones **
+** (or groups of phones) in your phone set that had no corresponding data. **
+** You should probably figure out whether something went wrong, **
+** or whether your data just doesn't happen to have examples of those **
+** phones. **
+steps/train_deltas.sh: converting alignments from exp/tri1_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri2a
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 23.2824427481% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.8091603053% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2a/log/analyze_alignments.log
+276 warnings in exp/tri2a/log/init_model.log
+633 warnings in exp/tri2a/log/update.*.log
+136 warnings in exp/tri2a/log/acc.*.*.log
+1 warnings in exp/tri2a/log/build_tree.log
+68 warnings in exp/tri2a/log/align.*.*.log
+2 warnings in exp/tri2a/log/analyze_alignments.log
+1 warnings in exp/tri2a/log/questions.log
+exp/tri2a: nj=10 align prob=-97.57 over 0.78h [retry=2.6%, fail=1.5%] states=1112 gauss=13506 tree-impr=7.36
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri2a
+
+===== Delta+delta-delta TRI2 DECODING =====
+
+0.554229 -0.237957
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 10 --cmd run.pl exp/tri2a/graph data/test exp/tri2a/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri2a/graph exp/tri2a/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 36.3636363636% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 30.303030303% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2a/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.5
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2a/decode/log/analyze_lattice_depth_stats.log
+exp/tri2a/decode/wer_10
+%WER 23.51 [ 561 / 2386, 133 ins, 62 del, 366 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri2a/decode/wer_11
+%WER 21.67 [ 517 / 2386, 115 ins, 68 del, 334 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri2a/decode/wer_12
+%WER 20.37 [ 486 / 2386, 107 ins, 71 del, 308 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri2a/decode/wer_13
+%WER 19.32 [ 461 / 2386, 97 ins, 69 del, 295 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri2a/decode/wer_14
+%WER 18.48 [ 441 / 2386, 86 ins, 72 del, 283 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri2a/decode/wer_15
+%WER 18.02 [ 430 / 2386, 82 ins, 72 del, 276 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri2a/decode/wer_16
+%WER 17.27 [ 412 / 2386, 75 ins, 73 del, 264 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri2a/decode/wer_17
+%WER 16.93 [ 404 / 2386, 75 ins, 79 del, 250 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri2a/decode/wer_7
+%WER 30.13 [ 719 / 2386, 214 ins, 57 del, 448 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/tri2a/decode/wer_8
+%WER 27.95 [ 667 / 2386, 181 ins, 57 del, 429 sub ]
+%SER 92.42 [ 61 / 66 ]
+exp/tri2a/decode/wer_9
+%WER 26.28 [ 627 / 2386, 162 ins, 59 del, 406 sub ]
+%SER 92.42 [ 61 / 66 ]
+
+===== Delta+delta-delta TRI2 ALIGNMENT =====
+
+steps/align_si.sh --nj 10 --cmd run.pl --use-graphs true data/train data/lang exp/tri2a exp/tri2a_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri2a, putting alignments in exp/tri2a_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri2a_ali
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 23.2824427481% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 24.8091603053% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2a_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== LDA-MLLT TRI3 TRAINING =====
+
+steps/train_lda_mllt.sh --cmd run.pl 3500 20000 data/train data/lang exp/tri2a_ali exp/tri3a
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+WARNING (gmm-init-model[5.5.896~1-8a59]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+This is a bad warning.
+steps/train_lda_mllt.sh: Converting alignments from exp/tri2a_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri3a
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.7557251908% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.7557251908% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3a/log/analyze_alignments.log
+1 warnings in exp/tri3a/log/build_tree.log
+313 warnings in exp/tri3a/log/init_model.log
+1 warnings in exp/tri3a/log/questions.log
+136 warnings in exp/tri3a/log/acc.*.*.log
+2 warnings in exp/tri3a/log/analyze_alignments.log
+798 warnings in exp/tri3a/log/update.*.log
+4 warnings in exp/tri3a/log/lda_acc.*.log
+64 warnings in exp/tri3a/log/align.*.*.log
+exp/tri3a: nj=10 align prob=-46.62 over 0.78h [retry=2.3%, fail=1.5%] states=1224 gauss=13460 tree-impr=6.41 lda-sum=21.98 mllt:impr,logdet=0.88,2.54
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri3a
+
+===== LDA-MLLT TRI3 DECODING =====
+
+0.554211 -0.237989
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 10 --cmd run.pl exp/tri3a/graph data/test exp/tri3a/decode
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3a/graph exp/tri3a/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 33.3333333333% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.2121212121% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3a/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.5
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3a/decode/log/analyze_lattice_depth_stats.log
+exp/tri3a/decode/wer_10
+%WER 24.10 [ 575 / 2386, 144 ins, 68 del, 363 sub ]
+%SER 89.39 [ 59 / 66 ]
+exp/tri3a/decode/wer_11
+%WER 22.25 [ 531 / 2386, 129 ins, 71 del, 331 sub ]
+%SER 87.88 [ 58 / 66 ]
+exp/tri3a/decode/wer_12
+%WER 20.66 [ 493 / 2386, 113 ins, 74 del, 306 sub ]
+%SER 86.36 [ 57 / 66 ]
+exp/tri3a/decode/wer_13
+%WER 20.03 [ 478 / 2386, 105 ins, 77 del, 296 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri3a/decode/wer_14
+%WER 19.32 [ 461 / 2386, 98 ins, 82 del, 281 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri3a/decode/wer_15
+%WER 18.73 [ 447 / 2386, 95 ins, 82 del, 270 sub ]
+%SER 84.85 [ 56 / 66 ]
+exp/tri3a/decode/wer_16
+%WER 17.98 [ 429 / 2386, 92 ins, 81 del, 256 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri3a/decode/wer_17
+%WER 17.60 [ 420 / 2386, 86 ins, 85 del, 249 sub ]
+%SER 83.33 [ 55 / 66 ]
+exp/tri3a/decode/wer_7
+%WER 30.34 [ 724 / 2386, 223 ins, 62 del, 439 sub ]
+%SER 95.45 [ 63 / 66 ]
+exp/tri3a/decode/wer_8
+%WER 28.29 [ 675 / 2386, 191 ins, 66 del, 418 sub ]
+%SER 92.42 [ 61 / 66 ]
+exp/tri3a/decode/wer_9
+%WER 25.82 [ 616 / 2386, 165 ins, 66 del, 385 sub ]
+%SER 90.91 [ 60 / 66 ]
+
+===== LDA-MLLT TRI3 ALIGNMENT (WITH FMLLR)=====
+
+steps/align_fmllr.sh --nj 10 --cmd run.pl data/train data/lang exp/tri3a exp/tri3a_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri3a/final.mdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri3a_ali
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.7557251908% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.7557251908% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3a_ali/log/analyze_alignments.log
+20 warnings in exp/tri3a_ali/log/align_pass1.*.log
+19 warnings in exp/tri3a_ali/log/align_pass2.*.log
+2 warnings in exp/tri3a_ali/log/analyze_alignments.log
+68 warnings in exp/tri3a_ali/log/fmllr.*.log
+
+===== SAT TRI4 TRAINING =====
+
+steps/train_sat.sh --cmd run.pl 4200 40000 data/train data/lang exp/tri3a_ali exp/tri4a
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3a_ali
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+WARNING (gmm-init-model[5.5.896~1-8a59]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+This is a bad warning.
+steps/train_sat.sh: Converting alignments from exp/tri3a_ali to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri4a
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.7557251908% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.3740458015% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4a/log/analyze_alignments.log
+1 warnings in exp/tri4a/log/questions.log
+271 warnings in exp/tri4a/log/fmllr.*.*.log
+57 warnings in exp/tri4a/log/align.*.*.log
+136 warnings in exp/tri4a/log/acc.*.*.log
+534 warnings in exp/tri4a/log/init_model.log
+2 warnings in exp/tri4a/log/analyze_alignments.log
+1 warnings in exp/tri4a/log/build_tree.log
+1308 warnings in exp/tri4a/log/update.*.log
+7 warnings in exp/tri4a/log/est_alimdl.log
+steps/train_sat.sh: Likelihood evolution:
+-53.198 -50.8263 -50.3026 -49.7103 -48.2296 -46.8987 -45.9219 -45.2236 -44.6224 -43.9667 -43.4425 -42.7796 -42.3995 -42.2145 -42.076 -41.9775 -41.9048 -41.8587 -41.8285 -41.8011 -41.7488 -41.7376 -41.7248 -41.7083 -41.6974 -41.693 -41.6878 -41.6847 -41.6784 -41.6723 -41.6598 -41.6555 -41.6497 -41.645 
+exp/tri4a: nj=10 align prob=-48.47 over 0.78h [retry=1.9%, fail=1.5%] states=1512 gauss=13317 fmllr-impr=3.55 over 0.70h tree-impr=8.57
+steps/train_sat.sh: done training SAT system in exp/tri4a
+
+===== SAT TRI4 DECODING =====
+
+0.557005 -0.237833
+HCLGa is not stochastic
+steps/decode.sh --config conf/decode.config --nj 10 --cmd run.pl exp/tri4a/graph data/test exp/tri4a/decode
+
+
+
+steps/decode.sh WARNING: Running speaker independent system decoding using a SAT model!
+steps/decode.sh WARNING: This is OK if you know what you are doing...
+
+
+
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri4a/graph exp/tri4a/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 37.8787878788% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 34.8484848485% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4a/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,9) and mean=3.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4a/decode/log/analyze_lattice_depth_stats.log
+exp/tri4a/decode/wer_10
+%WER 28.25 [ 674 / 2386, 194 ins, 68 del, 412 sub ]
+%SER 95.45 [ 63 / 66 ]
+exp/tri4a/decode/wer_11
+%WER 26.19 [ 625 / 2386, 173 ins, 68 del, 384 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/tri4a/decode/wer_12
+%WER 24.94 [ 595 / 2386, 156 ins, 73 del, 366 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/tri4a/decode/wer_13
+%WER 23.76 [ 567 / 2386, 141 ins, 75 del, 351 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/tri4a/decode/wer_14
+%WER 22.59 [ 539 / 2386, 127 ins, 82 del, 330 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/tri4a/decode/wer_15
+%WER 21.79 [ 520 / 2386, 118 ins, 84 del, 318 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/tri4a/decode/wer_16
+%WER 20.62 [ 492 / 2386, 107 ins, 83 del, 302 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/tri4a/decode/wer_17
+%WER 19.78 [ 472 / 2386, 96 ins, 83 del, 293 sub ]
+%SER 93.94 [ 62 / 66 ]
+exp/tri4a/decode/wer_7
+%WER 34.79 [ 830 / 2386, 279 ins, 57 del, 494 sub ]
+%SER 95.45 [ 63 / 66 ]
+exp/tri4a/decode/wer_8
+%WER 32.48 [ 775 / 2386, 246 ins, 58 del, 471 sub ]
+%SER 95.45 [ 63 / 66 ]
+exp/tri4a/decode/wer_9
+%WER 29.80 [ 711 / 2386, 208 ins, 63 del, 440 sub ]
+%SER 95.45 [ 63 / 66 ]
+
+===== SAT TRI4 ALIGNMENT (WITH FMLLR)=====
+
+steps/align_fmllr.sh --cmd run.pl data/train data/lang exp/tri4a exp/tri4a_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri4a/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri4a_ali
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.7557251908% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 21.3740458015% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4a_ali/log/analyze_alignments.log
+66 warnings in exp/tri4a_ali/log/fmllr.*.log
+14 warnings in exp/tri4a_ali/log/align_pass1.*.log
+13 warnings in exp/tri4a_ali/log/align_pass2.*.log
+2 warnings in exp/tri4a_ali/log/analyze_alignments.log
+
+===== run.sh script is finished =====
+

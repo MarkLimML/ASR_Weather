@@ -22,14 +22,6 @@ D_B
 D_E
 D_I
 D_S
-E_B
-E_E
-E_I
-E_S
-F_B
-F_E
-F_I
-F_S
 I_B
 I_E
 I_I
@@ -70,10 +62,6 @@ b_B
 b_E
 b_I
 b_S
-c_B
-c_E
-c_I
-c_S
 d_B
 d_E
 d_I
