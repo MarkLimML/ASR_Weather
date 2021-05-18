@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import sys
 import os
 
@@ -17,13 +17,13 @@ with open("data/local/lang/lexicon.txt") as f:
 			ref[word] = list()
 			ref[word].append(pron)
 
-print(ref)
+#print(ref)
 
 lex = open("lexicon_tmp.txt", "wb")
 lex.write(b"<UNK> SPN\n")
 i = 0
 
-with open("data/full/words.txt") as f:
+with open("data/test/words.txt") as f:
 	with open("nonlex.txt","w") as n:
 		for line in f:
 			if(i == 0):
@@ -40,5 +40,5 @@ with open("data/full/words.txt") as f:
 				n.write(line + "\n")
 			
 			
-print(i, "words not included in lexicon")
+print(i-1, "words not included in lexicon")
 			

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import sys
 
 phones = ['p','b','t','d','k','g','?','tS','dZ','s','S','h','m','n','N','l','r','j','w','i','e','6','a','o','u','aj','6j','ej','oj','uj','aw','6w','iw','ow','f','v','z','Z','T','D','I','e','{','3','@','A','V','U']
 

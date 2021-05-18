@@ -3,11 +3,10 @@
 echo
 echo "===== WER Report ====="
 echo
-python3 local/get_average_wer.py mono;
-python3 local/get_average_wer.py tri1;
-python3 local/get_average_wer.py tri2a;
-python3 local/get_average_wer.py tri3a;
-python3 local/get_average_wer.py tri4a;
+dir="mono tri1 tri2a tri3a"
+for x in $dir; do
+	python3 local/get_average_wer.py $x;
+done
 echo
 echo "===== get_wer_report.sh is finished ====="
 echo

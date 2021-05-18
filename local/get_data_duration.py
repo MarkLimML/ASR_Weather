@@ -17,8 +17,10 @@ else:
 	arr = []
 
 total = 0
+train = 0
+test = 0
 with open("exp_log/data_stat.txt", "w") as y:
-	for i in range(min,max) :
+	for i in range(70,0,-1):
 		if(len(arr) != 0 and str(i) in arr):
 			continue
 		fname = 'waves_weather/weather'+"{0:0=3d}".format(i)+'.wav';
@@ -34,3 +36,25 @@ with open("exp_log/data_stat.txt", "w") as y:
 	total = total / 60 / 60
 	print("train: "+"{:.2f}".format(train)+" hrs\ntest: "+"{:.2f}".format(test)+" hrs\ntotal: "+"{:.2f}".format(total)+" hrs")
 	print("train: "+"{:.2f}".format(train)+" hrs\ntest: "+"{:.2f}".format(test)+" hrs\ntotal: "+"{:.2f}".format(total)+" hrs",file=y)
+    
+ttype=["train:","test:","total:"]
+with open("exp_log/data_stat.txt", "r") as z:
+    parttrain = 0
+    parttest = 0
+    stmp = ""
+    for line in z:
+        tmp = line.split(" ",1)
+        if(tmp[0] in ttype):
+            continue
+        tmpval = float(tmp[1])
+        if(parttrain+tmpval <= (train*60)*60):
+            parttrain += tmpval
+        elif(parttest <= (test*60)*60):
+            if(stmp == ""):
+                stmp = tmp[0]
+            parttest += tmpval
+    parttrain = parttrain / 60 / 60
+    parttest = parttest / 60 / 60
+    print("train: "+"{:.2f}".format(parttrain)+" hrs\ntest: "+"{:.2f}".format(parttest)+" hrs\ntotal: "+"{:.2f}".format(parttrain+parttest)+" hrs")
+    print(stmp)
+        
