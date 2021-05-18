@@ -57,6 +57,7 @@ sifeats="ark,s,cs:apply-cmvn $cmvn_opts scp:$data_dir/cmvn.scp scp:$data_dir/fea
 pass1feats="$sifeats transform-feats ark:$data_dir/pre_trans.1 ark:- ark:- |";
 feats="$sifeats transform-feats  ark:$data_dir/trans.1 ark:- ark:- |"
 
+rm -r $data_dir/!(wav.scp)
 rm -r build
 mkdir build
 mkdir -p $output_dir
