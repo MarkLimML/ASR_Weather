@@ -1,15 +1,14 @@
 #!/bin/bash
 . ./path.sh || exit 1
 . ./cmd.sh || exit 1
-nj=16     # number of parallel jobs - 1 is perfect for such a small dataset
-lm_order=4 # language model order (n-gram quantity) - 1 is enough for digits grammar
-train_size=690 # number of utterances (train set)
-test_size=173 # number of utterances (test set)
+nj=16     # number of parallel jobs
+lm_order=4 # language model order (n-gram quantity)
+train_size=721 # number of utterances (train set)
+test_size=142 # number of utterances (test set)
 # Safety mechanism (possible running this script with modified arguments)
 . utils/parse_options.sh || exit 1
-[[ $# -ge 2 ]] && { echo "Wrong arguments!"; exit 1; }
+[[ $# -ge 1 ]] && { echo "Wrong arguments!"; exit 1; }
 
-filename=$1
 curdate="$(date '+%m_%d_%Y')"
 tmp=$curdate
 for i in 2 3 4 5 6 7 8 9 10; do
@@ -29,8 +28,8 @@ rm -rf exp mfcc data/train/cmvn.scp data/train/feats.scp data/test/cmvn.scp data
 echo
 echo "===== TAKING SUBSET OF DATA AND RESAMPLING OF DATA ====="
 echo
-utils/subset_data_dir.sh --first data/full $train_size data/train
-utils/subset_data_dir.sh --last data/full $test_size data/test
+utils/subset_data_dir.sh --last data/full $train_size data/train
+utils/subset_data_dir.sh --first data/full $test_size data/test
 utils/data/resample_data_dir.sh 16000 data/train
 utils/data/resample_data_dir.sh 16000 data/test
 # Making spk2utt files
@@ -107,7 +106,7 @@ steps/align_si.sh --boost-silence 1.25 --nj $nj --cmd "$train_cmd" data/train da
 echo
 echo "===== TRI1 (first triphone pass) TRAINING ====="
 echo
-steps/train_deltas.sh --boost-silence 1.25 --cmd "$train_cmd" 400 16000 data/train data/lang exp/mono_ali exp/tri1 || exit 1
+steps/train_deltas.sh --boost-silence 1.25 --cmd "$train_cmd" 400 10000 data/train data/lang exp/mono_ali exp/tri1 || exit 1
 echo
 echo "===== TRI1 (first triphone pass) DECODING ====="
 echo
@@ -118,40 +117,27 @@ echo "===== TRI1 ALIGNMENT ====="
 echo
 steps/align_si.sh --nj $nj --cmd "$train_cmd" data/train data/lang exp/tri1 exp/tri1_ali || exit 1;
 echo
-echo "===== Delta+delta-delta TRI2 TRAINING ====="
+echo "===== LDA-MLLT TRI2a(Delta + LDA-MLLT) TRAINING ====="
 echo
-steps/train_deltas.sh --cmd "$train_cmd" 600 18000 data/train data/lang exp/tri1_ali exp/tri2a || exit 1;
+steps/train_lda_mllt.sh  --cmd "$train_cmd" --splice-opts "--left-context=3 --right-context=3" 700 15000 data/train data/lang exp/tri1_ali exp/tri2a || exit 1;
 echo
-echo "===== Delta+delta-delta TRI2 DECODING ====="
+echo "===== LDA-MLLT TRI2a(Delta + LDA-MLLT) DECODING ====="
 echo
 utils/mkgraph.sh data/lang exp/tri2a exp/tri2a/graph || exit 1
 steps/decode.sh --config conf/decode.config --nj 16 --cmd "$decode_cmd" exp/tri2a/graph data/test exp/tri2a/decode
 echo
-echo "===== Delta+delta-delta TRI2 ALIGNMENT ====="
+echo "===== LDA-MLLT TRI2a(Delta + LDA-MLLT) ALIGNMENT====="
 echo
-steps/align_si.sh  --nj $nj --cmd "$train_cmd" --use-graphs true data/train data/lang exp/tri2a exp/tri2a_ali  || exit 1;
+steps/align_si.sh --nj $nj --cmd "$train_cmd" data/train data/lang exp/tri2a exp/tri2a_ali || exit 1;
 echo
-echo "===== LDA-MLLT TRI3 TRAINING ====="
+echo "===== SAT TRI3a(LDA + SAT) TRAINING ====="
 echo
-steps/train_lda_mllt.sh --cmd "$train_cmd" 800 20000 data/train data/lang exp/tri2a_ali exp/tri3a || exit 1;
+steps/train_sat.sh  --cmd "$train_cmd" 700 15000 data/train data/lang exp/tri2a_ali exp/tri3a || exit 1;
 echo
-echo "===== LDA-MLLT TRI3 DECODING ====="
+echo "===== SAT TRI3a(LDA + SAT) DECODING ====="
 echo
 utils/mkgraph.sh data/lang exp/tri3a exp/tri3a/graph || exit 1
-steps/decode.sh --config conf/decode.config --nj 16 --cmd "$decode_cmd" exp/tri3a/graph data/test exp/tri3a/decode
-echo
-echo "===== LDA-MLLT TRI3 ALIGNMENT (WITH FMLLR)====="
-echo
-steps/align_fmllr.sh --nj $nj --cmd "$train_cmd" data/train data/lang exp/tri3a exp/tri3a_ali || exit 1;
-echo
-echo "===== SAT TRI4 TRAINING ====="
-echo
-steps/train_sat.sh  --cmd "$train_cmd" 1100 21000 data/train data/lang exp/tri3a_ali exp/tri4a || exit 1;
-echo
-echo "===== SAT TRI4 DECODING ====="
-echo
-utils/mkgraph.sh data/lang exp/tri4a exp/tri4a/graph || exit 1
-steps/decode_fmllr.sh --config conf/decode.config --nj 16 --cmd "$decode_cmd" exp/tri4a/graph data/test exp/tri4a/decode
+steps/decode_fmllr.sh --config conf/decode.config --nj 16 --cmd "$decode_cmd" exp/tri3a/graph data/test exp/tri3a/decode
 echo
 echo "===== BEST WER RESULTS ====="
 echo
@@ -162,6 +148,23 @@ echo
 echo "===== AVERAGE WER REPORT ====="
 echo
 . ./local/get_wer_report.sh || exit 1
+echo
+echo "===== ALIGNMENT FOR PER REPORT ====="
+echo
+steps/align_si.sh --boost-silence 1.25 --nj $nj --cmd "$train_cmd" data/test data/lang exp/mono exp/mono_decode
+steps/align_si.sh --nj $nj --cmd "$train_cmd" data/test data/lang exp/tri1 exp/tri1_decode
+steps/align_si.sh --nj $nj --cmd "$train_cmd" data/test data/lang exp/tri2a exp/tri2a_decode
+steps/align_fmllr.sh --nj $nj --cmd "$train_cmd" data/test data/lang exp/tri3a exp/tri3a_decode
+local/generate_confusion_matrix.sh --nj $nj --cmd "$train_cmd" exp/mono/graph exp/mono exp/mono_decode exp/mono/decode exp/mono_decode
+local/generate_confusion_matrix.sh --nj $nj --cmd "$train_cmd" exp/tri1/graph exp/tri1 exp/tri1_decode exp/tri1/decode exp/tri1_decode
+local/generate_confusion_matrix.sh --nj $nj --cmd "$train_cmd" exp/tri2a/graph exp/tri2a exp/tri2a_decode exp/tri2a/decode exp/tri2a_decode
+local/generate_confusion_matrix.sh --nj $nj --cmd "$train_cmd" exp/tri3a/graph exp/tri3a exp/tri3a_decode exp/tri3a/decode exp/tri3a_decode
+echo
+echo "===== PER REPORT ====="
+echo
+for x in mono tri1 tri2a tri3a; do
+	python3 local/compute_per.py "exp/"$x"_decode"
+done
 echo
 echo "===== run.sh script is finished ====="
 echo
