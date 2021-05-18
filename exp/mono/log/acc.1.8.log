@@ -1,0 +1,18 @@
+# gmm-acc-stats-ali exp/mono/1.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/8/utt2spk scp:data/train/split16/8/cmvn.scp scp:data/train/split16/8/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.8.gz|" exp/mono/1.8.acc 
+# Started at Sun May 16 20:33:59 CST 2021
+#
+gmm-acc-stats-ali exp/mono/1.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/8/utt2spk scp:data/train/split16/8/cmvn.scp scp:data/train/split16/8/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.8.gz|' exp/mono/1.8.acc 
+apply-cmvn --utt2spk=ark:data/train/split16/8/utt2spk scp:data/train/split16/8/cmvn.scp scp:data/train/split16/8/feats.scp ark:- 
+add-deltas ark:- ark:- 
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather046_001
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather046_005
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather046_007
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather046_009
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather046_011
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather046_013
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:112) Done 39 files, 6 with errors.
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -115.288 over 41454 frames.
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Sun May 16 20:34:01 CST 2021, elapsed time 2 seconds

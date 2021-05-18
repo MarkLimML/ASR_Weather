@@ -1,0 +1,31 @@
+# gmm-latgen-faster --max-active=2000 "--beam=10.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.alimdl exp/tri3a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/16/utt2spk scp:data/test/split16/16/cmvn.scp scp:data/test/split16/16/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri3a/decode.si/lat.16.gz" 
+# Started at Sun May 16 20:58:12 CST 2021
+#
+gmm-latgen-faster --max-active=2000 '--beam=10.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.alimdl exp/tri3a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/16/utt2spk scp:data/test/split16/16/cmvn.scp scp:data/test/split16/16/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri3a/decode.si/lat.16.gz' 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/16/utt2spk scp:data/test/split16/16/cmvn.scp scp:data/test/split16/16/feats.scp ark:- 
+weather014_006 ASAHAN NAMAN ANG HANGGANG MATITINDING BUHOS NG ULAN SA MINDANAO PAGSAPIT NG HAPON AT GABI 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather014_006 is -5.56687 over 481 frames.
+weather015_001 MGA KAPUSO KAKAIBANG INIT ANG NARAMDAMAN DIYAN SA PANGASINAN SA TAAS NG PAGASA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather015_001 is -5.00249 over 433 frames.
+weather015_002 PUMALO SA FORTY EIGHT POINT TWO DEGREES CELSIUS YUNG INIT FACTOR SA DAGUPAN PANGASINAN KAHAPON YAN ANG HAPON HABANG NASA FORTY FOUR POINT FIVE DEGREES CELSIUS NAMAN YUNG DAMANG INIT KANINANG HAPON YUNG MGA GANYANG KAALINSANGAN MGA KAPUSO AH POSIBLE PONG HEAT STRESS AT HEAT STROKE 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather015_002 is -5.31355 over 1487 frames.
+weather015_003 AT MAGING I AM READY PA RIN SA MAALINSANGANG PANAHON BUKAS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather015_003 is -5.10667 over 296 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 8 utterances, errors on 0
+weather015_004 SA DATOS NG METRAWEATHER NASA FORTY ONE DEGREES CELSIUS YUNG INIT FACTOR DIYAN SA DAGUPAN NASA FORTY DEGREES CELSIUS NAMAN YUNG DAMANG INIT POSIBLE SA TUGUEGARAO AT CABANATUAN AT THIRTY NINE DEGREES CELSIUS NAMAN DIYAN SA MAY CATBALOGAN AT TAGBILARAN SA VISAYAS AT SA MAY GENERAL SANTOS SA MINDANAO HABANG FORTY TWO DEGREES CELSIUS MGA KAPUSO AH POSIBLENG DAMANG INIT DIYAN SA MAY COTABATO CITY 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather015_004 is -5.0639 over 2214 frames.
+weather015_005 SA METRO MANILA POSIBLENG UMABOT NAMAN SA THIRTY SEVEN DEGREES CELSIUS YUNG DAMANG INIT AT BAHAGYANG MAULAP PA RIN PERO WALA PONG ULAN NA INAASAHAN SA MAGHAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather015_005 is -4.92915 over 927 frames.
+weather015_006 MAAYOS NAMAN ANG PANAHON SA LUZON BUKAS NG UMAGA PERO ASAHAN ANG ULAN DIYAN SA MAY CORDILLERA ILOCOS REGION SA MAY AH PROBINSYA NG CAGAYAN ISABELA DIYAN SA MAY ZAMBALES AT AURORA PAGDATING SA HAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather015_006 is -4.91747 over 1100 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.7749 over 7974 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 8 utterances; 0 had errors.
+weather015_007 SA VISAYAS WALANG ULAN SA UMAGA PERO PAGDATING NG HAPON MAY ULAN DIYAN SA MAY EASTERN SAMAR SAMAR AT PAGDATING SA HAPON DIN KASAMA NA ANG LEYTE PROVINCES 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather015_007 is -4.9702 over 1036 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 23.9356s: real-time factor assuming 100 frames/sec is 0.300171
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 8 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -5.09101 over 7974 frames.
+# Accounting: time=26 threads=1
+# Ended (code 0) at Sun May 16 20:58:38 CST 2021, elapsed time 26 seconds

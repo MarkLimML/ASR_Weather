@@ -1,35 +1,12 @@
-# gmm-acc-stats-ali exp/mono/1.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.1.gz|" exp/mono/1.1.acc 
-# Started at Wed Mar 31 21:45:52 CST 2021
+# gmm-acc-stats-ali exp/mono/1.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/1/utt2spk scp:data/train/split16/1/cmvn.scp scp:data/train/split16/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.1.gz|" exp/mono/1.1.acc 
+# Started at Sun May 16 20:33:59 CST 2021
 #
-gmm-acc-stats-ali exp/mono/1.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.1.gz|' exp/mono/1.1.acc 
-apply-cmvn --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- 
+gmm-acc-stats-ali exp/mono/1.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/1/utt2spk scp:data/train/split16/1/cmvn.scp scp:data/train/split16/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.1.gz|' exp/mono/1.1.acc 
+apply-cmvn --utt2spk=ark:data/train/split16/1/utt2spk scp:data/train/split16/1/cmvn.scp scp:data/train/split16/1/feats.scp ark:- 
 add-deltas ark:- ark:- 
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather003_001
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather003_005
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather003_007
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather003_008
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather003_009
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather004_001
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather004_002
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather004_003
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather004_008
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather004_009
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather004_010
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather004_012
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather005_002
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather005_003
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather005_004
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather005_006
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather006_007
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather006_009
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather006_010
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather006_011
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather006_013
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather007_004
-LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 67 utterances, errors on 0
-WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather007_007
-LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:112) Done 44 files, 23 with errors.
-LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -112.5 over 45648 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 46 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:112) Done 46 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -119.531 over 48620 frames.
 LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:123) Written accs.
-# Accounting: time=0 threads=1
-# Ended (code 0) at Wed Mar 31 21:45:52 CST 2021, elapsed time 0 seconds
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sun May 16 20:34:01 CST 2021, elapsed time 1 seconds

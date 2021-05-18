@@ -1,7 +1,7 @@
-# sum-tree-stats exp/tri3a/treeacc exp/tri3a/1.treeacc exp/tri3a/2.treeacc exp/tri3a/3.treeacc exp/tri3a/4.treeacc 
-# Started at Sun Apr  4 16:13:04 CST 2021
+# sum-tree-stats exp/tri3a/treeacc exp/tri3a/1.treeacc exp/tri3a/10.treeacc exp/tri3a/11.treeacc exp/tri3a/12.treeacc exp/tri3a/13.treeacc exp/tri3a/14.treeacc exp/tri3a/15.treeacc exp/tri3a/16.treeacc exp/tri3a/2.treeacc exp/tri3a/3.treeacc exp/tri3a/4.treeacc exp/tri3a/5.treeacc exp/tri3a/6.treeacc exp/tri3a/7.treeacc exp/tri3a/8.treeacc exp/tri3a/9.treeacc 
+# Started at Sun May 16 20:52:04 CST 2021
 #
-sum-tree-stats exp/tri3a/treeacc exp/tri3a/1.treeacc exp/tri3a/2.treeacc exp/tri3a/3.treeacc exp/tri3a/4.treeacc 
-LOG (sum-tree-stats[5.5.896~1-8a59]:main():sum-tree-stats.cc:88) Wrote summed accs ( 15555 individual stats)
-# Accounting: time=0 threads=1
-# Ended (code 0) at Sun Apr  4 16:13:04 CST 2021, elapsed time 0 seconds
+sum-tree-stats exp/tri3a/treeacc exp/tri3a/1.treeacc exp/tri3a/10.treeacc exp/tri3a/11.treeacc exp/tri3a/12.treeacc exp/tri3a/13.treeacc exp/tri3a/14.treeacc exp/tri3a/15.treeacc exp/tri3a/16.treeacc exp/tri3a/2.treeacc exp/tri3a/3.treeacc exp/tri3a/4.treeacc exp/tri3a/5.treeacc exp/tri3a/6.treeacc exp/tri3a/7.treeacc exp/tri3a/8.treeacc exp/tri3a/9.treeacc 
+LOG (sum-tree-stats[5.5.896~1-8a59]:main():sum-tree-stats.cc:88) Wrote summed accs ( 23342 individual stats)
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sun May 16 20:52:05 CST 2021, elapsed time 1 seconds

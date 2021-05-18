@@ -1,0 +1,56 @@
+# gunzip -c exp/tri3a/decode.si/lat.7.gz | lattice-to-post --acoustic-scale=0.083333 ark:- ark:- | weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp/tri3a/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3a/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/test/split16/7/spk2utt exp/tri3a/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3a/decode/pre_trans.7 
+# Started at Sun May 16 20:59:07 CST 2021
+#
+gmm-post-to-gpost exp/tri3a/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' ark:- ark:- 
+weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp/tri3a/final.alimdl ark:- ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/test/split16/7/spk2utt exp/tri3a/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3a/decode/pre_trans.7 
+lattice-to-post --acoustic-scale=0.083333 ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 8.75245 per frame over 3309.16 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather006_009, auxf-impr from fMLLR is 8.75245, over 3309.16 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 9.31695 per frame over 1948.54 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather006_010, auxf-impr from fMLLR is 9.31695, over 1948.54 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 8.58176 per frame over 2479.31 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather006_011, auxf-impr from fMLLR is 8.58176, over 2479.31 frames.
+
+LOG (lattice-to-post[5.5.896~1-8a59]:main():lattice-to-post.cc:106) Overall average log-like/frame is -3.83278 over 19054 frames.  Average acoustic like/frame is -3.68774
+LOG (lattice-to-post[5.5.896~1-8a59]:main():lattice-to-post.cc:110) Done 9 lattices.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 10.0013 per frame over 838.827 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather006_012, auxf-impr from fMLLR is 10.0013, over 838.827 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 7.33198 per frame over 3502.61 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather006_013, auxf-impr from fMLLR is 7.33198, over 3502.61 frames.
+
+LOG (weight-silence-post[5.5.896~1-8a59]:main():weight-silence-post.cc:95) Done 9 posteriors.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 8.23232 per frame over 1004.54 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather007_001, auxf-impr from fMLLR is 8.23232, over 1004.54 frames.
+
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.95462 per frame over 990.696 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather007_002, auxf-impr from fMLLR is 6.95462, over 990.696 frames.
+
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.7749 over 19054 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 9 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 9.20293 per frame over 629.74 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather007_003, auxf-impr from fMLLR is 9.20293, over 629.74 frames.
+
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.7749 over 19054 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 9 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.5.896~1-8a59]:main():gmm-post-to-gpost.cc:124) Done 9 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.5.896~1-8a59]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -44.5815 over 17387.9 frames.
+LOG (gmm-post-to-gpost[5.5.896~1-8a59]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.22437 per frame over 2684.45 frames.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:141) For speaker weather007_004, auxf-impr from fMLLR is 6.22437, over 2684.45 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:186) Done 9 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.5.896~1-8a59]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 8.05901 over 17387.9 frames.
+# Accounting: time=7 threads=1
+# Ended (code 0) at Sun May 16 20:59:15 CST 2021, elapsed time 7 seconds

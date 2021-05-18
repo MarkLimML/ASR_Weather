@@ -1,0 +1,112 @@
+# ali-to-post "ark:gunzip -c exp/tri3a/ali.6.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3a/12.mdl ark:- ark:- | gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/train/split16/6/spk2utt exp/tri3a/12.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/6/utt2spk scp:data/train/split16/6/cmvn.scp scp:data/train/split16/6/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2a_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split16/6/utt2spk ark:exp/tri3a/trans.6 ark:- ark:- |" ark:- ark:exp/tri3a/tmp_trans.6 
+# Started at Sun May 16 20:54:34 CST 2021
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3a/12.mdl ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3a/ali.6.gz|' ark:- 
+gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/train/split16/6/spk2utt exp/tri3a/12.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/6/utt2spk scp:data/train/split16/6/cmvn.scp scp:data/train/split16/6/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2a_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split16/6/utt2spk ark:exp/tri3a/trans.6 ark:- ark:- |' ark:- ark:exp/tri3a/tmp_trans.6 
+transform-feats --utt2spk=ark:data/train/split16/6/utt2spk ark:exp/tri3a/trans.6 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split16/6/utt2spk scp:data/train/split16/6/cmvn.scp scp:data/train/split16/6/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri2a_ali/final.mat ark:- ark:- 
+LOG (ali-to-post[5.5.896~1-8a59]:main():ali-to-post.cc:73) Converted 44 alignments.
+LOG (weight-silence-post[5.5.896~1-8a59]:main():weight-silence-post.cc:95) Done 44 posteriors.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:118) Did not find posteriors for utterance weather033_002
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 0
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_002, auxf-impr from fMLLR is -nan, over 0 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.515819 per frame over 597 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_003, auxf-impr from fMLLR is 0.515819, over 597 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.293425 per frame over 1874 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_004, auxf-impr from fMLLR is 0.293425, over 1874 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.373646 per frame over 1149 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_005, auxf-impr from fMLLR is 0.373646, over 1149 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.25889 per frame over 1805 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_006, auxf-impr from fMLLR is 0.25889, over 1805 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 430
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_007, auxf-impr from fMLLR is 0, over 430 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.493696 per frame over 559 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_008, auxf-impr from fMLLR is 0.493696, over 559 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.295841 per frame over 1376 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_009, auxf-impr from fMLLR is 0.295841, over 1376 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 29
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_010, auxf-impr from fMLLR is 0, over 29 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 191
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather033_011, auxf-impr from fMLLR is 0, over 191 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 410
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather034_001, auxf-impr from fMLLR is 0, over 410 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.713929 per frame over 611 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather034_002, auxf-impr from fMLLR is 0.713929, over 611 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.62631 per frame over 730 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather034_003, auxf-impr from fMLLR is 0.62631, over 730 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.44748 per frame over 1008 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather034_004, auxf-impr from fMLLR is 0.44748, over 1008 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.489663 per frame over 915 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather034_005, auxf-impr from fMLLR is 0.489663, over 915 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 479
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather034_006, auxf-impr from fMLLR is 0, over 479 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.567888 per frame over 721 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather034_007, auxf-impr from fMLLR is 0.567888, over 721 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.587429 per frame over 765 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather034_008, auxf-impr from fMLLR is 0.587429, over 765 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.538703 per frame over 585 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_001, auxf-impr from fMLLR is 0.538703, over 585 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.42263 per frame over 824 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_002, auxf-impr from fMLLR is 0.42263, over 824 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 481
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_003, auxf-impr from fMLLR is 0, over 481 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 391
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_004, auxf-impr from fMLLR is 0, over 391 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 431
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_005, auxf-impr from fMLLR is 0, over 431 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 426
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_006, auxf-impr from fMLLR is 0, over 426 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 393
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_007, auxf-impr from fMLLR is 0, over 393 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 394
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_008, auxf-impr from fMLLR is 0, over 394 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.462776 per frame over 745 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_009, auxf-impr from fMLLR is 0.462776, over 745 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 396
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_010, auxf-impr from fMLLR is 0, over 396 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.556705 per frame over 652 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_011, auxf-impr from fMLLR is 0.556705, over 652 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.550508 per frame over 637 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather035_012, auxf-impr from fMLLR is 0.550508, over 637 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 484
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_001, auxf-impr from fMLLR is 0, over 484 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.302613 per frame over 1618 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_002, auxf-impr from fMLLR is 0.302613, over 1618 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.670957 per frame over 518 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_003, auxf-impr from fMLLR is 0.670957, over 518 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 318
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_004, auxf-impr from fMLLR is 0, over 318 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 480
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_005, auxf-impr from fMLLR is 0, over 480 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 250
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_006, auxf-impr from fMLLR is 0, over 250 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.458763 per frame over 688 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_007, auxf-impr from fMLLR is 0.458763, over 688 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.542263 per frame over 651 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_008, auxf-impr from fMLLR is 0.542263, over 651 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.366399 per frame over 1182 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_009, auxf-impr from fMLLR is 0.366399, over 1182 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.567309 per frame over 669 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather036_010, auxf-impr from fMLLR is 0.567309, over 669 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 246
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather037_001, auxf-impr from fMLLR is 0, over 246 frames.
+WARNING (gmm-est-fmllr[5.5.896~1-8a59]:Update():fmllr-diag-gmm.cc:162) Not updating fMLLR since below min-count: count is 205
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather037_002, auxf-impr from fMLLR is 0, over 205 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.601886 per frame over 751 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather037_003, auxf-impr from fMLLR is 0.601886, over 751 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.7749 over 34677 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 45 utterances; 0 had errors.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.611155 per frame over 698 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather037_004, auxf-impr from fMLLR is 0.611155, over 698 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average logdet is 1.52748 over 34677 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 45 utterances; 0 had errors.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.680996 per frame over 653 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:143) For speaker weather037_005, auxf-impr from fMLLR is 0.680996, over 653 frames.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:188) Done 44 files, 1 with no posts, 0 with other errors.
+LOG (gmm-est-fmllr[5.5.896~1-8a59]:main():gmm-est-fmllr.cc:190) Overall fMLLR auxf impr per frame is 0.355342 over 29415 frames.
+# Accounting: time=13 threads=1
+# Ended (code 0) at Sun May 16 20:54:48 CST 2021, elapsed time 13 seconds

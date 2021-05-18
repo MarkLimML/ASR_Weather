@@ -1,0 +1,2 @@
+weather031 cat waves_weather/weather031.wav |  -t wav - -c 1 -b 16 -t wav - rate 16000 |
+weather032 cat waves_weather/weather032.wav |  -t wav - -c 1 -b 16 -t wav - rate 16000 |

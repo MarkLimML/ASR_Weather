@@ -1,20 +1,30 @@
 # gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/5/utt2spk scp:data/test/split16/5/cmvn.scp scp:data/test/split16/5/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode/lat.5.gz" 
-# Started at Wed Mar 31 21:47:26 CST 2021
+# Started at Sun May 16 20:39:01 CST 2021
 #
 gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/5/utt2spk scp:data/test/split16/5/cmvn.scp scp:data/test/split16/5/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode/lat.5.gz' 
-apply-cmvn --utt2spk=ark:data/test/split16/5/utt2spk scp:data/test/split16/5/cmvn.scp scp:data/test/split16/5/feats.scp ark:- 
 add-deltas ark:- ark:- 
-weather030_006 SIGNAL NUMBER TWO NAMAN DIYAN SA CAGAYAN ILOCOS NORTE APAYAO ABRA KALINGA ILOCOS SUR MO TEN PROVINCE LA UNION BENTE PANGASINAN TARLAC NUEVA ECIJA NORTHERN QUEZON KASAMA ANG POLILLO ISLAND SOUTHERN AURORA ZAMBALES PAMPANGA AT BULACAN 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_006 is -9.17672 over 1884 frames.
-LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
-weather030_007 MASUNGIT NA LAGAY NG PANAHON DIN ANG INAASAHAN BUKA O MAMAYANG GABI HANGGANG BUKAS DIYAN SA MGA PROBINSYA NA YAN 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_007 is -9.43757 over 523 frames.
-weather030_008 HABANG SIGNAL NUMBER ONE NAMAN DITO SA METRO MANILA SA BATANES GROUP OF ISLANDS KASAMA ANG BABUYAN GROUP OF ISLANDS RIZAL SOUTHERN QUEZON DIYAN SA MAY LAGUNA BATANGAS BATAAN CAVITE AT CAMARINES NORTE 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_008 is -9.19296 over 1403 frames.
-weather030_009 MGA ULAN AT BUGSO NG HANGIN NAMAN ANG INAASAHAN SIMULA MAMAYA HANGGANG BUKAS SA MGA NABANGGIT NA LUGAR 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_009 is -9.13026 over 687 frames.
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 9.7821s: real-time factor assuming 100 frames/sec is 0.217525
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.20502 over 4497 frames.
-# Accounting: time=11 threads=1
-# Ended (code 0) at Wed Mar 31 21:47:37 CST 2021, elapsed time 11 seconds
+apply-cmvn --utt2spk=ark:data/test/split16/5/utt2spk scp:data/test/split16/5/cmvn.scp scp:data/test/split16/5/feats.scp ark:- 
+weather005_001 MAGANDANG ARAW PO SA ATING LAHAT NARITO ANG PINAKAHULING ULAT SA LAGAY NG ATING PANAHON NGAYONG ALAS SINGKO NG HAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_001 is -8.16621 over 579 frames.
+weather005_002 TATLONG WEATHER SYSTEM ANG SA KASALUKUYAN AY NAKAKAAPEKTO SA PHILIPPINE LAND MASS AT ISA NA NGA PO DIYAN YUNG TINATAWAG NATING TAIL END OF A COLD FRONT NA SA NGAYON AY NAKAKAAPEKTO SA SILANGANG BAHAGI NG CENTRAL AT SOUTHERN LUZON KAYAT ASAHAN PA RIN HO NATIN ANG MAHINA HANGGANG SA KATAMTAMANG MGA PAGULAN AT PAGKIDLAT PAGKULOG SA KAMAYNILAAN SA MGA LUGAR PO NG SOUTHERN LUZON EXCEPT FOR PALAWAN AT SA LALAWIGAN NG AURORA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_002 is -8.15091 over 2513 frames.
+weather005_003 SAMANTALA TROUGH O BAGONG LOW PRESSURE AREA NAMAN ITO PONG LOW PRESSURE AREA HANGGANG SA NGAYON AY NASA LABAS PA RIN ANG ATING PINAG NGUNIT YUNG KANYANG TROUGH PO YUNG BUNTOT AY PATULOY NA NAKAKAAPEKTO SA EASTERN AH SECTION OF VISAYAS KAYAT ASAHAN PA RIN HO NATIN ANG MAHINA HANGGANG SA KATAMTAMANG MGA PAGULAN AT PAGKIDLAT PAGKULOG SA SILANGANG KABISAYAAN KASAMA NA PO DIYAN ANG CARAGA AT DAVAO REGION AT SOCSARGEN REGION 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_003 is -8.15541 over 2638 frames.
+weather005_004 SA HILAGANG LUZON NAMAN AY PATULOY PAR NGUNIT IIRAL NG NORTHEAST MONSOON O YUNG HANGING AMIHAN KAYAT ASAHAN PA RIN NATIN ANG MAHIHINANG MGA PAGULAN DOON SA REHIYON NG ILOCOS KASAMA PO DIYAN ANG CORDILLERA AT CAGAYAN VALLEY MAGING NATITIRANG BAHAGI NG CENTRAL LUZON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_004 is -8.12772 over 1687 frames.
+weather005_005 SA NATITIRANG BAHAGI NAMAN ANG ATING BANSA AY GENERALLY FAIR WEATHER PO TAYO NGAYON MALIBAN NA LAMANG SA MGA PULO-PULONG MGA PAGULAN O PAGKIDLAT PAGKULOG 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_005 is -8.09829 over 885 frames.
+weather005_006 ANG ATING GALE WARNING AY NAKATAAS PA RIN PO SA NORTHERN AND WESTERN SECTION NG AH NORTHERN LUZON KAYA SA MGA NABANGGIT KONG LUGAR AY HINDI PA RIN HO PINAPAYAGAN NG PHILIPPINE COAST GUARD NA PUMALAOT ANG ATING MGA KABABAYANG MANGINGISDA SAPAGKAT MAGIGING MAALON HANGGANG SA NAPAKAALON PA RIN PO NG MGA KARAGATAN DITO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_006 is -8.12706 over 1833 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+weather005_007 DUMAKO NAMAN TAYO SA MAGIGING TEMPERATURE FORECAST PO NATIN SA IBA'T IBANG LUGAR DITO SA PILIPINAS DITO NALAMANG SA METRO MANILA INAASAHAN ATING AH MAGIGING AGWAT NG TEMPERATURA AY MULA SA TWENTY FOUR HANGGANG SA THIRTY DEGREES CELSIUS SA BAGUIO NAMAN AY MULA SA FIFTEEN HANGGANG SA TWENTY FOUR DEGREES CELSIUS SAMANTALA SA TAGAYTAY AY MULA SA TWENTY TWO HANGGANG SA TWENTY SEVEN DEGREES CELSIUS AT SA PUERTO PRINCESA AY MULA SA TWENTY FOUR HANGGANG SA THIRTY TWO DEGREES CELSIUS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_007 is -8.12361 over 2785 frames.
+weather005_008 METRO CEBU AY MULA SA TWENTY FIVE HANGGANG SA THIRTY ONE DEGREES CELSIUS SAMANTALA SA ILOILO AY MULA SA TWENTY FOUR HANGGANG THIRTY DEGREES CELSIUS ANG TINATAYANG MAGIGING AGWAT NG TEMPERATURA SAMANTALANG SA METRO DAVAO AY MULA SA TWENTY FIVE HANGGANG THIRTY DEGREES CELSIUS AT TWENTY FOUR HANGGANG THIRTY TWO DEGREES CELSIUS DOON SA ZAMBOANGA CITY 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_008 is -8.18816 over 1862 frames.
+weather005_009 ANG SUNRISE PO NATIN FOR TOMORROW INAASAHAN NATING SIX FOURTEEN IN THE MORNING MAGAGANAP SAMANTALA LULUBOG NAMAN ANG ARAW NATIN MAMAYA SA GANAP NA ALAS SINGKO BENTE NUEBE NG HAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather005_009 is -8.16169 over 1057 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 38.7468s: real-time factor assuming 100 frames/sec is 0.244629
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 9 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.14435 over 15839 frames.
+# Accounting: time=40 threads=1
+# Ended (code 0) at Sun May 16 20:39:42 CST 2021, elapsed time 40 seconds

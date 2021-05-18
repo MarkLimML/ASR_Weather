@@ -1,0 +1,17 @@
+# gmm-acc-stats-ali exp/tri2a/9.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/8/utt2spk scp:data/train/split16/8/cmvn.scp scp:data/train/split16/8/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2a/6.mat ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri2a/ali.8.gz|" exp/tri2a/9.8.acc 
+# Started at Sun May 16 20:46:54 CST 2021
+#
+gmm-acc-stats-ali exp/tri2a/9.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/8/utt2spk scp:data/train/split16/8/cmvn.scp scp:data/train/split16/8/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2a/6.mat ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri2a/ali.8.gz|' exp/tri2a/9.8.acc 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri2a/6.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split16/8/utt2spk scp:data/train/split16/8/cmvn.scp scp:data/train/split16/8/feats.scp ark:- 
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather042_002
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather044_004
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -84.1854 over 52476 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 45 utterances; 0 had errors.
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:112) Done 43 files, 2 with errors.
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -48.7568 over 50989 frames.
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Sun May 16 20:46:57 CST 2021, elapsed time 3 seconds

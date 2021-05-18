@@ -1,32 +1,60 @@
 # extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.11 ark:- | compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.11 --verbose=2 --config=conf/mfcc.conf ark:- ark:- | copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.11 ark:- ark,scp:/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.11.ark,/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.11.scp 
-# Started at Wed Mar 31 21:45:16 CST 2021
+# Started at Sun May 16 20:33:00 CST 2021
 #
+extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.11 ark:- 
 copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.11 ark:- ark,scp:/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.11.ark,/mnt/c/kaldi/egs/thesis/weather/mfcc/raw_mfcc_train.11.scp 
 compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.11 --verbose=2 --config=conf/mfcc.conf ark:- ark:- 
-extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.11 ark:- 
-WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 9395684 bytes in RIFF chunk, but after first data block there will be 36 + 9395260 bytes (we do not support reading multiple data chunks).
-WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 9355054 bytes in RIFF chunk, but after first data block there will be 36 + 9354630 bytes (we do not support reading multiple data chunks).
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather018_009
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_001
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_002
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_003
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_004
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_005
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_006
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_007
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_008
-WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 3157950 bytes in RIFF chunk, but after first data block there will be 36 + 3157526 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_013
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_014
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_015
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_016
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_017
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_018
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_019
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_020
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_021
 LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather019_009
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather020_001
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather020_002
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather020_003
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather020_004
-WARNING (extract-segments[5.5.896~1-8a59]:Read():wave-reader.cc:260) Expected 9574338 bytes in RIFF chunk, but after first data block there will be 36 + 9573914 bytes (we do not support reading multiple data chunks).
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather020_005
-LOG (extract-segments[5.5.896~1-8a59]:main():extract-segments.cc:194) Successfully processed 16 lines out of 16 in the segments file. 
-VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather021_001
-LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:185)  Done 16 out of 16 utterances.
-LOG (copy-feats[5.5.896~1-8a59]:main():copy-feats.cc:143) Copied 16 feature matrices.
-# Accounting: time=4 threads=1
-# Ended (code 0) at Wed Mar 31 21:45:20 CST 2021, elapsed time 4 seconds
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_022
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_023
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_024
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_025
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_026
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather052_027
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_001
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_002
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_003
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_004
+LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_005
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_006
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_007
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_008
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_009
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_010
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_011
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_012
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_013
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_014
+LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_015
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_016
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_017
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_018
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_019
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather053_020
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_001
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_002
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_003
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_004
+LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:181) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_005
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_006
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_007
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_008
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_009
+LOG (extract-segments[5.5.896~1-8a59]:main():extract-segments.cc:194) Successfully processed 45 lines out of 45 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:182) Processed features for key weather054_010
+LOG (compute-mfcc-feats[5.5.896~1-8a59]:main():compute-mfcc-feats.cc:185)  Done 45 out of 45 utterances.
+LOG (copy-feats[5.5.896~1-8a59]:main():copy-feats.cc:143) Copied 45 feature matrices.
+# Accounting: time=7 threads=1
+# Ended (code 0) at Sun May 16 20:33:07 CST 2021, elapsed time 7 seconds

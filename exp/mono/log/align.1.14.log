@@ -1,0 +1,99 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.25 1 exp/mono/1.mdl - |" "ark:gunzip -c exp/mono/fsts.14.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/14/utt2spk scp:data/train/split16/14/cmvn.scp scp:data/train/split16/14/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,t:|gzip -c >exp/mono/ali.14.gz" 
+# Started at Sun May 16 20:33:30 CST 2021
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.25 1 exp/mono/1.mdl - |' 'ark:gunzip -c exp/mono/fsts.14.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/14/utt2spk scp:data/train/split16/14/cmvn.scp scp:data/train/split16/14/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,t:|gzip -c >exp/mono/ali.14.gz' 
+gmm-boost-silence --boost=1.25 1 exp/mono/1.mdl - 
+WARNING (gmm-boost-silence[5.5.896~1-8a59]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
+LOG (gmm-boost-silence[5.5.896~1-8a59]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1.25
+LOG (gmm-boost-silence[5.5.896~1-8a59]:main():gmm-boost-silence.cc:103) Wrote model to -
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split16/14/utt2spk scp:data/train/split16/14/cmvn.scp scp:data/train/split16/14/feats.scp ark:- 
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_024
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather058_024 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_025
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_026
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather058_026 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_027
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather058_027 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_028
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_029
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather058_029 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_030
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather058_030 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_031
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_032
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather058_032 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_033
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather058_033 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_034
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather058_034 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_035
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_001
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_001 with beam 40
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:626) Did not successfully decode file weather059_001, len = 1218
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_002
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_002 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_003
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_003 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_004
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_004 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_005
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_006
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_006 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_007
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_007 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_008
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_008 with beam 40
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:626) Did not successfully decode file weather059_008, len = 1154
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_009
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_010
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_010 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_011
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_011 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_012
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_012 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_013
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_013 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_014
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_014 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_015
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_015 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_016
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_016 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_017
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_018
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_019
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_020
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_020 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_021
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_021 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather059_022
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather059_022 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_001
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_001 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_002
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_002 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_003
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_003 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_004
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_004 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_005
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_005 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_006
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_006 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_007
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_007 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_008
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_008 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_009
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_009 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_010
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_010 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather060_011
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather060_011 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -110.621 over 32011 frames.
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:137) Retried 36 out of 45 utterances.
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:139) Done 43, errors on 2
+# Accounting: time=16 threads=1
+# Ended (code 0) at Sun May 16 20:33:47 CST 2021, elapsed time 16 seconds

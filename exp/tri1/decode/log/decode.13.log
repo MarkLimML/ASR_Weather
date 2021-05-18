@@ -1,20 +1,30 @@
 # gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/13/utt2spk scp:data/test/split16/13/cmvn.scp scp:data/test/split16/13/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.13.gz" 
-# Started at Sat Apr  3 00:21:25 CST 2021
+# Started at Sun May 16 20:44:10 CST 2021
 #
 gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/13/utt2spk scp:data/test/split16/13/cmvn.scp scp:data/test/split16/13/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.13.gz' 
-add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/test/split16/13/utt2spk scp:data/test/split16/13/cmvn.scp scp:data/test/split16/13/feats.scp ark:- 
-weather031_022 SA PAG MAHINA YUNG AMIHAN MO TAPOS NANDITO KA PA LAMANG DAPAT NG PUMASOK SA PHILIPPINE AREA OF RESPONSIBILITY ISA KA NG GANAP NA BAGYO NANDUN YUNG PAGKAKATAONG LALO SIYANG LUMALAKAS 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_022 is -9.00814 over 966 frames.
-weather031_023 NA NANDITO PALAWAN SA LABAS NA PINAG AT MAHINA YUNG AMIHAN NIYA I HIHINA LUMAKAS SIYA KAYA NAGING MAPAMINSALA SAMANTALA ITO KASING SIYA SAMUEL DITO NALAMANG SEVEN IN TROPICAL DEPRESSION MALAPIT NA TUMAMA SA LUPA KAYA HINDI SA GANUNG KALAKAS PERO YUNG ISANG NAKIKITA NATIN JESSICA AT NAPANSIN MO RIN PAGDATING NG LAST QUARTER OF THE YEAR MAS KAKAUNTI YUNG BAGYO PERO MAS MADALAS TUMATAMA YAN KAYA NAGIGING MAS MAPAMINSALA 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_023 is -8.92842 over 2611 frames.
-LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
-weather031_024 O PARANG SA PHYSICS DIN MANG TANI NO PAG MAS MARA MAS MAP MALAYO ANG PINANGGAGALINGAN DI YAN NAKAKAPAG DIN SHANSHAN STRENGTH AT MOMENTUM MAS MALAKAS YUNG PO YAN SA NIYA KATULAD NAGING YAN YOLANDA ITONG SI SAMUEL MALAPIT SA PILIPINAS NABUO 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_024 is -9.41064 over 1483 frames.
-weather031_025 YES JESSICA YAN ANG MAGIGING YAN LINYA POSIBLE ISA MAGING ISANG TROPICAL STORM BAHAGYANG LALAKAS BAGO TUMAMA SA KALUPAAN PERO DEFINITELY HINDI SIYA MAGIGING KASING LAKAS LALO MGA NAG AALALA NG ISANG SUPER TYPHOON O KATULAD NUNG MALA YOLANDANG BAGYO ANG PROBLEMA LANG 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_025 is -8.8481 over 1642 frames.
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 10.074s: real-time factor assuming 100 frames/sec is 0.150314
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.02693 over 6702 frames.
-# Accounting: time=11 threads=1
-# Ended (code 0) at Sat Apr  3 00:21:36 CST 2021, elapsed time 11 seconds
+add-deltas ark:- ark:- 
+weather010_011 AT YAN ANG LATEST MULA SA GMA WEATHER AKO PO SI NATHANIEL CRUZ MAGPLANO PARA SIGURADO I AM READY SERBISYONG TOTOO NG 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_011 is -8.87865 over 732 frames.
+weather011_001 KAPUSO MATINDING INIT ANG NARAMDAMAN SA ILANG LUGAR SA BANSA NGAYONG UNANG ARAW NG MAYO 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather011_001 is -8.57203 over 466 frames.
+weather011_002 SA DATOS NG PAGASA EH PUMALO SA FORTY SIX POINT NINE DEGREES CELSIUS YUNG INIT FACTOR DIYAN SA MAY CASIGURAN AURORA AT KANINANG ALAS DOS YAN NG HAPON UMABOT NAMAN SA FORTY SIX POINT THREE DEGREES CELSIUS ANG DAMANG INIT DIYAN SA MAY GIWAN EASTERN SAMAR ALAS ONSE NG UMAGA MGA KAPUSO HABANG FORTY FIVE POINT SIX DEGREES CELSIUS NAMAN DIYAN SA MAY DAGUPAN PANGASINAN AT SA METRO MANILA NASA FORTY DEGREES CELSIUS YUNG DAMANG INIT KANINANG ALAS DOS AT ALAS QUATRO NG HAPON PERO SA NAIA UMABOT NASA FORTY TWO POINT THREE DEGREES CELSIUS ANG INIT FACTOR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather011_002 is -8.5528 over 3290 frames.
+weather011_003 AT MANATILING I AM READY BUKAS DAHIL POSIBLENG AH MARAMDAMAN MULI YUNG FORTY DEGREES CELSIUS NA INIT FACTOR DITO SA METRO MANILA PERO MGA KAPUSO AH ASAHAN ANG THUNDERSTORM SA HAPON AT SA GABI 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather011_003 is -8.49076 over 1228 frames.
+weather011_004 SA LUZON MAGHAPONG MAY ULAN SA MAY NORTHERN LUZON LALO DIYAN SA MAY CORDILLERA SA MGA PROBINSYA NG AURORAT QUEZON AT MAULAN NA RIN SA MAY CENTRAL LUZON CALABARZON AT MINDORO PAGDATING SA HAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather011_004 is -8.38723 over 1113 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+weather011_005 SA VISAYAS WALANG ULAN SA UMAGA AT SA NEGROS PROVINCES AT DIYAN SA MAY LEYTE MAY MGA PAGULAN PAGDATING SA HAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather011_005 is -8.35557 over 778 frames.
+weather011_006 AT SA MINDANAO MAGHAPONG MAULAN SA REHIYON NG SOCSARGEN AT MAULAN NA RIN SA HALOS BUONG MINDANAO NA KUNG MINSAN MALALAKAS MGA KAPUSO MALIBAN DIYAN SA MAY REHIYON NG CARAGA SA HAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather011_006 is -8.4196 over 1123 frames.
+weather011_007 AT YAN ANG LATEST MULA SA GMA WEATHER AKO PO SI NATHANIEL CRUZ MAGPLANO PARA SIGURADO I AM READY SERBISYONG TOTOO NG GMA NEWS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather011_007 is -8.45753 over 782 frames.
+weather012_001 NAGPAPATULOY PONG ALINSANGAN SA IBA'T-IBANG BAHAGI NG BANSA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather012_001 is -8.86376 over 327 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 31.4699s: real-time factor assuming 100 frames/sec is 0.319849
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 9 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.52344 over 9839 frames.
+# Accounting: time=33 threads=1
+# Ended (code 0) at Sun May 16 20:44:44 CST 2021, elapsed time 33 seconds

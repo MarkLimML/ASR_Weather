@@ -1,0 +1,11 @@
+# acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp/mono_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/12/utt2spk scp:data/train/split16/12/cmvn.scp scp:data/train/split16/12/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono_ali/ali.12.gz|" exp/tri1/12.treeacc 
+# Started at Sun May 16 20:40:20 CST 2021
+#
+acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp/mono_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/12/utt2spk scp:data/train/split16/12/cmvn.scp scp:data/train/split16/12/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono_ali/ali.12.gz|' exp/tri1/12.treeacc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split16/12/utt2spk scp:data/train/split16/12/cmvn.scp scp:data/train/split16/12/feats.scp ark:- 
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+LOG (acc-tree-stats[5.5.896~1-8a59]:main():acc-tree-stats.cc:118) Accumulated stats for 45 files, 0 failed due to no alignment, 0 failed for other reasons.
+LOG (acc-tree-stats[5.5.896~1-8a59]:main():acc-tree-stats.cc:121) Number of separate stats (context-dependent states) is 6204
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sun May 16 20:40:22 CST 2021, elapsed time 1 seconds

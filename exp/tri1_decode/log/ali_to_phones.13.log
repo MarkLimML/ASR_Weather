@@ -1,0 +1,23 @@
+# align-text ark:<( ali-to-phones exp/tri1/final.mdl "ark:gunzip -c exp/tri1_decode/ali.13.gz|" ark,t:- | int2sym.pl -f 2- exp/tri1_decode/phones.txt - ) ark:<( lattice-to-phone-lattice exp/tri1/final.mdl "ark:gunzip -c exp/tri1/decode/lat.13.gz|" ark:- | lattice-best-path --acoustic-scale=0.1 ark:- ark,t:- ark:/dev/null | int2sym.pl -f 2- exp/tri1_decode/phones.txt - ) ark:exp/tri1_decode/confusions.13.txt 
+# Started at Sun May 16 21:01:38 CST 2021
+#
+align-text ark:/dev/fd/63 ark:/dev/fd/62 ark:exp/tri1_decode/confusions.13.txt 
+ali-to-phones exp/tri1/final.mdl 'ark:gunzip -c exp/tri1_decode/ali.13.gz|' ark,t:- 
+lattice-to-phone-lattice exp/tri1/final.mdl 'ark:gunzip -c exp/tri1/decode/lat.13.gz|' ark:- 
+lattice-best-path --acoustic-scale=0.1 ark:- ark,t:- ark:/dev/null 
+LOG (ali-to-phones[5.5.896~1-8a59]:main():ali-to-phones.cc:134) Done 8 utterances.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather010_011, best cost 79.1801 + 7704.02 = 7783.2 over 732 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather011_001, best cost 84.8368 + 4691.7 = 4776.53 over 466 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather011_002, best cost 446.194 + 33231.1 = 33677.3 over 3290 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather011_003, best cost 178.307 + 12298.1 = 12476.4 over 1228 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather011_004, best cost 182.829 + 10982.6 = 11165.5 over 1113 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather011_005, best cost 106.488 + 7673.01 = 7779.5 over 778 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather011_006, best cost 163.973 + 11149.5 = 11313.5 over 1123 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather011_007, best cost 74.1809 + 7847.56 = 7921.75 over 782 frames.
+LOG (lattice-to-phone-lattice[5.5.896~1-8a59]:main():lattice-to-phone-lattice.cc:94) Done converting 9 lattices.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:99) For utterance weather012_001, best cost 55.0919 + 3412.04 = 3467.13 over 327 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:124) Overall cost per frame is 10.2003 = 0.139352 [graph] + 10.061 [acoustic] over 9839 frames.
+LOG (lattice-best-path[5.5.896~1-8a59]:main():lattice-best-path.cc:128) Done 9 lattices, failed for 0
+LOG (align-text[5.5.896~1-8a59]:main():align-text.cc:135) Done 8 sentences, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Sun May 16 21:01:42 CST 2021, elapsed time 3 seconds

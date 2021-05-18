@@ -1,0 +1,67 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.0 1 exp/tri2a/10.mdl - |" "ark:gunzip -c exp/tri2a/fsts.13.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/13/utt2spk scp:data/train/split16/13/cmvn.scp scp:data/train/split16/13/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2a/6.mat ark:- ark:- |" "ark:|gzip -c >exp/tri2a/ali.13.gz" 
+# Started at Sun May 16 20:46:59 CST 2021
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/tri2a/10.mdl - |' 'ark:gunzip -c exp/tri2a/fsts.13.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/13/utt2spk scp:data/train/split16/13/cmvn.scp scp:data/train/split16/13/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2a/6.mat ark:- ark:- |' 'ark:|gzip -c >exp/tri2a/ali.13.gz' 
+gmm-boost-silence --boost=1.0 1 exp/tri2a/10.mdl - 
+WARNING (gmm-boost-silence[5.5.896~1-8a59]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
+LOG (gmm-boost-silence[5.5.896~1-8a59]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.5.896~1-8a59]:main():gmm-boost-silence.cc:103) Wrote model to -
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split16/13/utt2spk scp:data/train/split16/13/cmvn.scp scp:data/train/split16/13/feats.scp ark:- 
+transform-feats exp/tri2a/6.mat ark:- ark:- 
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather056_018
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather056_019
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_001
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_002
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_003
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_004
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_005
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_006
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather057_006 with beam 40
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:626) Did not successfully decode file weather057_006, len = 812
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_007
+WARNING (gmm-align-compiled[5.5.896~1-8a59]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance weather057_007 with beam 40
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_008
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_009
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_010
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_011
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_012
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_013
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_014
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_015
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_016
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_017
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_018
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_019
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather057_020
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_001
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_002
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_003
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_004
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_005
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_006
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_007
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_008
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_009
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_010
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_011
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_012
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_013
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_014
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_015
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_016
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_017
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_018
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_019
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_020
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_021
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_022
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -84.1854 over 37187 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 45 utterances; 0 had errors.
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:127) weather058_023
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -43.7406 over 36375 frames.
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:137) Retried 2 out of 45 utterances.
+LOG (gmm-align-compiled[5.5.896~1-8a59]:main():gmm-align-compiled.cc:139) Done 44, errors on 1
+# Accounting: time=6 threads=1
+# Ended (code 0) at Sun May 16 20:47:05 CST 2021, elapsed time 6 seconds

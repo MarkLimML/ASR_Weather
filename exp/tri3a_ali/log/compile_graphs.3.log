@@ -1,9 +1,0 @@
-# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 1 -f 2- data/lang/words.txt data/train/split4/3/text|" "ark:|gzip -c >exp/tri3a_ali/fsts.3.gz" 
-# Started at Sun Apr  4 16:15:56 CST 2021
-#
-compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 1 -f 2- data/lang/words.txt data/train/split4/3/text|' 'ark:|gzip -c >exp/tri3a_ali/fsts.3.gz' 
-sym2int.pl: replacing IBA’T-IBANG with 1
-** Replaced 1 instances of OOVs with 1
-LOG (compile-train-graphs[5.5.896~1-8a59]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 67 graphs, failed for 0
-# Accounting: time=1 threads=1
-# Ended (code 0) at Sun Apr  4 16:15:57 CST 2021, elapsed time 1 seconds

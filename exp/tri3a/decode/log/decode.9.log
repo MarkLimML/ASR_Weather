@@ -1,25 +1,36 @@
-# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.mdl exp/tri3a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/9/utt2spk scp:data/test/split16/9/cmvn.scp scp:data/test/split16/9/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri3a/decode/lat.9.gz" 
-# Started at Sun Apr  4 16:15:31 CST 2021
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.mdl exp/tri3a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/9/utt2spk scp:data/test/split16/9/cmvn.scp scp:data/test/split16/9/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split16/9/utt2spk ark:exp/tri3a/decode/pre_trans.9 ark:- ark:- |" "ark:|gzip -c > exp/tri3a/decode/lat.tmp.9.gz" 
+# Started at Sun May 16 20:59:16 CST 2021
 #
-gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.mdl exp/tri3a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/9/utt2spk scp:data/test/split16/9/cmvn.scp scp:data/test/split16/9/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri3a/decode/lat.9.gz' 
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.mdl exp/tri3a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/9/utt2spk scp:data/test/split16/9/cmvn.scp scp:data/test/split16/9/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split16/9/utt2spk ark:exp/tri3a/decode/pre_trans.9 ark:- ark:- |' 'ark:|gzip -c > exp/tri3a/decode/lat.tmp.9.gz' 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
 transform-feats exp/tri3a/final.mat ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/test/split16/9/utt2spk scp:data/test/split16/9/cmvn.scp scp:data/test/split16/9/feats.scp ark:- 
-splice-feats ark:- ark:- 
-weather031_005 NAKATAAS ANG STORM SIGNAL NUMBER ONE DIYAN SA MGA PROBINSYA NG SURIGAO DEL NORTE SABADO DEL SUR AGUSAN DEL NORTE AGUSAN DEL SUR DINAGAT ISLAND MISAMIS ORIENTAL AT CAMIGUIN SA MINDANAO 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_005 is -4.93561 over 1094 frames.
-LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 5 utterances, errors on 0
-weather031_006 SIGNAL NUMBER ONE DIN SA MAY AH SAMAR EASTERN SAMAR BILIRAN LEYTE SOUTHERN LEYTE DIYAN SA BOHOL CEBU SIQUIJOR NEGROS ORIENTAL AT NEGROS OCCIDENTAL SA VISAYAS AT SA MASBATE SA LUZON 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_006 is -4.67069 over 1508 frames.
-weather031_007 NAMATAAN ANG CENTRO NG TROPICAL DEPRESSION SAMUEL SA LAYO LAMANG FIVE HUNDRED FIVE KILOMETERS DIYAN SA MAY SILANGAN NG HINATUAN SURIGAO DEL SUR AT TAGLAY NITO LAKAS NG HANGING YAN EIGHTY FIVE KILOMETERS PER HOUR MALAPIT SA GITNA AT BUGSO NA HANGGANG SIXTY FIVE KILOMETERS PER HOUR 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_007 is -4.8968 over 1529 frames.
-weather031_008 AT INAASAHAN NA KIKILOS ITO PAHILAGANG KANLURAN O NORTHWEST SA BILIS NAMAN NA TWENTY FIVE KILOMETERS PER HOUR 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_008 is -4.66806 over 713 frames.
-LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.4635 over 6133 frames.
-LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 5 utterances; 0 had errors.
-weather031_009 AT SA FORECAST TRACK NG PAGASA EH POSIBLENG TUMAMA DIYAN SA MAY DINAGAT ISLAND O SA MAY AH POSIBLE SA LEYTE ANG AH CENTRO NG BAGYO SAMUEL BUKAS PO YAN AT MAY TSANSA RIN NA LUMAKAS NA ITO BAGO MAG LANDFALL 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather031_009 is -4.73828 over 1289 frames.
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 12.8884s: real-time factor assuming 100 frames/sec is 0.210148
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 5 utterances, failed for 0
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -4.78822 over 6133 frames.
-# Accounting: time=14 threads=1
-# Ended (code 0) at Sun Apr  4 16:15:45 CST 2021, elapsed time 14 seconds
+transform-feats --utt2spk=ark:data/test/split16/9/utt2spk ark:exp/tri3a/decode/pre_trans.9 ark:- ark:- 
+weather007_013 SAMANTALA SA PUERTO PRINCESA AY MULA SA TWENTY FIVE HANGGANG SA THIRTY ONE DEGREES CELSIUS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather007_013 is -3.95947 over 524 frames.
+weather007_014 DUMAKO NAMAN TAYO SA CEBU INAASAHANG TWENTY FOUR HANGGANG SA THIRTY ANG TEMPERATURE RANGE SAMANTALANG SA MAY ILOILO CITY AY MULA SA TWENTY FIVE HANGGANG SA TWENTY NINE DEGREES CELSIUS DOON NAMAN SA METRO DAVAO AY MULA SA TWENTY FOUR HANGGANG SA THIRTY DEGREES CELSIUS AT SA ZAMBOANGA CITY NAMAN AY MULA SA TWENTY FOUR HANGGANG SA THIRTY ONE DEGREES CELSIUS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather007_014 is -4.03409 over 2031 frames.
+weather007_015 ANG ATIN PONG SUNSET TODAY AY INAASAHAN PONG FIVE THIRTY IN THE AFTERNOON SAMANTALANG ANG SA NA LESS PO NATIN BUKAS AY SIX FIFTEEN IN THE MORNING 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather007_015 is -4.07201 over 948 frames.
+weather007_016 YAN HO MUNA ANG LATEST MULA DITO SA PAGASA ITO PO SI LORIDIN DELA CRUZ 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather007_016 is -3.84223 over 467 frames.
+weather008_001 MAGANDANG ARAW PO SA ATING LAHAT NARITO ANG PINAKAHULING ULAT SA LAGAY NG ATING PANAHON NGAYONG ALAS SINGKO NG HAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather008_001 is -3.92805 over 638 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+weather008_002 MERON TAYONG BINABANTAYANG ISANG LOW PRESSURE AREA SA LOOB PO NG ATING PA HOUR AT HULI ITONG NAMATAAN KANINA SA VICINITY NG BUENAVISTA QUEZON PROVINCE 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather008_002 is -4.01553 over 913 frames.
+weather008_003 KAYAT SA MGA LALAWIGAN PO NG CAMARINES NORTE AT QUEZON AY PATULOY NATING PINAG IINGAT NG ATING MGA KABABAYAN MULA SA KATAMTAMAN HANGGANG SA KUNG MINSAN AY MALAKAS NA MGA PAGULAN AT PAGKIDLAT PAGKULOG NA MAARI PONG MAGDULOT NG MGA PAGBAHA O PAGGUHO NG LUPA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather008_003 is -4.00827 over 1600 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.7749 over 11278 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 9 utterances; 0 had errors.
+weather008_004 SAMANTALA SA MGA LUGAR PO DITO SA SOUTHERN LUZON EXCEPT FOR PALAWAN KASAMA PO DIYAN ANG LUGAR NG NORTHERN SAMAR METRO MANILA AT MGA LALAWIGAN PO NG CAGAYAN ISABELA AT AURORA AY MAGIGING MAULAP DIN TAYO SA ARAW NA ITO NA MAY MAHINA HANGGANG SA KATAMTAMANG MGA PAGULAN AT PAGKIDLAT PAGKULOG 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather008_004 is -4.00732 over 1921 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average logdet is 8.21669 over 11278 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 9 utterances; 0 had errors.
+weather008_005 DAHIL PO SA PREVAILING PA RIN ANG NORTHEAST MONSOON O YUNG HANGING AMIHAN AASAHAN PO NATIN NA SA ARAW NA ITO AY MAY MGA MAHINANG MGA PAGULAN PA RIN DOON SA MGA REHIYON NG NORTHERN LUZON SO YUN PO YUNG REGION NG ILOCOS KASAMA DIYAN ANG CORDILLERA REGION CAGAYAN VALLEY AT NATITIRANG BAHAGI PA PO NG CENTRAL LUZON KASAMA PO SILA SA PWEDENG MAAPEKTUHAN NG MGA MAHINANG MGA PAGULAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather008_005 is -4.09762 over 2236 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 27.9057s: real-time factor assuming 100 frames/sec is 0.247435
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 9 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -4.02274 over 11278 frames.
+# Accounting: time=30 threads=1
+# Ended (code 0) at Sun May 16 20:59:46 CST 2021, elapsed time 30 seconds

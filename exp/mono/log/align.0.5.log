@@ -1,0 +1,21 @@
+# align-equal-compiled "ark:gunzip -c exp/mono/fsts.5.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/5/utt2spk scp:data/train/split16/5/cmvn.scp scp:data/train/split16/5/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/5/utt2spk scp:data/train/split16/5/cmvn.scp scp:data/train/split16/5/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono/0.5.acc 
+# Started at Sun May 16 20:33:28 CST 2021
+#
+align-equal-compiled 'ark:gunzip -c exp/mono/fsts.5.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/5/utt2spk scp:data/train/split16/5/cmvn.scp scp:data/train/split16/5/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
+gmm-acc-stats-ali --binary=true exp/mono/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/5/utt2spk scp:data/train/split16/5/cmvn.scp scp:data/train/split16/5/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono/0.5.acc 
+apply-cmvn --utt2spk=ark:data/train/split16/5/utt2spk scp:data/train/split16/5/cmvn.scp scp:data/train/split16/5/feats.scp ark:- 
+add-deltas ark:- ark:- 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split16/5/utt2spk scp:data/train/split16/5/cmvn.scp scp:data/train/split16/5/feats.scp ark:- 
+WARNING (align-equal-compiled[5.5.896~1-8a59]:EqualAlign():fstext/fstext-utils-inl.h:919) EqualAlign: the randomly constructed paths lengths: 118,126,124,132,117,126,130,119,124,131
+WARNING (align-equal-compiled[5.5.896~1-8a59]:EqualAlign():fstext/fstext-utils-inl.h:920) EqualAlign: utterance has too few frames 115 to align.
+WARNING (align-equal-compiled[5.5.896~1-8a59]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence weather032_030
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+WARNING (align-equal-compiled[5.5.896~1-8a59]:main():align-equal-compiled.cc:109) Computed 44 alignments; 0 lacked features, 1 had other errors.
+WARNING (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance weather032_030
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:112) Done 44 files, 1 with errors.
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -119.408 over 56778 frames.
+LOG (gmm-acc-stats-ali[5.5.896~1-8a59]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Sun May 16 20:33:30 CST 2021, elapsed time 2 seconds

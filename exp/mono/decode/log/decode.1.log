@@ -1,22 +1,30 @@
 # gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/1/utt2spk scp:data/test/split16/1/cmvn.scp scp:data/test/split16/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode/lat.1.gz" 
-# Started at Wed Mar 31 21:47:26 CST 2021
+# Started at Sun May 16 20:39:01 CST 2021
 #
 gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/1/utt2spk scp:data/test/split16/1/cmvn.scp scp:data/test/split16/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode/lat.1.gz' 
 apply-cmvn --utt2spk=ark:data/test/split16/1/utt2spk scp:data/test/split16/1/cmvn.scp scp:data/test/split16/1/feats.scp ark:- 
 add-deltas ark:- ark:- 
-weather029_006 SA MAY AH NASA ONE HUNDRED TEN KILOMETERS SILANGAN NG BALER AURORA ANG BAGYONG PEPITO BAHAGI NG BANSA GUSTINESS SEVENTY FIVE KILOMETERS PER HOUR AT PAGBUGSO O GUSTINESS O NINETY KILOMETERS PER HOUR 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_006 is -10.0933 over 1125 frames.
-weather029_007 BAHAGYANG BUMILIS ANG PAGKILOS NITO SA TWENTY KILOMETERS PER HOUR PATUNGONG WEST NORTHWEST 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_007 is -10.0381 over 553 frames.
-weather029_008 SA FORECAST NATIN AT YAN CENTER FOR DIN YUNG RAINFALL FORECAST O ECMWF 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_008 is -10.2913 over 578 frames.
-LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 5 utterances, errors on 0
-weather029_009 NAKIKITANG TUTUMBUKIN NITO ANG AURORA NGAYONG GABI AT AT KANINA CENTRAL LUZON O SOUTHERN PORTION NG NORTHERN LUZON HANGGANG BUKAS NG MADALING ARAW 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_009 is -10.2021 over 814 frames.
-weather029_010 INAASAHAN ANG MALAKAS ULAN DIN JENNY SA AURORA ISABELA QUEZON BULACAN TARLAC CAMARINES NORTE JENNY SIYA NUEVA VIZCAYA QUIRINO MAINLAND CAGAYAN CORDILLERA LA UNION ILOCOS SUR TARLAC PAMPANGA BATAAN ZAMBALES AT PANGASINAN 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_010 is -9.71554 over 1806 frames.
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 13.7621s: real-time factor assuming 100 frames/sec is 0.282241
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 5 utterances, failed for 0
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.98876 over 4876 frames.
-# Accounting: time=14 threads=1
-# Ended (code 0) at Wed Mar 31 21:47:40 CST 2021, elapsed time 14 seconds
+weather001_001 DALAWANG LOW PRESSURE AREA SA LOOB NG PHILIPPINE AREA OF RESPONSIBILITY O PAR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather001_001 is -8.78434 over 517 frames.
+weather001_002 ANG MAGPAPAULAN SA MALAKING BAHAGI NG LUZON AT VISAYAS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather001_002 is -8.78726 over 370 frames.
+weather001_003 BASE SA PINAKAHULING WEATHER BULLETIN NG PAGASA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather001_003 is -8.85443 over 297 frames.
+weather001_004 ANG ISA SA MGA LPA NA ITO AY NASA LAYONG SEVEN HUNDRED FIFTEEN KILOMETERS SILANGAN NG BASCO BATANES ANG IKALAWANG LPA AY NAMATAAN SA LAYONG ONE HUNDRED THIRTY KILOMETERS WEST SOUTHWEST NG IBA ZAMBALES HINAHATAK NITO ANG SOUTHWEST MONSOON O HANGING HABAGAT 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather001_004 is -8.78358 over 1788 frames.
+weather001_005 ASAHAN PO NGAYONG ARAW NG MONSOON RIN SA METRO MANILA ZAMBALES BATAAN CAVITE BATANGAS PALAWAN AT MINDORO PROVINCES 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather001_005 is -8.71275 over 942 frames.
+weather001_006 MAKARARANAS NAMAN ANG RAINSHOWERS AT THUNDERSTORMS SA BICOL WESTERN VISAYAS AT SA NALALABING BAHAGI NG CENTRAL LUZON CALABARZON AT MIMAROPA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather001_006 is -8.8414 over 892 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+weather001_007 NALAMANG SA TROUGH O EXTENSION NG LPA DARANAS NG KALAT-KALAT NA RAINSHOWERS AT THUNDERSTORMS SA CAGAYAN VALLEY CORDILLERA ADMINISTRATIVE REGION AT ILOCOS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather001_007 is -8.80756 over 1007 frames.
+weather001_008 ISOLATED RAINSHOWERS NAMAN ANG IIRAL SA MINDANAO AT NALALABING BAHAGI NG VISAYAS DULOT NG LOCALIZED THUNDERSTORMS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather001_008 is -8.96499 over 751 frames.
+weather002_001 SA ATIN NAMANG ULAT PANAHON TATLO ANG LOW PRESSURE AREA O LPA NA BINABANTAYAN NG PAGASA PATULOY NA MANG TANI SA ONE HUNDRED NINE FIVE KILOMETERS TIMOG KANLURAN NG SINAIT ILOCOS SUR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather002_001 is -8.47785 over 1269 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 37.2273s: real-time factor assuming 100 frames/sec is 0.475262
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 9 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.7555 over 7833 frames.
+# Accounting: time=39 threads=1
+# Ended (code 0) at Sun May 16 20:39:40 CST 2021, elapsed time 39 seconds

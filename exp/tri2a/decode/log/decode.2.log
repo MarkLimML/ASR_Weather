@@ -1,20 +1,33 @@
-# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/2/utt2spk scp:data/test/split16/2/cmvn.scp scp:data/test/split16/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri2a/decode/lat.2.gz" 
-# Started at Sat Apr  3 18:06:42 CST 2021
+# gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/2/utt2spk scp:data/test/split16/2/cmvn.scp scp:data/test/split16/2/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri2a/decode/lat.2.gz" 
+# Started at Sun May 16 20:50:15 CST 2021
 #
-gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/2/utt2spk scp:data/test/split16/2/cmvn.scp scp:data/test/split16/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri2a/decode/lat.2.gz' 
-add-deltas ark:- ark:- 
+gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2a/graph/words.txt exp/tri2a/final.mdl exp/tri2a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/2/utt2spk scp:data/test/split16/2/cmvn.scp scp:data/test/split16/2/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri2a/decode/lat.2.gz' 
 apply-cmvn --utt2spk=ark:data/test/split16/2/utt2spk scp:data/test/split16/2/cmvn.scp scp:data/test/split16/2/feats.scp ark:- 
-weather029_011 BUKAS NG UMAGA KAPAG NASA DAGAT NA ANG CENTRO NG BAGYO POSIBLE PA RIN MAKARANAS NG MALAKAS NA ULAN ANG ZAMBALES 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_011 is -10.0344 over 642 frames.
-weather029_012 NAMAN SA METRO MANILA AT NATITIRANG BAHAGI NG LUZON INAASAHAN AT AH TATAMA NA MAY PAMINSAN MINSAN MALAKAS NA BUHOS NG ULAN NGAYONG GABI TULAD NAUNA NA NASA LAYONG KANINANG HAPON 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_012 is -10.1166 over 1063 frames.
-LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
-weather029_013 KESA TAMA UUWI PALARONG TUBIG DIN AT HEAT LAYO NA ANYOS MGA NAKAMOTOR O NO 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_013 is -10.0518 over 463 frames.
-weather029_014 BUKAS MAKAKAASA PA RIN TAYO NG MAGHAPONG MAULAP AT MAULAN PANAHON SA METRO MANILA PERO INAASAHANG HIHINA ANG ULAN KUMPARA NGAYONG ARAW LALONG LALO NA PO NATIN UNA NG HAPON O GABI MAKIKITA PO NATING MALIIT NA ANG PORSYENTO NG PAG ULAN NA SA SOUTHERN DIN RESIDENT SAAN SI SINAIT 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather029_014 is -10.0872 over 1694 frames.
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 17.189s: real-time factor assuming 100 frames/sec is 0.445079
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -10.0823 over 3862 frames.
-# Accounting: time=19 threads=1
-# Ended (code 0) at Sat Apr  3 18:07:01 CST 2021, elapsed time 19 seconds
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri2a/final.mat ark:- ark:- 
+weather002_002 ANG IKALAWA NAMAN AY NASA THREE HUNDRED FIFTY FIVE KILOMETERS SILANGAN NG APARRI CAGAYAN HABANG IKATLO AY NASA LABAS NG PHILIPPINE AREA OF RESPONSIBILITY 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather002_002 is -4.18532 over 961 frames.
+weather002_003 NAMATAAN ITO SA LAYONG ONE THOUSAND ONE HUNDRED TWENTY KILOMETERS EAST NG MINDANAO AYON SA PAGASA MABABA ANG TSANSANG AH MAGIGING BAGYO ANG TATLONG LPA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather002_003 is -4.09127 over 949 frames.
+weather002_004 AT NARITO NAMAN ANG MAGIGING TEMPERATURA BUKAS SA ILANG PILING LUGAR SA BANSA SA LUZON MAGIGING PINAKA MAINIT PA RIN SA TUGUEGARAO CITY KUNG SAAN PAPALO SA FORTY TWO DEGREES CELSIUS ANG HEAT INDEX SA VISAYAS PINAKAMATAAS NA INIT ANG MARARAMDAMAN SA DUMAGUETE THIRTY NINE DEGREES CELSIUS AT SA MINDANAO PINAKA MAINIT SA GENERAL SANTOS CITY KUNG SAAN NASA FORTY TWO DEGREES CELSIUS ANG MAXIMUM HEAT INDEX HABANG SA METRO MANILA INAASAHAN PAPALO SA FORTY ONE DEGREES CELSIUS ANG HEAT INDEX 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather002_004 is -4.27557 over 3153 frames.
+weather002_005 MANATILING NAKATUTOK SA ABS-CBN ANC DZMM NEWS NG ABS DASH CBN TATAMA PATROL GABI PARA SA IBA PANG NAGBABAGANG BALITA AKO PO SI STANLEY PALISADA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather002_005 is -4.37811 over 859 frames.
+weather003_001 MAGANDANG ARAW PO SA ATING LAHAT WELCOME PO SA WEATHER FORECASTING SECTION NG PAGASA AT NARITO NA NGA ANG LATEST SA LAGAY NG ATING PANAHON NGAYONG ARAW NG MARTES ALAS SINGKO NG UMAGA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather003_001 is -3.70275 over 1016 frames.
+weather003_002 UPDATE MULA SA YAN BINABANTAYAN ATING BAGYO NASA WEST PHILIPPINE SEA NA PO ANG MATA NITO SI BAGYONG NINA AT KANINA NGAY HULI ITONG NAMATAAN SA LAYONG THREE HUNDRED SIXTY KILOMETERS KANLURAN NG IBA ZAMBALES AT NANATILI PO ITONG NASA TYPHOON CATEGORY TAGLAY PA RIN ANG LAKAS NG HANGIN UMAABOT SA ONE HUNDRED TWENTY KILOMETERS PER HOUR MALAPIT SA GITNA AT PAGBUGSO PO NG HANGIN UMAABOT SA SA ONE HUNDRED SIXTY KILOMETERS PER HOUR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather003_002 is -3.84665 over 2581 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+weather003_003 TINATAYA PONG KIKILOS ITO SA DIRECTION PAKANLURAN SA BILIS NA SEVENTEEN KILOMETERS PER HOUR 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather003_003 is -3.81703 over 624 frames.
+weather003_004 AT KUNG HINDI PO MAGBAGO ANG BILIS NG TAKBO AT DIRECTION PO NITONG SI BAGYONG NINA INAASAHAN NATIN THAT LATE EVENING TODAY AY NASA LABAS NA PO ITO NG ATING AREA OF RESPONSIBILITY 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather003_004 is -3.69391 over 1062 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.7749 over 13582 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 9 utterances; 0 had errors.
+weather003_005 BAGAMAT WALA PO TAYONG NAKATAAS NGAYON ANG TROPICAL CYCLONE WARNING SIGNAL SA NAMAN BAHAGI PAN ANG ATING KALUPAAN AY NANANATILI PONG MAKARANAS NG MAULAP NA KALANGITAN NA MAY MAHINANG MGA PAGULAN NG CAGAYAN VALLEY REGION DULOT PA RIN PO YAN NG NORTH EAST MONSOON O YUNG HANGING AMIHAN NA UMIIRAL SA HILAGANG LUZON SAMANTALANG ILOCOS REGION NAMAN KASAMA PO ANG CORDILLERA AY MAKAKARANAS NA MGA PULO-PULONG MAHIHINANG MGA PAG ULAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather003_005 is -3.72331 over 2377 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 43.2516s: real-time factor assuming 100 frames/sec is 0.318448
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 9 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -3.97524 over 13582 frames.
+# Accounting: time=45 threads=1
+# Ended (code 0) at Sun May 16 20:51:00 CST 2021, elapsed time 45 seconds

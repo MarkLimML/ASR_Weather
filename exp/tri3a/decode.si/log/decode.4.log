@@ -1,0 +1,33 @@
+# gmm-latgen-faster --max-active=2000 "--beam=10.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.alimdl exp/tri3a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/4/utt2spk scp:data/test/split16/4/cmvn.scp scp:data/test/split16/4/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri3a/decode.si/lat.4.gz" 
+# Started at Sun May 16 20:58:12 CST 2021
+#
+gmm-latgen-faster --max-active=2000 '--beam=10.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.alimdl exp/tri3a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/4/utt2spk scp:data/test/split16/4/cmvn.scp scp:data/test/split16/4/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri3a/decode.si/lat.4.gz' 
+apply-cmvn --utt2spk=ark:data/test/split16/4/utt2spk scp:data/test/split16/4/cmvn.scp scp:data/test/split16/4/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+weather004_004 NARANASAN NG MAULAP NA KALANGITAN NA MAY KASAMA YANG MAHINA HANGGANG SA KATAMTAMANG MGA PAGULAN AT MGA PAGKIDLAT AT PAGKULOG 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_004 is -3.72937 over 784 frames.
+weather004_005 SAMANTALANG DITO SA NATITIRANG BAHAGI NG CAGAYAN VALLEY ITONG PROBINSYA NG BATANES AT YAN AY LUZON KAILAN AT DITO SA REHIYON NG ILOCOS REGION 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_005 is -3.83215 over 930 frames.
+weather004_006 AY 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_006 is -4.08722 over 50 frames.
+weather004_007 DAHIL SA NORTHEAST MONSOON MAKAKARANAS NAMAN YAN NG MAULAP NA KALANGITAN NA MAY KASAMA LAMANG YANG MGA LIGHT RAINS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_007 is -3.75776 over 651 frames.
+weather004_008 SAMANTALA SA ATING ILANG BAHAGI NG ATING BANSA ITONG NATITIRANG BAHAGI NG SOUTHERN LUZON BUONG KABISAYAAN BUONG MINDANAO MAGIGING MAGANDA ANG ATING TAYA NG PANAHON SA UMAGA PERO PAMINSAN MINSAN MAGKAKAROON PO TAYO NG PULO-PULONG MGA PAGKIDLAT AT PAGKULOG O INTENSE ANG ATING MGA LOCALIZE THUNDERSTORM NGUNIT ITO'Y PANANDALIAN LAMANG 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_008 is -3.72819 over 1962 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+weather004_009 SAMANTALANG ANG ATING LAGAY NG KARAGATAN DAHIL PAMINSAN NORTHEAST MONSOON NA NAKAKAAPEKTO DITO SA EXTREME NORTHERN LUZON PO DITO SA MAY DULONG HILAGANG LUZON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_009 is -3.74611 over 982 frames.
+weather004_010 ASAHAN NATIN NAMAN MERON TAYONG GALE WARNING DITO SA MGA BAYBAYIN NG BATANES CALAYAN BABUYAN HILAGANG BAYBAYIN NG CAGAYAN AT DITO SA PROBINSYA NG ILOCOS NORTE ILOCOS SUR LA UNION AT PANGASINAN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_010 is -3.67295 over 1518 frames.
+weather004_011 HINDI PO NATIN PINAPAYAGANG PUMALAOT YUNG MGA MALILIIT SASAKYANG PANDAGAT PERO YUNG MALALAKI AY PINAPAYUHANG MAG INGAT SA MGA MALALAKING ALON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_011 is -3.75629 over 880 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.7749 over 8353 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 9 utterances; 0 had errors.
+weather004_012 AT YAN ANG ATING LATEST UPDATE MULA DITO SA PAGASA WEATHER FORECASTING CENTER SHERYL IGNACIO NAG UULAT 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather004_012 is -3.84748 over 596 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 25.19s: real-time factor assuming 100 frames/sec is 0.301569
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 9 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -3.74787 over 8353 frames.
+# Accounting: time=27 threads=1
+# Ended (code 0) at Sun May 16 20:58:39 CST 2021, elapsed time 27 seconds

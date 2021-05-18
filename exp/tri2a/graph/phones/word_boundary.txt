@@ -32,14 +32,6 @@ D_B begin
 D_E end
 D_I internal
 D_S singleton
-E_B begin
-E_E end
-E_I internal
-E_S singleton
-F_B begin
-F_E end
-F_I internal
-F_S singleton
 I_B begin
 I_E end
 I_I internal
@@ -80,10 +72,6 @@ b_B begin
 b_E end
 b_I internal
 b_S singleton
-c_B begin
-c_E end
-c_I internal
-c_S singleton
 d_B begin
 d_E end
 d_I internal

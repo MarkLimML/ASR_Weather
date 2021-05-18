@@ -1,0 +1,35 @@
+last 690 first 173 80/20
+----------TRAIN----------
+Total 1.879575 hours of data
+Average segment length 9.80647826086956 seconds
+Segment weather048_008 has length of 49.74 seconds
+Segment weather033_010 has length of 0.310000000000002 seconds
+----------TEST----------
+Total 0.591866666666667 hours of data
+Average segment length 12.3163005780347 seconds
+Segment weather006_013 has length of 38.75 seconds
+Segment weather004_006 has length of 0.519999999999996 seconds
+
+first 690 last 173 80/20
+----------TRAIN----------
+Total 2.08268055555556 hours of data
+Average segment length 10.8661594202899 seconds
+Segment weather048_008 has length of 49.74 seconds
+Segment weather033_010 has length of 0.310000000000002 seconds
+----------TEST----------
+Total 0.388761111111111 hours of data
+Average segment length 8.08982658959537 seconds
+Segment weather070_009 has length of 22.92 seconds
+Segment weather061_010 has length of 1.35000000000001 seconds
+
+last 721 first 142 80/20
+----------TRAIN----------
+Total 1.97493055555556 hours of data
+Average segment length 9.86095700416089 seconds
+Segment weather048_008 has length of 49.74 seconds
+Segment weather033_010 has length of 0.310000000000002 seconds
+----------TEST----------
+Total 0.496511111111112 hours of data
+Average segment length 12.5876056338028 seconds
+Segment weather006_013 has length of 38.75 seconds
+Segment weather004_006 has length of 0.519999999999996 seconds

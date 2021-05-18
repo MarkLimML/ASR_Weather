@@ -1,0 +1,33 @@
+# gmm-latgen-faster --max-active=2000 "--beam=10.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.alimdl exp/tri3a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri3a/decode.si/lat.12.gz" 
+# Started at Sun May 16 20:58:12 CST 2021
+#
+gmm-latgen-faster --max-active=2000 '--beam=10.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri3a/graph/words.txt exp/tri3a/final.alimdl exp/tri3a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri3a/decode.si/lat.12.gz' 
+apply-cmvn --utt2spk=ark:data/test/split16/12/utt2spk scp:data/test/split16/12/cmvn.scp scp:data/test/split16/12/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+weather010_002 MGA KAPUSO NAITALA KANINANG UMAGA YUNG PINAKA MABABANG TEMPERATURA SA BANSA NGAYONG AMIHAN SEASON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_002 is -4.95525 over 537 frames.
+weather010_003 AYON SA PAGASA BUMAGSAK SA ELEVEN POINT TWO DEGREES CELSIUS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_003 is -5.0306 over 371 frames.
+weather010_004 ANG TEMPERATURA DIYAN SA MAY BAGUIO CITY KANINA PO YANG MAG AALAS SINGKO NG UMAGA MGA KAPUSO ITO NA YUNG PINAKA MALAMIG NA TEMPERATURA NGAYONG AMIHAN SEASON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_004 is -4.76192 over 786 frames.
+weather010_005 AT NGAYONG WEEKEND EH POSIBLENG BUMABA PARA SA TEN DEGREES CELSIUS O KAYA I AM READY DEGREES CELSIUS YUNG TEMPERATURA DIYAN SA BAGYO AH MABABA NAMAN PO ANG TSANSANG UMULAN EH YUNG MGA PUPUNTA NG BAGYO EH MAGING I AM READY KAYO SA YUNG MGA DIYAN MAY 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_005 is -4.67624 over 1430 frames.
+weather010_006 SA METRO MANILA NASA FORTY TO TWENTY ONE DEGREES CELSIUS NAMAN ANG POSIBLENG MINIMUM TEMPERATURE PAGULAN SA BAGYO WALA RING INAASAHANG ULAN NGAYONG WEEKEND 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_006 is -4.75511 over 975 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+weather010_007 SA LUZON MAGIGING MAULAN DIYAN SA MGA REHIYON NG CORDILLERA DIYAN SA MAY CAGAYAN VALLEY SA MGA PROBINSYA NG QUEZON AURORA MAGING SA MINDORO ORIENTAL AT DIYAN SA ILANG BAHAGI NG BICOL REGION BUKAS YAN SABADO HABANG SA LINGGO MAGTUTULOY TULOY YUNG ULAN SA MGA LUGAR SA CAGAYAN VALLEY DIYAN SA MAY AURORA AT NORTHERN QUEZON MAGING SA MINDORO ORIENTAL PERO WALA NASA BICOL REGION CENTRAL LUZON MAGING SA CORDILLERA AT ILOCOS REGION 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_007 is -4.59729 over 2322 frames.
+weather010_008 SA VISAYAS MAGHAPON MANG MAULAN DITO SA MAY LEYTE AT SAMAR PROVINCES MAGING SA ILANG BAHAGI NG NEGROS PROVINCES BUKAS NAMAN YAN NG HAPON AT MAGTUTULOY TULOY YUNG ULAN DIYAN SA NEGROS AT AKLAN PROVINCES PAGDATING NG LINGGO PERO DITO SA ILANG BAHAGI NG VISAYAS HALOS WALA NG ULAN SA LINGGO SA MINDANAO BUONG ARAW NA MAULAN SA SURIGAO PROVINCES AT DAVAO ORIENTAL DIYAN PO AY ARAW NG SABADO AT SA LINGGO MARAMING LUGAR SA EASTERN MINDANAO YUNG AH DAVAO REGION AT CARAGA REGION MAY MGA PAGULAN AT MAULAN NA RIN SA NORTHERN MINDANAO PAGDATING SA HAPON NGAYONG WEEKEND 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_008 is -4.52766 over 3608 frames.
+weather010_009 MAGANDANG RIN ANG MALAKAS NA AMIHAN ANG EASTERN SEABOARD NAMAN NG AH LUZON DITO SA MAY CAGAYAN VALLEY AURORA DIYAN SA MAY BICOL REGION HANGGANG SA MAY SAMAR PROVINCES IBIG SABIHIN PO NIYAN MATAAS ANG MGA ALON AT DELIKADO SA MGA MAGING 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_009 is -4.80969 over 1427 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.7749 over 12339 frames.
+LOG (transform-feats[5.5.896~1-8a59]:main():transform-feats.cc:161) Applied transform to 9 utterances; 0 had errors.
+weather010_010 MGA KAPUSO WAG KAKALIMUTAN HA ANG I AM READY SA DOBOL B ALAS NUEBE NA LESS IS MAY NG UMAGA TUWING SABADO SA SUPER READY DZ DOBOL B REGION AH 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather010_010 is -4.98578 over 883 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 28.2034s: real-time factor assuming 100 frames/sec is 0.228571
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 9 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -4.69001 over 12339 frames.
+# Accounting: time=30 threads=1
+# Ended (code 0) at Sun May 16 20:58:43 CST 2021, elapsed time 30 seconds

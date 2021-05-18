@@ -1,20 +1,30 @@
 # gmm-latgen-faster --max-active=7000 "--beam=13.0" --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.7.gz" 
-# Started at Sat Apr  3 00:21:25 CST 2021
+# Started at Sun May 16 20:44:10 CST 2021
 #
 gmm-latgen-faster --max-active=7000 '--beam=13.0' --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.7.gz' 
-add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/test/split16/7/utt2spk scp:data/test/split16/7/cmvn.scp scp:data/test/split16/7/feats.scp ark:- 
-weather030_014 PATAAS YAN ANG ALON SA HALOS BUONG LUZON MULA YAN SA MAY AH MATA NG NASA NANDITO SA MAY AH CAGAYAN VALLEY ILOCOS REGION DIYAN SA MAY EASTERN VISAYAS YANG NORTHERN EACH EASTERN SAMAR KASAMA NA ANG EASTERN MINDANAO DAHIL AMA PO YAN SA PINAGSANIB NA EPEKTO NUNG BAGYO AT NG MALAKAS NA AMIHAN 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_014 is -9.14497 over 1744 frames.
-LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 4 utterances, errors on 0
-weather030_015 MAY BANTA RIN NG STORM SURGE DIYAN SA MGA PROBINSYA NA ISABELA CAGAYAN DIYAN SA MAY AURORA ILOCOS SUR ILOCOS NORTE AT LA UNION NA POSIBLENG UMABOT NA ANG TATLONG METRO 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_015 is -9.33392 over 1159 frames.
-weather030_016 HINDI NAMAN APEKTADO BAGYO VISAYAS AT MINDANAO AREA O KAPUSO AH MALALAKAS NA ULAN DITO SA MAY LUZON LALONG LALO NA SA NORTHERN AT CENTRAL LUZON 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_016 is -9.28843 over 924 frames.
-weather030_017 AT YAN ANG LATEST MULA SA GMA WEATHER AKO PO SI NATHANIEL CRUZ MAGPLANO PARA SIGURADO I AM READY SERBISYONG TOTOO NG GMA NEWS 
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather030_017 is -9.17515 over 740 frames.
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 6.72382s: real-time factor assuming 100 frames/sec is 0.147226
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 4 utterances, failed for 0
-LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.22684 over 4567 frames.
-# Accounting: time=7 threads=1
-# Ended (code 0) at Sat Apr  3 00:21:32 CST 2021, elapsed time 7 seconds
+add-deltas ark:- ark:- 
+weather006_009 AT SILIPIN PO NATIN YUNG MAGIGING TAYA O MAGIGING AGWAT NG TEMPERATURA SA ILANG PILING LUGAR DITO PO SA METRO MANILA DAHIL PATULOY PA RIN NA MAKULIMLIM ANG ATING KALANGITAN YUNG RANGE PO NG TEMPERATURE NATIN AY NASA PAGITAN LAMANG NG TWENTY FOUR TO THIRTY DEGREES CELSIUS SA MAY BAGUIO DAHIL PATULOY PA RIN PONG NAMAMAYANI ITONG NORTHEAST MONSOON RAINS NG TEMPERATURE NA ATING INAASAHAN AY CITY FIFTEEN TO TWENTY ONE DEGREES CELSIUS SA MAY TAGAYTAY NAMAN TWENTY ONE TO TWENTY SEVEN DEGREES CELSIUS SA MAY PUERTO PRINCESA ASAHAN PO NATIN TWENTY FOUR TO THIRTY ONE DEGREES CELSIUS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather006_009 is -8.1994 over 3621 frames.
+weather006_010 SA ILANG LUGAR NAMAN PO SA MAY VISAYAS DITO PO SA METRO CEBU ANG INAASAHAN PO NATING AGWAT NG TEMPERATURA AY TWENTY FIVE TO THIRTY DEGREES CELSIUS SA MAY ILOILO TWENTY FIVE TO TWENTY NINE DEGREES CELSIUS SA MAY MINDANAO NAMAN PO ITONG DAVAO TWENTY FIVE TO THIRTY ONE DEGREES CELSIUS SA MAY ZAMBOANGA TWENTY FOUR TO THIRTY TWO DEGREES CELSIUS 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather006_010 is -8.20911 over 2167 frames.
+weather006_011 SILIPIN NAMAN PO NATIN YUNG MAGIGING TAYA NG ATING KARAGATAN PATULOY PA RIN PONG NAKATAAS ANG ATING GALE WARNING DITO PO SA SEABOARDS NG NORTHERN LUZON EASTERN SEABOARD NG CENTRAL LUZON EASTERN SEABOARD NG SOUTHERN LUZON AT EASTERN SEABOARD NG KABISAYAAN DAHIL DIYAN ASAHAN PO NATIN HINDI PO NATIN PINAPAYAGANG MAG LAYAG YUNG MALILIIT SASAKYANG PANDAGAT NGUNIT YUNG MGA MALALAKI NAMAN PO AY PINAPAYUHANG MAG INGAT SA MGA MALAPIT MALALAKING 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather006_011 is -8.06325 over 2815 frames.
+weather006_012 AT ANG ATING ARAW INAASAHAN PO NATING LULUBOG FIVE THIRTY NGAYONG HAPON SAMANTALANG BUKAS NG UMAGA SISIKAT NAMAN ITO SA FORTY SIX FOURTEEN 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather006_012 is -8.20638 over 903 frames.
+weather006_013 AT PARA NAMAN PO SA MGA LATEST UPDATE TUNGKOL PO SA ATING PANAHON MAAARI PO NATING I FOLLOW ANG ATING TWITTER ACCOUNT PAG DOST UNDERSCORE PAGASA MAARI PO NATING I LIKE ANG ATING FACEBOOK ACCOUNT PAGASA DOT DOST DOT GOV DOT PH ANG ATING YOUTUBE NAMAN PO PAGASA TV MAARI RIN PO NATING BISITAHIN ANG ATING WEBSITE WW DA AT PAGASA DOT DOST DOT GOV DOT PH AT MULA NGA PO DITO SA WEATHER FORECASTING CENTER SHERYL IGNACIO ISA PO SA MGA WEATHER FORECASTER NG PAGASA DOST NAG UULAT NAGBIBIGAY IMPORMASYON MARAMING SALAMAT PO SA INYONG PANONOOD HANGGANG SA MULI HAPPY WEEKEND 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather006_013 is -8.24169 over 3873 frames.
+weather007_001 MAGANDANG ARAW PO SA ATING LAHAT WELCOME SA WEATHER FORECASTING SECTION NG PAGASA AT NARITO NA NGA ANG LATEST SA LAGAY NG ATING PANAHON NGAYONG ARAW NG SABADO ALAS SINGKO NG HAPON 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather007_001 is -7.85758 over 1058 frames.
+weather007_002 DALAWANG WEATHER SYSTEM PA RIN ANG PATULOY NA NAGBIBIGAY O NAG CACAUSE NG MGA PAGULAN SA MALAKING BAHAGI PO NG ATING BANSA AT ISA NA NGA PO DIYAN YUNG TINATAWAG NATING TAIL END OF A COLD FRONT 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather007_002 is -8.09291 over 1027 frames.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 9 utterances, errors on 0
+weather007_003 ITO PO YUNG BOUNDARY SA PAGITAN NG DALAWANG MALAKING AIR MASS NA MALAKI PO ANG DIFFERENCE NG KANILANG TEMPERATURA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather007_003 is -7.90634 over 655 frames.
+weather007_004 KAYAT KUNG MAPAPANSIN PO NATIN KUMPARA PO NUNG MGA NAKARAANG ARAW AY BAHAGYANG BUMABA PO YUNG AXIS O ORIENTATION NETONG TAIL END NATIN KAYAT DOON PO SA KABIKULAN AT SA EASTERN VISAYAS AT SA SILANGANG KABISAYAAN AY PATULOY PONG MAKAKARANAS ANG ATING MGA KABABAYAN DOON NG KATAMTAMAN HANGGANG SA KUNG MINSAN AY MALAKAS NA MGA PAGULAN KAYAT DOBLENG INGAT PO TAYO DAHIL ANG GANITONG KLASENG INTENSITY NG PAGULAN AY PWEDE PONG MAG AH BUHOS NG MGA PAGBAHA AT PAGGUHO NG LUPA 
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance weather007_004 is -7.92916 over 2935 frames.
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:176) Time taken 45.2942s: real-time factor assuming 100 frames/sec is 0.237715
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:179) Done 9 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.896~1-8a59]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.1129 over 19054 frames.
+# Accounting: time=46 threads=1
+# Ended (code 0) at Sun May 16 20:44:56 CST 2021, elapsed time 46 seconds

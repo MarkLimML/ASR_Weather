@@ -1,0 +1,16 @@
+# ali-to-post "ark:gunzip -c exp/tri1_ali/ali.13.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri1_ali/final.mdl ark:- ark:- | acc-lda --rand-prune=4.0 exp/tri1_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/13/utt2spk scp:data/train/split16/13/cmvn.scp scp:data/train/split16/13/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- |" ark,s,cs:- exp/tri2a/lda.13.acc 
+# Started at Sun May 16 20:45:33 CST 2021
+#
+ali-to-post 'ark:gunzip -c exp/tri1_ali/ali.13.gz|' ark:- 
+acc-lda --rand-prune=4.0 exp/tri1_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split16/13/utt2spk scp:data/train/split16/13/cmvn.scp scp:data/train/split16/13/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- |' ark,s,cs:- exp/tri2a/lda.13.acc 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri1_ali/final.mdl ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split16/13/utt2spk scp:data/train/split16/13/cmvn.scp scp:data/train/split16/13/feats.scp ark:- 
+WARNING (acc-lda[5.5.896~1-8a59]:main():acc-lda.cc:77) No posteriors for utterance weather057_006
+LOG (ali-to-post[5.5.896~1-8a59]:main():ali-to-post.cc:73) Converted 44 alignments.
+LOG (weight-silence-post[5.5.896~1-8a59]:main():weight-silence-post.cc:95) Done 44 posteriors.
+LOG (apply-cmvn[5.5.896~1-8a59]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+LOG (acc-lda[5.5.896~1-8a59]:main():acc-lda.cc:117) Done 44 files, failed for 1
+LOG (acc-lda[5.5.896~1-8a59]:main():acc-lda.cc:122) Written statistics.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Sun May 16 20:45:36 CST 2021, elapsed time 3 seconds

@@ -1,1 +1,0 @@
-compose-transforms --b-is-affine=true ark:exp/tri4a/tmp_trans.4 ark:exp/tri4a/trans.4 ark:exp/tri4a/composed_trans.4 
