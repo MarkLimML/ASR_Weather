@@ -22,7 +22,7 @@ with open(sys.argv[1]+"/confusions.txt","r") as f1:
             dle += int(tmp[2])
         elif(tmp[0] != tmp[1]):
             sub += int(tmp[2])
-    total = 22663
+    total = cor+sub+dle
     per = ((ins+sub+dle)/total)
     fper = "{0:.2f}".format(per * 100)
         

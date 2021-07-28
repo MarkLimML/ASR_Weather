@@ -31,7 +31,7 @@ for x in range(min,max):
             tmp = line.split(" ")
             start = float(tmp[1])
             end = float(tmp[2])
-            if(start<tmpend or end<start):
+            if(start<tmpend or end<start or start==end):
                 print("ERROR: incorrect segment",line.strip())
             elif(" \n" in line):
                 print("ERROR: extra end space",line.strip())

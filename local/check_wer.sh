@@ -19,7 +19,7 @@ while : ; do
 	echo "	Total=$ttl"
 	echo "	Length=$len"
 	echo ""
-	python -c "print('	WER={0:0.2f}%'.format($ttl/$len*100))"
+	python3 -c "print('	WER={0:0.2f}%'.format($ttl/$len*100))"
 	read -n 1 k <&1
 	if [[ $k = $'\e' ]] ; then
 		printf "\nQuitting from the program\n"

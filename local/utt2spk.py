@@ -1,6 +1,6 @@
 import sys
 
-if(len(sys.argv) < 3):
+if(len(sys.argv) < 2):
 	print("usage: python local/utt2spk.py <number-of-wavefiles> <list-of-skipped-numbers>")
 	sys.exit();
 
@@ -17,11 +17,10 @@ with open("data/full/utt2spk","w") as y:
 		if(len(arr) != 0 and str(i) in arr):
 			continue
 		with open("text_weather/weather"+"{0:03}".format(i)+".txt","r") as f:
-			for num,file in enumerate(f):
-				total+=1
-				seg = "{0:03}".format(num+1)
-				fno = "{0:03}".format(i)
-				l = "weather"+fno+"_"+seg
-				print(l,l,file=y)
+			for num,line in enumerate(f):
+				total += 1
+				tmp = line.strip().split(" ",1)
+				ID = tmp[0].strip()
+				print(ID,ID,file=y)
                 
 print(sys.argv[0]+":","Created", total, "utterances")

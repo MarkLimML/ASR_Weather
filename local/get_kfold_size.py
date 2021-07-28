@@ -1,21 +1,21 @@
 #! /usr/bin/env python3
 import sys
 import wave
-import contextlib
+import math
 
 if(len(sys.argv) < 2):
-	print("usage: cat <segments-file> | local/get_data_split.py <total-wav-hours>")
+	print("usage: cat <segments-file> | local/get_kfold_size.py <total-wav-hours>")
 	sys.exit();
 
 maxtotal = float(sys.argv[1])
-maxtrain = maxtotal * 0.8 * 3600
-maxtest = maxtotal * 0.2 * 3600
+maxset = maxtotal * 0.2 * 3600
 total = 0
-train = 0
+set = 0
 test = 0
 dur = 0
-chktrain = True
-chklast = False
+
+setutt = []
+setids = []
 
 file = []
 for line in sys.stdin:
@@ -30,7 +30,7 @@ with open("exp_log/data_stat.txt") as d:
 file = file[::-1]
 fdur = fdur[::-1]
 stmp = ""
-i = 0
+x = 0
 sil = 0.00
 tgap = 0.00
 ID = 0
@@ -44,28 +44,29 @@ for line in file:
 		sil = 0.00
 	if(tgap == 0.00):
 		tgap = float(fdur[ID-1])
-	if(int(tmp2[1]) == 1 and not chklast):
+	if(int(tmp2[1]) == 1):
 		sil = float(tmp[2])
-		chklast = True
 	dur = tgap - float(tmp[2])
 	
 	tgap = float(tmp[2])
-	if(train+dur <= maxtrain and chktrain):
-		train += dur
-	elif(test+dur <= maxtest):
-		if(chktrain):
-			chktrain = False
-		if(stmp == ""):
-			stmp = tmp[0]+" "+str(i)
-		test += dur
-	i+=1
-	print(ID,train,tgap)
+	if(set+dur <= maxset):
+		set += dur
+	elif(math.isclose(set+dur,maxset,rel_tol=9e-4)):
+		set += dur
+	else:
+		setutt.append(tmp[0])
+		setids.append(str(x))
+		print(ID,set/3600,dur/3600)
+		set = 0.00
+		x = 0
+	stmp = tmp[0]
+	x+=1
+print(ID,set/3600,tgap/3600)
 	
+for i,item in enumerate(setutt):
+	total += (set/3600)
+	print(setutt[i],setids[i])
 	
-
-print(stmp)
-total = (train + test)/3600
-train = train/3600
-test = test/3600
-print(total, train, test)
-print(maxtotal, maxtrain/3600, maxtest/3600)
+print(stmp, x)
+print(total)
+print(maxtotal, maxset/3600)
